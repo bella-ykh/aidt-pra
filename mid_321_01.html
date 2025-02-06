@@ -37,7 +37,7 @@
                 프로그램의 실행 순서는 다음 순서도와 같다.
             </div>
             <div class="cm_img">
-                <img src="img/img_01.png" alt="순서도">
+                <img src="img/flowchart_321_01.png" alt="순서도">
             </div>
           </div>
           <div class="cm_slide">
@@ -101,49 +101,6 @@
               <div class="cm_indicator"></div>
           </div>
       </div>
-      
-
-      <script>
-        const slides = document.querySelector('.cm_slides');
-        const indicators = document.querySelectorAll('.cm_indicator');
-        const prevButton = document.querySelector('.cm_prev');
-        const nextButton = document.querySelector('.cm_next');
-        let currentSlide = 0;
-
-        function updateSlide(index) {
-            slides.style.transform = `translateX(-${index * 100}%)`;
-            indicators.forEach((indicator, i) => {
-                indicator.classList.toggle('cm_current', i === index);
-            });
-            prevButton.disabled = index === 0;
-            nextButton.disabled = index === indicators.length - 1;
-        }
-
-        prevButton.addEventListener('click', () => {
-            if (currentSlide > 0) {
-                currentSlide -= 1;
-                updateSlide(currentSlide);
-            }
-        });
-
-        nextButton.addEventListener('click', () => {
-            if (currentSlide < indicators.length - 1) {
-                currentSlide += 1;
-                updateSlide(currentSlide);
-            }
-        });
-
-        indicators.forEach((indicator, i) => {
-            indicator.addEventListener('click', () => {
-                currentSlide = i;
-                updateSlide(currentSlide);
-            });
-        });
-
-        updateSlide(currentSlide);
-      </script>
-
-    
-
+      <script src="js/cm_script.js"></script>
 </body>
 </html>

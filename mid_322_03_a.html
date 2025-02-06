@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>중-322-실습-03-설명(하)</title>
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" type="text/css" href="css/font/pretendard.css" />
+    <link rel="stylesheet" type="text/css" href="css/font/pretendard-subset.css"/>
+    <script type="text/javascript" src="js/GoogleTranslate.js"></script>
+    <script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=GoogleTranslateInitCallback"></script>
+</head>
+<body>
+    <div class="cm_slide_container">
+        <div class="cm_slides">
+          <div class="cm_slide">
+            <h1 class="cm_title_01">간식 랜덤박스</h1>
+            <div class="cm_bg">
+                <div class="cm_container">
+                    간식 리스트에서 메뉴 하나를 골라주는 프로그램을 작성해 보자.
+
+                    <h2 class="cm_title_02 cm_pd_l0"><span class="cm_num">1</span>문제 이해 및 분석</h2>
+                    <div class="cm_txt cm_pd_l0">
+                        먹고 싶은 간식을 관리하는 간식 리스트를 만들고, 간식 리스트에서 무작위로 추첨하여 간식 메뉴를 보여준다.
+                    </div>
+                    
+                    <div class="cm_video">
+                        <h3 class="cm_video_title">프로그램 결과 미리보기</h3>
+                        <div class="cm_view">
+                            <video width="100%" height="auto" controls class="cm_video_form">
+                                <source src="video/mid_322_01_01.mp4" type="video/mp4">
+                                <track src="video/mid_322_01_01.vtt" kind="subtitles" srclang="ko" label="Korean">
+                                브라우저가 동영상을 지원하지 않습니다.
+                            </video>
+                        </div>
+                    </div>
+                </div>
+            </div>
+          </div>
+          <div class="cm_slide">
+            <h2 class="cm_title_02"><span class="cm_num">2</span>알고리즘 설계</h2>
+            <h3 class="cm_title_03">
+                <span class="cm_no">①</span>
+                문제 해결을 위해 오브젝트가 구현해야 할 기능을 생각해보자.
+            </h3>
+
+            <div class="cm_tbl_wrap">
+                <table class="cm_tbl_01">
+                    <caption>오브젝트가 구현해야 할 기능</caption>
+                    <colgroup>
+                      <col width="20%" />
+                      <col width="80%" />
+                    </colgroup>
+                    <tr>
+                      <th><img src="img/object_add.svg" alt="추가하기"></th>
+                      <td>
+                        <ul class="cm_list">
+                            <li>오브젝트를 클릭하면 추가할 음식 이름을 입력받는다.</li>
+                            <li>입력받은 항목을 리스트에 추가한다.</li>
+                        </ul>
+                      </td>
+                    </tr>
+                    <tr>
+                        <th><img src="img/object_del.svg" alt="삭제하기"></th>
+                        <td>
+                          <ul class="cm_list">
+                              <li>오브젝트를 클릭하면 삭제할 항목 번호를 입력받는다.</li>
+                              <li>항목 번호에 해당하는 리스트의 항목을 삭제한다.</li>
+                          </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th><img src="img/object_change.svg" alt="바꾸기"></th>
+                        <td>
+                          <ul class="cm_list">
+                              <li>오브젝트를 클릭하면 바꿀 항목 번호를 입력받는다.</li>
+                              <li>항목 번호를 저장한다.</li>
+                              <li>새로운 음식 이름을 입력받는다.</li>
+                              <li>항목 번호에 해당하는 리스트의 항목을 새로운 음식으로 바꾼다.</li>
+                          </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th><img src="img/object_anything.svg" alt="아무거나"></th>
+                        <td>
+                          <ul class="cm_list">
+                              <li>오브젝트를 클릭하면 1부터 리스트의 항목 수 사이에서 무작위 수를 정한다.</li>
+                              <li>무작위 수에 해당하는 리스트의 항목을 간식으로 정한다.</li>
+                              <li>2초 기다린다.</li>
+                              <li>간식을 말한다.</li>
+                          </ul>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+
+            <h3 class="cm_title_03">
+                <span class="cm_no">②</span>
+                프로그램에 필요한 변수와 리스트를 생각해보자. 
+            </h3>
+            <div class="cm_tbl_wrap">
+                <table class="cm_tbl_01">
+                    <caption>프로그램에 필요한 변수와 리스트</caption>
+                    <colgroup>
+                      <col width="20%" />
+                      <col width="80%" />
+                    </colgroup>
+                    <tr>
+                      <th>리스트</th>
+                      <td>
+                        <ul class="cm_list">
+                            <li>간식 리스트 : 먹고 싶은 간식 리스트</li>
+                        </ul>
+                      </td>
+                    </tr>
+                    <tr>
+                        <th>변수</th>
+                        <td>
+                          <ul class="cm_list">
+                              <li>항목 번호 : 간식 리스트 관리를 위한 항목 번호</li>
+                          </ul>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+          </div>
+          <div class="cm_slide">
+            <h2 class="cm_title_02"><span class="cm_num">3</span>프로그래밍</h2>
+            <h3 class="cm_title_03"><span class="cm_no">①</span>준비하기</h3>
+            <div class="cm_tbl_wrap">
+                <table class="cm_tbl_02">
+                    <caption>준비하기</caption>
+                    <colgroup>
+                      <col width="15%" />
+                      <col width="85%" />
+                    </colgroup>
+                    <tr>
+                      <th>오브젝트</th>
+                      <td class="cm_img_h40">
+                        <img src="img/object_boy.svg" alt="소년" class="cm_h80">
+                        <img src="img/object_present.svg" alt="선물">
+                        <img src="img/object_add.svg" alt="추가하기">
+                        <img src="img/object_del.svg" alt="삭제하기">
+                        <img src="img/object_change.svg" alt="바꾸기">
+                        <img src="img/object_anything.svg" alt="아무거나">
+                      </td>
+                    </tr>
+                    <tr>
+                        <th>리스트</th>
+                        <td>간식 리스트</td>
+                    </tr>
+                    <tr>
+                        <th>변수</th>
+                        <td>
+                            항목 번호
+                            <div class="cm_tip_tbl">
+                                <div class="cm_tip_txt">Tip</div>
+                                <div class="cm_tip_box">
+                                    실행 화면에서 보이지 않도록 속성 탭에서 숨긴다.
+                                    <div class="cm_mg_t10"><img src="img/tip_var_02.svg" alt="항목 번호" class="cm_h65"></div>
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>신호</th>
+                        <td>아무거나</td>
+                    </tr>
+                </table>
+            </div>
+            
+            <h3 class="cm_title_03"><span class="cm_no">②</span>프로그램 작성하기</h3>
+            <div class="cm_tbl_wrap">
+                <table class="cm_tbl_02">
+                    <caption>프로그램 작성하기</caption>
+                    <colgroup>
+                      <col width="15%" />
+                      <col width="85%" />
+                    </colgroup>
+                    <tr>
+                      <th><img src="img/object_boy.svg" alt="소년" class="cm_h65"></th>
+                      <td><img src="img/img_322_03_01.svg" alt=""></td>
+                    </tr>
+                    <tr>
+                        <th><img src="img/object_add.svg" alt="추가하기"></th>
+                        <td><img src="img/img_322_03_02_a.svg" alt=""></td>
+                    </tr>
+                    <tr>
+                        <th><img src="img/object_del.svg" alt="삭제하기"></th>
+                        <td><img src="img/img_322_03_03_a.svg" alt=""></td>
+                    </tr>
+                    <tr>
+                        <th><img src="img/object_change.svg" alt="바꾸기"></th>
+                        <td><img src="img/img_322_03_04_a.svg" alt=""></td>
+                    </tr>
+                    <tr>
+                        <th><img src="img/object_anything.svg" alt="아무거나"></th>
+                        <td><img src="img/img_322_03_05_a.svg" alt=""></td>
+                    </tr>
+                    <tr>
+                        <th><img src="img/object_present.svg" alt="선물"></th>
+                        <td>
+                            <img src="img/img_322_03_06_1.svg" alt="" class="cm_w75">
+                            <img src="img/img_322_03_06_2.svg" alt="" class="cm_w75">
+                        </td>
+                    </tr>
+                </table>
+            </div>
+          </div>
+          <div class="cm_slide">
+            <h2 class="cm_title_02"><span class="cm_num">4</span>결과 확인 및 디버깅</h2>
+            <div class="cm_txt">프로그램을 실행하여 실행 결과를 확인해 보자.</div>
+          </div>
+        </div>
+        
+    </div>
+    <div class="cm_foot">
+        <div class="cm_navigation">
+            <button class="cm_nav_button cm_prev">
+                <img src="img/btn_prev.png" alt="이전">
+                <img src="img/btn_prev_disabled.png" alt="이전" class="disabled">
+            </button>
+            <button class="cm_nav_button cm_next">
+                <img src="img/btn_next.png" alt="다음">
+                <img src="img/btn_next_disabled.png" alt="다음" class="disabled">
+            </button>
+        </div>
+        <div class="cm_indicators">
+            <div class="cm_indicator cm_current"></div>
+            <div class="cm_indicator"></div>
+            <div class="cm_indicator"></div>
+            <div class="cm_indicator"></div>
+        </div>
+    </div>
+    <script src="js/cm_script.js"></script>
+
+</body>
+</html>

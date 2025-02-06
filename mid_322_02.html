@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>중-322-실습-01-설명</title>
+    <title>중-322-실습-02-설명</title>
     <link rel="stylesheet" href="css/common.css">
     <link rel="stylesheet" type="text/css" href="css/font/pretendard.css" />
     <link rel="stylesheet" type="text/css" href="css/font/pretendard-subset.css"/>
@@ -14,17 +14,17 @@
     <div class="cm_slide_container">
         <div class="cm_slides">
           <div class="cm_slide">
-            <h1 class="cm_title_01">나의 버킷 리스트 만들기</h1>
+            <h1 class="cm_title_01">반티 후보 등록하기</h1>
             <div class="cm_bg">
                 <div class="cm_container">
-                    리스트를 활용하여 ‘나의 버킷 리스트’ 프로그램을 작성해 보자.
+                    체육대회에 입을 반티를 결정하는 문제를 해결하기 위해 리스트를 활용하여 ‘반티 선호도 조사’ 프로그램의 첫 번째 장면(등록하기)인 ‘반티 후보 등록’ 프로그램을 작성해 보자.
 
                     <h2 class="cm_title_02 cm_pd_l0"><span class="cm_num">1</span>문제 이해 및 분석</h2>
                     <div class="cm_txt cm_pd_l0">
-                        ‘나의 버킷 리스트’라는 이름의 리스트를 만들고, 리스트 항목을 관리한다.
+                        다양한 반티 후보를 추가, 삭제, 수정(바꾸기), 확인하는 프로그램을 작성한다.
                     </div>
                     
-                    <div class="cm_video cm_mg_t50">
+                    <div class="cm_video">
                         <h3 class="cm_video_title">프로그램 결과 미리보기</h3>
                         <div class="cm_view">
                             <video width="100%" height="auto" controls class="cm_video_form">
@@ -39,56 +39,66 @@
           </div>
           <div class="cm_slide">
             <h2 class="cm_title_02"><span class="cm_num">2</span>알고리즘 설계</h2>
-            <div class="cm_txt">
+            <h3 class="cm_title_03">
+                <span class="cm_no">①</span>
+                ‘반티 후보 등록하기’ 단계를 위해 설계한 순서도를 확인해 보자.
+            </h3>
+            <div class="cm_img"><img src="img/flowchart_322_02.png" alt="순서도"></div>
+
+            <h3 class="cm_title_03">
+                <span class="cm_no">②</span>
                 문제 해결을 위해 오브젝트가 구현해야 할 기능을 생각해보자.
-            </div>
+            </h3>
             <div class="cm_tbl_wrap">
                 <table class="cm_tbl_01">
-                    <caption>오브젝트가 구현해야 할 기능 추가하기, 바꾸기, 삭제하기</caption>
+                    <caption>[오브젝트가 구현해야 할 기능] 추가하기, 바꾸기, 삭제하기</caption>
                     <colgroup>
-                      <col width="15%" />
-                      <col width="85%" />
+                      <col width="20%" />
+                      <col width="80%" />
                     </colgroup>
                     <tr>
-                      <th>추가하기</th>
+                      <th><img src="img/object_add.svg" alt="추가하기"></th>
                       <td>
                         <ul class="cm_list">
-                            <li>
-                                <span>
-                                    <img src="img/object_add.svg" alt="추가하기">
-                                    오브젝트를 클릭하면 추가할 버킷 리스트를 항목을 입력받는다.
-                                </span>
-                            </li>
+                            <li>오브젝트를 클릭하면 추가할 반티를 입력받는다.</li>
                             <li>입력받은 항목을 리스트에 추가한다.</li>
                         </ul>
                       </td>
                     </tr>
                     <tr>
-                        <th>바꾸기</th>
+                        <th><img src="img/object_del.svg" alt="삭제하기"></th>
                         <td>
                           <ul class="cm_list">
-                              <li>
-                                    <span>
-                                        <img src="img/object_change.svg" alt="바꾸기">
-                                        오브젝트를 클릭하면 변경할 항목 번호와 바꿀 내용을 입력받는다.
-                                    </span>
-                              </li>
-                              <li>입력받은 항목 번호에 해당하는 항목을 수정한다.</li>
+                              <li>오브젝트를 클릭하면 삭제할 항목 번호를 입력받는다.</li>
+                              <li>항목 번호에 해당하는 리스트의 항목을 삭제한다.</li>
                           </ul>
                         </td>
                     </tr>
                     <tr>
-                        <th>삭제하기</th>
+                        <th><img src="img/object_change.svg" alt="바꾸기"></th>
                         <td>
                           <ul class="cm_list">
-                            <li>
-                                <span>
-                                    <img src="img/object_del.svg" alt="삭제하기">
-                                    오브젝트를 클릭하면 삭제할 항목 번호를 입력받는다.
-                                </span>
-                            </li>
-                            <li>입력받은 항목 번호에 해당하는 항목을 삭제한다.</li>
+                              <li>오브젝트를 클릭하면 바꿀 항목 번호를 입력받는다.</li>
+                              <li>항목 번호를 저장한다.</li>
+                              <li>새로운 반티를 입력받는다.</li>
+                              <li>항목 번호에 해당하는 리스트의 항목을 반티로 바꾼다.</li>
                           </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th><img src="img/object_confirm.svg" alt="확인" class="cm_h45"></th>
+                        <td>
+                          <ul class="cm_list">
+                              <li>등록한 반티의 개수를 4초 동안 말한다.</li>
+                              <li>투표하기 장면으로 이동한다.</li>
+                          </ul>
+                          <div class="cm_tip_tbl">
+                            <div class="cm_tip_txt">Tip</div>
+                            <div class="cm_tip_box">
+                                <img src="img/object_plus.svg" alt="+" class="cm_h30"> 
+                                버튼을 클릭해서 새 장면을 추가할 수 있다. 장면을 추가하고 장면 이름을 ‘투표하기’로 변경한다.
+                            </div>
+                          </div>
                         </td>
                     </tr>
                 </table>
@@ -96,9 +106,7 @@
           </div>
           <div class="cm_slide">
             <h2 class="cm_title_02"><span class="cm_num">3</span>프로그래밍</h2>
-            <h3 class="cm_title_03">
-                <span class="cm_no">①</span>준비하기
-            </h3>
+            <h3 class="cm_title_03"><span class="cm_no">①</span>준비하기</h3>
             <div class="cm_tbl_wrap">
                 <table class="cm_tbl_02">
                     <caption>[프로그래밍 준비하기] 오브젝트, 변수, 리스트</caption>
@@ -110,8 +118,9 @@
                       <th>오브젝트</th>
                       <td class="cm_img_h40">
                         <img src="img/object_add.svg" alt="추가하기">
-                        <img src="img/object_change.svg" alt="바꾸기">
                         <img src="img/object_del.svg" alt="삭제하기">
+                        <img src="img/object_change.svg" alt="바꾸기">
+                        <img src="img/object_confirm.svg" alt="확인">
                       </td>
                     </tr>
                     <tr>
@@ -122,41 +131,51 @@
                                 <div class="cm_tip_txt">Tip</div>
                                 <div class="cm_tip_box">
                                     실행 화면에서 보이지 않도록 속성 탭에서 숨긴다.
-                                    <div class="cm_tip_tbl_img"><img src="img/img_322_01_01.svg" alt="바꿀 번호"></div>
+                                    <div class="cm_mg_t10"><img src="img/tip_var_01.svg" alt="바꿀 번호" class="cm_h65"></div>
                                 </div>
                             </div>
                         </td>
                     </tr>
                     <tr>
                         <th>리스트</th>
-                        <td>나의 버킷 리스트</td>
+                        <td>반티 리스트</td>
                     </tr>
                 </table>
             </div>
             
-            <h3 class="cm_title_03">
-                <span class="cm_no">②</span>프로그램 작성하기
-            </h3>
+            <h3 class="cm_title_03"><span class="cm_no">②</span>프로그램 작성하기</h3>
             <div class="cm_tbl_wrap">
                 <table class="cm_tbl_02">
-                    <caption>[프로그램 작성하기] 추가하기, 바꾸기, 삭제하기</caption>
+                    <caption>[프로그램 작성하기] 추가하기, 삭제하기, 바꾸기, 확인</caption>
                     <colgroup>
                       <col width="15%" />
                       <col width="85%" />
                     </colgroup>
                     <tr>
-                      <th>추가하기</th>
-                      <td><img src="img/img_322_01_02.svg" alt=""></td>
+                      <th><img src="img/object_add.svg" alt="추가하기"></th>
+                      <td><img src="img/img_322_02_01.svg" alt=""></td>
                     </tr>
                     <tr>
-                        <th>바꾸기</th>
-                        <td><img src="img/img_322_01_03.svg" alt=""></td>
+                        <th><img src="img/object_del.svg" alt="삭제하기"></th>
+                        <td><img src="img/img_322_02_02.svg" alt=""></td>
                     </tr>
                     <tr>
-                        <th>삭제하기</th>
-                        <td><img src="img/img_322_01_04.svg" alt=""></td>
+                        <th><img src="img/object_change.svg" alt="바꾸기"></th>
+                        <td><img src="img/img_322_02_03.svg" alt=""></td>
+                    </tr>
+                    <tr>
+                        <th><img src="img/object_confirm.svg" alt="확인"></th>
+                        <td><img src="img/img_322_02_04.svg" alt=""></td>
                     </tr>
                 </table>
+
+                <div class="cm_tip">
+                    <div class="cm_tip_txt">Tip</div>
+                    <div class="cm_tip_box">
+                        등록한 반티 후보의 개수는 아래의 블록을 통해 알 수 있다.
+                        <div class="cm_img"><img src="img/img_322_02_05.svg" alt="" class="cm_w75"></div>
+                    </div>
+                  </div>
             </div>
           </div>
           <div class="cm_slide">

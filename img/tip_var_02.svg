@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="_레이어_1" data-name="레이어 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 125 50">
+  <defs>
+    <style>
+      .cls-1 {
+        font-family: Pretendard-Bold-KSCpc-EUC-H, Pretendard;
+        font-size: 15px;
+        font-weight: 700;
+      }
+
+      .cls-2 {
+        fill: none;
+        stroke: #8da5b4;
+      }
+
+      .cls-2, .cls-3 {
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        stroke-width: 1.5px;
+      }
+
+      .cls-3 {
+        fill: #fff;
+        stroke: #abc5d5;
+      }
+
+      .cls-4 {
+        fill: #d7dde0;
+      }
+
+      .cls-4, .cls-5 {
+        stroke-width: 0px;
+      }
+
+      .cls-5 {
+        fill: #f7fcff;
+      }
+    </style>
+  </defs>
+  <g>
+    <path class="cls-5" d="m2.843.25h119.315c1.431,0,2.592,1.162,2.592,2.592v44.315c0,1.431-1.162,2.593-2.593,2.593H2.843c-1.431,0-2.592-1.162-2.592-2.592V2.842C.25,1.412,1.412.25,2.843.25Z"/>
+    <path class="cls-4" d="m122.158.5c1.292,0,2.342,1.051,2.342,2.342v44.315c0,1.292-1.051,2.343-2.342,2.343H2.842c-1.292,0-2.342-1.051-2.342-2.343V2.842C.5,1.551,1.551.5,2.842.5h119.315M122.158,0H2.842C1.273,0,0,1.272,0,2.842v44.315C0,48.727,1.273,50,2.842,50h119.315c1.57,0,2.842-1.273,2.842-2.843V2.842C125,1.272,123.727,0,122.158,0h0Z"/>
+  </g>
+  <g>
+    <g>
+      <circle class="cls-3" cx="26.628" cy="24.982" r="11.177"/>
+      <g>
+        <path class="cls-2" d="m19.708,23.538s1.516,4.516,6.806,4.516,7.032-4.516,7.032-4.516"/>
+        <g>
+          <line class="cls-2" x1="30.348" y1="27.243" x2="32.098" y2="29.315"/>
+          <line class="cls-2" x1="22.88" y1="27.27" x2="21.203" y2="29.27"/>
+        </g>
+        <line class="cls-2" x1="26.628" y1="28.135" x2="26.628" y2="30.78"/>
+      </g>
+    </g>
+    <text class="cls-1" transform="translate(52.227 30.429)"><tspan x="0" y="0">항목 번호</tspan></text>
+  </g>
+</svg>
