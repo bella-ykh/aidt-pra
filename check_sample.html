@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>체크박스 설정</title>
+    <style>
+        /* A 체크박스는 기본 선택 + 비활성화 */
+        .checkbox-a {
+            pointer-events: none; /* 클릭 방지 */
+            opacity: 0.9; /* 시각적으로 비활성화 */
+        }
+    </style>
+</head>
+<body>
+    <label>
+        <input type="checkbox" class="checkbox-a" checked disabled> A (고정 선택)
+    </label>
+    <br>
+    <label>
+        <input type="checkbox" class="checkbox-b"> B (선택 가능)
+    </label>
+</body>
+</html>
