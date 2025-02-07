@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>중-323-실습-02-설명</title>
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" type="text/css" href="css/font/pretendard.css" />
+    <link rel="stylesheet" type="text/css" href="css/font/pretendard-subset.css"/>
+    <script type="text/javascript" src="js/GoogleTranslate.js"></script>
+    <script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=GoogleTranslateInitCallback"></script>
+</head>
+<body>
+    <div class="cm_slide_container">
+        <div class="cm_slides">
+          <div class="cm_slide" aria-label="슬라이드 첫 번째 화면입니다.">
+            <h1 class="cm_title_01">반티 투표하기</h1>
+            <div class="cm_bg">
+                <div class="cm_container">
+                    체육대회에 입을 반티를 결정하는 문제를 해결하기 연산자를 활용하여 ‘반티 선호도 조사’ 프로그램의 두 번째 장면(투표하기)인 ‘반티 투표하기’ 프로그램을 작성해 보자.
+
+                    <h2 class="cm_title_02 cm_pd_l0"><span class="cm_num">1</span>문제 이해 및 분석</h2>
+                    <div class="cm_txt cm_pd_l0">
+                        반티별 점수 합계를 구한 후, 모두 투표하였을 때 ‘결과보기’ 장면으로 이동한다.
+                    </div>
+                    
+                    <div class="cm_video">
+                        <h3 class="cm_video_title">프로그램 결과 미리보기</h3>
+                        <div class="cm_view">
+                            <video width="100%" height="auto" controls class="cm_video_form">
+                                <source src="video/mid_322_01_01.mp4" type="video/mp4">
+                                <track src="video/mid_322_01_01.vtt" kind="subtitles" srclang="ko" label="Korean">
+                                브라우저가 동영상을 지원하지 않습니다.
+                            </video>
+                        </div>
+                    </div>
+                </div>
+            </div>
+          </div>
+          <div class="cm_slide" aria-label="슬라이드 두 번째 화면입니다.">
+            <h2 class="cm_title_02"><span class="cm_num">2</span>알고리즘 설계</h2>
+            <h3 class="cm_title_03"><span class="cm_no">①</span>‘반티 투표하기’ 단계를 위해 설계한 순서도를 확인해 보자.</h3>
+            <div class="cm_img"><img src="img/flowchart_322_02.png" alt="순서도"></div>
+          </div>
+          <div class="cm_slide" aria-label="슬라이드 세 번째 화면입니다.">
+            <h3 class="cm_title_03"><span class="cm_no">②</span>문제 해결을 위해 오브젝트가 구현해야 할 기능을 생각해보자.</h3>
+            <div class="cm_tbl_wrap">
+                <table class="cm_tbl_01">
+                    <caption>오브젝트가 구현해야 할 기능</caption>
+                    <colgroup>
+                      <col width="15%" />
+                      <col width="25%" />
+                      <col width="60%" />
+                    </colgroup>
+                    <tr>
+                      <th rowspan="3">반티 오브젝트 이미지</th>
+                      <td>초기화</td>
+                      <td>실행 화면과 리스트 초기 설정을 한다.</td>
+                    </tr>
+                    <tr>
+                        <td>학생 수 입력</td>
+                        <td>전체 학생 수를 입력받아 총 인원 변수에 저장한다.</td>
+                    </tr>
+                    <tr>
+                        <td>반티 후보 점수 입력</td>
+                        <td>오브젝트를 클릭하였을 때 반티 별로 점수를 입력받는다.</td>
+                    </tr>
+                    <tr>
+                        <th><img src="img/object_result.svg" alt="결과보기"></th>
+                        <td colspan="2">
+                            모든 사람이 투 표하였을 때 ‘결과보기’ 장면으로 이동한다. 
+                            <div class="cm_tip_tbl">
+                                <div class="cm_tip_txt">Tip</div>
+                                <div class="cm_tip_box">
+                                    장면을 추가하고 장면 이름을 ‘결과보기’로 변경한다.
+                                </div>
+                              </div>
+                        </td>
+                      </tr>
+                </table>
+            </div>
+          </div>
+          <div class="cm_slide" aria-label="슬라이드 네 번째 화면입니다.">
+            <h2 class="cm_title_02"><span class="cm_num">3</span>프로그래밍</h2>
+            <h3 class="cm_title_03"><span class="cm_no">①</span>준비하기</h3>
+            <div class="cm_tbl_wrap">
+                <table class="cm_tbl_02">
+                    <caption>프로그래밍 준비하기</caption>
+                    <colgroup>
+                      <col width="15%" />
+                      <col width="85%" />
+                    </colgroup>
+                    <tr>
+                      <th>오브젝트</th>
+                      <td class="cm_img_h40">
+                        <img src="img/object_bant.png" alt="반티 오브젝트" class="cm_h80">
+                        <img src="img/object_result.svg" alt="결과보기">
+                      </td>
+                    </tr>
+                    <tr>
+                        <th>변수</th>
+                        <td>
+                            <ul class="cm_list">
+                                <li>총 인원</li>
+                                <li>투표한 사람</li>
+                                <li>n (리스트의 항목 번호 )</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>리스트</th>
+                        <td>
+                            <ul class="cm_list">
+                                <li>반티 리스트</li>
+                                <li>반티 총점 (반티별 누적 점수를 저장)</li>
+                            </ul>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div class="cm_tip">
+                <div class="cm_tip_txt">Tip</div>
+                <div class="cm_tip_box">
+                    반티 리스트를 제외한 나머지 변수와 리스트는 실행 화면에서 보이지 않게 숨긴다. 
+                </div>
+            </div>
+
+            <h3 class="cm_title_03"><span class="cm_no">②</span>프로그램 작성하기</h3>
+            <div class="cm_tbl_wrap">
+                <table class="cm_tbl_02">
+                    <caption>프로그래밍 준비하기</caption>
+                    <colgroup>
+                      <col width="15%" />
+                      <col width="15%" />
+                      <col width="70%" />
+                    </colgroup>
+                    <tr>
+                      <th rowspan="3"><img src="img/object_bant.png" alt="반티 오브젝트" class="cm_h80"></th>
+                      <th>반티 총점 초기화</th>
+                      <td>
+                        <img src="img/img_323_02_01.svg" alt="">
+                        <img src="img/img_323_02_02.svg" alt="">
+                        <img src="img/img_323_02_03.svg" alt="">
+                      </td>
+                    </tr>
+                    <tr>
+                        <th>학생 수 입력 및 변수 보이기</th>
+                        <td>
+                          <img src="img/img_323_02_01.svg" alt="">
+                          <img src="img/img_323_02_04.svg" alt="">
+                          <img src="img/img_323_02_05.svg" alt="">
+                          <img src="img/img_323_02_06.svg" alt="">
+                          <img src="img/img_323_02_07.svg" alt="">
+                          <img src="img/img_323_02_08.svg" alt="">
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>반티별 합계 점수 구하기</th>
+                        <td>
+                          <img src="img/img_323_02_09.svg" alt="">
+                          <img src="img/img_323_02_10.svg" alt="">
+                          <img src="img/img_323_02_11.svg" alt="">
+                          <img src="img/img_323_02_12.svg" alt="">
+                          <img src="img/img_323_02_13.svg" alt="">
+                        </td>
+                    </tr>
+                    <tr>
+                        <th><img src="img/object_result.svg" alt="결과보기"></th>
+                        <th>'결과보기' 장면으로 이동</th>
+                        <td>
+                          <img src="img/img_323_02_14.svg" alt="">
+                          <img src="img/img_323_02_15.svg" alt="">
+                          <img src="img/img_323_02_16.svg" alt="">
+                          <img src="img/img_323_02_17.svg" alt="">
+                          <img src="img/img_323_02_18.svg" alt="">
+                        </td>
+                    </tr>
+                </table>
+            </div>
+          </div>
+          <div class="cm_slide" aria-label="슬라이드 다섯 번째 화면입니다.">
+            <h2 class="cm_title_02"><span class="cm_num">4</span>결과 확인 및 디버깅</h2>
+            <div class="cm_txt">프로그램을 실행하여 실행 결과를 확인해 보자.</div>
+            <div class="cm_tip">
+                <div class="cm_tip_txt">Tip</div>
+                <div class="cm_tip_box">
+                    프로그램을 실행할 때, ‘등록하기’ 장면을 선택한 후 ‘시작하기‘ 버튼을 클릭한다.
+                </div>
+              </div>
+          </div>
+        </div>
+        
+    </div>
+    <div class="cm_foot">
+        <div class="cm_navigation">
+            <button class="cm_nav_button cm_prev">
+                <img src="img/btn_prev.png" alt="이전">
+                <img src="img/btn_prev_disabled.png" alt="이전" class="disabled">
+            </button>
+            <button class="cm_nav_button cm_next">
+                <img src="img/btn_next.png" alt="다음">
+                <img src="img/btn_next_disabled.png" alt="다음" class="disabled">
+            </button>
+        </div>
+        <div class="cm_indicators">
+            <div class="cm_indicator cm_current"></div>
+            <div class="cm_indicator"></div>
+            <div class="cm_indicator"></div>
+            <div class="cm_indicator"></div>
+            <div class="cm_indicator"></div>
+        </div>
+    </div>
+    <script src="js/cm_script.js"></script>
+
+</body>
+</html>

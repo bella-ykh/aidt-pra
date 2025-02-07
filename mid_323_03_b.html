@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>중-323-실습-03-설명(중)</title>
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" type="text/css" href="css/font/pretendard.css" />
+    <link rel="stylesheet" type="text/css" href="css/font/pretendard-subset.css"/>
+    <script type="text/javascript" src="js/GoogleTranslate.js"></script>
+    <script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=GoogleTranslateInitCallback"></script>
+</head>
+<body>
+    <div class="cm_slide_container">
+        <div class="cm_slides">
+          <div class="cm_slide" aria-label="슬라이드 첫 번째 화면입니다.">
+            <h1 class="cm_title_01">비밀번호</h1>
+            <div class="cm_bg">
+                <div class="cm_container">
+                    새로 설정한 우리집 현관문 비밀번호와 이번 달 코드를 바르게 입력해야 집에 들어갈 수 있는 프로그램을 작성해보자.
+
+                    <h2 class="cm_title_02 cm_pd_l0"><span class="cm_num">1</span>문제 이해 및 분석</h2>
+                    <div class="cm_txt cm_pd_l0">
+                        우리집에 들어가는 방법 및 절차를 생각해 보자.
+
+                        <ul class="cm_list_num">
+                            <li><span>①</span>비밀번호를 입력한다.</li>
+                            <li><span>②</span>이번 달 코드를 입력한다.</li>
+                            <li><span>③</span>비밀번호와 이번 달 코드가 모두 올바르면 집에 들어간다.</li>
+                            <li><span>④</span>비밀번호 또는 이번 달 코드가 하나라도 틀리면 집에 들어갈 수 없다.</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="cm_video">
+                        <h3 class="cm_video_title">프로그램 결과 미리보기</h3>
+                        <div class="cm_view">
+                            <video width="100%" height="auto" controls class="cm_video_form">
+                                <source src="video/mid_322_01_01.mp4" type="video/mp4">
+                                <track src="video/mid_322_01_01.vtt" kind="subtitles" srclang="ko" label="Korean">
+                                브라우저가 동영상을 지원하지 않습니다.
+                            </video>
+                        </div>
+                    </div>
+                </div>
+            </div>
+          </div>
+          <div class="cm_slide" aria-label="슬라이드 두 번째 화면입니다.">
+            <h2 class="cm_title_02"><span class="cm_num">2</span>알고리즘 설계</h2>
+            <h3 class="cm_title_03">
+                <span class="cm_no">①</span>
+                프로그램을 위해 구현해야 할 기능을 생각해 보자.
+            </h3>
+
+            <div class="cm_tbl_wrap">
+                <table class="cm_tbl_01">
+                    <caption>프로그램을 위해 구현해야 할 기능</caption>
+                    <colgroup>
+                      <col width="20%" />
+                      <col width="80%" />
+                    </colgroup>
+                    <tr>
+                      <th><img src="img/object_pw.svg" alt="비밀번호"></th>
+                      <td>
+                        <ul class="cm_list_num">
+                            <li><span>❶</span>비밀번호를 입력 받고, 입력한 값을 비밀번호 변수에 저장한다.</li>
+                            <li><span>❷</span>이번 달 코드를 입력 받고, 입력한 값을 변수 코드에 저장한다.</li>
+                            <li><span>❸</span>비밀번호와 코드가 일치하면 집에 들어간다. (환영 인사 말풍선)</li>
+                            <li><span>❹</span>비밀번호 또는 코드가 틀리면 집에 들어갈 수 없다. (접근 불가 말풍선)</li>
+                        </ul>
+                        <div class="cm_tip_tbl">
+                            <div class="cm_tip_txt">Tip</div>
+                            <div class="cm_tip_box">
+                                비밀번호는 ‘1234’, 이 달의 코드는 ‘여름’ 이다.
+                            </div>
+                          </div>
+                      </td>
+                    </tr>
+                </table>
+            </div>
+
+            <h3 class="cm_title_03">
+                <span class="cm_no">②</span>
+                프로그램에 필요한 변수를 생각해 보자.
+            </h3>
+            <div class="cm_txt">
+                <ul class="cm_list">
+                    <li>비밀번호 : 사용자가 입력한 비밀번호를 저장</li>
+                    <li>코드 : 사용자가 입력한 코드를 저장</li>
+                </ul>
+            </div>
+            
+
+            <h3 class="cm_title_03">
+                <span class="cm_no">③</span>
+                프로그램에 필요한 연산자를 생각해 보자.
+            </h3>
+            <div class="cm_txt">
+                <ul class="cm_list">
+                    <li><img src="img/img_323_03_01.svg" alt="참 그리고 참 블록"> : 사용자가 입력한 비밀번호와 코드가 모두 일치하는지 판단</li>
+                </ul>
+            </div>
+          </div>
+          <div class="cm_slide" aria-label="슬라이드 세 번째 화면입니다.">
+            <h2 class="cm_title_02"><span class="cm_num">3</span>프로그래밍</h2>
+            <h3 class="cm_title_03"><span class="cm_no">①</span>준비하기</h3>
+            <div class="cm_tbl_wrap">
+                <table class="cm_tbl_02">
+                    <caption>준비하기</caption>
+                    <colgroup>
+                      <col width="15%" />
+                      <col width="85%" />
+                    </colgroup>
+                    <tr>
+                      <th>오브젝트</th>
+                      <td class="cm_img_h40">
+                        <img src="img/object_pw.svg" alt="비밀번호">
+                        <img src="img/object_character.png" alt="캐릭터" class="cm_h80">
+                      </td>
+                    </tr>
+                    <tr>
+                        <th>변수</th>
+                        <td>
+                            코드, 비밀 번호
+                            <div class="cm_tip_tbl">
+                                <div class="cm_tip_txt">Tip</div>
+                                <div class="cm_tip_box">
+                                    변수는 실행 화면에서 보이지 않도록 속성 탭에서 숨긴다.
+                                    <div class="cm_mg_t10">
+                                        <img src="img/tip_var_03.svg" alt="코드 변수 숨기기" class="cm_h65">
+                                        <img src="img/tip_var_04.svg" alt="비밀 번호 변수 숨기기" class="cm_h65">
+                                    </div>
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            
+            <h3 class="cm_title_03"><span class="cm_no">②</span>프로그램 작성하기</h3>
+            <div class="cm_tbl_wrap">
+                <table class="cm_tbl_02">
+                    <caption>프로그램 작성하기</caption>
+                    <colgroup>
+                      <col width="15%" />
+                      <col width="85%" />
+                    </colgroup>
+                    <tr>
+                      <th><img src="img/object_character.png" alt="캐릭터" class="cm_h65"></th>
+                      <td><img src="img/img_323_03_02.svg" alt=""></td>
+                    </tr>
+                    <tr>
+                        <th><img src="img/object_pw.svg" alt="비밀번호"></th>
+                        <td>
+                            <img src="img/img_323_03_03_a.svg" alt="">
+                            <div class="cm_tip_tbl">
+                                <div class="cm_tip_txt">Tip</div>
+                                <div class="cm_tip_box">
+                                    엔트리봇의 멘트 후(3초 대기) 비밀 번호입력 창이 뜬다.
+                                </div>
+                              </div>
+                              
+                        </td>
+                    </tr>
+                </table>
+            </div>
+          </div>
+          <div class="cm_slide" aria-label="슬라이드 네 번째 화면입니다.">
+            <h2 class="cm_title_02"><span class="cm_num">4</span>결과 확인 및 디버깅</h2>
+            <div class="cm_txt">프로그램을 실행하여 실행 결과를 확인해 보자.</div>
+          </div>
+        </div>
+        
+    </div>
+    <div class="cm_foot">
+        <div class="cm_navigation">
+            <button class="cm_nav_button cm_prev">
+                <img src="img/btn_prev.png" alt="이전">
+                <img src="img/btn_prev_disabled.png" alt="이전" class="disabled">
+            </button>
+            <button class="cm_nav_button cm_next">
+                <img src="img/btn_next.png" alt="다음">
+                <img src="img/btn_next_disabled.png" alt="다음" class="disabled">
+            </button>
+        </div>
+        <div class="cm_indicators">
+            <div class="cm_indicator cm_current"></div>
+            <div class="cm_indicator"></div>
+            <div class="cm_indicator"></div>
+            <div class="cm_indicator"></div>
+        </div>
+    </div>
+    <script src="js/cm_script.js"></script>
+
+</body>
+</html>
