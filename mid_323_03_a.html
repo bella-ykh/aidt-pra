@@ -10,7 +10,7 @@
     <script type="text/javascript" src="js/GoogleTranslate.js"></script>
     <script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=GoogleTranslateInitCallback"></script>
 </head>
-<body>
+<body class="bg_entry">
     <div class="cm_slide_container">
         <div class="cm_slides">
           <div class="cm_slide" aria-label="슬라이드 첫 번째 화면입니다.">
@@ -44,6 +44,7 @@
                 </div>
             </div>
           </div>
+
           <div class="cm_slide" aria-label="슬라이드 두 번째 화면입니다.">
             <h2 class="cm_title_02"><span class="cm_num">2</span>알고리즘 설계</h2>
             <h3 class="cm_title_03">
@@ -59,7 +60,7 @@
                       <col width="80%" />
                     </colgroup>
                     <tr>
-                      <th><img src="img/object_pw.svg" alt="비밀번호"></th>
+                      <th><img src="img/object_pw.svg" alt="비밀번호" class="cm_h50"></th>
                       <td>
                         <ul class="cm_list_num">
                             <li><span>❶</span>비밀번호를 입력 받고, 입력한 값을 비밀번호 변수에 저장한다.</li>
@@ -82,7 +83,7 @@
                 <span class="cm_no">②</span>
                 프로그램에 필요한 변수를 생각해 보자.
             </h3>
-            <div class="cm_txt">
+            <div class="cm_txt_in">
                 <ul class="cm_list">
                     <li>비밀번호 : 사용자가 입력한 비밀번호를 저장</li>
                     <li>코드 : 사용자가 입력한 코드를 저장</li>
@@ -94,12 +95,14 @@
                 <span class="cm_no">③</span>
                 프로그램에 필요한 연산자를 생각해 보자.
             </h3>
-            <div class="cm_txt">
+            <div class="cm_txt_in">
                 <ul class="cm_list">
-                    <li><img src="img/img_323_03_01.svg" alt="참 그리고 참 블록"> : 사용자가 입력한 비밀번호와 코드가 모두 일치하는지 판단</li>
+                    <li>
+                        <div class="cm_flex_inline"><img src="img/img_323_03_01.svg" alt="참 그리고 참 블록"> : 사용자가 입력한 비밀번호와 코드가 모두 일치하는지 판단</div></li>
                 </ul>
             </div>
           </div>
+
           <div class="cm_slide" aria-label="슬라이드 세 번째 화면입니다.">
             <h2 class="cm_title_02"><span class="cm_num">3</span>프로그래밍</h2>
             <h3 class="cm_title_03"><span class="cm_no">①</span>준비하기</h3>
@@ -112,8 +115,8 @@
                     </colgroup>
                     <tr>
                       <th>오브젝트</th>
-                      <td class="cm_img_h40">
-                        <img src="img/object_pw.svg" alt="비밀번호">
+                      <td>
+                        <img src="img/object_pw.svg" alt="비밀번호" class="cm_h50">
                         <img src="img/object_character.png" alt="캐릭터" class="cm_h80">
                       </td>
                     </tr>
@@ -125,9 +128,9 @@
                                 <div class="cm_tip_txt">Tip</div>
                                 <div class="cm_tip_box">
                                     변수는 실행 화면에서 보이지 않도록 속성 탭에서 숨긴다.
-                                    <div class="cm_mg_t10">
-                                        <img src="img/tip_var_03.svg" alt="코드 변수 숨기기" class="cm_h65">
-                                        <img src="img/tip_var_04.svg" alt="비밀 번호 변수 숨기기" class="cm_h65">
+                                    <div class="cm_tip_var">
+                                        <img src="img/tip_var_03.svg" alt="코드 변수 숨기기">
+                                        <img src="img/tip_var_04.svg" alt="비밀 번호 변수 숨기기">
                                     </div>
                                 </div>
                             </div>
@@ -164,6 +167,7 @@
                 </table>
             </div>
           </div>
+          
           <div class="cm_slide" aria-label="슬라이드 네 번째 화면입니다.">
             <h2 class="cm_title_02"><span class="cm_num">4</span>결과 확인 및 디버깅</h2>
             <div class="cm_txt">프로그램을 실행하여 실행 결과를 확인해 보자.</div>
