@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="_레이어_1" data-name="레이어 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 343.171 663.411">
+  <defs>
+    <style>
+      .cls-1, .cls-2 {
+        font-family: Pretendard-Bold-KSCpc-EUC-H, Pretendard;
+        font-size: 26px;
+        font-weight: 700;
+      }
+
+      .cls-3 {
+        fill: #ffe697;
+        stroke: #bb7d0c;
+      }
+
+      .cls-3, .cls-4, .cls-5, .cls-6 {
+        stroke-miterlimit: 10;
+      }
+
+      .cls-3, .cls-4, .cls-6 {
+        stroke-width: 2px;
+      }
+
+      .cls-7, .cls-2 {
+        letter-spacing: -.025em;
+      }
+
+      .cls-4 {
+        fill: #d5ead1;
+      }
+
+      .cls-4, .cls-5 {
+        stroke: #000;
+      }
+
+      .cls-8 {
+        letter-spacing: -.12em;
+      }
+
+      .cls-9 {
+        stroke-width: 0px;
+      }
+
+      .cls-5 {
+        fill: none;
+        stroke-width: 3px;
+      }
+
+      .cls-6 {
+        fill: #b6eda2;
+        stroke: #6ea159;
+      }
+
+      .cls-10 {
+        letter-spacing: -.057em;
+      }
+    </style>
+  </defs>
+  <g>
+    <g>
+      <line class="cls-5" x1="171.375" y1="70.967" x2="171.375" y2="108.808"/>
+      <polygon class="cls-9" points="165.391 107.057 171.375 117.418 177.357 107.057 165.391 107.057"/>
+    </g>
+    <g>
+      <rect class="cls-4" x="101.585" y="1" width="140" height="70" rx="35" ry="35"/>
+      <text class="cls-2" transform="translate(149.089 45.191)"><tspan x="0" y="0">시작</tspan></text>
+    </g>
+  </g>
+  <g>
+    <rect class="cls-6" x="101.585" y="592.411" width="140" height="70" rx="35" ry="35"/>
+    <text class="cls-2" transform="translate(160.362 636.361)"><tspan x="0" y="0">끝</tspan></text>
+  </g>
+  <g>
+    <g>
+      <g>
+        <line class="cls-5" x1="171.375" y1="228.278" x2="171.375" y2="266.119"/>
+        <polygon class="cls-9" points="165.391 264.368 171.375 274.73 177.357 264.368 165.391 264.368"/>
+      </g>
+      <g>
+        <polygon class="cls-3" points="291.584 228.358 1.584 228.358 51.587 123.358 341.587 123.358 291.584 228.358"/>
+        <text class="cls-1" transform="translate(122.626 168.549)"><tspan class="cls-7"><tspan x="0" y="0">“안녕!”을</tspan></tspan><tspan class="cls-7" x="-32.984" y="33">2초 동안 말한다</tspan><tspan class="cls-10" x="123.844" y="33">.</tspan></text>
+      </g>
+    </g>
+    <g>
+      <g>
+        <line class="cls-5" x1="171.375" y1="384.181" x2="171.375" y2="422.022"/>
+        <polygon class="cls-9" points="165.391 420.271 171.375 430.633 177.357 420.271 165.391 420.271"/>
+      </g>
+      <g>
+        <polygon class="cls-3" points="291.584 384.162 1.584 384.162 51.587 279.162 341.587 279.162 291.584 384.162"/>
+        <text class="cls-1" transform="translate(56.302 324.353)"><tspan class="cls-7" x="0" y="0">“나는 엔트리봇이야</tspan><tspan class="cls-8" x="191.877" y="0">.</tspan><tspan class="cls-7" x="196.102" y="0">”를</tspan><tspan class="cls-7" x="33.601" y="33">2초 동안 말한다</tspan><tspan class="cls-10" x="190.428" y="33">.</tspan></text>
+      </g>
+    </g>
+    <g>
+      <g>
+        <line class="cls-5" x1="171.375" y1="540.02" x2="171.375" y2="577.861"/>
+        <polygon class="cls-9" points="165.391 576.11 171.375 586.472 177.357 576.11 165.391 576.11"/>
+      </g>
+      <g>
+        <polygon class="cls-3" points="291.584 540.031 1.584 540.031 51.587 435.031 341.587 435.031 291.584 540.031"/>
+        <text class="cls-1" transform="translate(90.885 480.223)"><tspan class="cls-7"><tspan x="0" y="0">“날씨가 좋아”를</tspan></tspan><tspan class="cls-7" x="-1.243" y="33">2초 동안 말한다</tspan><tspan class="cls-10" x="155.584" y="33">.</tspan></text>
+      </g>
+    </g>
+  </g>
+  <g>
+    <rect class="cls-6" x="101.585" y="1" width="140" height="70" rx="35" ry="35"/>
+    <text class="cls-2" transform="translate(149.089 45.191)"><tspan x="0" y="0">시작</tspan></text>
+  </g>
+</svg>

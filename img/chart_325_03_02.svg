@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="_레이어_1" data-name="레이어 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 421.34 887.076">
+  <defs>
+    <style>
+      .cls-1 {
+        stroke-width: 0px;
+      }
+
+      .cls-2 {
+        font-family: Pretendard-Bold-KSCpc-EUC-H, Pretendard;
+        font-size: 26px;
+        font-weight: 700;
+        letter-spacing: -.025em;
+      }
+
+      .cls-3 {
+        fill: #caebfc;
+        stroke: #3295c3;
+      }
+
+      .cls-3, .cls-4, .cls-5, .cls-6 {
+        stroke-miterlimit: 10;
+      }
+
+      .cls-3, .cls-5, .cls-6 {
+        stroke-width: 2px;
+      }
+
+      .cls-4 {
+        fill: none;
+        stroke: #000;
+        stroke-width: 3px;
+      }
+
+      .cls-5 {
+        fill: #ccbef4;
+        stroke: #8c7bc6;
+      }
+
+      .cls-6 {
+        fill: #b6eda2;
+        stroke: #6ea159;
+      }
+    </style>
+  </defs>
+  <g>
+    <line class="cls-4" x1="156.899" y1="70.967" x2="156.899" y2="108.808"/>
+    <polygon class="cls-1" points="150.916 107.057 156.899 117.418 162.882 107.057 150.916 107.057"/>
+  </g>
+  <g>
+    <polyline class="cls-4" points="301.856 337.876 419.84 337.876 419.84 769.771 170.725 769.771"/>
+    <polygon class="cls-1" points="172.476 763.788 162.114 769.771 172.476 775.755 172.476 763.788"/>
+  </g>
+  <g>
+    <line class="cls-4" x1="156.899" y1="420.465" x2="156.899" y2="458.306"/>
+    <polygon class="cls-1" points="150.916 456.555 156.899 466.916 162.882 456.555 150.916 456.555"/>
+  </g>
+  <g>
+    <line class="cls-4" x1="156.899" y1="197.012" x2="156.899" y2="239.854"/>
+    <polygon class="cls-1" points="150.916 238.103 156.899 248.465 162.882 238.103 150.916 238.103"/>
+  </g>
+  <g>
+    <line class="cls-4" x1="156.688" y1="575.658" x2="156.688" y2="613.499"/>
+    <polygon class="cls-1" points="150.704 611.748 156.688 622.11 162.671 611.748 150.704 611.748"/>
+  </g>
+  <g>
+    <line class="cls-4" x1="156.688" y1="730.497" x2="156.688" y2="797.635"/>
+    <polygon class="cls-1" points="150.704 795.884 156.688 806.246 162.671 795.884 150.704 795.884"/>
+  </g>
+  <polygon class="cls-5" points="156.627 254.021 9.794 337.876 156.627 421.731 303.461 337.876 156.627 254.021"/>
+  <rect class="cls-6" x="30.527" y="1" width="252.744" height="70" rx="35" ry="35"/>
+  <text class="cls-2" transform="translate(75.024 45.191)"><tspan x="0" y="0">최댓값 함수 시작</tspan></text>
+  <rect class="cls-3" x="41.361" y="123.696" width="230.533" height="73.746"/>
+  <text class="cls-2" transform="translate(83.464 168.906)"><tspan x="0" y="0">n을 1로 정하기</tspan></text>
+  <rect class="cls-3" x="30.856" y="812.284" width="251.535" height="73.746"/>
+  <text class="cls-2" transform="translate(72.553 857.493)"><tspan x="0" y="0">n을 1만큼 더하기</tspan></text>
+  <text class="cls-2" transform="translate(99.347 314.681)"><tspan x="0" y="0">반티 총점의</tspan><tspan x="0" y="31">항목 수만큼</tspan><tspan x="-3.999" y="62">반복했는가?</tspan></text>
+  <text class="cls-2" transform="translate(327.96 322.987)"><tspan x="0" y="0">아니요</tspan></text>
+  <text class="cls-2" transform="translate(171.574 235.306)"><tspan x="0" y="0">아니요</tspan></text>
+  <rect class="cls-3" x="1.022" y="473.325" width="311.223" height="107.156"/>
+  <text class="cls-2" transform="translate(52.762 518.543)"><tspan x="0" y="0">최댓값을 반티 총점의</tspan><tspan x="-7.444" y="33">n번째 항목으로 정하기</tspan></text>
+  <rect class="cls-3" x="1.022" y="628.164" width="311.223" height="107.156"/>
+  <text class="cls-2" transform="translate(63.672 673.382)"><tspan x="0" y="0">최댓값 항목 번호를</tspan><tspan x="27.958" y="33">n으로 정하기</tspan></text>
+</svg>
