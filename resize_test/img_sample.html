@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>반응형 이미지 컨테이너</title>
+    <style>
+        .image-container {
+            width: 580px; /* 기본 너비 */
+            max-width: 100%; /* 화면이 작아질 때 유동적으로 조정 */
+            height: 400px; /* 기본 높이 설정 */
+            max-height: 100vh; /* 화면보다 너무 커지지 않도록 제한 */
+            border: 2px solid #ccc;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .image-container img {
+            max-width: 100%; /* 부모 너비를 넘지 않음 */
+            max-height: 100%; /* 부모 높이를 넘지 않음 */
+            width: auto; /* 비율 유지하면서 자동 조정 */
+            height: auto; /* 비율 유지하면서 자동 조정 */
+            object-fit: scale-down; /* 큰 이미지는 축소, 작은 이미지는 원래 크기 유지 */
+        }
+
+        /* 반응형: 화면 크기가 작아질 때 조정 */
+        @media (max-width: 768px) {
+            .image-container {
+                width: 90%;
+                height: auto;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .image-container {
+                width: 100%;
+                height: auto;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="image-container">
+        <img src="img/img_323_01_01.svg" alt="반응형 이미지">
+    </div>
+
+    <div class="image-container">
+        <img src="img/img_323_02_04.svg" alt="반응형 이미지">
+    </div>
+
+    <div class="image-container">
+        <img src="img/img_323_02_08.svg" alt="반응형 이미지">
+    </div>
+
+    <div class="image-container">
+        <img src="img/img_323_02_05.svg" alt="반응형 이미지">
+    </div>
+
+</body>
+</html>
