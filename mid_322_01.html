@@ -10,30 +10,31 @@
     <script type="text/javascript" src="js/GoogleTranslate.js"></script>
     <script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=GoogleTranslateInitCallback"></script>
 </head>
-<body class="bg_entry">
+<body class="">
     <div class="cm_slide_container">
         <div class="cm_slides">
           <div class="cm_slide" aria-label="슬라이드 첫 번째 화면입니다.">
-            <h1 class="cm_title_01">나의 버킷 리스트 만들기</h1>
-            <div class="cm_bg">
-                <div class="cm_container">
-                    리스트를 활용하여 ‘나의 버킷 리스트’ 프로그램을 작성해 보자.
+            <div class="cm_title_wrap">
+                <div class="cm_ico_01"></div>
+                <h1 class="cm_title_01">나의 버킷 리스트 만들기</h1>
+            </div>
+            <div class="cm_txt">
+                리스트를 활용하여 ‘나의 버킷 리스트’ 프로그램을 작성해 보자.
+            </div>
 
-                    <h2 class="cm_title_02 cm_pd_l0"><span class="cm_num">1</span>문제 이해 및 분석</h2>
-                    <div class="cm_txt cm_pd_l0">
-                        ‘나의 버킷 리스트’라는 이름의 리스트를 만들고, 리스트 항목을 관리한다.
-                    </div>
-                    
-                    <div class="cm_video cm_mg_t50">
-                        <h3 class="cm_video_title">프로그램 결과 미리보기</h3>
-                        <div class="cm_view">
-                            <video width="100%" height="auto" controls class="cm_video_form">
-                                <source src="video/mid_322_01_01.mp4" type="video/mp4">
-                                <track src="video/mid_322_01_01.vtt" kind="subtitles" srclang="ko" label="Korean">
-                                브라우저가 동영상을 지원하지 않습니다.
-                            </video>
-                        </div>
-                    </div>
+            <h2 class="cm_title_02 cm_pd_l0"><span class="cm_num">1</span>문제 이해 및 분석</h2>
+            <div class="cm_txt cm_pd_l0">
+                ‘나의 버킷 리스트’라는 이름의 리스트를 만들고, 리스트 항목을 관리한다.
+            </div>
+            
+            <div class="cm_video">
+                <h3 class="cm_video_title">프로그램 결과 미리보기</h3>
+                <div class="cm_view">
+                    <video width="100%" height="auto" controls class="cm_video_form">
+                        <source src="video/mid_322_01_01.mp4" type="video/mp4">
+                        <track src="video/mid_322_01_01.vtt" kind="subtitles" srclang="ko" label="Korean">
+                        브라우저가 동영상을 지원하지 않습니다.
+                    </video>
                 </div>
             </div>
           </div>
@@ -45,14 +46,14 @@
             </div>
             <div class="cm_tbl_wrap">
                 <table class="cm_tbl_01">
-                    <caption>오브젝트가 구현해야 할 기능 추가하기, 바꾸기, 삭제하기</caption>
+                    <caption>오브젝트가 구현해야 할 기능</caption>
                     <colgroup>
                       <col width="15%" />
                       <col width="85%" />
                     </colgroup>
                     <tr>
                       <th>추가하기</th>
-                      <td>
+                      <td class="cm_h35">
                         <ul class="cm_list">
                             <li>
                                 <div class="cm_vt_c">
@@ -66,7 +67,7 @@
                     </tr>
                     <tr>
                         <th>바꾸기</th>
-                        <td>
+                        <td class="cm_h35">
                           <ul class="cm_list">
                               <li>
                                     <div class="cm_vt_c">
@@ -80,7 +81,7 @@
                     </tr>
                     <tr>
                         <th>삭제하기</th>
-                        <td>
+                        <td class="cm_h35">
                           <ul class="cm_list">
                             <li>
                                 <div class="cm_vt_c">
@@ -103,7 +104,7 @@
             </h3>
             <div class="cm_tbl_wrap">
                 <table class="cm_tbl_02">
-                    <caption>[프로그래밍 준비하기] 오브젝트, 변수, 리스트</caption>
+                    <caption>프로그래밍 준비하기</caption>
                     <colgroup>
                       <col width="15%" />
                       <col width="85%" />
@@ -124,7 +125,7 @@
                                 <div class="cm_tip_txt">Tip</div>
                                 <div class="cm_tip_box">
                                     실행 화면에서 보이지 않도록 속성 탭에서 숨긴다.
-                                    <div class="cm_tip_var"><img src="img/img_322_01_01.svg" alt="바꿀 번호" style="height: 60px !important;"></div>
+                                    <div class="cm_tip_var"><img src="img/tip_322_01.svg" alt="바꿀 번호"></div>
                                 </div>
                             </div>
                         </td>
@@ -141,22 +142,34 @@
             </h3>
             <div class="cm_tbl_wrap">
                 <table class="cm_tbl_02">
-                    <caption>[프로그램 작성하기] 추가하기, 바꾸기, 삭제하기</caption>
+                    <caption>프로그램 작성하기</caption>
                     <colgroup>
                       <col width="15%" />
                       <col width="85%" />
                     </colgroup>
                     <tr>
-                      <th>추가하기</th>
-                      <td><img src="img/img_322_01_02.svg" alt=""></td>
+                        <th>추가하기</th>
+                        <td>
+                            <div class="cm_img_322">
+                                <img src="img/img_322_01_01.png" alt="">
+                            </div>
+                        </td>
                     </tr>
                     <tr>
                         <th>바꾸기</th>
-                        <td><img src="img/img_322_01_03.svg" alt=""></td>
+                        <td>
+                            <div class="cm_img_322">
+                                <img src="img/img_322_01_02.png" alt="">
+                            </div>
+                        </td>
                     </tr>
                     <tr>
                         <th>삭제하기</th>
-                        <td><img src="img/img_322_01_04.svg" alt=""></td>
+                        <td>
+                            <div class="cm_img_322">
+                                <img src="img/img_322_01_03.png" alt="">
+                            </div>
+                        </td>
                     </tr>
                 </table>
             </div>

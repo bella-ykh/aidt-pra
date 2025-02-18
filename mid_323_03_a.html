@@ -10,37 +10,37 @@
     <script type="text/javascript" src="js/GoogleTranslate.js"></script>
     <script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=GoogleTranslateInitCallback"></script>
 </head>
-<body class="bg_entry">
+<body class="">
     <div class="cm_slide_container">
         <div class="cm_slides">
           <div class="cm_slide" aria-label="슬라이드 첫 번째 화면입니다.">
-            <h1 class="cm_title_01">비밀번호</h1>
-            <div class="cm_bg">
-                <div class="cm_container">
-                    새로 설정한 우리집 현관문 비밀번호와 이번 달 코드를 바르게 입력해야 집에 들어갈 수 있는 프로그램을 작성해보자.
+            <div class="cm_title_wrap">
+                <div class="cm_ico_01"></div>
+                <h1 class="cm_title_01">비밀번호</h1>
+            </div>
+            <div class="cm_txt">
+                새로 설정한 우리집 현관문 비밀번호와 이번 달 코드를 바르게 입력해야 집에 들어갈 수 있는 프로그램을 작성해보자.
+            </div>
+            <h2 class="cm_title_02"><span class="cm_num">1</span>문제 이해 및 분석</h2>
+            <div class="cm_txt">
+                우리집에 들어가는 방법 및 절차를 생각해 보자.
 
-                    <h2 class="cm_title_02 cm_pd_l0"><span class="cm_num">1</span>문제 이해 및 분석</h2>
-                    <div class="cm_txt cm_pd_l0">
-                        우리집에 들어가는 방법 및 절차를 생각해 보자.
-
-                        <ul class="cm_list_num">
-                            <li><span>①</span>비밀번호를 입력한다.</li>
-                            <li><span>②</span>이번 달 코드를 입력한다.</li>
-                            <li><span>③</span>비밀번호와 이번 달 코드가 모두 올바르면 집에 들어간다.</li>
-                            <li><span>④</span>비밀번호 또는 이번 달 코드가 하나라도 틀리면 집에 들어갈 수 없다.</li>
-                        </ul>
-                    </div>
-                    
-                    <div class="cm_video">
-                        <h3 class="cm_video_title">프로그램 결과 미리보기</h3>
-                        <div class="cm_view">
-                            <video width="100%" height="auto" controls class="cm_video_form">
-                                <source src="video/mid_322_01_01.mp4" type="video/mp4">
-                                <track src="video/mid_322_01_01.vtt" kind="subtitles" srclang="ko" label="Korean">
-                                브라우저가 동영상을 지원하지 않습니다.
-                            </video>
-                        </div>
-                    </div>
+                <ul class="cm_list_num">
+                    <li><span>①</span>비밀번호를 입력한다.</li>
+                    <li><span>②</span>이번 달 코드를 입력한다.</li>
+                    <li><span>③</span>비밀번호와 이번 달 코드가 모두 올바르면 집에 들어간다.</li>
+                    <li><span>④</span>비밀번호 또는 이번 달 코드가 하나라도 틀리면 집에 들어갈 수 없다.</li>
+                </ul>
+            </div>
+            
+            <div class="cm_video">
+                <h3 class="cm_video_title">프로그램 결과 미리보기</h3>
+                <div class="cm_view">
+                    <video width="100%" height="auto" controls class="cm_video_form">
+                        <source src="video/mid_322_01_01.mp4" type="video/mp4">
+                        <track src="video/mid_322_01_01.vtt" kind="subtitles" srclang="ko" label="Korean">
+                        브라우저가 동영상을 지원하지 않습니다.
+                    </video>
                 </div>
             </div>
           </div>
@@ -56,17 +56,17 @@
                 <table class="cm_tbl_01">
                     <caption>프로그램을 위해 구현해야 할 기능</caption>
                     <colgroup>
-                      <col width="20%" />
-                      <col width="80%" />
+                      <col width="15%" />
+                      <col width="85%" />
                     </colgroup>
                     <tr>
-                      <th><img src="img/object_pw.svg" alt="비밀번호" class="cm_h50"></th>
+                      <th><img src="img/object_pw.svg" alt="비밀번호"></th>
                       <td>
-                        <ul class="cm_list_num">
-                            <li><span>❶</span>비밀번호를 입력 받고, 입력한 값을 비밀번호 변수에 저장한다.</li>
-                            <li><span>❷</span>이번 달 코드를 입력 받고, 입력한 값을 변수 코드에 저장한다.</li>
-                            <li><span>❸</span>비밀번호와 코드가 일치하면 집에 들어간다. (환영 인사 말풍선)</li>
-                            <li><span>❹</span>비밀번호 또는 코드가 틀리면 집에 들어갈 수 없다. (접근 불가 말풍선)</li>
+                        <ul class="cm_list_num cm_pd_t0">
+                            <li><span class="font_18">❶</span>비밀번호를 입력 받고, 입력한 값을 비밀번호 변수에 저장한다.</li>
+                            <li><span class="font_18">❷</span>이번 달 코드를 입력 받고, 입력한 값을 변수 코드에 저장한다.</li>
+                            <li><span class="font_18">❸</span>비밀번호와 코드가 일치하면 집에 들어간다. (환영 인사 말풍선)</li>
+                            <li><span class="font_18">❹</span>비밀번호 또는 코드가 틀리면 집에 들어갈 수 없다. (접근 불가 말풍선)</li>
                         </ul>
                         <div class="cm_tip_tbl">
                             <div class="cm_tip_txt">Tip</div>
@@ -79,17 +79,14 @@
                 </table>
             </div>
 
-            <h3 class="cm_title_03">
+            <h3 class="cm_title_03 cm_pd_t0">
                 <span class="cm_no">②</span>
                 프로그램에 필요한 변수를 생각해 보자.
             </h3>
-            <div class="cm_txt_in">
-                <ul class="cm_list">
-                    <li>비밀번호 : 사용자가 입력한 비밀번호를 저장</li>
-                    <li>코드 : 사용자가 입력한 코드를 저장</li>
-                </ul>
-            </div>
-            
+            <ul class="cm_list cm_mg_l20">
+                <li>비밀번호 : 사용자가 입력한 비밀번호를 저장</li>
+                <li>코드 : 사용자가 입력한 코드를 저장</li>
+            </ul>
 
             <h3 class="cm_title_03">
                 <span class="cm_no">③</span>
@@ -98,7 +95,11 @@
             <div class="cm_txt_in">
                 <ul class="cm_list">
                     <li>
-                        <div class="cm_flex_inline"><img src="img/img_323_03_01.svg" alt="참 그리고 참 블록"> : 사용자가 입력한 비밀번호와 코드가 모두 일치하는지 판단</div></li>
+                        <div class="cm_flex_inline">
+                            <img src="img/img_323_03_01.svg" alt="참 그리고 참 블록" class="cm_w40"> 
+                            : 사용자가 입력한 비밀번호와 코드가 모두 일치하는지 판단
+                        </div>
+                    </li>
                 </ul>
             </div>
           </div>
@@ -126,7 +127,7 @@
                             코드, 비밀 번호
                             <div class="cm_tip_tbl">
                                 <div class="cm_tip_txt">Tip</div>
-                                <div class="cm_tip_box">
+                                <div class="cm_tip_box cm_pd_b0">
                                     변수는 실행 화면에서 보이지 않도록 속성 탭에서 숨긴다.
                                     <div class="cm_tip_var">
                                         <img src="img/tip_var_03.svg" alt="코드 변수 숨기기">
@@ -148,8 +149,12 @@
                       <col width="85%" />
                     </colgroup>
                     <tr>
-                      <th><img src="img/object_character.png" alt="캐릭터" class="cm_h65"></th>
-                      <td><img src="img/img_323_03_02.svg" alt=""></td>
+                        <th><img src="img/object_character.png" alt="캐릭터" class="cm_h65"></th>
+                        <td>
+                            <div class="cm_img_warp">
+                                <img src="img/img_323_03_02.png" alt="">
+                            </div>
+                        </td>
                     </tr>
                     <tr>
                         <th><img src="img/object_pw.svg" alt="비밀번호"></th>
