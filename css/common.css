@@ -93,11 +93,15 @@ select { -o-appearance: none; -webkit-appearance: none; -moz-appearance: none; a
 .cm_video_form { border-radius: 20px; overflow: hidden; display: block; } 
 
 
+/*** 순서도 ***/
+.cm_chart { display: flex; flex-direction: column; } 
+.cm_chart_title { height: 70px; width: 284px; padding-top: 12px; padding-left: 41px; color: #fff; font-size: 20px; background: url(../img/bg_title2.png) no-repeat 0 0; text-align: left;} 
+.cm_view_chart { width: 100%; background-color: #fff; border: solid 3px #1a509f; margin-top: -21px; padding: 10px; border-radius: 20px; text-align: center; } 
+.cm_view_chart img { display: block; margin: 0 auto; } 
 
 
 /*** 이미지 리사이즈 ***/
 .cm_img { text-align: center; padding: 20px 0; } 
-.cm_chart { max-width: 580px; text-align: center; padding: 20px 40px; } 
 
 .cm_img_321 { width: 100%; display: flex; flex-direction: row; justify-content: space-between; align-items: center; margin-bottom: 20px; } 
 .cm_img_321 .cm_321_01 { width: 16%; } 
