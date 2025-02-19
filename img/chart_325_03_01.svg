@@ -1,22 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg id="_레이어_1" data-name="레이어 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 471.095 812.338">
+<svg id="_레이어_1" data-name="레이어 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 726.727 586.274">
   <defs>
     <style>
       .cls-1 {
-        fill: #ffe697;
-        stroke: #bb7d0c;
+        fill: #707070;
+        stroke-width: 0px;
       }
 
-      .cls-1, .cls-2, .cls-3, .cls-4 {
+      .cls-2 {
+        fill: #b6eda2;
+        stroke: #6ea159;
+      }
+
+      .cls-2, .cls-3, .cls-4, .cls-5 {
         stroke-miterlimit: 10;
       }
 
-      .cls-1, .cls-3, .cls-4 {
-        stroke-width: 2px;
-      }
-
-      .cls-5 {
-        stroke-width: 0px;
+      .cls-3 {
+        fill: none;
+        stroke: #707070;
+        stroke-width: 3px;
       }
 
       .cls-6 {
@@ -26,53 +29,48 @@
         letter-spacing: -.025em;
       }
 
-      .cls-2 {
-        fill: none;
-        stroke: #000;
-        stroke-width: 3px;
-      }
-
-      .cls-3 {
-        fill: #ccbef4;
+      .cls-4 {
+        fill: #d9cfff;
         stroke: #8c7bc6;
       }
 
-      .cls-4 {
-        fill: #b6eda2;
-        stroke: #6ea159;
+      .cls-5 {
+        fill: #ffe697;
+        stroke: #bb7d0c;
       }
     </style>
   </defs>
+  <rect class="cls-2" x="44.421" y="515.774" width="252.744" height="70" rx="35" ry="35"/>
+  <text class="cls-6" transform="translate(159.558 559.724)"><tspan x="0" y="0">끝</tspan></text>
+  <polyline class="cls-3" points="171.002 92.556 725.227 92.556 725.227 204.04 666.163 204.04"/>
   <g>
-    <line class="cls-2" x1="224.661" y1="68.59" x2="224.661" y2="111.451"/>
-    <polygon class="cls-5" points="218.677 109.7 224.661 120.062 230.644 109.7 218.677 109.7"/>
+    <line class="cls-3" x1="170.793" y1="68.09" x2="170.793" y2="116.655"/>
+    <polygon class="cls-1" points="164.81 114.904 170.793 125.266 176.777 114.904 164.81 114.904"/>
+  </g>
+  <rect class="cls-2" x="44.421" y=".5" width="252.744" height="70" rx="35" ry="35"/>
+  <text class="cls-6" transform="translate(71.919 44.691)"><tspan x="0" y="0">투표 결과 확인 시작</tspan></text>
+  <g>
+    <line class="cls-3" x1="170.793" y1="282.694" x2="170.793" y2="328.536"/>
+    <polygon class="cls-1" points="164.81 326.785 170.793 337.147 176.777 326.785 164.81 326.785"/>
   </g>
   <g>
-    <polyline class="cls-2" points="224.661 541.723 224.661 510.399 1.5 510.399 1.5 215.41 74.467 215.41"/>
-    <polygon class="cls-5" points="230.644 539.973 224.661 550.334 218.678 539.973 230.644 539.973"/>
+    <polygon class="cls-4" points="170.793 125.268 11.697 204.746 170.793 284.224 329.89 204.746 170.793 125.268"/>
+    <text class="cls-6" transform="translate(102.332 184.257)"><tspan x="0" y="0">반티 리스트의</tspan><tspan x="10.91" y="31">수만큼 모두</tspan><tspan x="6.911" y="62">출력했는가?</tspan></text>
   </g>
-  <rect class="cls-4" x="98.289" y="741.338" width="252.744" height="70" rx="35" ry="35"/>
-  <text class="cls-6" transform="translate(213.425 785.288)"><tspan x="0" y="0">끝</tspan></text>
-  <rect class="cls-4" x="98.289" y="1" width="252.744" height="70" rx="35" ry="35"/>
-  <text class="cls-6" transform="translate(125.786 45.191)"><tspan x="0" y="0">투표 결과 확인 시작</tspan></text>
+  <text class="cls-6" transform="translate(327.985 184.069)"><tspan x="0" y="0">아니요</tspan></text>
+  <text class="cls-6" transform="translate(186.144 315.794)"><tspan x="0" y="0">예</tspan></text>
   <g>
-    <line class="cls-2" x1="224.661" y1="296.614" x2="224.661" y2="342.455"/>
-    <polygon class="cls-5" points="218.677 340.705 224.661 351.066 230.644 340.705 218.677 340.705"/>
+    <polygon class="cls-5" points="643.241 257.246 383.244 257.246 433.247 152.246 693.244 152.246 643.241 257.246"/>
+    <text class="cls-6" transform="translate(464.515 197.437)"><tspan x="0" y="0">반티 리스트의</tspan><tspan x="-13.582" y="33">항목별 총점 출력</tspan></text>
   </g>
-  <polygon class="cls-3" points="224.661 124.551 65.564 215.41 224.661 306.268 383.757 215.41 224.661 124.551"/>
-  <text class="cls-6" transform="translate(156.199 192.831)"><tspan x="0" y="0">반티 리스트의</tspan><tspan x="10.91" y="31">수만큼 모두</tspan><tspan x="6.911" y="62">출력했는가?</tspan></text>
-  <text class="cls-6" transform="translate(240.433 335.537)"><tspan x="0" y="0">아니요</tspan></text>
-  <text class="cls-6" transform="translate(48.398 197.843)"><tspan x="0" y="0">예</tspan></text>
   <g>
-    <polyline class="cls-2" points="224.449 462.808 224.449 494.502 469.595 494.502 469.595 215.41 400.273 215.41"/>
-    <polygon class="cls-5" points="402.023 209.426 391.662 215.41 402.023 221.393 402.023 209.426"/>
+    <line class="cls-3" x1="170.582" y1="468.91" x2="170.582" y2="506.751"/>
+    <polygon class="cls-1" points="164.599 505 170.582 515.361 176.565 505 164.599 505"/>
   </g>
-  <polygon class="cls-1" points="344.659 462.819 54.659 462.819 104.662 357.819 394.662 357.819 344.659 462.819"/>
-  <text class="cls-6" transform="translate(155.93 403.011)"><tspan x="0" y="0">반티 리스트의</tspan><tspan x="-13.582" y="33">항목별 총점 출력</tspan></text>
+  <polygon class="cls-5" points="278.629 468.756 .792 468.756 62.958 338.214 340.795 338.214 278.629 468.756"/>
+  <text class="cls-6" transform="translate(102.063 380.693)"><tspan x="0" y="0">총점 리스트의</tspan><tspan x="-46.312" y="33">최댓값 항목에 해당하는</tspan><tspan x="-2.671" y="66">반티 이름 출력</tspan></text>
   <g>
-    <line class="cls-2" x1="224.449" y1="688.345" x2="224.449" y2="726.186"/>
-    <polygon class="cls-5" points="218.466 724.435 224.449 734.797 230.433 724.435 218.466 724.435"/>
+    <line class="cls-3" x1="323.567" y1="204.746" x2="397.746" y2="204.746"/>
+    <polygon class="cls-1" points="395.996 210.729 406.357 204.746 395.996 198.763 395.996 210.729"/>
   </g>
-  <polygon class="cls-1" points="332.496 687.191 54.659 687.191 116.826 556.65 394.662 556.65 332.496 687.191"/>
-  <text class="cls-6" transform="translate(155.93 599.128)"><tspan x="0" y="0">총점 리스트의</tspan><tspan x="-46.312" y="33">최댓값 항목에 해당하는</tspan><tspan x="-2.671" y="66">반티 이름 출력</tspan></text>
 </svg>
