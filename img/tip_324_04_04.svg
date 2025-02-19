@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="_레이어_1" data-name="레이어 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 141.427 39.613">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fefdfe;
+      }
+
+      .cls-1, .cls-2 {
+        stroke-width: 0px;
+      }
+
+      .cls-2 {
+        fill: #1498c0;
+      }
+
+      .cls-3 {
+        fill: #fefefe;
+        font-family: Pretendard-Bold-KSCpc-EUC-H, Pretendard;
+        font-size: 22px;
+        font-weight: 700;
+      }
+    </style>
+  </defs>
+  <g>
+    <rect class="cls-2" x="0" y="0" width="141.427" height="39.613" rx="3.355" ry="3.355"/>
+    <path class="cls-1" d="m124.256,15.826c1.294,0,2.588-.003,3.883,0,.819.002,1.502.248,1.892,1.043.405.825.055,1.466-.46,2.088-1.25,1.51-2.462,3.051-3.74,4.537-1.135,1.32-2.057,1.312-3.204-.025-1.308-1.525-2.559-3.098-3.834-4.652-.449-.547-.699-1.13-.389-1.847.322-.745.9-1.114,1.683-1.127,1.39-.024,2.78-.007,4.17-.007v-.011Z"/>
+  </g>
+  <text class="cls-3" transform="translate(9.613 26.554)"><tspan x="0" y="0">이 될때까지</tspan></text>
+</svg>
