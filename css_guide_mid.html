@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>중등 css 가이드</title>
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" type="text/css" href="css/font/pretendard.css" />
+    <link rel="stylesheet" type="text/css" href="css/font/pretendard-subset.css"/>
+    <script type="text/javascript" src="js/GoogleTranslate.js"></script>
+    <script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=GoogleTranslateInitCallback"></script>
+</head>
+<body>
+<br>
+/********** 중등 css Guide **********/ 
+<br><br>
+<!-- h1 (font 24px)-->
+<div class="cm_title_wrap">
+  <div class="cm_ico_01"></div>
+  <h1 class="cm_title_01">타이틀</h1>
+</div>
+
+<!-- h2 (font 22px)-->
+<h2 class="cm_title_02"><span class="cm_num">1</span>문제 이해 및 분석</h2>
+<h2 class="cm_title_02"><span class="cm_num">2</span>알고리즘 설계</h2>
+<h2 class="cm_title_02"><span class="cm_num">3</span>프로그래밍</h2>
+<h2 class="cm_title_02"><span class="cm_num">4</span>결과 확인 및 디버깅</h2>
+
+<!-- h3 (font 18px) ①숫자 (font 22px)-->
+<h3 class="cm_title_03"><span class="cm_no">①</span>준비하기</h3>
+<h3 class="cm_title_03"><span class="cm_no">②</span>프로그램 작성하기</h3>
+<h3 class="cm_title_03"><span class="cm_no">③</span>프로그램 작성하기</h3>
+<h3 class="cm_title_03"><span class="cm_no">④</span>프로그램 작성하기</h3>
+
+
+<!-- 컨텐츠 txt (font 18px)-->
+<div class="cm_txt"></div>
+
+<!--미리보기 동영상-->
+<div class="cm_video">
+  <h3 class="cm_video_title">프로그램 결과 미리보기</h3>
+  <div class="cm_view">
+      <video width="100%" height="auto" controls class="cm_video_form">
+        <source src=".mp4" type="video/mp4">
+        <track src=".vtt" kind="subtitles" srclang="ko" label="Korean">
+        브라우저가 동영상을 지원하지 않습니다.
+      </video>
+  </div>
+</div>
+
+<!-- 순서도 -->
+<div class="cm_chart">
+  <h3 class="cm_chart_title">순서도</h3>
+  <div class="cm_view_chart">
+      <img src="img/chart_321_01.svg" alt="" class="cm_w60">
+  </div>
+</div>
+
+
+<!-- 테이블1 // 내부txt (font 16px) -->
+<div class="cm_tbl_wrap">
+  <table class="cm_tbl_01">
+      <caption>오브젝트가 구현해야 할 기능</caption>
+      <colgroup>
+        <col width="20%" />
+        <col width="80%" />
+      </colgroup>
+      <tr>
+        <th><img src="img/object_add.svg" alt="추가하기"></th>
+        <td>
+          <ul class="cm_list">
+              <li>오브젝트를 클릭하면 추가할 반티를 입력받는다.</li>
+              <li>입력받은 항목을 리스트에 추가한다.</li>
+          </ul>
+        </td>
+      </tr>
+      <tr>
+          <th><img src="img/object_confirm.svg" alt="확인" class="cm_h45"></th>
+          <td>
+            <ul class="cm_list">
+                <li>등록한 반티의 개수를 4초 동안 말한다.</li>
+                <li>투표하기 장면으로 이동한다.</li>
+            </ul>
+            <div class="cm_tip_tbl">
+              <div class="cm_tip_txt">Tip</div>
+              <div class="cm_tip_box">
+                  <img src="img/object_plus.svg" alt="+" class="cm_h30"> 
+                  버튼을 클릭해서 새 장면을 추가할 수 있다. 장면을 추가하고 장면 이름을 ‘투표하기’로 변경한다.
+              </div>
+            </div>
+          </td>
+      </tr>
+  </table>
+</div>
+
+
+<!-- 테이블2 // 내부txt (font 16px) -->
+<div class="cm_tbl_wrap">
+  <table class="cm_tbl_02">
+      <caption>프로그래밍 준비하기</caption>
+      <colgroup>
+        <col width="15%" />
+        <col width="85%" />
+      </colgroup>
+      <tr>
+        <th>오브젝트</th>
+        <td></td>
+      </tr>
+      <tr>
+          <th>변수</th>
+          <td>
+              바꿀번호
+              <div class="cm_tip_tbl">
+                  <div class="cm_tip_txt">Tip</div>
+                  <div class="cm_tip_box">
+                      실행 화면에서 보이지 않도록 속성 탭에서 숨긴다.
+                      <div class="cm_tip_tbl_img"><img src="img/tip_change_num.svg" alt="바꿀 번호"></div>
+                  </div>
+              </div>
+          </td>
+      </tr>
+      <tr>
+          <th>리스트</th>
+          <td>반티 리스트</td>
+      </tr>
+  </table>
+</div>
+
+
+<!--Tip-->
+<div class="cm_tip">
+  <div class="cm_tip_txt">Tip</div>
+  <div class="cm_tip_box">
+      코드를 삭제하려면 블록을 끌어와 오른쪽 아래에 쓰레기통이나 블록 영역에 버린다.
+      <ul class="cm_tip_321">
+          <li>
+              <img src="img/img_321_01_06.png" alt="쓰레기통">
+              <span>쓰레기통</span>
+          </li>
+          <li>
+              <img src="img/img_321_01_07.png" alt="여기로 옮겨 버리기 라는 설명이 쓰여진 쓰레기통 ">
+              <span>블록 탭 영역</span>
+          </li>
+      </ul>
+  </div>
+</div>
+
+<!-- cm_tip_tbl -->
+<div class="cm_tip_tbl">
+  <div class="cm_tip_txt">Tip</div>
+  <div class="cm_tip_box">
+      
+  </div>
+</div>
+
+
+<!-- 리스트 -->
+<ul class="cm_list">
+  <li></li>
+  <li></li>
+</ul>
+
+<ul class="cm_list_num">
+  <li><span>①</span></li>
+  <li><span>②</span></li>
+  <li><span>③</span></li>
+  <li><span>④</span></li>
+</ul>
+
+
+<!--슬라이드 영역-->
+<div class="cm_slide_container">
+  <div class="cm_slides">
+    <div class="cm_slide">
+      슬라이드1 
+    </div>
+    <div class="cm_slide">
+      슬라이드2
+    </div>
+    <div class="cm_slide">
+      슬라이드3
+    </div>
+    <div class="cm_slide">
+      슬라이드4            
+    </div>
+  </div>
+</div>
+<!--이전,다음,인디케이터-->
+<div class="cm_foot">
+  <div class="cm_navigation">
+    <button class="cm_nav_button cm_prev">
+      <img src="img/btn_prev.png" alt="이전">
+      <img src="img/btn_prev_disabled.png" alt="이전" class="disabled">
+    </button>
+    <button class="cm_nav_button cm_next">
+      <img src="img/btn_next.png" alt="다음">
+      <img src="img/btn_next_disabled.png" alt="다음" class="disabled">
+    </button>
+  </div>
+  <div class="cm_indicators">
+      <div class="cm_indicator cm_current"></div>
+      <div class="cm_indicator"></div>
+      <div class="cm_indicator"></div>
+      <div class="cm_indicator"></div>
+  </div>
+</div>
+<script src="js/cm_script.js"></script>
+
+
+
+</body>
+</html>

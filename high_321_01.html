@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>고-321-실습-01-설명</title>
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" type="text/css" href="css/font/pretendard.css" />
+    <link rel="stylesheet" type="text/css" href="css/font/pretendard-subset.css"/>
+    <script type="text/javascript" src="js/GoogleTranslate.js"></script>
+    <script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=GoogleTranslateInitCallback"></script>
+</head>
+<body>
+    <div class="cm_slide_container">
+        <div class="cm_slides">
+          <div class="cm_slide" aria-label="슬라이드 첫 번째 화면입니다.">
+            <div class="cm_title_bg">
+                <h1 class="cm_title_h1">변수와 자료형</h1>
+            </div>
+
+            <div class="cm_txt">
+                화면에 변수의 자료형을 출력하는 프로그램을 작성해 보자. 
+            </div>
+            <div class="cm_txt_bold"><span class="cm_bull"></span>실행 결과</div>
+            <div class="cm_code_white">
+                <pre class="cm_code2">100 &lt;class 'int'&gt;
+3.1415 &lt;class 'float'&gt;
+Python &lt;class 'str'&gt;
+True &lt;class 'bool'&gt;
+&lt;class 'list'&gt;
+&lt;class 'tuple'&gt;
+&lt;class 'dict'&gt;</pre>
+            </div>
+          </div>
+
+          <div class="cm_slide" aria-label="슬라이드 두 번째 화면입니다.">
+            <div class="cm_title_bg2">
+                <h2 class="cm_title_h2"><span class="cm_num_01">1</span>프로그래밍</h2>
+            </div>
+            <div class="cm_txt_bold cm_mg_b20">
+                코드를 보고 오른쪽 프로그램을 완성해 보자.
+            </div>
+
+            <h3 class="cm_title_h3"><span class="cm_no">①</span>단일형 변수를 저장하고 자료형 출력하기</h3>
+            <div class="cm_code_black">
+                <pre class="cm_code2">
+a = 100 
+b = 3.1415 
+c = 'Python'
+d = True 
+print(a, type(a)) 
+print(b, type(b)) 
+print(c, type(c)) 
+print(d, type(d))                    
+                </pre>
+            </div>
+
+            <h3 class="cm_title_h3"><span class="cm_no">②</span>컨테이너형 변수를 저장하고 자료형 출력하기</h3>
+            <div class="cm_code_black">
+                <pre class="cm_code2">
+colors = ['빨', '주', '노', '초', '파']
+weekday = ('월', '화', '수', '목', '금')
+students = {'혜민': '131-9898', '서준': '457-4777'}
+print(type(colors))
+print(type(weekday))
+print(type(students))
+                </pre>
+            </div>
+
+            <div class="cm_tip_h">
+                <div class="cm_tip_bg"><span class="cm_tip_txt2">Tip!</span></div>
+                <div class="cm_tip_cont">
+                  컨테이너형 변수도 단일형 변수와 마찬가지로 다음의 형식으로 자료형을 알 수 있다.
+                  <div class="cm_var_box">type(변수명)</div>
+                </div>
+            </div>
+          </div>
+
+          <div class="cm_slide" aria-label="슬라이드 세 번째 화면입니다.">
+            <div class="cm_title_bg2">
+                <h2 class="cm_title_h2"><span class="cm_num_02">2</span>결과 확인 및 디버깅</h2>
+            </div>
+            <ul class="cm_list_num_h">
+                <li><span>①</span>프로그램을 실행하여 [실행 결과]와 같이 결과가 출력되는지 확인해 보자.</li>
+                <li><span>②</span>[실행 결과]와 같이 출력했다면 ‘채점 하기’ 버튼을 눌러 실습 결과를 확인해 보자.</li>
+            </ul>
+          </div>
+        </div>
+        
+      </div>
+      <div class="cm_foot">
+        <div class="cm_navigation">
+            <button class="cm_nav_button cm_prev">
+              <img src="img/btn_prev_h.png" alt="이전">
+              <img src="img/btn_prev_disabled.png" alt="이전" class="disabled">
+            </button>
+            <button class="cm_nav_button cm_next">
+              <img src="img/btn_next_h.png" alt="다음">
+              <img src="img/btn_next_disabled.png" alt="다음" class="disabled">
+            </button>
+          </div>
+          <div class="cm_indicators">
+              <div class="cm_indicator cm_indi_h cm_current"></div>
+              <div class="cm_indicator cm_indi_h"></div>
+              <div class="cm_indicator cm_indi_h"></div>
+          </div>
+      </div>
+      <script>
+        window.addEventListener("load", function () {
+          const slides = document.querySelector('.cm_slides');
+          const indicators = document.querySelectorAll('.cm_indicator');
+          const prevButton = document.querySelector('.cm_prev');
+          const nextButton = document.querySelector('.cm_next');
+          let currentSlide = 0;
+
+          function updateSlide(index) {
+              slides.style.transform = `translateX(-${index * 100}%)`;
+              indicators.forEach((indicator, i) => {
+                  indicator.classList.toggle('cm_current', i === index);
+              });
+              prevButton.disabled = index === 0;
+              nextButton.disabled = index === indicators.length - 1;
+          }
+
+          prevButton.addEventListener('click', () => {
+              if (currentSlide > 0) {
+                  currentSlide -= 1;
+                  updateSlide(currentSlide);
+              }
+          });
+
+          nextButton.addEventListener('click', () => {
+              if (currentSlide < indicators.length - 1) {
+                  currentSlide += 1;
+                  updateSlide(currentSlide);
+              }
+          });
+
+          indicators.forEach((indicator, i) => {
+              indicator.addEventListener('click', () => {
+                  currentSlide = i;
+                  updateSlide(currentSlide);
+              });
+          });
+
+          updateSlide(currentSlide);
+      });
+      </script>
+</body>
+</html>

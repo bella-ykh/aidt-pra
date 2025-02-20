@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>고-322-실습-04-설명</title>
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" type="text/css" href="css/font/pretendard.css" />
+    <link rel="stylesheet" type="text/css" href="css/font/pretendard-subset.css"/>
+    <script type="text/javascript" src="js/GoogleTranslate.js"></script>
+    <script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=GoogleTranslateInitCallback"></script>
+</head>
+<body>
+    <div class="cm_slide_container">
+        <div class="cm_slides">
+          <div class="cm_slide" aria-label="슬라이드 첫 번째 화면입니다.">
+            <div class="cm_title_bg">
+                <h1 class="cm_title_h1">독서록 프로그램</h1>
+            </div>
+
+            <div class="cm_txt">
+                파일입출력 함수를 사용하여 책에 대한 한 줄 평을 텍스트 파일에 저장하는 프로그램을 완성해 보자. 
+            </div>
+
+            // [저장된 텍스트 파일 예시] // 이미지 제작??? 
+
+          </div>
+
+          <div class="cm_slide" aria-label="슬라이드 두 번째 화면입니다.">
+            <div class="cm_title_bg2">
+                <h2 class="cm_title_h2"><span class="cm_num_01">1</span>프로그래밍</h2>
+            </div>
+
+            <div class="cm_txt_bold">빈칸을 채워 ‘bookervier.txt’ 파일에 독서록을 저장하는 프로그램을 완성해보자.</div>
+
+            <div class="cm_hint_container">
+                <div class="cm_hint_header">Hint</div>
+                <div class="cm_hint_content">
+                    <p class="cm_hint_txt">‘bookervier.txt’ 파일을 추가 모드로 여는 방법</p>
+                    <div class="cm_code_black">f = open('bookreview.txt', 'a')</div>
+                </div>
+            </div>
+
+            <div class="cm_hint_container">
+                <div class="cm_hint_header">Hint</div>
+                <div class="cm_hint_content">
+                    <p class="cm_hint_txt">저장할 책 정보를 입력받는 방법</p>
+                    <div class="cm_code_black">
+                        <pre class="cm_code2">title = input('책 제목: ')
+review = input('한 줄 평: ')</pre>
+                    </div>
+                </div>
+            </div>
+
+            <div class="cm_tip_h">
+                <div class="cm_tip_bg"><span class="cm_tip_txt2">Tip!</span></div>
+                <div class="cm_tip_cont">
+                    <ul class="cm_list">
+                        <li>
+                            write( ) 함수의 인수로 문자열과 변수가 혼합된 값을 입력하려고 할 때, ‘+’ (더하기) 기호로 값을 연결한다. 
+                        </li>
+                        <li>
+                            화면이나 파일에 한 줄을 쓰고 커서를 다음 줄로 옮기고자 할 때, ‘\n’ (newline) 기호를 사용한다.
+                        </li>
+                    </ul>
+                </div>
+              </div>
+          </div>
+
+          <div class="cm_slide" aria-label="슬라이드 세 번째 화면입니다.">
+            <div class="cm_title_bg2">
+                <h2 class="cm_title_h2"><span class="cm_num_02">2</span>결과 확인 및 디버깅</h2>
+            </div>
+
+            <h3 class="cm_title_h3"><span class="cm_no">①</span>프로그램을 실행하여 독서록 내용을 입력해 보자. </h3>
+            <h3 class="cm_title_h3"><span class="cm_no">②</span>완성한 코드 아래에 다음 코드를 추가하여 텍스트 파일에 저장된 내용을 확인해 보자.</h3>
+
+            <div class="cm_code_black">
+                <pre class="cm_code2"><span class="cm_keyword" aria-label="주석 # 파일 읽기"># 파일 읽기</span>
+f = open('bookreview.txt', 'r') 
+a = f.read() 
+print(‘\n’)
+print(a) 
+f.close()</pre>
+            </div>
+
+            <h3 class="cm_title_h3"><span class="cm_no">③</span>텍스트 파일 예시와 같이 결과가 잘 출력된다면 ‘채점 하기’ 버튼을 눌러 실습 결과를 확인해 보자.</h3>
+
+          </div>
+        </div>
+        
+      </div>
+      <div class="cm_foot">
+        <div class="cm_navigation">
+            <button class="cm_nav_button cm_prev">
+              <img src="img/btn_prev_h.png" alt="이전">
+              <img src="img/btn_prev_disabled.png" alt="이전" class="disabled">
+            </button>
+            <button class="cm_nav_button cm_next">
+              <img src="img/btn_next_h.png" alt="다음">
+              <img src="img/btn_next_disabled.png" alt="다음" class="disabled">
+            </button>
+          </div>
+          <div class="cm_indicators">
+              <div class="cm_indicator cm_indi_h cm_current"></div>
+              <div class="cm_indicator cm_indi_h"></div>
+              <div class="cm_indicator cm_indi_h"></div>
+          </div>
+      </div>
+      <script>
+        window.addEventListener("load", function () {
+          const slides = document.querySelector('.cm_slides');
+          const indicators = document.querySelectorAll('.cm_indicator');
+          const prevButton = document.querySelector('.cm_prev');
+          const nextButton = document.querySelector('.cm_next');
+          let currentSlide = 0;
+
+          function updateSlide(index) {
+              slides.style.transform = `translateX(-${index * 100}%)`;
+              indicators.forEach((indicator, i) => {
+                  indicator.classList.toggle('cm_current', i === index);
+              });
+              prevButton.disabled = index === 0;
+              nextButton.disabled = index === indicators.length - 1;
+          }
+
+          prevButton.addEventListener('click', () => {
+              if (currentSlide > 0) {
+                  currentSlide -= 1;
+                  updateSlide(currentSlide);
+              }
+          });
+
+          nextButton.addEventListener('click', () => {
+              if (currentSlide < indicators.length - 1) {
+                  currentSlide += 1;
+                  updateSlide(currentSlide);
+              }
+          });
+
+          indicators.forEach((indicator, i) => {
+              indicator.addEventListener('click', () => {
+                  currentSlide = i;
+                  updateSlide(currentSlide);
+              });
+          });
+
+          updateSlide(currentSlide);
+
+          // 모든 Hint 요소 선택
+        const hintHeaders = document.querySelectorAll('.cm_hint_header');
+
+        // 각 Hint에 이벤트 리스너 추가
+        hintHeaders.forEach(hintHeader => {
+            hintHeader.addEventListener("click", function () {
+                let hintContent = this.nextElementSibling; // 바로 다음 형제 요소 선택
+
+                // 열려있는 경우 닫기
+                if (hintContent.style.maxHeight) {
+                    hintContent.style.maxHeight = null;
+                    this.classList.remove('active');
+                } 
+                // 닫혀있는 경우 열기
+                else {
+                    hintContent.style.maxHeight = hintContent.scrollHeight + "px";
+                    this.classList.add('active');
+                }
+            });
+        });
+      });
+      </script>
+</body>
+</html>
