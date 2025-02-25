@@ -30,6 +30,17 @@
     <h2 class="cm_title_h2"><span class="cm_num_03">3</span>프로그래밍</h2>
 </div>
 
+<!-- h2 (font 28px)-->
+<div class="cm_title_bg2">
+  <h2 class="cm_title_h2">1. 프로그래밍</h2>
+</div>
+<div class="cm_title_bg2">
+  <h2 class="cm_title_h2">2. 결과 확인 및 디버깅</h2>
+</div>
+<div class="cm_title_bg2">
+  <h2 class="cm_title_h2">3. 프로그래밍</h2>
+</div>
+
 <!-- h3 (font 18px) ①숫자 (font 22px)-->
 <h3 class="cm_title_h3"><span class="cm_no">①</span>준비하기</h3>
 <h3 class="cm_title_h3"><span class="cm_no">②</span>프로그램</h3>
@@ -174,14 +185,45 @@ print(type(students))
   <div class="cm_tip_cont">
     컨테이너형 변수도 단일형 변수와 마찬가지로 다음의 형식으로 자료형을 알 수 있다.
     <div class="cm_var_box">type(변수명)</div>
+
+    <ul class="cm_list_tip_h">
+      <li>
+        <div>
+          <span>import random :</span>random 모듈을불러오기
+        </div>
+      </li>
+      <li>
+        <div>
+          <span>random.randint(1,100) : </span>1~100 사이의난수 생성하기 
+        </div>
+      </li>
+    </ul>
+
+    <div class="cm_ex_wrap">
+      <span class="cm_ex_txt">예)</span>
+      <ul class="cm_list_tip_h">
+        <li>
+          <div>
+            <span>import random :</span>random 모듈을불러오기
+          </div>
+        </li>
+        <li>
+          <div>
+            <span>random.randint(1,100) : </span>1~100 사이의난수 생성하기 
+          </div>
+        </li>
+      </ul>
+    </div>
   </div>
 </div>
 
 <!-- Hint -->
 <div class="cm_hint_container">
-  <div class="cm_hint_header">Hint</div>
+  <div class="cm_hint_header">
+    Hint
+    <span class="cm_hint_sub">힌트텍스트</span>
+  </div>
   <div class="cm_hint_content">
-      <p class="cm_hint_txt">변수 취미에 문자열 데이터를 저장하는 방법</p>
       <div class="cm_code_black">취미 = '영화 보기'</div>
   </div>
 </div>
@@ -237,6 +279,40 @@ print(주말 지출 총액)
 print(주말 지출 평균액)
 
 종료
+  </div>
+</div>
+
+<!-- 요구사항 -->
+<div class="cm_req_wrap">
+  <div class="cm_req_title">요구 사항</div>
+  <div class="cm_req_1depth"><span class="cm_req_num">1</span>Movie 클래스 생성</div>
+  <div class="cm_req_1depth"><span class="cm_req_num">2</span>여러 개의 영화 객체 생성</div>
+  <div class="cm_req_1depth"><span class="cm_req_num">3</span>영화 정보 출력</div>
+  <div class="cm_req_1depth"><span class="cm_req_num">4</span>가장 높은 평점을 받은 영화 찾기</div>
+
+  <div class="cm_req_2depth">
+    <span class="cm_txt_point">1)</span>
+    <div class="cm_2depth_txt"><span class="cm_font_bold"> 속성 :</span> 영화 제목(title), 장르(genre), 평점 리스트(ratings)</div>
+  </div>
+  <div class="cm_req_2depth">
+    <span class="cm_txt_point">-</span>
+    <div class="cm_2depth_txt">최소 3개의 Movie 객체를 생성하고 각 객체에 여러 개의 평점을 추가한다.</div>
+  </div>
+
+
+  <div class="cm_req_3depth">
+    <ul class="cm_list_tip_h">
+      <li class="cm_point_bull">
+        <div>
+          <span>display_info() :</span>영화의 제목, 장르, 평균 평점을 출력한다.
+        </div>
+      </li>
+      <li>
+        <div>
+          <span>random.randint(1,100) : </span>1~100 사이의난수 생성하기 
+        </div>
+      </li>
+    </ul>
   </div>
 </div>
 

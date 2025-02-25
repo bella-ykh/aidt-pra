@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>고-322-실습-05-설명</title>
+    <title>고-323-실습-08-설명</title>
     <link rel="stylesheet" href="css/common.css">
     <link rel="stylesheet" type="text/css" href="css/font/pretendard.css" />
     <link rel="stylesheet" type="text/css" href="css/font/pretendard-subset.css"/>
@@ -15,28 +15,14 @@
         <div class="cm_slides">
           <div class="cm_slide" aria-label="슬라이드 첫 번째 화면입니다.">
             <div class="cm_title_bg">
-                <h1 class="cm_title_h1">물품 보관함 정보 프로그램</h1>
+                <h1 class="cm_title_h1">캐릭터 관리 프로그램</h1>
             </div>
 
             <div class="cm_txt">
-                파일입출력 함수를 사용하여 공공 데이터 파일의 내용을 확인하는 파이썬 프로그램을 완성해 보자.
-            </div>
-            <div class="cm_txt">
-                공공 데이터 포털 <br> 
-                (https://www.data.go.kr/data/15044234/fileData.do) 에서 내려받은 서울교통공사 물품 보관함 
-                위치 정보 파일(<span class="cm_point">서울교통공사_물품보관함 위치정보_20231031.csv</span>) 을 출력하려고 한다. 파일의 내용은 아래 그림과 같다.
+                딕셔너리를 활용하여 게임 캐릭터의 정보를 저장하는 파이썬 프로그램을 작성해 보자. 
             </div>
 
-            // [물품 보관함 위치 정보 파일] // 이미지 제작??? <br><br><br><br>
-
-            <div class="cm_tip_h">
-                <div class="cm_tip_bg"><span class="cm_tip_txt2">Tip!</span></div>
-                <div class="cm_tip_cont">
-                    csv는 comma-separated values의 줄임말로, csv 파일은 데이터를 ,(콤마)로 구분하여 표 형태로 저장한 텍스트 파일이다. <br>
-                    빅데이터 분석을 위하여 대용량 데이터를 저장할 때 많이 사용된다.
-                </div>
-            </div>
-
+            //  이미지 제작 ///
           </div>
 
           <div class="cm_slide" aria-label="슬라이드 두 번째 화면입니다.">
@@ -44,63 +30,85 @@
                 <h2 class="cm_title_h2">1. 프로그래밍</h2>
             </div>
 
-            <div class="cm_txt_bold">빈 칸을 채워 코드를 완성해 보자.</div>
-
+            <h3 class="cm_title_h3"><span class="cm_no">①</span>캐릭터(gogo)의 정보를 2차원 딕셔너리로 표현해 보자.</h3>
             <div class="cm_hint_container">
                 <div class="cm_hint_header">
-                    Hint<span class="cm_hint_sub">csv 파일을 읽기 모드로 여는 방법</span>
+                    Hint<span class="cm_hint_sub">딕셔너리에 캐릭터의 정보를 저장하는 방법</span>
                 </div>
                 <div class="cm_hint_content">
-                    <div class="cm_code_black">with open('서울교통공사_물품보관함 위치정보_20231031.csv', 'r') as file:</div>
+                    <div class="cm_code_black">
+                        <pre class="cm_code2">gojeongbo = {
+    'gogo': {'공격력': 150, 
+    '스피드': 100,
+    '충성심': 200,
+    '경험치': 150,
+    '체력': 100,
+    '방어력': 50}
+}</pre>
+                    </div>
                 </div>
             </div>
+            <h3 class="cm_title_h3"><span class="cm_no">②</span>프로그램</h3>
 
-            <div class="cm_tip_h cm_mg_b30">
+            
+          </div>
+
+          <div class="cm_slide" aria-label="슬라이드 세 번째 화면입니다.">
+            <div class="cm_title_bg2">
+                <h2 class="cm_title_h2">2. 결과 확인 및 디버깅</h2>
+            </div>
+
+            <h3 class="cm_title_h3"><span class="cm_no">①</span>프로그램을 실행하여 [실행 결과]와 같이 출력되는지 확인해 보자.</h3>
+
+            <div class="cm_txt_bold"><span class="cm_bull"></span>실행 결과</div>
+            <div class="cm_code_white">
+                <pre class="cm_code2">미송이의 의복 치수: {'상의': 85, '신발': 230, '하의': 'S'}
+미송이의 상의 치수: 85
+미송이의 수정된 의복 치수: {'상의': 90, '신발': 230, '하의': 'S'}</pre>
+            </div>
+
+            <h3 class="cm_title_h3"><span class="cm_no">②</span>결과를 출력했다면 아래 코드를 실행한 후 결과를 확인해 보자.</h3>
+            <div class="cm_code_white">print(class1['한준'])</div>
+
+            <h3 class="cm_title_h3"><span class="cm_no">③</span>딕셔너리에 존재하지 않는 키를 출력하려고 하면, 오류가 발생한다. 아래 코드를 추가하여 실행 중 오류가 발생했을 때도 실행되도록 수정해 보자.</h3>
+            <div class="cm_tip_h">
                 <div class="cm_tip_bg"><span class="cm_tip_txt2">Tip!</span></div>
                 <div class="cm_tip_cont">
-                    with 명령어를 사용하면 연(open) 파일을 자동으로 닫아주므로, 'file.close( )' 명령을 생략해도 된다.
+                    try except(예외 처리): 실행 중 오류가 발생했을 때 실행을 중단하지 않고 계속 실행하게 한다.
+                    예) • try: 실행할 코드
+                          • except: 오류가 발생했을 때 처리할 코드
+                    
                 </div>
             </div>
 
-            <div class="cm_hint_container">
-                <div class="cm_hint_header">
-                    Hint<span class="cm_hint_sub">파일의 모든 줄을 읽고 리스트에 담아 lines 변수에 저장하는 방법</span>
-                </div>
-                <div class="cm_hint_content">
-                    <div class="cm_code_black">lines = file.readlines()</div>
-                </div>
+            <div class="cm_code_black">
+                <pre class="cm_code2">print('학생의 의류 사이즈를 검색하겠습니다.')
+name = input('어떤 학생이 궁금하신가요?')
+clothes = input('어떤 사이즈가 궁금하신가요?')
+try:
+    print(f'{name}의 {clothes} 사이즈는 {class1[name][clothes]}입니다.')
+except:
+    print('존재하는 키가 아닙니다.')</pre>
             </div>
 
             <div class="cm_tip_h">
                 <div class="cm_tip_bg"><span class="cm_tip_txt2">Tip!</span></div>
                 <div class="cm_tip_cont">
-                    split( ): 문자열에 관한 함수로 다음과 같은 형식으로 사용한다.
-                    <div class="cm_var_box cm_mg_b20">문자열.split('구분자')</div>
-                    구분자를 기준으로 문자열을 잘라 리스트로 만들어주는데, 만약 구분자를 생략한다면 공백을 기준으로 자른다.
+                    f-string: 문자열의 원하는 위치에 특정한 값을 삽입하는 방법이다. 
+                    문자열 앞에 f를 붙이고, 어떤 변수나 표현식을 삽입할 때는 중괄호 안에 넣어 준다.
                 </div>
             </div>
-          </div>
-
-          <div class="cm_slide" aria-label="슬라이드 세 번째 화면입니다.">
-            <div class="cm_title_bg2">
-                <h2 class="cm_title_h2"><span class="cm_num_02">2</span>결과 확인 및 디버깅</h2>
-            </div>
-
-            <h3 class="cm_title_h3"><span class="cm_no">①</span>프로그램을 실행하여 [실행 결과]와 같이 결과가 출력되는지 확인해 보자.</h3>
 
             <div class="cm_txt_bold"><span class="cm_bull"></span>실행 결과</div>
             <div class="cm_code_white">
-                <pre class="cm_code2">['연번', '호선', '보관함명', '상세위치']
-['1', '1', '서울역A', '1호선 1/2번 출입구 사이 복도']
-['2', '1', '서울역D', '2/3번 출입구 복도 사이']
-['3', '1', '서울역E', '2/3번 출입구 복도 사이/화장실 주변']
-['4', '1', '시청A', '2/3번 출구 주변']
-['5', '1', '시청B', '2/3번 출구 엘리베이터 주변’]
-
--- 생략 --</pre>
+                <pre class="cm_code2">학생의 의류 사이즈를 검색하겠습니다.
+어떤 학생이 궁금하신가요? 한준
+어떤 사이즈가 궁금하신가요? 상의
+존재하는 키가 아닙니다.</pre>
             </div>
 
-            <h3 class="cm_title_h3"><span class="cm_no">②</span>[실행 결과]와 같이 출력했다면 ‘채점 하기’ 버튼을 눌러 실습 결과를 확인해 보자.</h3>
+            <h3 class="cm_title_h3"><span class="cm_no">④</span>프로그램이 잘 동작한다면 ‘채점 하기’ 버튼을 눌러 실습 결과를 확인해 보자.</h3>
+
 
           </div>
         </div>
