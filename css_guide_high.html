@@ -47,11 +47,11 @@
 <h3 class="cm_title_h3"><span class="cm_no">③</span>프로그램</h3>
 <h3 class="cm_title_h3"><span class="cm_no">④</span>프로그램</h3>
 
-<ul class="cm_list_num">
-    <li><span class="cm_high">①</span>내용내용내용</li>
-    <li><span class="cm_high">②</span></li>
-    <li><span class="cm_high">③</span></li>
-    <li><span class="cm_high">④</span></li>
+<ul class="cm_list_num_h">
+    <li><span>①</span>내용내용내용</li>
+    <li><span>②</span></li>
+    <li><span>③</span></li>
+    <li><span>④</span></li>
 </ul>
 
 <!-- 컨텐츠 txt (font 18px)-->
@@ -82,9 +82,8 @@ True &lt;class 'bool'&gt;
     </pre>
 </div>
 
-<!-- 블랙 코드창(넘버링) -->
+<!-- 넘버링 코드창(일반) -->
 <div class="cm_code_number">
-    <!-- 줄 번호는 시각적으로 보이지만, 스크린리더에서는 읽히지 않음 -->
     <div class="cm_line_numbers" aria-hidden="true">
         <span>1</span>
         <span>2</span>
@@ -95,8 +94,6 @@ True &lt;class 'bool'&gt;
         <span>7</span>
         <span>8</span>
     </div>
-    
-    <!-- 코드 블록: <pre>를 사용하여 원본 코드 구조 유지 -->
     <pre class="cm_code">
 a = 100
 b = 3.1415
@@ -108,6 +105,37 @@ c = 'Python'
 <span class="cm_function" aria-label="print 함수 호출">print</span>(d, type(d))
     </pre>
 </div>
+
+<div class="cm_code_number">
+    <div class="cm_line_numbers" aria-hidden="true">
+        <span>1</span>
+        <span>2</span>
+        <span>3</span>
+        <span>4</span>
+        <span>5</span>
+    </div>
+    <pre class="cm_code">코드</pre>
+</div>
+
+
+<!-- 넘버링 코드창(스크롤)-->
+<div class="cm_code_scroll">
+  <div class="cm_line_numbers" aria-hidden="true">
+      <span>1</span>
+      <span>2</span>
+      <span>3</span>
+      <span>4</span>
+      <span>5</span>
+      <span>6</span>
+  </div>
+  <pre class="cm_code">colors = ['빨', '주', '노', '초', '파']
+weekday = ('월', '화', '수', '목', '금')
+students = {'혜민' : '131-9898', '서준' : '457-4777'}
+print(type(colors))
+print(type(weekday))
+print(type(students))</pre>
+</div>
+
 
 <!-- 블랙 코드창(기본) -->
 <div class="cm_code_black">
@@ -181,76 +209,80 @@ print(type(students))
 
 <!--Tip-->
 <div class="cm_tip_h">
-  <div class="cm_tip_bg"><span class="cm_tip_txt2">Tip!</span></div>
-  <div class="cm_tip_cont">
-    컨테이너형 변수도 단일형 변수와 마찬가지로 다음의 형식으로 자료형을 알 수 있다.
-    <div class="cm_var_box">type(변수명)</div>
+    <div class="cm_tip_bg"><span class="cm_tip_txt2">Tip!</span></div>
+    <div class="cm_tip_cont">
+        컨테이너형 변수도 단일형 변수와 마찬가지로 다음의 형식으로 자료형을 알 수 있다.
+        <div class="cm_var_box">type(변수명)</div>
 
-    <ul class="cm_list_tip_h">
-      <li>
-        <div>
-          <span>import random :</span>random 모듈을불러오기
-        </div>
-      </li>
-      <li>
-        <div>
-          <span>random.randint(1,100) : </span>1~100 사이의난수 생성하기 
-        </div>
-      </li>
-    </ul>
-
-    <div class="cm_ex_wrap">
-      <span class="cm_ex_txt">예)</span>
-      <ul class="cm_list_tip_h">
+        <ul class="cm_list_tip_h">
         <li>
-          <div>
+            <div>
             <span>import random :</span>random 모듈을불러오기
-          </div>
+            </div>
         </li>
         <li>
-          <div>
+            <div>
             <span>random.randint(1,100) : </span>1~100 사이의난수 생성하기 
-          </div>
+            </div>
         </li>
-      </ul>
+        </ul>
+
+        <div class="cm_ex_wrap">
+            <span class="cm_ex_txt">예)</span>
+            <ul class="cm_list_tip_h">
+                <li>
+                <div>
+                    <span>import random :</span>random 모듈을불러오기
+                </div>
+                </li>
+                <li>
+                <div>
+                    <span>random.randint(1,100) : </span>1~100 사이의난수 생성하기 
+                </div>
+                </li>
+            </ul>
+        </div>
     </div>
-  </div>
 </div>
 
 <!-- Hint -->
 <div class="cm_hint_container">
-  <div class="cm_hint_header">
-    Hint
-    <span class="cm_hint_sub">힌트텍스트</span>
-  </div>
-  <div class="cm_hint_content">
-      <div class="cm_code_black">취미 = '영화 보기'</div>
-  </div>
+    <div class="cm_hint_header">
+        Hint<span class="cm_hint_sub">힌트텍스트</span>
+    </div>
+    <div class="cm_hint_content">
+        <div class="cm_code_number">
+            <div class="cm_line_numbers" aria-hidden="true">
+                <span>1</span>
+            </div>
+            <pre class="cm_code">코드</pre>
+        </div>
+    </div>
 </div>
 
 <script>
-  window.addEventListener("load", function () {
-      // 모든 Hint 요소 선택
-      const hintHeaders = document.querySelectorAll('.cm_hint_header');
+    window.addEventListener("load", function () {
+        // 모든 Hint 요소 선택
+        const hintHeaders = document.querySelectorAll('.cm_hint_header');
 
-      // 각 Hint에 이벤트 리스너 추가
-      hintHeaders.forEach(hintHeader => {
-          hintHeader.addEventListener("click", function () {
-              let hintContent = this.nextElementSibling; // 바로 다음 형제 요소 선택
+        // 각 Hint에 이벤트 리스너 추가
+        hintHeaders.forEach(hintHeader => {
+            hintHeader.addEventListener("click", function () {
+                let hintContent = this.nextElementSibling; // 바로 다음 형제 요소 선택
 
-              // 열려있는 경우 닫기
-              if (hintContent.style.maxHeight) {
-                  hintContent.style.maxHeight = null;
-                  this.classList.remove('active');
-              } 
-              // 닫혀있는 경우 열기
-              else {
-                  hintContent.style.maxHeight = hintContent.scrollHeight + "px";
-                  this.classList.add('active');
-              }
-          });
-      });
-  });
+                // 열려있는 경우 닫기
+                if (hintContent.style.maxHeight) {
+                    hintContent.style.maxHeight = null;
+                    this.classList.remove('active');
+                } 
+                // 닫혀있는 경우 열기
+                else {
+                    hintContent.style.maxHeight = hintContent.scrollHeight + "px";
+                    this.classList.add('active');
+                }
+            });
+        });
+    });
 </script>
 
 

@@ -11,188 +11,163 @@
     <script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=GoogleTranslateInitCallback"></script>
 </head>
 <body>
-    <div class="cm_slide_container">
-        <div class="cm_slides">
-          <div class="cm_slide" aria-label="슬라이드 첫 번째 화면입니다.">
-            <div class="cm_title_bg">
-                <h1 class="cm_title_h1">하의 치수 관리 프로그램</h1>
-            </div>
+    <div class="cm_wrap_h">
+        <div class="cm_title_bg">
+            <h1 class="cm_title_h1">하의 치수 관리 프로그램</h1>
+        </div>
 
-            <div class="cm_txt">
-                1차원 딕셔너리를 사용하여 학생들의 하의 치수 정보를 저장하는 파이썬 프로그램을 작성해 보자.
-            </div>
+        <div class="cm_txt">
+            1차원 딕셔너리를 사용하여 학생들의 하의 치수 정보를 저장하는 파이썬 프로그램을 작성해 보자.
+        </div>
 
-            <div class="cm_tbl_wrap cm_w50">
-                <table class="cm_tbl_03">
-                    <caption>학생들의 하의 치수 정보</caption>
-                    <colgroup>
-                      <col width="50%" />
-                      <col width="50%" />
-                    </colgroup>
-                    <thead>
-                      <tr>
-                          <th>이름</th>
-                          <th>신발</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>내빈</td>
-                            <td>M</td>
-                        </tr>
-                        <tr>
-                            <td>미송</td>
-                            <td>S</td>
-                        </tr>
-                        <tr>
-                            <td>민수</td>
-                            <td>XL</td>
-                        </tr>
-                        <tr>
-                            <td>준서</td>
-                            <td>L</td>
-                        </tr>
-                        <tr>
-                            <td>지환</td>
-                            <td>L</td>
-                        </tr>
-                    </tbody>
-                    
-                </table>
-            </div>
+        <div class="cm_tbl_wrap cm_w50">
+            <table class="cm_tbl_03">
+                <caption>학생들의 하의 치수 정보</caption>
+                <colgroup>
+                  <col width="50%" />
+                  <col width="50%" />
+                </colgroup>
+                <thead>
+                  <tr>
+                      <th>이름</th>
+                      <th>신발</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>내빈</td>
+                        <td>M</td>
+                    </tr>
+                    <tr>
+                        <td>미송</td>
+                        <td>S</td>
+                    </tr>
+                    <tr>
+                        <td>민수</td>
+                        <td>XL</td>
+                    </tr>
+                    <tr>
+                        <td>준서</td>
+                        <td>L</td>
+                    </tr>
+                    <tr>
+                        <td>지환</td>
+                        <td>L</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
 
-          </div>
-
-          <div class="cm_slide" aria-label="슬라이드 두 번째 화면입니다.">
-            <div class="cm_title_bg2">
-                <h2 class="cm_title_h2">1. 프로그래밍</h2>
-            </div>
-
-            <h3 class="cm_title_h3"><span class="cm_no">①</span>표를 보고 빈 칸을 채워 딕셔너리에 하의 치수를 저장하는 코드를 완성해 보자.</h3>
-            <div class="cm_hint_container">
-                <div class="cm_hint_header">
-                    Hint<span class="cm_hint_sub">딕셔너리에 하의 치수를 저장하는 방법</span>
-                </div>
-                <div class="cm_hint_content">
-                    <div class="cm_code_black">P_size = {'내빈': 'M', '미송':'S', '민수':'XL', '준서':'L', '지환':'L'}</div>
-                </div>
-            </div>
-
-            <h3 class="cm_title_h3"><span class="cm_no">②</span>준서의 하의 치수를 M으로 수정하고 수정된 값을 확인하는 코드를 완성해 보자.</h3>
-            <div class="cm_hint_container">
-                <div class="cm_hint_header">
-                    Hint<span class="cm_hint_sub">키를 이용해 딕셔너리의 값을 출력하는 방법</span>
-                </div>
-                <div class="cm_hint_content">
-                    <div class="cm_code_black">print( P_size['준서'] )</div>
-                </div>
-            </div>
-
-            <div class="cm_hint_container">
-                <div class="cm_hint_header">
-                    Hint<span class="cm_hint_sub">키를 이용해 딕셔너리의 값을 수정하고 출력하는 방법</span>
-                </div>
-                <div class="cm_hint_content">
-                    <div class="cm_code_black">
-                        <pre class="cm_code2">P_size['준서'] = 'M'
-print( P_size['준서'] )</pre>
-                    </div>
-                </div>
-            </div>
-
-            <h3 class="cm_title_h3"><span class="cm_no">③</span>기존의 딕셔너리에 재우의 하의 치수(XL)를 추가하는 코드를 완성해 보자.</h3>
-            <div class="cm_hint_container">
-                <div class="cm_hint_header">
-                    Hint<span class="cm_hint_sub">딕셔너리에 새로운 키:값 쌍을 저장하는 방법</span>
-                </div>
-                <div class="cm_hint_content">
-                    <div class="cm_code_black">
-                        <pre class="cm_code2">P_size['재우'] = 'XL'
-print(P_size)</pre>
-                    </div>
-                </div>
-            </div>
-
-          </div>
-
-          <div class="cm_slide" aria-label="슬라이드 세 번째 화면입니다.">
-            <div class="cm_title_bg2">
-                <h2 class="cm_title_h2">2. 결과 확인 및 디버깅</h2>
-            </div>
-
-            <h3 class="cm_title_h3"><span class="cm_no">①</span>프로그램을 실행하여 [실행 결과]와 같이 결과가 출력되는지 확인해 보자.</h3>
-
-            <div class="cm_txt_bold"><span class="cm_bull"></span>실행 결과</div>
-            <div class="cm_code_white">
-                <pre class="cm_code2">{'내빈': 'M', '미송': 'S', '민수': 'XL', '준서': 'L', '지환': 'L'}
+        <div class="cm_txt_bold"><span class="cm_bull"></span>실행 결과</div>
+        <div class="cm_code_white">
+            <pre class="cm_code2">{'내빈': 'M', '미송': 'S', '민수': 'XL', '준서': 'L', '지환': 'L'}
 L
 M
 {'내빈': 'M', '미송': 'S', '민수': 'XL', '준서': 'M', '지환': 'L', '재우': 'XL'}</pre>
-            </div>
-
-            <h3 class="cm_title_h3"><span class="cm_no">②</span>[실행 결과]와 같이 출력했다면 ‘채점 하기’ 버튼을 눌러 실습 결과를 확인해 보자.</h3>
-
-          </div>
         </div>
-        
-      </div>
-      <div class="cm_foot">
-        <div class="cm_navigation">
-            <button class="cm_nav_button cm_prev">
-              <img src="img/btn_prev_h.png" alt="이전">
-              <img src="img/btn_prev_disabled.png" alt="이전" class="disabled">
-            </button>
-            <button class="cm_nav_button cm_next">
-              <img src="img/btn_next_h.png" alt="다음">
-              <img src="img/btn_next_disabled.png" alt="다음" class="disabled">
-            </button>
-          </div>
-          <div class="cm_indicators">
-              <div class="cm_indicator cm_indi_h cm_current"></div>
-              <div class="cm_indicator cm_indi_h"></div>
-              <div class="cm_indicator cm_indi_h"></div>
-          </div>
-      </div>
-      <script>
+
+        <div class="cm_title_bg2">
+            <h2 class="cm_title_h2">1. 프로그래밍</h2>
+        </div>
+
+        <h3 class="cm_title_h3"><span class="cm_no">①</span>표를 보고 빈 칸을 채워 딕셔너리에 하의 치수를 저장하는 코드를 완성해 보자.</h3>
+        <div class="cm_hint_container">
+            <div class="cm_hint_header">
+                Hint<span class="cm_hint_sub">딕셔너리에 하의 치수를 저장하는 방법</span>
+            </div>
+            <div class="cm_hint_content">
+                <div class="cm_code_number">
+                    <div class="cm_line_numbers" aria-hidden="true">
+                        <span>1</span>
+                    </div>
+                    <pre class="cm_code">P_size = {'내빈': 'M', '미송':'S', '민수':'XL', '준서':'L', '지환':'L'}</pre>
+                </div>
+            </div>
+        </div>
+
+        <h3 class="cm_title_h3"><span class="cm_no">②</span>준서의 하의 치수를 M으로 수정하고 수정된 값을 확인하는 코드를 완성해 보자.</h3>
+        <div class="cm_hint_container">
+            <div class="cm_hint_header">
+                Hint<span class="cm_hint_sub">키를 이용해 딕셔너리의 값을 출력하는 방법</span>
+            </div>
+            <div class="cm_hint_content">
+                <div class="cm_code_number">
+                    <div class="cm_line_numbers" aria-hidden="true">
+                        <span>1</span>
+                    </div>
+                    <pre class="cm_code">print( P_size['준서'] )</pre>
+                </div>
+            </div>
+        </div>
+
+        <div class="cm_hint_container">
+            <div class="cm_hint_header">
+                Hint<span class="cm_hint_sub">키를 이용해 딕셔너리의 값을 수정하고 출력하는 방법</span>
+            </div>
+            <div class="cm_hint_content">
+                <div class="cm_code_number">
+                    <div class="cm_line_numbers" aria-hidden="true">
+                        <span>1</span>
+                        <span>2</span>
+                    </div>
+                    <pre class="cm_code">P_size['준서'] = 'M'
+print( P_size['준서'] )</pre>
+                </div>
+            </div>
+        </div>
+
+        <h3 class="cm_title_h3"><span class="cm_no">③</span>기존의 딕셔너리에 재우의 하의 치수(XL)를 추가하는 코드를 완성해 보자.</h3>
+        <div class="cm_hint_container">
+            <div class="cm_hint_header">
+                Hint<span class="cm_hint_sub">딕셔너리에 새로운 키:값 쌍을 저장하는 방법</span>
+            </div>
+            <div class="cm_hint_content">
+                <div class="cm_code_number">
+                    <div class="cm_line_numbers" aria-hidden="true">
+                        <span>1</span>
+                        <span>2</span>
+                    </div>
+                    <pre class="cm_code">P_size['재우'] = 'XL'
+print(P_size)</pre>
+                </div>
+            </div>
+        </div>
+
+        <div class="cm_title_bg2">
+            <h2 class="cm_title_h2">2. 결과 확인 및 디버깅</h2>
+        </div>
+
+         <ul class="cm_list_num_h">
+            <li><span>①</span>프로그램을 실행하여 [실행 결과]와 같이 결과가 출력되는지 확인해 보자.</li>
+            <li><span>②</span>결과를 출력했다면 ‘제출하기’ 버튼을 눌러 실습의 결과를 확인해 보자.</li>
+        </ul>
+
+
+    </div>
+
+    <script>
         window.addEventListener("load", function () {
-          const slides = document.querySelector('.cm_slides');
-          const indicators = document.querySelectorAll('.cm_indicator');
-          const prevButton = document.querySelector('.cm_prev');
-          const nextButton = document.querySelector('.cm_next');
-          let currentSlide = 0;
-
-          function updateSlide(index) {
-              slides.style.transform = `translateX(-${index * 100}%)`;
-              indicators.forEach((indicator, i) => {
-                  indicator.classList.toggle('cm_current', i === index);
-              });
-              prevButton.disabled = index === 0;
-              nextButton.disabled = index === indicators.length - 1;
-          }
-
-          prevButton.addEventListener('click', () => {
-              if (currentSlide > 0) {
-                  currentSlide -= 1;
-                  updateSlide(currentSlide);
-              }
-          });
-
-          nextButton.addEventListener('click', () => {
-              if (currentSlide < indicators.length - 1) {
-                  currentSlide += 1;
-                  updateSlide(currentSlide);
-              }
-          });
-
-          indicators.forEach((indicator, i) => {
-              indicator.addEventListener('click', () => {
-                  currentSlide = i;
-                  updateSlide(currentSlide);
-              });
-          });
-
-          updateSlide(currentSlide);
-      });
-      </script>
+            // 모든 Hint 요소 선택
+            const hintHeaders = document.querySelectorAll('.cm_hint_header');
+    
+            // 각 Hint에 이벤트 리스너 추가
+            hintHeaders.forEach(hintHeader => {
+                hintHeader.addEventListener("click", function () {
+                    let hintContent = this.nextElementSibling; // 바로 다음 형제 요소 선택
+    
+                    // 열려있는 경우 닫기
+                    if (hintContent.style.maxHeight) {
+                        hintContent.style.maxHeight = null;
+                        this.classList.remove('active');
+                    } 
+                    // 닫혀있는 경우 열기
+                    else {
+                        hintContent.style.maxHeight = hintContent.scrollHeight + "px";
+                        this.classList.add('active');
+                    }
+                });
+            });
+        });
+    </script>
 </body>
 </html>

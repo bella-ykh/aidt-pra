@@ -11,84 +11,87 @@
     <script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=GoogleTranslateInitCallback"></script>
 </head>
 <body>
-    <div class="cm_slide_container">
-        <div class="cm_slides">
-          <div class="cm_slide" aria-label="슬라이드 첫 번째 화면입니다.">
-            <div class="cm_title_bg">
-                <h1 class="cm_title_h1">2차원 딕셔너리</h1>
-            </div>
+    <div class="cm_wrap_h">
+        <div class="cm_title_bg">
+            <h1 class="cm_title_h1">2차원 딕셔너리</h1>
+        </div>
 
-            <div class="cm_txt">
-                우리 반 학생들의 의복 치수를 2차원 딕셔너리로 저장하는 프로그램을 작성해 보자.
-            </div>
+        <div class="cm_txt">
+            우리 반 학생들의 의복 치수를 2차원 딕셔너리로 저장하는 프로그램을 작성해 보자.
+        </div>
 
-            <div class="cm_tbl_wrap">
-                <table class="cm_tbl_03">
-                    <caption>우리 반 학생들의 의복 치수</caption>
-                    <colgroup>
-                      <col width="25%" />
-                      <col width="25%" />
-                      <col width="25%" />
-                      <col width="25%" />
-                    </colgroup>
-                    <thead>
-                      <tr>
-                          <th>이름</th>
-                          <th>상의</th>
-                          <th>신발</th>
-                          <th>하의</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>내빈</td>
-                            <td>95</td>
-                            <td>250</td>
-                            <td>M</td>
-                        </tr>
-                        <tr>
-                            <td>미송</td>
-                            <td>85</td>
-                            <td>230</td>
-                            <td>S</td>
-                        </tr>
-                        <tr>
-                            <td>민수</td>
-                            <td>100</td>
-                            <td>270</td>
-                            <td>XL</td>
-                        </tr>
-                        <tr>
-                            <td>준서</td>
-                            <td>95</td>
-                            <td>235</td>
-                            <td>L</td>
-                        </tr>
-                        <tr>
-                            <td>지환</td>
-                            <td>90</td>
-                            <td>250</td>
-                            <td>L</td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
+        <div class="cm_tbl_wrap">
+            <table class="cm_tbl_03">
+                <caption>우리 반 학생들의 의복 치수</caption>
+                <colgroup>
+                  <col width="25%" />
+                  <col width="25%" />
+                  <col width="25%" />
+                  <col width="25%" />
+                </colgroup>
+                <thead>
+                  <tr>
+                      <th>이름</th>
+                      <th>상의</th>
+                      <th>신발</th>
+                      <th>하의</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>내빈</td>
+                        <td>95</td>
+                        <td>250</td>
+                        <td>M</td>
+                    </tr>
+                    <tr>
+                        <td>미송</td>
+                        <td>85</td>
+                        <td>230</td>
+                        <td>S</td>
+                    </tr>
+                    <tr>
+                        <td>민수</td>
+                        <td>100</td>
+                        <td>270</td>
+                        <td>XL</td>
+                    </tr>
+                    <tr>
+                        <td>준서</td>
+                        <td>95</td>
+                        <td>235</td>
+                        <td>L</td>
+                    </tr>
+                    <tr>
+                        <td>지환</td>
+                        <td>90</td>
+                        <td>250</td>
+                        <td>L</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
 
-          </div>
+        <div class="cm_txt_bold"><span class="cm_bull"></span>실행 결과</div>
+        <div class="cm_code_white">
+            <pre class="cm_code2">학생의 의류 사이즈를 검색하겠습니다.
+어떤 학생이 궁금하신가요? 한준
+어떤 사이즈가 궁금하신가요? 상의
+존재하는 키가 아닙니다.</pre>
+        </div>
 
-          <div class="cm_slide" aria-label="슬라이드 두 번째 화면입니다.">
-            <div class="cm_title_bg2">
-                <h2 class="cm_title_h2">1. 프로그래밍</h2>
-            </div>
+        <div class="cm_title_bg2">
+            <h2 class="cm_title_h2">1. 프로그래밍</h2>
+        </div>
 
-            <h3 class="cm_title_h3"><span class="cm_no">①</span>코드를 보고 오른쪽 프로그램을 완성해 보자.</h3>
-            <div class="cm_code_black">
-                <pre class="cm_code2">class1 = {
-    '내빈': {'상의': 95, '신발': 250, '하의': 'M' },
-    '미송': {'상의': 85, '신발': 230, '하의': 'S' },
-    '민수': {'상의': 100, '신발': 270, '하의': 'XL' },
-    '준서': {'상의': 95, '신발': 235, '하의': 'L' },
-    '지환': {'상의': 90, '신발': 250, '하의': 'L' }
+        <h3 class="cm_title_h3"><span class="cm_no">①</span>코드를 보고 오른쪽 프로그램을 완성해 보자.</h3>
+        <div class="cm_code_black">
+            <pre class="cm_code2">class1 = {
+'내빈': {'상의': 95, '신발': 250, '하의': 'M' },
+'미송': {'상의': 85, '신발': 230, '하의': 'S' },
+'민수': {'상의': 100, '신발': 270, '하의': 'XL' },
+'준서': {'상의': 95, '신발': 235, '하의': 'L' },
+'지환': {'상의': 90, '신발': 250, '하의': 'L' }
 }
 
 <span class="cm_keyword"># 2차원 딕셔너리에서 키를 이용하여 값 가져오기</span>
@@ -98,136 +101,67 @@ print('미송이의 상의 치수:', class1['미송']['상의'])
 <span class="cm_keyword"># 2차원 딕셔너리에서 키를 이용하여 값 수정하기</span>
 class1['미송']['상의'] = 90
 print('미송이의 수정된 의복 치수:', class1['미송'])</pre>
-            </div>
-            
-          </div>
+        </div>
 
-          <div class="cm_slide" aria-label="슬라이드 세 번째 화면입니다.">
-            <div class="cm_title_bg2">
-                <h2 class="cm_title_h2">2. 결과 확인 및 디버깅</h2>
-            </div>
+        <div class="cm_title_bg2">
+            <h2 class="cm_title_h2">2. 결과 확인 및 디버깅</h2>
+        </div>
 
-            <h3 class="cm_title_h3"><span class="cm_no">①</span>프로그램을 실행하여 [실행 결과]와 같이 출력되는지 확인해 보자.</h3>
+        <h3 class="cm_title_h3"><span class="cm_no">①</span>프로그램을 실행하여 [실행 결과]와 같이 출력되는지 확인해 보자.</h3>
 
-            <div class="cm_txt_bold"><span class="cm_bull"></span>실행 결과</div>
-            <div class="cm_code_white">
-                <pre class="cm_code2">미송이의 의복 치수: {'상의': 85, '신발': 230, '하의': 'S'}
+        <div class="cm_txt_bold"><span class="cm_bull"></span>실행 결과</div>
+        <div class="cm_code_white">
+            <pre class="cm_code2">미송이의 의복 치수: {'상의': 85, '신발': 230, '하의': 'S'}
 미송이의 상의 치수: 85
 미송이의 수정된 의복 치수: {'상의': 90, '신발': 230, '하의': 'S'}</pre>
-            </div>
+        </div>
 
-            <h3 class="cm_title_h3"><span class="cm_no">②</span>결과를 출력했다면 아래 코드를 실행한 후 결과를 확인해 보자.</h3>
-            <div class="cm_code_white">print(class1['한준'])</div>
+        <h3 class="cm_title_h3"><span class="cm_no">②</span>결과를 출력했다면 아래 코드를 실행한 후 결과를 확인해 보자.</h3>
+        <div class="cm_code_white">print(class1['한준'])</div>
 
-            <h3 class="cm_title_h3"><span class="cm_no">③</span>딕셔너리에 존재하지 않는 키를 출력하려고 하면, 오류가 발생한다. 아래 코드를 추가하여 실행 중 오류가 발생했을 때도 실행되도록 수정해 보자.</h3>
-            <div class="cm_tip_h">
-                <div class="cm_tip_bg"><span class="cm_tip_txt2">Tip!</span></div>
-                <div class="cm_tip_cont">
-                    try except(예외 처리): 실행 중 오류가 발생했을 때 실행을 중단하지 않고 계속 실행하게 한다.
-                    <div class="cm_ex_wrap cm_mg_t10">
-                        <span class="cm_ex_txt">예)</span>
-                        <ul class="cm_list_tip_h">
-                            <li>
-                                <div><span>try :</span>실행할 코드</div>
-                            </li>
-                            <li>
-                                <div><span>except : </span>오류가 발생했을 때 처리할 코드</div>
-                            </li>
-                        </ul>
-                    </div>
+        <h3 class="cm_title_h3"><span class="cm_no">③</span>딕셔너리에 존재하지 않는 키를 출력하려고 하면, 오류가 발생한다. 아래 코드를 추가하여 실행 중 오류가 발생했을 때도 실행되도록 수정해 보자.</h3>
+        <div class="cm_tip_h">
+            <div class="cm_tip_bg"><span class="cm_tip_txt2">Tip!</span></div>
+            <div class="cm_tip_cont">
+                try except(예외 처리): 실행 중 오류가 발생했을 때 실행을 중단하지 않고 계속 실행하게 한다.
+                <div class="cm_ex_wrap cm_mg_t10">
+                    <span class="cm_ex_txt">예)</span>
+                    <ul class="cm_list_tip_h">
+                        <li>
+                            <div><span>try :</span>실행할 코드</div>
+                        </li>
+                        <li>
+                            <div><span>except : </span>오류가 발생했을 때 처리할 코드</div>
+                        </li>
+                    </ul>
                 </div>
             </div>
+        </div>
 
-            <div class="cm_code_black">
-                <pre class="cm_code2">print('학생의 의류 사이즈를 검색하겠습니다.')
+        <div class="cm_code_black">
+            <pre class="cm_code2">print('학생의 의류 사이즈를 검색하겠습니다.')
 name = input('어떤 학생이 궁금하신가요?')
 clothes = input('어떤 사이즈가 궁금하신가요?')
 try:
-    print(f'{name}의 {clothes} 사이즈는 {class1[name][clothes]}입니다.')
+print(f'{name}의 {clothes} 사이즈는 {class1[name][clothes]}입니다.')
 except:
-    print('존재하는 키가 아닙니다.')</pre>
-            </div>
-
-            <div class="cm_tip_h">
-                <div class="cm_tip_bg"><span class="cm_tip_txt2">Tip!</span></div>
-                <div class="cm_tip_cont">
-                    <span class="cm_font_bold">f-string:</span> 문자열의 원하는 위치에 특정한 값을 삽입하는 방법이다. 
-                    문자열 앞에 f를 붙이고, 어떤 변수나 표현식을 삽입할 때는 중괄호 안에 넣어 준다.
-                </div>
-            </div>
-
-            <div class="cm_txt_bold"><span class="cm_bull"></span>실행 결과</div>
-            <div class="cm_code_white">
-                <pre class="cm_code2">학생의 의류 사이즈를 검색하겠습니다.
-어떤 학생이 궁금하신가요? 한준
-어떤 사이즈가 궁금하신가요? 상의
-존재하는 키가 아닙니다.</pre>
-            </div>
-
-            <h3 class="cm_title_h3"><span class="cm_no">④</span>프로그램이 잘 동작한다면 ‘채점 하기’ 버튼을 눌러 실습 결과를 확인해 보자.</h3>
-
-
-          </div>
+print('존재하는 키가 아닙니다.')</pre>
         </div>
+
+        <div class="cm_tip_h">
+            <div class="cm_tip_bg"><span class="cm_tip_txt2">Tip!</span></div>
+            <div class="cm_tip_cont">
+                <span class="cm_font_bold">f-string:</span> 문자열의 원하는 위치에 특정한 값을 삽입하는 방법이다. 
+                문자열 앞에 f를 붙이고, 어떤 변수나 표현식을 삽입할 때는 중괄호 안에 넣어 준다.
+            </div>
+        </div>
+
         
-      </div>
-      <div class="cm_foot">
-        <div class="cm_navigation">
-            <button class="cm_nav_button cm_prev">
-              <img src="img/btn_prev_h.png" alt="이전">
-              <img src="img/btn_prev_disabled.png" alt="이전" class="disabled">
-            </button>
-            <button class="cm_nav_button cm_next">
-              <img src="img/btn_next_h.png" alt="다음">
-              <img src="img/btn_next_disabled.png" alt="다음" class="disabled">
-            </button>
-          </div>
-          <div class="cm_indicators">
-              <div class="cm_indicator cm_indi_h cm_current"></div>
-              <div class="cm_indicator cm_indi_h"></div>
-              <div class="cm_indicator cm_indi_h"></div>
-          </div>
-      </div>
-      <script>
-        window.addEventListener("load", function () {
-          const slides = document.querySelector('.cm_slides');
-          const indicators = document.querySelectorAll('.cm_indicator');
-          const prevButton = document.querySelector('.cm_prev');
-          const nextButton = document.querySelector('.cm_next');
-          let currentSlide = 0;
 
-          function updateSlide(index) {
-              slides.style.transform = `translateX(-${index * 100}%)`;
-              indicators.forEach((indicator, i) => {
-                  indicator.classList.toggle('cm_current', i === index);
-              });
-              prevButton.disabled = index === 0;
-              nextButton.disabled = index === indicators.length - 1;
-          }
+        <h3 class="cm_title_h3"><span class="cm_no">④</span>프로그램이 잘 동작한다면 ‘채점 하기’ 버튼을 눌러 실습 결과를 확인해 보자.</h3>
 
-          prevButton.addEventListener('click', () => {
-              if (currentSlide > 0) {
-                  currentSlide -= 1;
-                  updateSlide(currentSlide);
-              }
-          });
 
-          nextButton.addEventListener('click', () => {
-              if (currentSlide < indicators.length - 1) {
-                  currentSlide += 1;
-                  updateSlide(currentSlide);
-              }
-          });
-
-          indicators.forEach((indicator, i) => {
-              indicator.addEventListener('click', () => {
-                  currentSlide = i;
-                  updateSlide(currentSlide);
-              });
-          });
-
-          updateSlide(currentSlide);
-      });
-      </script>
+    </div>
+    
 </body>
 </html>
