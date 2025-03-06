@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>고-322-실습-01-설명</title>
+    <title>고-324-실습-17-설명</title>
     <link rel="stylesheet" href="css/common.css">
     <link rel="stylesheet" type="text/css" href="css/font/pretendard.css" />
     <link rel="stylesheet" type="text/css" href="css/font/pretendard-subset.css"/>
@@ -13,62 +13,50 @@
 <body>
     <div class="cm_wrap_h">
         <div class="cm_title_bg">
-            <h1 class="cm_title_h1">표준입출력 함수</h1>
+            <h1 class="cm_title_h1">사용자 정의 함수</h1>
         </div>
 
         <div class="cm_txt">
-            표준 출력 print( ) 함수와 표준 입력 input( ) 함수를 사용한 프로그램의 실행 결과를 예상해 보고, 결과를 확인해 보자. 
+            1부터 입력받은 수까지 누적 합을 구하는 함수를 정의하고, 함수를 호출하는 프로그램을 작성해 보자.
         </div>
 
         <div class="cm_txt_bold"><span class="cm_bull"></span>실행 결과 예시</div>
         <div class="cm_code_white">
-            <pre class="cm_code2">좋아하는 과일이 무엇입니까? 청포도
-좋아하는 과일은 청포도 이군요.
-몇 살이세요?19
-당신은 19 살이군요.
-fruit의 자료형: &lt;class 'str'&gt;
-age의 자료형: &lt;class 'int'&gt;</pre>
-        </div>
+            <pre class="cm_code2">수: 10
+55</pre>
+        </div>       
 
-        <div class="cm_title_bg2 cm_mg_t50">
+        <div class="cm_title_bg2">
             <h2 class="cm_title_h2">1. 프로그래밍</h2>
         </div>
+        <h3 class="cm_title_h3">코드를 보고 빈 칸을 채워 프로그램을 완성해 보자.</h3>
 
-        <h3 class="cm_title_h3"><span class="cm_no">①</span>표준입출력 함수를 사용하여 코드를 완성해 보자.</h3>
         <div class="cm_code_number">
             <div class="cm_line_numbers" aria-hidden="true">
                 <span>1</span>
                 <span>2</span>
                 <span>3</span>
                 <span>4</span>
-                <span>5</span>
             </div>
-            <pre class="cm_code">fruit = input('좋아하는 과일이 무엇입니까?')
-print('좋아하는 과일은', fruit, '이군요.')
-
-age = int(input('몇 살이세요?'))
-print('당신은', age, '살이군요.')</pre>
+            <pre class="cm_code">def total(number):
+                sum = 0
+                for i in range(1, number + 1):
+                  sum +=i
+                return sum
+               
+              num = int(input('수: '))
+              print(total(num))</pre>
         </div>
 
-        <h3 class="cm_title_h3"><span class="cm_no">②</span>표준 출력 함수를 이용하여 변수의 자료형을 확인해 보자.</h3>
-        <div class="cm_code_number">
-            <div class="cm_line_numbers" aria-hidden="true">
-                <span>7</span>
-                <span>8</span>
-            </div>
-            <pre class="cm_code">print('fruit의 자료형:', type(fruit))
-print('age의 자료형:', type(age))</pre>
-        </div>
-        
         <div class="cm_title_bg2">
             <h2 class="cm_title_h2">2. 결과 확인 및 디버깅</h2>
         </div>
+
         <ul class="cm_list_num_h">
             <li><span>①</span>프로그램을 실행하여 [실행 결과 예시]와 같이 결과가 출력되는지 확인해 보자.</li>
             <li><span>②</span>예시와 같이 결과를 출력했다면 ‘제출하기’ 버튼을 눌러 실습의 결과를 확인해 보자.</li>
         </ul>
 
     </div>
-
 </body>
 </html>

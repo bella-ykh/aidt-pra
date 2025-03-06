@@ -19,14 +19,15 @@
         <div class="cm_txt">
             날짜와 간단한 메모를 키보드로 입력하여 memo.txt 파일에 저장하고 파일의 내용을 출력하는 프로그램을 작성해 보자.
         </div>
-        <div class="cm_txt">
-            [메모 예시]
-            25년 1월 7일에 ‘정보 과제 하기‘ 메모를 작성하고자 하는 경우  <br>
-            날짜: 250107 <br>
-            메모 내용: 정보 과제 하기
-        </div>
 
-        // [메모 예시] // 이미지 제작??? <br><br><br><br>
+        <div class="cm_req_wrap">
+            <div class="cm_req_title">메모 예시</div>
+            <div class="cm_txt">25년 1월 7일에 ‘정보 과제 하기‘ 메모를 작성하고자 하는 경우  </div>
+            <ul>
+                <li><span class="cm_point">날짜:</span> 250107</li>
+                <li class="cm_pd_t10"><span class="cm_point">메모 내용:</span> 정보 과제 하기</li>
+            </ul>
+        </div>
 
         <div class="cm_txt_bold"><span class="cm_bull"></span>실행 결과 예시</div>
         <div class="cm_code_white">
@@ -118,7 +119,12 @@ print( content)
                 Hint<span class="cm_hint_sub">변수 date에 데이터를 표준 입력받는 방법</span>
             </div>
             <div class="cm_hint_content">
-                <div class="cm_code_black">date = input("날짜: ")</div>
+                <div class="cm_code_number">
+                    <div class="cm_line_numbers" aria-hidden="true">
+                        <span>3</span>
+                    </div>
+                    <pre class="cm_code">date = input("날짜: ")</pre>
+                </div>
             </div>
         </div>
         <div class="cm_hint_container">
@@ -126,7 +132,12 @@ print( content)
                 Hint<span class="cm_hint_sub">memo.txt 파일을 오픈하여 file변수에 저장하는 방법</span>
             </div>
             <div class="cm_hint_content">
-                <div class="cm_code_black">file = open("memo.txt", "a")</div>
+                <div class="cm_code_number">
+                    <div class="cm_line_numbers" aria-hidden="true">
+                        <span>7</span>
+                    </div>
+                    <pre class="cm_code">file = open("memo.txt", "a")</pre>
+                </div>
             </div>
         </div>
         <div class="cm_hint_container">
@@ -134,7 +145,12 @@ print( content)
                 Hint<span class="cm_hint_sub">메모에 date변수 넣고 끝에 ‘-’ 넣는 방법</span>
             </div>
             <div class="cm_hint_content">
-                <div class="cm_code_black">file.write(date+ '-')</div>
+                <div class="cm_code_number">
+                    <div class="cm_line_numbers" aria-hidden="true">
+                        <span>8</span>
+                    </div>
+                    <pre class="cm_code">file.write(date+ '-')</pre>
+                </div>
             </div>
         </div>
         <div class="cm_hint_container">
@@ -142,7 +158,12 @@ print( content)
                 Hint<span class="cm_hint_sub">file을 닫는 방법</span>
             </div>
             <div class="cm_hint_content">
-                <div class="cm_code_black">file.close()</div>
+                <div class="cm_code_number">
+                    <div class="cm_line_numbers" aria-hidden="true">
+                        <span>10</span>
+                    </div>
+                    <pre class="cm_code cm_mg_l40">file.close()</pre>
+                </div>
             </div>
         </div>
         <div class="cm_hint_container">
@@ -150,7 +171,12 @@ print( content)
                 Hint<span class="cm_hint_sub">file의 내용 읽어서 content에 저장하는 방법</span>
             </div>
             <div class="cm_hint_content">
-                <div class="cm_code_black">content = file.read()</div>
+                <div class="cm_code_number">
+                    <div class="cm_line_numbers" aria-hidden="true">
+                        <span>17</span>
+                    </div>
+                    <pre class="cm_code cm_mg_l40">content = file.read()</pre>
+                </div>
             </div>
         </div>
         <div class="cm_hint_container">
@@ -158,7 +184,12 @@ print( content)
                 Hint<span class="cm_hint_sub">content 내용 모니터에 출력하는 방법</span>
             </div>
             <div class="cm_hint_content">
-                <div class="cm_code_black">print(content)</div>
+                <div class="cm_code_number">
+                    <div class="cm_line_numbers" aria-hidden="true">
+                        <span>22</span>
+                    </div>
+                    <pre class="cm_code cm_mg_l40">print(content)</pre>
+                </div>
             </div>
         </div>
 
@@ -168,7 +199,7 @@ print( content)
 
         <ul class="cm_list_num_h">
             <li><span>①</span>프로그램을 실행하여 [실행 결과 예시]와 같이 결과가 출력되는지 확인해 보자.</li>
-            <li><span>②</span>[실행 결과 예시] 와 같이 결과를 출력했다면 ‘채점 하기’ 버튼을 눌러 실습 결과를 확인해 보자.</li>
+            <li><span>②</span>예시와 같이 결과를 출력했다면 ‘제출하기’ 버튼을 눌러 실습의 결과를 확인해 보자.</li>
         </ul>  
 
     </div>

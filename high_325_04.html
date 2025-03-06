@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>고-325-실습-04-설명</title>
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" type="text/css" href="css/font/pretendard.css" />
+    <link rel="stylesheet" type="text/css" href="css/font/pretendard-subset.css"/>
+    <script type="text/javascript" src="js/GoogleTranslate.js"></script>
+    <script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=GoogleTranslateInitCallback"></script>
+</head>
+<body>
+    <div class="cm_wrap_h">
+        <div class="cm_title_bg">
+            <h1 class="cm_title_h1">도서 대여 프로그램</h1>
+        </div>
+
+        <div class="cm_txt">
+            학급 문고의 대여 프로그램으로 구현할 때 필요한 Book 클래스와 Student 클래스의 코드를 작성해 보자.
+        </div>
+
+        <ul class="cm_list">
+            <li class="cm_h_bull">Book 클래스의 속성은 도서명(title), 저자(author), 대여 여부(is_rented)로 구성된다.</li>
+            <li class="cm_h_bull">Student 클래스의 속성은 학번(id), 이름(name), 대여한 책 리스트로 구성되며, 메소드는 책 대여 메소드(rent_book)를 구현한다.</li>
+        </ul>
+
+        <div class="cm_txt_bold"><span class="cm_bull"></span>실행 결과</div>
+        <div class="cm_code_white">
+            <pre class="cm_code2">홍길동에게 소나기 대여함.
+소나기 대여 중.</pre>
+        </div>        
+
+        <div class="cm_title_bg2">
+            <h2 class="cm_title_h2">1. 프로그래밍</h2>
+        </div>
+
+        <h3 class="cm_title_h3">코드를 채워 프로그램을 완성해 보자.</h3>
+        <div class="cm_hint_container">
+            <div class="cm_hint_header">
+                Hint<span class="cm_hint_sub">Book 클래스의 __str__() 메소드 정의하는 방법</span>
+            </div>
+            <div class="cm_hint_content">
+                <div class="cm_code_number">
+                    <div class="cm_line_numbers" aria-hidden="true">
+                        <span>1</span>
+                    </div>
+                    <pre class="cm_code">def __str__(self):
+    return f'{self.title}'</pre>
+                </div>
+            </div>
+        </div>
+
+        <div class="cm_hint_container">
+            <div class="cm_hint_header">
+                Hint<span class="cm_hint_sub">Student 클래스의 rent_book() 메소드 정의하는 방법</span>
+            </div>
+            <div class="cm_hint_content">
+                <div class="cm_code_number">
+                    <div class="cm_line_numbers" aria-hidden="true">
+                        <span>1</span>
+                    </div>
+                    <pre class="cm_code">def rent_book(self, book):
+    if not book.is_rented:
+        book.is_rented = True
+        self.rented_books.append(book)
+        return f'{self.name}에게 {book.title} 대여함.'
+    else:
+        return f'{book.title} 대여 중.'</pre>
+                </div>
+            </div>
+        </div>
+
+        <div class="cm_title_bg2">
+            <h2 class="cm_title_h2">2. 결과 확인 및 디버깅</h2>
+        </div>
+
+        <ul class="cm_list_num_h">
+            <li><span>①</span>프로그램을 실행하여 [실행 결과]와 같이 결과가 출력되는지 확인해 보자.</li>
+            <li><span>②</span>결과를 출력했다면 ‘제출하기’ 버튼을 눌러 실습의 결과를 확인해 보자.</li>
+        </ul>
+
+    </div>
+</body>
+</html>

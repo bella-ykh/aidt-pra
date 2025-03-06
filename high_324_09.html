@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>고-322-실습-02-설명</title>
+    <title>고-324-실습-09-설명</title>
     <link rel="stylesheet" href="css/common.css">
     <link rel="stylesheet" type="text/css" href="css/font/pretendard.css" />
     <link rel="stylesheet" type="text/css" href="css/font/pretendard-subset.css"/>
@@ -13,71 +13,55 @@
 <body>
     <div class="cm_wrap_h">
         <div class="cm_title_bg">
-            <h1 class="cm_title_h1">정사각형 넓이 계산기</h1>
+            <h1 class="cm_title_h1">while문</h1>
         </div>
 
         <div class="cm_txt">
-            표준입출력 함수를 사용하여 한 변의 길이를 입력받아 정사각형의 넓이를 계산하는 프로그램을 완성해 보자.
+            ‘만세’를 주어진 조건 안에서 출력하는 프로그램을 작성하여, while문의 동작을 확인해 보자.
         </div>
 
-        <div class="cm_txt_bold"><span class="cm_bull"></span>실행 결과 예시</div>
+        <div class="cm_txt_bold"><span class="cm_bull"></span>실행 결과</div>
         <div class="cm_code_white">
-            <pre class="cm_code2">정사각형의 넓이를 계산하겠습니다.
-정사각형의 한 변의 길이를 입력하세요: 25
-변의 길이가 25 인 정사각형의 넓이는 625 입니다. </pre>
-        </div>
+            <pre class="cm_code2">대한민국
+만세!
+만세!
+만세!</pre>
+        </div>        
 
         <div class="cm_title_bg2">
             <h2 class="cm_title_h2">1. 프로그래밍</h2>
         </div>
 
-        <div class="cm_txt_bold">표준입출력 함수를 사용하여 프로그램을 완성해 보자.</div>
+        <h3 class="cm_title_h3">코드를 보고 빈 칸을 채워 프로그램을 완성해 보자.</h3>
         <div class="cm_hint_container">
             <div class="cm_hint_header">
-                Hint<span class="cm_hint_sub">변수 a에 값을 입력받는 방법</span>
+                Hint<span class="cm_hint_sub">1~9까지 반복하여 구구단을 출력하는 방법</span>
             </div>
             <div class="cm_hint_content">
                 <div class="cm_code_number">
                     <div class="cm_line_numbers" aria-hidden="true">
+                        <span>1</span>
                         <span>2</span>
                     </div>
-                    <pre class="cm_code">a = input('정사각형의 한 변의 길이를 입력하세요: ')</pre>
+                    <pre class="cm_code">print('대한민국')
+i = 0
+while i < 3:
+    print('만세!')
+    i += 1</pre>
                 </div>
-            </div>
-        </div>
-
-        <div class="cm_hint_container">
-            <div class="cm_hint_header">
-                Hint<span class="cm_hint_sub">문자열 값을 출력하는 방법</span>
-            </div>
-            <div class="cm_hint_content">
-                <div class="cm_code_number">
-                    <div class="cm_line_numbers" aria-hidden="true">
-                        <span>3</span>
-                    </div>
-                    <pre class="cm_code">print('변의 길이가', a,'인 정사각형의 넓이는', int(a) * int(a),'입니다.')</pre>
-                </div>
-            </div>
-        </div>
-
-        <div class="cm_tip_h">
-            <div class="cm_tip_bg"><span class="cm_tip_txt2">Tip!</span></div>
-            <div class="cm_tip_cont">
-                input( ) 함수로 입력받은 값은 문자열로 저장되므로 정수로 변환하고 싶을 때는 정수 변환 함수 int( )를 사용한다.
             </div>
         </div>
 
         <div class="cm_title_bg2">
             <h2 class="cm_title_h2">2. 결과 확인 및 디버깅</h2>
         </div>
-        
+
         <ul class="cm_list_num_h">
-            <li><span>①</span>프로그램을 실행하여 [실행 결과 예시]와 같이 결과가 출력되는지 확인해 보자.</li>
-            <li><span>②</span>예시와 같이 결과를 출력했다면 ‘채점 하기’ 버튼을 눌러 실습 결과를 확인해 보자.</li>
+            <li><span>①</span>프로그램을 실행하여 [실행 결과]와 같이 결과가 출력되는지 확인해 보자.</li>
+            <li><span>②</span>결과를 출력했다면 ‘제출하기’ 버튼을 눌러 실습의 결과를 확인해 보자.</li>
         </ul>
 
     </div>
-
     <script>
         window.addEventListener("load", function () {
             // 모든 Hint 요소 선택

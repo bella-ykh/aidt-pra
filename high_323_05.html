@@ -105,24 +105,28 @@
                 <span>15</span>
                 <span>16</span>
                 <span>17</span>
+                <span>18</span>
+                <span>19</span>
             </div>
             <pre class="cm_code cm_mg_l40"><span class="cm_keyword"># 2차원 리스트에 값 저장하기</span>
 class1 = [ 
-[95, 250, 'M'], 
-[85, 230, 'S'],
-[100, 270, 'XL' ], 
-[95, 235, 'L' ], 
-[90, 250, 'L' ] 
+    [95, 250, 'M'], 
+    [85, 230, 'S'],
+    [100, 270, 'XL' ], 
+    [95, 235, 'L' ], 
+    [90, 250, 'L' ] 
 ]
 
 <span class="cm_keyword"># 인덱스를 이용해 2차원 리스트의 값 가져오기</span>
 print('1번 학생의 의복 치수:', class1[0])
 print('2번 학생의 상의 치수:', class1[1][0])
-print('2번 학생의 신발 치수:', class1[1][1])
+print('2번 학생의 신발 치수:', class1[1][1])<span class="cm_keyword"># 2번 학생의 신발 치수</span>
 
 <span class="cm_keyword"># 인덱스를 이용해 2차원 리스트의 값 수정하기</span>
-class1[1][0] = 90 
-print('2번 학생의 수정된 상의 치수:', class1[1][0])</pre>
+class1[4][0] = 100 <span class="cm_keyword"># 5번 학생의 상의 치수 수정</span>
+class1[4][2] = 'XL' <span class="cm_keyword"># 5번 학생의 하의 치수 수정</span>
+print('5번 학생의 수정된 상의 치수:', class1[4][0])
+print('5번 학생의 수정된 하의 치수:', class1[4][2])</pre>
         </div>
 
         <div class="cm_title_bg2">

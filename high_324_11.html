@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>고-324-실습-11-설명</title>
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" type="text/css" href="css/font/pretendard.css" />
+    <link rel="stylesheet" type="text/css" href="css/font/pretendard-subset.css"/>
+    <script type="text/javascript" src="js/GoogleTranslate.js"></script>
+    <script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=GoogleTranslateInitCallback"></script>
+</head>
+<body>
+    <div class="cm_wrap_h">
+        <div class="cm_title_bg">
+            <h1 class="cm_title_h1">업다운 게임 프로그램</h1>
+        </div>
+
+        <div class="cm_txt">
+            1~100 사이의 정수를 뽑아 그 숫자를 업다운으로 맞히는 프로그램을 작성해 보자. 
+        </div>
+
+        <div class="cm_txt_bold"><span class="cm_bull"></span>실행 결과 예시</div>
+        <div class="cm_code_white">
+            <pre class="cm_code2">숫자를 맞혀 보세요!
+숫자는 무엇일까요?: 50
+정답보다 작다.
+숫자는 무엇일까요?: 80
+정답보다 크다.
+숫자는 무엇일까요?: 65
+정답보다 작다.
+숫자는 무엇일까요?: 75
+정답보다 크다.
+숫자는 무엇일까요?: 72
+정답보다 크다.
+숫자는 무엇일까요?: 66
+정답입니다!
+6번의 시도만에 정답을 맞혔습니다.</pre>
+        </div>        
+
+        <div class="cm_title_bg2">
+            <h2 class="cm_title_h2">1. 프로그래밍</h2>
+        </div>
+
+        <h3 class="cm_title_h3">코드를 보고 빈 칸을 채워 프로그램을 완성해 보자.</h3>
+        <div class="cm_code_number">
+            <div class="cm_line_numbers" aria-hidden="true">
+                <span>1</span>
+                <span>2</span>
+                <span>3</span>
+                <span>4</span>
+                <span>5</span>
+                <span>6</span>
+                <span>7</span>
+                <span>8</span>
+                <span>9</span>
+                <span>10</span>
+                <span>11</span>
+                <span>12</span>
+                <span>13</span>
+                <span>14</span>
+                <span>15</span>
+                <span>16</span>
+            </div>
+            <pre class="cm_code cm_mg_l40">import random
+
+count = 0
+guess = 0
+answer = random.randint(1, 100) <span class="cm_keyword"># 1~100 사이의 정수</span>
+print('숫자를 맞혀 보세요!’)
+
+while answer != guess:
+    guess = int(input('숫자는 무엇일까요?: '))
+    count += 1
+    if guess > answer:
+        print('정답보다 크다.')
+    elif guess < answer:
+        print('정답보다 작다.’)
+
+print(f'정답입니다! {count}번의 시도만에 정답을 맞혔습니다.')</pre>
+        </div>
+
+        <div class="cm_tip_h">
+            <div class="cm_tip_bg"><span class="cm_tip_txt2">Tip!</span></div>
+            <div class="cm_tip_cont">
+                random은 무작위로 생성한 숫자가 필요할 때 사용하는 외부 모듈이며, 외부 모듈을 사용하기 위해 예약어 import를 사용한다.      
+                <ul class="cm_list_tip_h cm_mg_t20">
+                    <li>
+                        <div>
+                        <span>import random :</span>random 모듈을불러오기
+                        </div>
+                    </li>
+                    <li>
+                        <div>
+                        <span>random.randint(1,100) : </span>1~100 사이의난수 생성하기 
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="cm_title_bg2">
+            <h2 class="cm_title_h2">2. 결과 확인 및 디버깅</h2>
+        </div>
+
+        <ul class="cm_list_num_h">
+            <li><span>①</span>프로그램을 실행하여 [실행 결과 예시]와 같이 결과가 출력되는지 확인해 보자.</li>
+            <li><span>②</span>예시와 같이 결과를 출력했다면 ‘제출하기’ 버튼을 눌러 실습의 결과를 확인해 보자.</li>
+        </ul>
+
+    </div>
+</body>
+</html>

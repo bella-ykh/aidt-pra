@@ -21,7 +21,7 @@
         </div>
 
         <div class="cm_txt_bold cm_mg_b10"><span class="cm_bull"></span>지출액 예시</div>
-        <div class="cm_tbl_wrap">
+        <div class="cm_tbl_wrap cm_w50">
             <table class="cm_tbl_03">
                 <caption>학생 정보 예시</caption>
                 <colgroup>
@@ -167,7 +167,7 @@ print(주말 지출 평균액)
             <div class="cm_hint_content">
                 <div class="cm_code_number">
                     <div class="cm_line_numbers" aria-hidden="true">
-                        <span>1</span>
+                        <span>2</span>
                     </div>
                     <pre class="cm_code">mon = 5150</pre>
                 </div>
@@ -176,28 +176,52 @@ print(주말 지출 평균액)
 
         <div class="cm_hint_container">
             <div class="cm_hint_header">
-                Hint<span class="cm_hint_sub">변수 a, b의 연산 결과를 변수 c에 저장하는 방법</span>
+                Hint<span class="cm_hint_sub">주중 지출 총액 및 평균액 계산하는 방법</span>
             </div>
             <div class="cm_hint_content">
                 <div class="cm_code_number">
                     <div class="cm_line_numbers" aria-hidden="true">
-                        <span>1</span>
+                        <span>11</span>
+                        <span>12</span>
                     </div>
-                    <pre class="cm_code">c = a + b</pre>
+                    <pre class="cm_code cm_mg_l40">weekdays_total = mon + tue + wed + thu +fri 
+weekdays_ave = weekdays_total / 5</pre>
                 </div>
             </div>
         </div>
 
         <div class="cm_hint_container">
             <div class="cm_hint_header">
-                Hint<span class="cm_hint_sub">변수 a에 저장된 값을 출력하는 방법</span>
+                Hint<span class="cm_hint_sub">주말 지출 총액 및 평균액 계산하는 방법</span>
             </div>
             <div class="cm_hint_content">
                 <div class="cm_code_number">
                     <div class="cm_line_numbers" aria-hidden="true">
-                        <span>1</span>
+                        <span>15</span>
+                        <span>16</span>
                     </div>
-                    <pre class="cm_code">print(‘변숫값은’, a, ‘입니다.’)</pre>
+                    <pre class="cm_code cm_mg_l40">weekend_total = sat + sun
+weekend_ave = weekend_total / 2</pre>
+                </div>
+            </div>
+        </div>
+
+        <div class="cm_hint_container">
+            <div class="cm_hint_header">
+                Hint<span class="cm_hint_sub">계산 결과를 출력하는 방법</span>
+            </div>
+            <div class="cm_hint_content">
+                <div class="cm_code_number">
+                    <div class="cm_line_numbers" aria-hidden="true">
+                        <span>19</span>
+                        <span>20</span>
+                        <span>21</span>
+                        <span>22</span>
+                    </div>
+                    <pre class="cm_code cm_mg_l40">print('주중에 사용한 용돈의 총액은', weekdays_total, '원 입니다.')
+print('하루 평균 사용액은', weekdays_ave, '원 입니다.')
+print('주말에 사용한 용돈의 총액은', weekend_total, '원 입니다.')
+print('하루 평균 사용액은', weekend_ave, '원 입니다.')</pre>
                 </div>
             </div>
         </div>
