@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>고-322-실습-05-하(기초 다지기)</title>
+    <title>고-322-실습-06-하(기초 다지기)</title>
     <link rel="stylesheet" href="css/common.css">
     <link rel="stylesheet" type="text/css" href="css/font/pretendard.css" />
     <link rel="stylesheet" type="text/css" href="css/font/pretendard-subset.css"/>
@@ -13,24 +13,24 @@
 <body>
     <div class="cm_wrap_h">
         <div class="cm_title_bg">
-            <h1 class="cm_title_h1">일정 관리 메모장</h1>
+            <h1 class="cm_title_h1" tabindex="0">일정 관리 메모장</h1>
         </div>
 
-        <div class="cm_txt">
+        <div class="cm_txt" tabindex="0">
             날짜와 간단한 메모를 키보드로 입력하여 memo.txt 파일에 저장하고 파일의 내용을 출력하는 프로그램을 작성해 보자.
         </div>
 
         <div class="cm_req_wrap">
-            <div class="cm_req_title">메모 예시</div>
-            <div class="cm_txt">25년 1월 7일에 ‘정보 과제 하기‘ 메모를 작성하고자 하는 경우  </div>
+            <div class="cm_req_title" tabindex="0">메모 예시</div>
+            <div class="cm_txt_in" tabindex="0">25년 1월 7일에 ‘정보 과제 하기‘ 메모를 작성하고자 하는 경우  </div>
             <ul>
-                <li><span class="cm_point">날짜:</span> 250107</li>
-                <li class="cm_pd_t10"><span class="cm_point">메모 내용:</span> 정보 과제 하기</li>
+                <li><span class="cm_point" tabindex="0">날짜:</span> 250107</li>
+                <li class="cm_pd_t10" tabindex="0"><span class="cm_point">메모 내용:</span> 정보 과제 하기</li>
             </ul>
         </div>
 
-        <div class="cm_txt_bold"><span class="cm_bull"></span>실행 결과 예시</div>
-        <div class="cm_code_white">
+        <div class="cm_txt_bold" tabindex="0"><span class="cm_bull"></span>실행 결과 예시</div>
+        <div class="cm_code_white" tabindex="0">
             <pre class="cm_code2">메모가 'memo.txt' 파일에 저장되었습니다.
 
 저장된 메모를 확인합니다:
@@ -38,12 +38,12 @@
         </div>
 
         <div class="cm_title_bg2">
-            <h2 class="cm_title_h2">1. 문제 이해 및 분석</h2>
+            <h2 class="cm_title_h2" tabindex="0">1. 문제 이해 및 분석</h2>
         </div>
 
-        <div class="cm_txt_bold cm_mg_b20">문제 이해를 위해 문제 상태를 정의해 보자.</div>
+        <div class="cm_txt_bold cm_mg_b20" tabindex="0">문제 이해를 위해 문제 상태를 정의해 보자.</div>
         <div class="cm_tbl_wrap">
-            <table class="cm_tbl_03">
+            <table class="cm_tbl_03" tabindex="0">
                 <caption>문제 이해를 위해 문제 상태 정의</caption>
                 <colgroup>
                   <col width="20%" />
@@ -80,13 +80,13 @@
         </div>
 
         <div class="cm_title_bg2">
-            <h2 class="cm_title_h2">2. 알고리즘 설계</h2>
+            <h2 class="cm_title_h2" tabindex="0">2. 알고리즘 설계</h2>
         </div>
 
-        <div class="cm_txt_bold cm_mg_b20">의사 코드로 작성한 알고리즘을 살펴보자.</div>
+        <div class="cm_txt_bold cm_mg_b20" tabindex="0">의사 코드로 작성한 알고리즘을 살펴보자.</div>
         <div class="cm_code_container">
-            <div class="cm_code_title">의사 코드</div>
-            <div class="cm_code_txt">시작
+            <div class="cm_code_title" tabindex="0">의사 코드</div>
+            <div class="cm_code_txt" tabindex="0">시작
 
 print(메모를 입력하세요)
 date ← 250107
@@ -109,17 +109,17 @@ print( content)
         </div>
 
         <div class="cm_title_bg2">
-            <h2 class="cm_title_h2">3. 프로그래밍</h2>
+            <h2 class="cm_title_h2" tabindex="0">3. 프로그래밍</h2>
         </div>
         
-        <div class="cm_txt_bold">의사 코드를 참조하여 코드를 완성해 보자.</div>
+        <div class="cm_txt_bold" tabindex="0">의사 코드를 참조하여 코드를 완성해 보자.</div>
 
         <div class="cm_hint_container">
-            <div class="cm_hint_header">
+            <div class="cm_hint_header" tabindex="0">
                 Hint<span class="cm_hint_sub">변수 date에 데이터를 표준 입력받는 방법</span>
             </div>
             <div class="cm_hint_content">
-                <div class="cm_code_number">
+                <div class="cm_code_number" tabindex="0">
                     <div class="cm_line_numbers" aria-hidden="true">
                         <span>3</span>
                     </div>
@@ -128,11 +128,11 @@ print( content)
             </div>
         </div>
         <div class="cm_hint_container">
-            <div class="cm_hint_header">
+            <div class="cm_hint_header" tabindex="0">
                 Hint<span class="cm_hint_sub">memo.txt 파일을 오픈하여 file변수에 저장하는 방법</span>
             </div>
             <div class="cm_hint_content">
-                <div class="cm_code_number">
+                <div class="cm_code_number" tabindex="0">
                     <div class="cm_line_numbers" aria-hidden="true">
                         <span>7</span>
                     </div>
@@ -141,11 +141,11 @@ print( content)
             </div>
         </div>
         <div class="cm_hint_container">
-            <div class="cm_hint_header">
+            <div class="cm_hint_header" tabindex="0">
                 Hint<span class="cm_hint_sub">메모에 date변수 넣고 끝에 ‘-’ 넣는 방법</span>
             </div>
             <div class="cm_hint_content">
-                <div class="cm_code_number">
+                <div class="cm_code_number" tabindex="0">
                     <div class="cm_line_numbers" aria-hidden="true">
                         <span>8</span>
                     </div>
@@ -154,11 +154,11 @@ print( content)
             </div>
         </div>
         <div class="cm_hint_container">
-            <div class="cm_hint_header">
+            <div class="cm_hint_header" tabindex="0">
                 Hint<span class="cm_hint_sub">file을 닫는 방법</span>
             </div>
             <div class="cm_hint_content">
-                <div class="cm_code_number">
+                <div class="cm_code_number" tabindex="0">
                     <div class="cm_line_numbers" aria-hidden="true">
                         <span>10</span>
                     </div>
@@ -167,11 +167,11 @@ print( content)
             </div>
         </div>
         <div class="cm_hint_container">
-            <div class="cm_hint_header">
+            <div class="cm_hint_header" tabindex="0">
                 Hint<span class="cm_hint_sub">file의 내용 읽어서 content에 저장하는 방법</span>
             </div>
             <div class="cm_hint_content">
-                <div class="cm_code_number">
+                <div class="cm_code_number" tabindex="0">
                     <div class="cm_line_numbers" aria-hidden="true">
                         <span>17</span>
                     </div>
@@ -180,11 +180,11 @@ print( content)
             </div>
         </div>
         <div class="cm_hint_container">
-            <div class="cm_hint_header">
+            <div class="cm_hint_header" tabindex="0">
                 Hint<span class="cm_hint_sub">content 내용 모니터에 출력하는 방법</span>
             </div>
             <div class="cm_hint_content">
-                <div class="cm_code_number">
+                <div class="cm_code_number" tabindex="0">
                     <div class="cm_line_numbers" aria-hidden="true">
                         <span>22</span>
                     </div>
@@ -194,12 +194,12 @@ print( content)
         </div>
 
         <div class="cm_title_bg2">
-            <h2 class="cm_title_h2">4. 프로그래밍</h2>
+            <h2 class="cm_title_h2" tabindex="0">4. 프로그래밍</h2>
         </div>
 
         <ul class="cm_list_num_h">
-            <li><span>①</span>프로그램을 실행하여 [실행 결과 예시]와 같이 결과가 출력되는지 확인해 보자.</li>
-            <li><span>②</span>예시와 같이 결과를 출력했다면 ‘제출하기’ 버튼을 눌러 실습의 결과를 확인해 보자.</li>
+            <li tabindex="0"><span>①</span>프로그램을 실행하여 [실행 결과 예시]와 같이 결과가 출력되는지 확인해 보자.</li>
+            <li tabindex="0"><span>②</span>예시와 같이 결과를 출력했다면 ‘제출하기’ 버튼을 눌러 실습의 결과를 확인해 보자.</li>
         </ul>  
 
     </div>

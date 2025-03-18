@@ -13,16 +13,16 @@
 <body>
     <div class="cm_wrap_h">
         <div class="cm_title_bg">
-            <h1 class="cm_title_h1">용돈 기록 프로그램</h1>
+            <h1 class="cm_title_h1" tabindex="0">용돈 기록 프로그램</h1>
         </div>
 
-        <div class="cm_txt">
+        <div class="cm_txt" tabindex="0">
             지난 일주일 동안의 용돈 지출액을 기록한 후, 주중과 주말의 지출 총액 및 평균 지출액을 각각 계산하는 프로그램을 작성해 보자.  
         </div>
 
-        <div class="cm_txt_bold cm_mg_b10"><span class="cm_bull"></span>지출액 예시</div>
-        <div class="cm_tbl_wrap cm_w50">
-            <table class="cm_tbl_03">
+        <div class="cm_txt_bold cm_mg_b10" tabindex="0"><span class="cm_bull"></span>지출액 예시</div>
+        <div class="cm_tbl_wrap cm_w75">
+            <table class="cm_tbl_03" tabindex="0">
                 <caption>학생 정보 예시</caption>
                 <colgroup>
                     <col width="40%" />
@@ -67,8 +67,8 @@
             </table>
         </div>
 
-        <div class="cm_txt_bold"><span class="cm_bull"></span>실행 결과</div>
-        <div class="cm_code_white">
+        <div class="cm_txt_bold" tabindex="0"><span class="cm_bull"></span>실행 결과</div>
+        <div class="cm_code_white" tabindex="0">
             <pre class="cm_code2">
 주중에 사용한 용돈의 총액은 23800 원 입니다.
 하루 평균 사용액은 4760.0 원 입니다.
@@ -77,13 +77,13 @@
         </div>
 
         <div class="cm_title_bg2">
-            <h2 class="cm_title_h2">1. 문제 이해 및 분석</h2>
+            <h2 class="cm_title_h2" tabindex="0">1. 문제 이해 및 분석</h2>
         </div>
-        <div class="cm_txt_bold cm_mg_b20">
+        <div class="cm_txt_bold cm_mg_b20" tabindex="0">
             문제 이해를 위해 문제 상태를 정의해 보자.
         </div>
         <div class="cm_tbl_wrap">
-            <table class="cm_tbl_03">
+            <table class="cm_tbl_03" tabindex="0">
                 <caption>문제 이해를 위해 문제 상태 정의</caption>
                 <colgroup>
                   <col width="20%" />
@@ -120,13 +120,13 @@
         </div>
 
         <div class="cm_title_bg2">
-            <h2 class="cm_title_h2">2. 알고리즘 설계</h2>
+            <h2 class="cm_title_h2" tabindex="0">2. 알고리즘 설계</h2>
         </div>
 
-        <div class="cm_txt_bold cm_mg_b20">의사 코드로 작성한 알고리즘을 살펴보자.</div>
+        <div class="cm_txt_bold cm_mg_b20" tabindex="0">의사 코드로 작성한 알고리즘을 살펴보자.</div>
         <div class="cm_code_container cm_mg_b20">
-            <div class="cm_code_title">의사 코드</div>
-            <div class="cm_code_txt">시작
+            <div class="cm_code_title" tabindex="0">의사 코드</div>
+            <div class="cm_code_txt" tabindex="0">시작
 
 월 ← 5150
 화 ← 7500
@@ -150,24 +150,24 @@ print(주말 지출 평균액)
 종료</div>
         </div>
         <div class="cm_tip_h">
-            <div class="cm_tip_bg"><span class="cm_tip_txt2">Tip!</span></div>
-            <div class="cm_tip_cont">
+            <div class="cm_tip_bg" tabindex="0"><span class="cm_tip_txt2">Tip!</span></div>
+            <div class="cm_tip_cont" tabindex="0">
                 의사 코드는 프로그래밍 언어를 흉내 내어 알고리즘을 표현하는 방법이다. 
                 프로그래밍 언어와 유사해 보이지만 문법적인 제약을 받지 않는다.
             </div>
         </div>
 
         <div class="cm_title_bg2">
-            <h2 class="cm_title_h2">3. 프로그래밍</h2>
+            <h2 class="cm_title_h2" tabindex="0">3. 프로그래밍</h2>
         </div>
-        <div class="cm_txt_bold cm_mg_b20">의사 코드로 작성한 알고리즘을 살펴보자.</div>
+        <div class="cm_txt_bold cm_mg_b20" tabindex="0">의사 코드로 작성한 알고리즘을 살펴보자.</div>
         
         <div class="cm_hint_container">
-            <div class="cm_hint_header">
+            <div class="cm_hint_header" tabindex="0">
                 Hint<span class="cm_hint_sub">주중 지출 총액 및 평균액 계산하는 방법</span>
             </div>
             <div class="cm_hint_content">
-                <div class="cm_code_number">
+                <div class="cm_code_number" tabindex="0">
                     <div class="cm_line_numbers" aria-hidden="true">
                         <span>11</span>
                         <span>12</span>
@@ -179,11 +179,11 @@ weekdays_ave = weekdays_total / 5</pre>
         </div>
 
         <div class="cm_hint_container">
-            <div class="cm_hint_header">
+            <div class="cm_hint_header" tabindex="0">
                 Hint<span class="cm_hint_sub">주말 지출 총액 및 평균액 계산하는 방법</span>
             </div>
             <div class="cm_hint_content">
-                <div class="cm_code_number">
+                <div class="cm_code_number" tabindex="0">
                     <div class="cm_line_numbers" aria-hidden="true">
                         <span>15</span>
                         <span>16</span>
@@ -195,11 +195,11 @@ weekend_ave = weekend_total / 2</pre>
         </div>
 
         <div class="cm_hint_container">
-            <div class="cm_hint_header">
+            <div class="cm_hint_header" tabindex="0">
                 Hint<span class="cm_hint_sub">계산 결과를 출력하는 방법</span>
             </div>
             <div class="cm_hint_content">
-                <div class="cm_code_number">
+                <div class="cm_code_number" tabindex="0">
                     <div class="cm_line_numbers" aria-hidden="true">
                         <span>19</span>
                         <span>20</span>
@@ -215,13 +215,13 @@ print('하루 평균 사용액은', weekend_ave, '원 입니다.')</pre>
         </div>
 
         <div class="cm_title_bg2">
-            <h2 class="cm_title_h2">4. 결과 확인 및 디버깅</h2>
+            <h2 class="cm_title_h2" tabindex="0">4. 결과 확인 및 디버깅</h2>
         </div>   
         
         <ul class="cm_list_num_h">
-            <li><span>①</span>프로그램을 실행하여 [실행 결과 예시]와 같이 결과가 출력되는지 확인해 보자.</li>
-            <li><span>②</span>예시와 같이 결과를 출력했다면 ‘채점 하기’ 버튼을 눌러 실습 결과를 확인해 보자.</li>
-            <li><span>③</span>나만의 용돈 지출 데이터를 입력하여 코드를 수정한 후 실행 결과를 확인해 보자.</li>
+            <li tabindex="0"><span>①</span>프로그램을 실행하여 [실행 결과 예시]와 같이 결과가 출력되는지 확인해 보자.</li>
+            <li tabindex="0"><span>②</span>예시와 같이 결과를 출력했다면 ‘제출하기’ 버튼을 눌러 실습의 결과를 확인해 보자.</li>
+            <li tabindex="0"><span>③</span>나만의 용돈 지출 데이터를 입력하여 코드를 수정한 후 실행 결과를 확인해 보자.</li>
         </ul>
 
     </div>

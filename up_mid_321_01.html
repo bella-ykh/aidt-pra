@@ -9,14 +9,23 @@
     <link rel="stylesheet" type="text/css" href="css/font/pretendard-subset.css"/>
     <script type="text/javascript" src="js/GoogleTranslate.js"></script>
     <script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=GoogleTranslateInitCallback"></script>
+    <style>
+        video::cue {
+            color: yellow; /* 자막 텍스트 색상 */
+            background: rgba(0, 0, 0, 0.5); /* 자막 배경 색상 */
+            font-size: 18px; /* 자막 글자 크기 */
+            font-family: Arial, sans-serif; /* 자막 글꼴 */
+            text-shadow: 1px 1px 2px black; /* 자막 텍스트 그림자 */
+        }
+        </style>
 </head>
 <body class="">
-    <div class="cm_slide_container">
+    <div class="cm_slide_container" tabindex="0">
         <div class="cm_slides">
           <div class="cm_slide" aria-label="슬라이드 첫 번째 화면입니다." tabindex="0">
-            <div class="cm_title_wrap" tabindex="0">
+            <div class="cm_title_wrap">
                 <div class="cm_ico_01"></div>
-                <h1 class="cm_title_01">프로그래밍 시작하기</h1>
+                <h1 class="cm_title_01" tabindex="0">프로그래밍 시작하기</h1>
             </div>
 
             <div class="cm_txt" tabindex="0">
@@ -27,8 +36,8 @@
                 <h3 class="cm_video_title" tabindex="0">프로그램 결과 미리보기</h3>
                 <div class="cm_view">
                     <video width="100%" height="auto" controls class="cm_video_form">
-                        <source src=".mp4" type="video/mp4">
-                        <track src=".vtt" kind="subtitles" srclang="ko" label="Korean">
+                        <source src="https://kr.object.gov-ncloudstorage.com/001-mid-01-vod/001-mid-01-out/mid_322_01_01.mp4" type="video/mp4">
+                        <track src="https://kr.object.gov-ncloudstorage.com/001-mid-01-vod/001-mid-01-out/mid_322_01_01.vtt" kind="subtitles" srclang="ko" label="Korean">
                         브라우저가 동영상을 지원하지 않습니다.
                     </video>
                 </div>
@@ -53,12 +62,12 @@
             <div class="cm_txt" tabindex="0">
                 다음의 블록을 연결하여 순서도와 같이 동작하는 프로그램을 작성해 보자.
             </div>
-            <div class="cm_img_321" tabindex="0">
+            <div class="cm_img_321">
                 <img src="/public/cmass-editor/img/img_321_01_01.png" alt="엔트리 블록 카테고리 시작" class="cm_321_01" tabindex="0">
                 <img src="/public/cmass-editor/img/img_321_01_02.png" alt="오른쪽 화살표" class="cm_321_02" tabindex="0">
                 <img src="/public/cmass-editor/img/img_321_01_03.png" alt="시작하기 버튼을 클릭했을 때 블록" class="cm_321_03" tabindex="0">
             </div>
-            <div class="cm_img_321" tabindex="0">
+            <div class="cm_img_321">
                 <img src="/public/cmass-editor/img/img_321_01_04.png" alt="엔트리 블록 카테고리 생김새" class="cm_321_01" tabindex="0">
                 <img src="/public/cmass-editor/img/img_321_01_02.png" alt="오른쪽 화살표" class="cm_321_02" tabindex="0">
                 <img src="/public/cmass-editor/img/img_321_01_05.png" alt="안녕을 4초 동안 말하기 블록" class="cm_321_03" tabindex="0">
@@ -105,7 +114,7 @@
               <img src="/public/cmass-editor/img/btn_next_disabled.png" alt="다음" class="disabled">
             </button>
           </div>
-          <div class="cm_indicators">
+          <div class="cm_indicators" tabindex="0">
               <div class="cm_indicator cm_current"></div>
               <div class="cm_indicator"></div>
               <div class="cm_indicator"></div>

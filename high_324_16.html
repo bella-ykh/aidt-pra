@@ -13,15 +13,15 @@
 <body>
     <div class="cm_wrap_h">
         <div class="cm_title_bg">
-            <h1 class="cm_title_h1">폭탄 맵</h1>
+            <h1 class="cm_title_h1" tabindex="0">폭탄 맵</h1>
         </div>
 
-        <div class="cm_txt">
+        <div class="cm_txt" tabindex="0">
             6 × 6 크기의 게임 맵에 폭탄을 놓을 좌표를 입력받아 표시하는 프로그램을 만들려고 한다. 6 × 6 크기의 게임 맵을 표현하려면 어떤 데이터 구조가 적합할지 생각하여 프로그램을 완성해 보자.
         </div>
 
-        <div class="cm_txt_bold"><span class="cm_bull"></span>실행 결과 예시</div>
-        <div class="cm_code_white">
+        <div class="cm_txt_bold" tabindex="0"><span class="cm_bull"></span>실행 결과 예시</div>
+        <div class="cm_code_white" tabindex="0">
             <pre class="cm_code2">폭탄을 놓고 싶은 좌표(종료: n): 2 0
 폭탄을 놓고 싶은 좌표(종료: n): 6 8
 올바른 범위가 아닙니다.
@@ -37,32 +37,32 @@
         </div>        
 
         <div class="cm_title_bg2">
-            <h2 class="cm_title_h2">1. 문제 이해 및 분석</h2>
+            <h2 class="cm_title_h2" tabindex="0">1. 문제 이해 및 분석</h2>
         </div>
-        <h3 class="cm_title_h3">6 x 6 크기의 게임 맵에 폭탄을 놓을 좌표를 입력받아 폭탄이 있는 위치를 ★로 표시하는 프로그램을 작성한다.</h3>
+        <h3 class="cm_title_h3" tabindex="0">6 x 6 크기의 게임 맵에 폭탄을 놓을 좌표를 입력받아 폭탄이 있는 위치를 ★로 표시하는 프로그램을 작성한다.</h3>
 
         <div class="cm_title_bg2">
-            <h2 class="cm_title_h2">2. 알고리즘 설계</h2>
+            <h2 class="cm_title_h2" tabindex="0">2. 알고리즘 설계</h2>
         </div>
         <ul class="cm_list_num_h">
-            <li><span>①</span>0으로 채워진 6 x 6 크기의 2차원 리스트를 만든다.</li>
-            <li><span>②</span>폭탄을 놓고 싶은 좌표 x, y를 입력한다. 이때 좌표 x와 좌표 y는 공백으로 구분하여 입력한다.</li>
-            <li><span>③</span>입력한 좌표의 범위가 올바른지 확인하고, 범위가 잘못되었다면 다시 입력한다.</li>
-            <li><span>④</span>범위가 올바르다면, x, y좌표에 해당하는 리스트의 값을 1로 바꾸어 준다.</li>
-            <li><span>⑤</span>폭탄이 있는 좌표는 ★로, 아무것도 없는 좌표는 □로 출력한다.</li>
+            <li tabindex="0"><span>①</span>0으로 채워진 6 x 6 크기의 2차원 리스트를 만든다.</li>
+            <li tabindex="0"><span>②</span>폭탄을 놓고 싶은 좌표 x, y를 입력한다. 이때 좌표 x와 좌표 y는 공백으로 구분하여 입력한다.</li>
+            <li tabindex="0"><span>③</span>입력한 좌표의 범위가 올바른지 확인하고, 범위가 잘못되었다면 다시 입력한다.</li>
+            <li tabindex="0"><span>④</span>범위가 올바르다면, x, y좌표에 해당하는 리스트의 값을 1로 바꾸어 준다.</li>
+            <li tabindex="0"><span>⑤</span>폭탄이 있는 좌표는 ★로, 아무것도 없는 좌표는 □로 출력한다.</li>
         </ul>
 
         <div class="cm_title_bg2">
-            <h2 class="cm_title_h2">3. 프로그래밍</h2>
+            <h2 class="cm_title_h2" tabindex="0">3. 프로그래밍</h2>
         </div>
-        <h3 class="cm_title_h3">알고리즘 설계를 보고 코드를 작성하여 프로그램을 완성해 보자.</h3>
+        <h3 class="cm_title_h3" tabindex="0">알고리즘 설계를 보고 코드를 작성하여 프로그램을 완성해 보자.</h3>
 
         <div class="cm_hint_container">
-            <div class="cm_hint_header">
+            <div class="cm_hint_header" tabindex="0">
                 Hint<span class="cm_hint_sub">종료를 선택할 때까지 무한 루프를 생성하는 방법</span>
             </div>
             <div class="cm_hint_content">
-                <div class="cm_code_number">
+                <div class="cm_code_number" tabindex="0"v>
                     <div class="cm_line_numbers" aria-hidden="true">
                         <span>1</span>
                         <span>2</span>
@@ -77,7 +77,7 @@
             </div>
         </div>
 
-        <div class="cm_code_number">
+        <div class="cm_code_number" tabindex="0">
             <div class="cm_line_numbers" aria-hidden="true">
                 <span>1</span>
             </div>
@@ -85,8 +85,8 @@
         </div>
 
         <div class="cm_tip_h">
-            <div class="cm_tip_bg"><span class="cm_tip_txt2">Tip!</span></div>
-            <div class="cm_tip_cont">
+            <div class="cm_tip_bg" tabindex="0"><span class="cm_tip_txt2">Tip!</span></div>
+            <div class="cm_tip_cont" tabindex="0">
                 <span class="cm_font_bold">map( ) 함수:</span> map()은 반복 가능 객체의 각 요소들에 특정한 함수를 적용하고 싶을 때 사용한다. 
                 map(함수, 반복 가능 객체)와 같은 형식으로 사용한다. <br>
                 map(int, a.split())을 실행하면, a 변수에 저장된 입력받은 좌표를 split()함수로 2개의 문자열로 나눈 뒤 int 함수를 적용하여 정수형으로 변환한다.
@@ -95,11 +95,11 @@
         
 
         <div class="cm_hint_container">
-            <div class="cm_hint_header">
+            <div class="cm_hint_header" tabindex="0">
                 Hint<span class="cm_hint_sub">잘못된 좌표를 입력하면, 반복문으로 돌아가는 방법</span>
             </div>
             <div class="cm_hint_content">
-                <div class="cm_code_number">
+                <div class="cm_code_number" tabindex="0">
                     <div class="cm_line_numbers" aria-hidden="true">
                         <span>1</span>
                     </div>
@@ -111,11 +111,11 @@
         </div>
 
         <div class="cm_hint_container">
-            <div class="cm_hint_header">
+            <div class="cm_hint_header" tabindex="0">
                 Hint<span class="cm_hint_sub">폭탄 맵을 출력하는 방법</span>
             </div>
             <div class="cm_hint_content">
-                <div class="cm_code_number">
+                <div class="cm_code_number" tabindex="0">
                     <div class="cm_line_numbers" aria-hidden="true">
                         <span>1</span>
                         <span>2</span>
@@ -134,12 +134,12 @@
         </div>
 
         <div class="cm_title_bg2">
-            <h2 class="cm_title_h2">2. 결과 확인 및 디버깅</h2>
+            <h2 class="cm_title_h2" tabindex="0">2. 결과 확인 및 디버깅</h2>
         </div>
 
         <ul class="cm_list_num_h">
-            <li><span>①</span>프로그램을 실행하여 [실행 결과 예시]와 같이 결과가 출력되는지 확인해 보자.</li>
-            <li><span>②</span>예시와 같이 결과를 출력했다면 ‘제출하기’ 버튼을 눌러 실습의 결과를 확인해 보자.</li>
+            <li tabindex="0"><span>①</span>프로그램을 실행하여 [실행 결과 예시]와 같이 결과가 출력되는지 확인해 보자.</li>
+            <li tabindex="0"><span>②</span>예시와 같이 결과를 출력했다면 ‘제출하기’ 버튼을 눌러 실습의 결과를 확인해 보자.</li>
         </ul>
 
     </div>
