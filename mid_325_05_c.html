@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>중-325-실습-05-설명(상)</title>
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" type="text/css" href="css/font/pretendard.css" />
+    <link rel="stylesheet" type="text/css" href="css/font/pretendard-subset.css"/>
+    <script type="text/javascript" src="js/GoogleTranslate.js"></script>
+    <script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=GoogleTranslateInitCallback"></script>
+</head>
+<body class="cmass-content">
+    <div class="cm_slide_container">
+        <div class="cm_slides">
+          <div class="cm_slide" aria-label="슬라이드 첫 번째 화면입니다." tabindex="0">
+            <div class="cm_title_wrap">
+                <div class="cm_ico_01"></div>
+                <h1 class="cm_title_01" tabindex="0">업다운 숫자 맞추기 게임</h1>
+            </div>
+            <div class="cm_txt" tabindex="0">
+                매개변수가 없고 반환 값이 있는 함수를 활용하여, 업다운 숫자 맞추기 게임 프로그램을 구현해 보자.
+            </div>
+            <h2 class="cm_title_02 cm_pd_l0" tabindex="0"><span class="cm_num">1</span>문제 이해 및 분석</h2>
+
+            <div class="cm_chart cm_mg_t20">
+                <h3 class="cm_chart_title" tabindex="0">문제상황</h3>
+                <div class="cm_view_chart cm_bg_gray cm_txt_left" tabindex="0">
+                    K 선생님은 수업을 더욱 재미있고 흥미롭게 만들기 위해 숫자 맞추기 게임을 기획했다. 학생들은 랜덤으로 정해진 숫자를 맞히는 게임을 통해 논리적인 사고력을 기를 수 있다.
+                    <br><br>
+                    게임이 시작되면 컴퓨터는 1부터 50 사이의 랜덤한 숫자를 하나 선택한다. 학생들은 정답을 맞히기 위해 숫자를 입력해야 한다. 만약 입력한 숫자가 정답보다 크다면 "DOWN"이라는 힌트가 제공되고, 작다면 "UP"이라는 힌트가 주어진다.
+                    <br><br>
+                    학생들은 힌트를 바탕으로 점점 정답에 가까워지며 도전하게 된다. 정답을 맞히면 "축하합니다!"라는 메시지와 함께 게임을 푸는 데 걸린 시간이 표시된다. 정답을 맞힐 때까지 도전할 수 있으며, 게임이 끝나면 최종 결과가 출력된다.
+                    <br><br>
+                    K 선생님은 이 게임을 통해 학생들이 논리적으로 문제를 해결하고, 숫자의 크기를 비교하는 연습을 자연스럽게 하길 기대하고 있다.
+                </div>
+            </div>
+
+            <div class="cm_txt cm_pd_l0" tabindex="0">
+                &lt;문제상황&gt;에서 요구되는 프로그램의 기능을 생각해 보자. 
+                <ul class="cm_list_num">
+                    <li tabindex="0"><span>①</span>랜덤 숫자 생성: 1부터 50 사이의 랜덤한 정수를 하나 생성한다.</li>
+                    <li tabindex="0"><span>②</span>사용자 입력: 사용자는 숫자를 입력하여 정답 맞추기에 도전한다.</li>
+                    <li tabindex="0"><span>③</span>업다운 힌트 제공: 사용자의 입력이 정답보다 크면 "DOWN"을 출력한다. 사용자의 입력이 정답보다 작으면 "UP"을 출력한다.</li>
+                    <li tabindex="0"><span>④</span>정답 체크: 사용자가 정답을 맞히면 축하 메시지와 걸린 시간을 출력한다.</li>
+                    <li tabindex="0"><span>⑤</span>종료 조건: 사용자가 정답을 맞힐 때까지 반복한다. 사용자가 정답을 맞힌 후 걸린 시간을 출력하고 게임을 종료한다.</li>
+                </ul>                          
+            </div>
+            <div class="cm_video cm_mg_t10">
+                <h3 class="cm_video_title" tabindex="0">프로그램 결과 미리보기</h3>
+                <div class="cm_view" tabindex="0">
+                    <video width="100%" height="auto" controls class="cm_video_form" data-src=".m3u8"></video>
+                </div>
+            </div>
+          </div>
+
+          <div class="cm_slide" aria-label="슬라이드 두 번째 화면입니다." tabindex="0">
+            <h2 class="cm_title_02" tabindex="0"><span class="cm_num">2</span>알고리즘 설계</h2>
+            <div class="cm_txt cm_pd_tb0">
+                <ul class="cm_list_num">
+                    <li tabindex="0"><span>①</span>문제 해결을 위해 구현해야 할 기능을 생각해 보자.</li>
+                </ul>
+            </div>
+            <div class="cm_tbl_wrap">
+                <table class="cm_tbl_01" tabindex="0">
+                    <caption>오브젝트가 구현해야 할 기능</caption>
+                    <colgroup>
+                      <col width="20%" />
+                      <col width="80%" />
+                    </colgroup>
+                    <tr>
+                      <th tabindex="0">선생님</th>
+                      <td>
+                        <ul class="cm_list_num cm_pd_t0">
+                            <li tabindex="0"><span>❶</span>정답, 성공 변수를 숨긴다.</li>
+                            <li tabindex="0"><span>❷</span>“K선생님이 생각하고 있는 1~50 사이의 숫자를 맞혀보세요.”을 2초 동안 말하고, ＂시작합니다~”을 2초 동안 말한다.</li>
+                            <li tabindex="0"><span>❸</span>1~50 사이의 랜덤 숫자를 정답 변수에 저장한다.</li>
+                            <li tabindex="0"><span>❹</span>초시계 시작한다.</li>
+                            <li tabindex="0"><span>❺</span>'업다운' 함수에서 반환된 성공 변숫값이 1 이면, 초시계 값 말한 후 프로그램을 종료한다. </li>
+                        </ul>
+                      </td>
+                    </tr>
+                </table>
+            </div>
+            <div class="cm_txt cm_pd_tb0">
+                <ul class="cm_list_num cm_pd_t0">
+                    <li tabindex="0"><span>②</span>프로그램에 필요한 변수를 생각해 보자.</li>
+                </ul>
+                <ul class="cm_list cm_mg_l20">
+                    <li tabindex="0">정답 : 1부터 50사이의 정수 중에서 랜덤으로 선택된 숫자를 저장</li>
+                    <li tabindex="0">성공 : 정답 여부를 판단한 값을 저장</li>
+                </ul>
+            </div>
+            <div class="cm_txt_in">
+                <ul class="cm_list_num cm_pd_t0">
+                    <li tabindex="0"><span>③</span>프로그램에 필요한 '업다운' 함수를 생각해 보자.</li>
+                </ul>
+                <ul class="cm_list_num cm_mg_l20 cm_pd_t0">
+                    <li tabindex="0"><span>❶</span>사용자가 정답을 입력하면 입력값과 실제 정답을 비교하여 정답 여부를 판단한다. </li>
+                    <li tabindex="0"><span>❷</span>정답을 맞추면 1이라는 결괏값을 반환하고 정답이 아니면, 0이라는 결괏값을 반환한다. </li>
+                </ul>
+            </div>
+
+            <div class="cm_chart">
+                <h3 class="cm_video_title" tabindex="0">'업다운' 함수의 순서도</h3>
+                <div class="cm_view_chart" tabindex="0">
+                    <img src="img/img_325_05_01.svg" alt="'업다운' 함수가 시작되면 사용자로부터 숫자를 입력받고, 입력받은 수가 정답과 같은지 비교하여 같으면 결괏값 1을 반환하고, 입력값이 정답보다 작으면 'UP', 크면 'Down' 메세지를 출력하고 결괏값으로 0을 반환하는 과정을 나타낸 순서도">
+                </div>
+            </div>
+          </div>
+
+          <div class="cm_slide" aria-label="슬라이드 세 번째 화면입니다." tabindex="0">
+            <h2 class="cm_title_02" tabindex="0"><span class="cm_num">3</span>프로그래밍</h2>
+            <h3 class="cm_title_03" tabindex="0"><span class="cm_no">①</span>준비하기</h3>
+            <div class="cm_tbl_wrap">
+                <table class="cm_tbl_02" tabindex="0">
+                    <caption>프로그래밍 준비하기</caption>
+                    <colgroup>
+                      <col width="15%" />
+                      <col width="85%" />
+                    </colgroup>
+                    <tr>
+                      <th tabindex="0">오브젝트</th>
+                      <td tabindex="0"><img src="img/object_teacher.png" alt="선생님(3) 오브젝트" class="cm_h50"></td>
+                    </tr>
+                    <tr>
+                        <th tabindex="0">변수</th>
+                        <td tabindex="0">정답, 성공</td>
+                    </tr>
+                    <tr>
+                        <th tabindex="0">함수</th>
+                        <td tabindex="0">업다운</td>
+                    </tr>
+                </table>
+            </div>
+            
+            <h3 class="cm_title_03" tabindex="0"><span class="cm_no">②</span>프로그램 작성하기</h3>
+            <div class="cm_tbl_wrap">
+                <table class="cm_tbl_02" tabindex="0">
+                    <caption>프로그램 작성하기</caption>
+                    <colgroup>
+                        <col width="15%" />
+                        <col width="85%" />
+                        </colgroup>
+                    <tr>
+                        <th tabindex="0">
+                            <img src="img/object_teacher.png" alt="선생님(3) 오브젝트">
+                        </th>
+                        <td tabindex="0"><img src="img/img_325_05_02.svg" alt="시작하기 버튼을 클릭했을 때, 1부터 50사의 숫자 중에 하나를 정답값으로 정하고, 사용자로부터 숫자를 입력받아 정답 숫자를 맞출때 까지 반복하여 '업다운' 함수를 호출하여 정답을 맞추면 초시계 값을 출력하고 반복을 종료하는 엔트리 코드"></td>
+                    </tr>
+                    <tr>
+                        <th tabindex="0"><img src="" alt="'업다운' 함수 블록" class="cm_h65">업다운</th>
+                        <td class="cm_img_block" tabindex="0">
+                            <img src="img/img_325_05_03_c.svg" alt="'업다운' 함수 정의하기 블록으로 숫자를 입력받고 입력받은 수가 정답과 같은지 비교하여 같으면 '정답입니다'를 출력하고 결괏값 1을 반환, 입력값이 정답보다 작으면 'UP', 크면 'Down' 메세지를 출력하고 결괏값으로 0을 반환하는 함수를 정의한 빈칸이 포함된 엔트리 코드">
+                        </td>
+                    </tr>
+                </table>
+            </div>
+          </div>
+
+          <div class="cm_slide" aria-label="슬라이드 네 번째 화면입니다." tabindex="0">
+            <h2 class="cm_title_02" tabindex="0"><span class="cm_num">4</span>결과 확인 및 디버깅</h2>
+            <div class="cm_txt" tabindex="0">프로그램을 실행하여 실행 결과를 확인해 보자.</div>
+          </div>
+        </div>
+        
+    </div>
+    <div class="cm_foot" tabindex="0">
+        <div class="cm_navigation">
+            <button class="cm_nav_button cm_prev" tabindex="0">
+                <img src="img/btn_prev.png" alt="이전">
+                <img src="img/btn_prev_disabled.png" alt="이전" class="disabled">
+            </button>
+            <button class="cm_nav_button cm_next" tabindex="0">
+                <img src="img/btn_next.png" alt="다음">
+                <img src="img/btn_next_disabled.png" alt="다음" class="disabled">
+            </button>
+        </div>
+        <div class="cm_indicators">
+            <div class="cm_indicator cm_current" tabindex="0"></div>
+            <div class="cm_indicator" tabindex="0"></div>
+            <div class="cm_indicator" tabindex="0"></div>
+            <div class="cm_indicator" tabindex="0"></div>
+        </div>
+    </div>
+    <script>
+        window.addEventListener("load", function () {
+          const slides = document.querySelector('.cm_slides');
+          const indicators = document.querySelectorAll('.cm_indicator');
+          const prevButton = document.querySelector('.cm_prev');
+          const nextButton = document.querySelector('.cm_next');
+          let currentSlide = 0;
+
+          function updateSlide(index) {
+              slides.style.transform = `translateX(-${index * 100}%)`;
+              indicators.forEach((indicator, i) => {
+                  indicator.classList.toggle('cm_current', i === index);
+              });
+              prevButton.disabled = index === 0;
+              nextButton.disabled = index === indicators.length - 1;
+          }
+
+          prevButton.addEventListener('click', () => {
+              if (currentSlide > 0) {
+                  currentSlide -= 1;
+                  updateSlide(currentSlide);
+              }
+          });
+
+          nextButton.addEventListener('click', () => {
+              if (currentSlide < indicators.length - 1) {
+                  currentSlide += 1;
+                  updateSlide(currentSlide);
+              }
+          });
+
+          indicators.forEach((indicator, i) => {
+              indicator.addEventListener('click', () => {
+                  currentSlide = i;
+                  updateSlide(currentSlide);
+              });
+          });
+
+          updateSlide(currentSlide);
+      });
+      </script>
+
+</body>
+</html>

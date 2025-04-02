@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="_레이어_1" data-name="레이어 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 959.506 922.008">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #707070;
+        stroke-width: 0px;
+      }
+
+      .cls-2, .cls-3 {
+        font-family: Pretendard-Bold-KSCpc-EUC-H, Pretendard;
+        font-size: 26px;
+        font-weight: 700;
+      }
+
+      .cls-4, .cls-3 {
+        letter-spacing: -.025em;
+      }
+
+      .cls-5 {
+        fill: #b6eda2;
+        stroke: #6ea159;
+      }
+
+      .cls-5, .cls-6, .cls-7, .cls-8, .cls-9 {
+        stroke-miterlimit: 10;
+      }
+
+      .cls-10 {
+        letter-spacing: -.12em;
+      }
+
+      .cls-6 {
+        fill: none;
+        stroke: #707070;
+        stroke-width: 3px;
+      }
+
+      .cls-7 {
+        fill: #caebfc;
+        stroke: #3295c3;
+      }
+
+      .cls-8 {
+        fill: #d9cfff;
+        stroke: #8c7bc6;
+      }
+
+      .cls-11 {
+        letter-spacing: -.025em;
+      }
+
+      .cls-9 {
+        fill: #ffe697;
+        stroke: #bb7d0c;
+      }
+    </style>
+  </defs>
+  <g>
+    <line class="cls-6" x1="152.179" y1="750.199" x2="152.179" y2="811.947"/>
+    <polygon class="cls-1" points="146.195 810.196 152.179 820.558 158.162 810.196 146.195 810.196"/>
+  </g>
+  <rect class="cls-5" x="26.347" y="819.786" width="251.535" height="101.694" rx="50.847" ry="50.847"/>
+  <text class="cls-3" transform="translate(81.258 864.995)"><tspan x="0" y="0">결괏값 변환 후</tspan><tspan x="24.492" y="33">함수 종료</tspan></text>
+  <g>
+    <line class="cls-6" x1="480.105" y1="580.871" x2="480.105" y2="614.948"/>
+    <polygon class="cls-1" points="474.121 613.197 480.105 623.559 486.088 613.197 474.121 613.197"/>
+  </g>
+  <g>
+    <line class="cls-6" x1="152.179" y1="630.798" x2="152.179" y2="666.692"/>
+    <polygon class="cls-1" points="146.195 664.941 152.179 675.303 158.162 664.941 146.195 664.941"/>
+  </g>
+  <rect class="cls-7" x=".792" y="675.896" width="300.498" height="74.24"/>
+  <text class="cls-3" transform="translate(43.914 721.363)"><tspan x="0" y="0">결괏값(성공)에 1 저장</tspan></text>
+  <polygon class="cls-9" points="250.788 334.202 .792 334.202 50.795 229.202 300.791 229.202 250.788 334.202"/>
+  <polygon class="cls-9" points="251.287 630.798 1.291 630.798 51.294 525.798 301.29 525.798 251.287 630.798"/>
+  <g>
+    <line class="cls-6" x1="151.616" y1="70.467" x2="151.616" y2="104.538"/>
+    <polygon class="cls-1" points="145.633 102.788 151.616 113.149 157.599 102.788 145.633 102.788"/>
+  </g>
+  <g>
+    <polyline class="cls-6" points="479.779 728.661 479.779 771.581 162.936 771.581"/>
+    <polygon class="cls-1" points="164.687 765.597 154.326 771.581 164.687 777.564 164.687 765.597"/>
+  </g>
+  <g>
+    <polyline class="cls-6" points="807.38 728.661 807.38 771.581 490.537 771.581"/>
+    <polygon class="cls-1" points="492.287 765.597 481.926 771.581 492.287 777.564 492.287 765.597"/>
+  </g>
+  <g>
+    <polyline class="cls-6" points="293.294 429.949 479.779 429.949 479.779 464.258"/>
+    <polygon class="cls-1" points="473.796 462.507 479.779 472.869 485.763 462.507 473.796 462.507"/>
+  </g>
+  <g>
+    <line class="cls-6" x1="151.616" y1="334.202" x2="151.616" y2="365.388"/>
+    <polygon class="cls-1" points="145.633 363.637 151.616 373.999 157.599 363.637 145.633 363.637"/>
+  </g>
+  <g>
+    <line class="cls-6" x1="151.616" y1="485.9" x2="151.616" y2="517.085"/>
+    <polygon class="cls-1" points="145.633 515.334 151.616 525.696 157.599 515.334 145.633 515.334"/>
+  </g>
+  <g>
+    <line class="cls-6" x1="151.616" y1="186.511" x2="151.399" y2="219.908"/>
+    <polygon class="cls-1" points="145.428 218.118 151.344 228.518 157.393 218.196 145.428 218.118"/>
+  </g>
+  <rect class="cls-5" x="25.244" y=".5" width="252.744" height="70" rx="35" ry="35"/>
+  <text class="cls-3" transform="translate(62.741 44.692)"><tspan x="0" y="0">‘업다운’ 함수 시작</tspan></text>
+  <rect class="cls-7" x="1.291" y="113.195" width="299.999" height="73.746"/>
+  <text class="cls-3" transform="translate(40.925 158.405)"><tspan x="0" y="0">결괏값(성공)에 0 저장</tspan></text>
+  <text class="cls-3" transform="translate(85.33 274.549)"><tspan x="0" y="0">사용자로부터</tspan><tspan x="-12.152" y="31">숫자(정수) 입력</tspan></text>
+  <polygon class="cls-8" points="152.387 375.006 5.618 429.949 152.387 484.893 299.156 429.949 152.387 375.006"/>
+  <text class="cls-3" transform="translate(372.599 410.243)"><tspan x="0" y="0">아니요</tspan></text>
+  <text class="cls-2" transform="translate(88.42 570.145)"><tspan class="cls-4" x="0" y="0">‘정답입니다</tspan><tspan class="cls-10" x="115.309" y="0">.</tspan><tspan class="cls-11" x="119.534" y="0">’</tspan><tspan class="cls-4"><tspan x="-5.263" y="33">메세지를 출력</tspan></tspan></text>
+  <text class="cls-3" transform="translate(97.271 505.798)"><tspan x="0" y="0">예</tspan></text>
+  <text class="cls-3" transform="translate(83.173 438.296)"><tspan x="0" y="0">입력값 = 정답</tspan></text>
+  <polygon class="cls-9" points="579.776 728.661 329.78 728.661 379.783 623.661 629.779 623.661 579.776 728.661"/>
+  <polygon class="cls-8" points="480.876 472.869 334.107 527.812 480.876 582.756 627.645 527.812 480.876 472.869"/>
+  <text class="cls-2" transform="translate(416.907 668.008)"><tspan class="cls-4" x="0" y="0">‘정답입니다</tspan><tspan class="cls-10" x="115.309" y="0">.</tspan><tspan class="cls-11" x="119.534" y="0">’</tspan><tspan class="cls-4"><tspan x="-5.263" y="33">메세지를 출력</tspan></tspan></text>
+  <text class="cls-3" transform="translate(430.274 605.305)"><tspan x="0" y="0">예</tspan></text>
+  <text class="cls-3" transform="translate(411.66 536.159)"><tspan x="0" y="0">입력값 = 정답</tspan></text>
+  <g>
+    <polyline class="cls-6" points="622.229 527.535 808.715 527.535 808.715 613.163"/>
+    <polygon class="cls-1" points="802.731 611.413 808.715 621.774 814.698 611.413 802.731 611.413"/>
+  </g>
+  <text class="cls-3" transform="translate(701.535 507.829)"><tspan x="0" y="0">아니요</tspan></text>
+  <polygon class="cls-9" points="908.711 728.661 658.715 728.661 708.718 623.661 958.714 623.661 908.711 728.661"/>
+  <text class="cls-2" transform="translate(745.843 668.008)"><tspan class="cls-4" x="0" y="0">‘정답입니다</tspan><tspan class="cls-10" x="115.309" y="0">.</tspan><tspan class="cls-11" x="119.534" y="0">’</tspan><tspan class="cls-4"><tspan x="-5.263" y="33">메세지를 출력</tspan></tspan></text>
+</svg>
