@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="_레이어_1" data-name="레이어 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 82.496 41.807">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #de5c04;
+      }
+
+      .cls-1, .cls-2 {
+        stroke-width: 0px;
+      }
+
+      .cls-3 {
+        fill: #fff;
+        font-family: Pretendard-Bold-KSCpc-EUC-H, Pretendard;
+        font-size: 22px;
+        font-weight: 700;
+      }
+
+      .cls-2 {
+        fill: #a14100;
+      }
+    </style>
+  </defs>
+  <g>
+    <path class="cls-1" d="m20.903,40.807C9.929,40.807,1,31.878,1,20.903S9.929,1,20.903,1h40.69c10.975,0,19.903,8.929,19.903,19.903s-8.929,19.903-19.903,19.903H20.903Z"/>
+    <path class="cls-2" d="m61.593,2c10.423,0,18.903,8.48,18.903,18.903s-8.48,18.903-18.903,18.903H20.903c-10.423,0-18.903-8.48-18.903-18.903S10.48,2,20.903,2h40.69m0-2H20.903C9.407,0,0,9.406,0,20.903h0c0,11.497,9.407,20.903,20.903,20.903h40.69c11.497,0,20.903-9.406,20.903-20.903h0c0-11.497-9.406-20.903-20.903-20.903h0Z"/>
+  </g>
+  <text class="cls-3" transform="translate(12.729 27.291)"><tspan x="0" y="0">업다운</tspan></text>
+</svg>
