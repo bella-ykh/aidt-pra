@@ -241,6 +241,7 @@ color: #fff !important;background: none !important;border: none !important;borde
 .cmass-content .cm_tbl_02 { width: 100%; border-top: 6px solid #4f80ff; border-collapse: separate; border-spacing: 0; } 
 .cmass-content .cm_tbl_02 caption { display: none; } /* 저작도구 이슈 */
 .cmass-content .cm_tbl_02 th { background-color: #d6e9f4; border-right: solid 4px #fff; border-bottom: solid 4px #fff; padding: 10px; font-size: 18px; color: #222; text-align: center; } 
+.cmass-content .cm_tbl_02 th:last-child { border-right: 0; } 
 .cmass-content .cm_tbl_02 th img { height: min(35px, 7vw) !important; } 
 .cmass-content .cm_tbl_02 th img.cm_h45 { height: 45px !important; } 
 .cmass-content .cm_tbl_02 th img.cm_h65 { height: min(65px, 8vw) !important; } 
@@ -337,7 +338,7 @@ color: #fff !important;background: none !important;border: none !important;borde
 .cmass-content .cm_point { color: #057f64; font-weight: bold; } 
 
 .cmass-content .cm_txt_over { overflow-wrap: break-word; } 
-
+.cmass-content .cm_err_txt { text-align: left; margin: 15px 5px 10px;}
 
 .cmass-content .cm_h20 { height: 20px !important; } 
 .cmass-content .cm_h30 { height: min(30px, 7vw) !important; } 
@@ -397,6 +398,7 @@ color: #fff !important;background: none !important;border: none !important;borde
 .cmass-content .cm_mg_b30 { margin-bottom: 30px !important; } 
 
 .cmass-content .cm_align_c { text-align: center; margin: 0 auto; } 
+.cmass-content .cm_align_l { text-align: left; margin: 0 auto; } 
 
 
 
