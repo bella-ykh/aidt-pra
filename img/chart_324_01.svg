@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg id="_레이어_1" data-name="레이어 1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 968 695.041">
+<svg id="_레이어_1" data-name="레이어 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 937.194 855.581">
   <defs>
     <style>
       .cls-1 {
@@ -8,119 +8,106 @@
       }
 
       .cls-2 {
+        stroke: red;
+        stroke-dasharray: 0 0 7 4;
+      }
+
+      .cls-2, .cls-3 {
         fill: none;
-        stroke: #707070;
-      }
-
-      .cls-2, .cls-3, .cls-4, .cls-5, .cls-6 {
-        stroke-miterlimit: 10;
-      }
-
-      .cls-2, .cls-4, .cls-5 {
         stroke-width: 3px;
       }
 
-      .cls-7 {
-        font-size: 28px;
-        letter-spacing: -.025em;
-      }
-
-      .cls-7, .cls-8 {
-        font-family: Pretendard-Bold-KSCpc-EUC-H, Pretendard;
-        font-weight: 700;
+      .cls-2, .cls-3, .cls-4, .cls-5 {
+        stroke-miterlimit: 10;
       }
 
       .cls-3 {
+        stroke: #707070;
+      }
+
+      .cls-4 {
         fill: #caebfc;
         stroke: #3295c3;
       }
 
-      .cls-8 {
+      .cls-6 {
         font-size: 26px;
         letter-spacing: -.025em;
       }
 
-      .cls-4 {
-        fill: #fff;
-        filter: url(#drop-shadow-2);
-      }
-
-      .cls-4, .cls-5 {
-        stroke: #6f92aa;
+      .cls-6, .cls-7 {
+        font-family: Pretendard-Bold-KSCpc-EUC-H, Pretendard;
+        font-weight: 700;
       }
 
       .cls-5 {
-        fill: #fffad9;
-        stroke-dasharray: 0 0 7 4;
-      }
-
-      .cls-6 {
         fill: #d9cfff;
         stroke: #8c7bc6;
       }
+
+      .cls-7 {
+        fill: red;
+        font-size: 28px;
+        letter-spacing: -.025em;
+      }
     </style>
-    <filter id="drop-shadow-2" filterUnits="userSpaceOnUse">
-      <feOffset dx="3" dy="3"/>
-      <feGaussianBlur result="blur" stdDeviation="5"/>
-      <feFlood flood-color="#000" flood-opacity=".4"/>
-      <feComposite in2="blur" operator="in"/>
-      <feComposite in="SourceGraphic"/>
-    </filter>
   </defs>
-  <rect class="cls-4" x="14.096" y="48.797" width="934.194" height="615.871" rx="25" ry="25"/>
-  <rect class="cls-5" x="296.032" y="119.103" width="619.742" height="492.205" rx="25" ry="25"/>
+  <rect class="cls-2" x="1.5" y="48.797" width="934.194" height="593.869" rx="25" ry="25"/>
+  <rect class="cls-2" x="283.436" y="119.103" width="619.742" height="492.205" rx="25" ry="25"/>
   <g>
-    <line class="cls-2" x1="488.396" y1="273.884" x2="488.396" y2="317.189"/>
-    <polygon class="cls-1" points="480.917 315.001 488.396 327.953 495.875 315.001 480.917 315.001"/>
+    <line class="cls-3" x1="475.8" y1="273.884" x2="475.8" y2="317.189"/>
+    <polygon class="cls-1" points="468.321 315.001 475.8 327.953 483.279 315.001 468.321 315.001"/>
   </g>
   <g>
-    <line class="cls-2" x1="605.341" y1="213.206" x2="648.645" y2="213.206"/>
-    <polygon class="cls-1" points="646.457 220.686 659.409 213.206 646.457 205.728 646.457 220.686"/>
+    <line class="cls-3" x1="592.745" y1="213.206" x2="636.049" y2="213.206"/>
+    <polygon class="cls-1" points="633.861 220.686 646.813 213.206 633.861 205.728 633.861 220.686"/>
   </g>
   <g>
-    <line class="cls-2" x1="605.341" y1="392.752" x2="648.645" y2="392.752"/>
-    <polygon class="cls-1" points="646.457 400.232 659.409 392.752 646.457 385.274 646.457 400.232"/>
+    <line class="cls-3" x1="592.745" y1="392.752" x2="636.049" y2="392.752"/>
+    <polygon class="cls-1" points="633.861 400.232 646.813 392.752 633.861 385.274 633.861 400.232"/>
   </g>
   <g>
-    <line class="cls-2" x1="488.396" y1="453.497" x2="488.396" y2="496.802"/>
-    <polygon class="cls-1" points="480.917 494.614 488.396 507.566 495.875 494.614 480.917 494.614"/>
+    <line class="cls-3" x1="475.8" y1="453.497" x2="475.8" y2="496.802"/>
+    <polygon class="cls-1" points="468.321 494.614 475.8 507.566 483.279 494.614 468.321 494.614"/>
   </g>
-  <rect class="cls-3" x="368.396" y="508.87" width="240" height="66.462"/>
-  <text class="cls-8" transform="translate(409.352 550.448)"><tspan x="0" y="0">비겼습니다 출력</tspan></text>
-  <rect class="cls-3" x="661.379" y="179.975" width="226.999" height="66.462"/>
-  <text class="cls-8" transform="translate(695.835 221.559)"><tspan x="0" y="0">이겼습니다 출력</tspan></text>
-  <rect class="cls-3" x="661.379" y="359.521" width="226.999" height="66.462"/>
-  <text class="cls-8" transform="translate(706.746 401.1)"><tspan x="0" y="0">졌습니다 출력</tspan></text>
-  <text class="cls-8" transform="translate(502.078 307.671)"><tspan x="0" y="0">아니요</tspan></text>
-  <text class="cls-8" transform="translate(502.078 485.736)"><tspan x="0" y="0">아니요</tspan></text>
-  <text class="cls-8" transform="translate(612.93 197.22)"><tspan x="0" y="0">예</tspan></text>
-  <text class="cls-8" transform="translate(612.93 381.478)"><tspan x="0" y="0">예</tspan></text>
-  <polygon class="cls-6" points="488.396 150.035 370.053 213.206 488.396 276.378 606.739 213.206 488.396 150.035"/>
-  <text class="cls-8" transform="translate(420.263 210.054)"><tspan x="0" y="0">컴퓨터 선택이</tspan><tspan x="17.821" y="33">가위인가?</tspan></text>
-  <polygon class="cls-6" points="488.396 329.581 370.053 392.752 488.396 455.924 606.739 392.752 488.396 329.581"/>
-  <text class="cls-8" transform="translate(420.263 389.6)"><tspan x="0" y="0">컴퓨터 선택이</tspan><tspan x="17.821" y="33">가위인가?</tspan></text>
+  <rect class="cls-4" x="355.8" y="508.87" width="240" height="66.462"/>
+  <text class="cls-6" transform="translate(396.757 550.448)"><tspan x="0" y="0">비겼습니다 출력</tspan></text>
+  <rect class="cls-4" x="648.783" y="179.975" width="226.999" height="66.462"/>
+  <text class="cls-6" transform="translate(683.239 221.559)"><tspan x="0" y="0">이겼습니다 출력</tspan></text>
+  <rect class="cls-4" x="648.783" y="359.521" width="226.999" height="66.462"/>
+  <text class="cls-6" transform="translate(694.15 401.1)"><tspan x="0" y="0">졌습니다 출력</tspan></text>
+  <text class="cls-6" transform="translate(489.482 307.671)"><tspan x="0" y="0">아니요</tspan></text>
+  <text class="cls-6" transform="translate(489.482 485.736)"><tspan x="0" y="0">아니요</tspan></text>
+  <text class="cls-6" transform="translate(600.334 201.22)"><tspan x="0" y="0">예</tspan></text>
+  <text class="cls-6" transform="translate(600.334 381.478)"><tspan x="0" y="0">예</tspan></text>
+  <polygon class="cls-5" points="475.8 150.035 357.457 213.206 475.8 276.378 594.143 213.206 475.8 150.035"/>
+  <text class="cls-6" transform="translate(407.667 210.054)"><tspan x="0" y="0">컴퓨터 선택이</tspan><tspan x="17.821" y="33">가위인가?</tspan></text>
+  <polygon class="cls-5" points="475.8 329.581 357.457 392.752 475.8 455.924 594.143 392.752 475.8 329.581"/>
+  <text class="cls-6" transform="translate(407.667 389.6)"><tspan x="0" y="0">컴퓨터 선택이</tspan><tspan x="17.821" y="33">가위인가?</tspan></text>
   <g>
-    <line class="cls-2" x1="164.827" y1="196.585" x2="164.827" y2="468.664"/>
-    <polygon class="cls-1" points="157.347 466.476 164.827 479.428 172.305 466.476 157.347 466.476"/>
-  </g>
-  <g>
-    <line class="cls-2" x1="164.827" y1="595.557" x2="164.827" y2="684.277"/>
-    <polygon class="cls-1" points="157.347 682.089 164.827 695.041 172.305 682.089 157.347 682.089"/>
+    <line class="cls-3" x1="152.231" y1="196.586" x2="152.231" y2="665.31"/>
+    <polygon class="cls-1" points="144.751 663.121 152.231 676.073 159.709 663.121 144.751 663.121"/>
   </g>
   <g>
-    <line class="cls-2" x1="164.827" y1="26.912" x2="164.827" y2="146.213"/>
-    <polygon class="cls-1" points="157.347 144.024 164.827 156.977 172.305 144.024 157.347 144.024"/>
+    <line class="cls-3" x1="152.231" y1="792.202" x2="152.231" y2="844.817"/>
+    <polygon class="cls-1" points="144.751 842.629 152.231 855.581 159.709 842.629 144.751 842.629"/>
   </g>
-  <text class="cls-8" transform="translate(81.368 317.082)"><tspan x="0" y="0">아니요</tspan></text>
   <g>
-    <line class="cls-2" x1="280.161" y1="219.52" x2="356" y2="219.52"/>
-    <polygon class="cls-1" points="353.812 227 366.764 219.52 353.812 212.042 353.812 227"/>
+    <line class="cls-3" x1="152.231" y1="26.912" x2="152.231" y2="139.14"/>
+    <polygon class="cls-1" points="144.751 136.951 152.231 149.903 159.709 136.951 144.751 136.951"/>
   </g>
-  <text class="cls-8" transform="translate(325.317 203.534)"><tspan x="0" y="0">예</tspan></text>
-  <polygon class="cls-6" points="164.652 156.349 46.309 219.52 164.652 282.692 282.995 219.52 164.652 156.349"/>
-  <text class="cls-8" transform="translate(115.203 211.367)"><tspan x="0" y="0" xml:space="preserve">내  선택이</tspan><tspan x="-1.328" y="33">가위인가?</tspan></text>
-  <polygon class="cls-6" points="164.652 480.599 46.309 543.77 164.652 606.942 282.995 543.77 164.652 480.599"/>
-  <text class="cls-8" transform="translate(131.456 535.617)"><tspan x="0" y="0">대답이</tspan><tspan x="-17.581" y="33">바위인가?</tspan></text>
-  <text class="cls-7" transform="translate(760.031 26.646)"><tspan x="0" y="0">바깥 선택 구조</tspan></text>
-  <text class="cls-7" transform="translate(319.901 102.435)"><tspan x="0" y="0">안쪽 반복 구조</tspan></text>
+  <text class="cls-6" transform="translate(68.772 317.082)"><tspan x="0" y="0">아니요</tspan></text>
+  <g>
+    <line class="cls-3" x1="267.565" y1="213.206" x2="345.726" y2="213.206"/>
+    <polygon class="cls-1" points="343.538 220.686 356.49 213.206 343.538 205.728 343.538 220.686"/>
+  </g>
+  <text class="cls-6" transform="translate(308.076 201.22)"><tspan x="0" y="0">예</tspan></text>
+  <g>
+    <polygon class="cls-5" points="152.056 150.035 33.713 213.206 152.056 276.378 270.399 213.206 152.056 150.035"/>
+    <text class="cls-6" transform="translate(105.278 205.053)"><tspan x="0" y="0">내 선택이</tspan><tspan x="-3.999" y="33">가위인가?</tspan></text>
+  </g>
+  <polygon class="cls-5" points="152.056 677.244 33.713 740.415 152.056 803.587 270.399 740.415 152.056 677.244"/>
+  <text class="cls-6" transform="translate(105.278 732.262)"><tspan x="0" y="0">내 선택이</tspan><tspan x="-3.999" y="33">바위인가?</tspan></text>
+  <text class="cls-7" transform="translate(747.435 26.646)"><tspan x="0" y="0">바깥 선택 구조</tspan></text>
+  <text class="cls-7" transform="translate(307.306 102.435)"><tspan x="0" y="0">안쪽 선택 구조</tspan></text>
 </svg>

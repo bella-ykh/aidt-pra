@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg id="_레이어_1" data-name="레이어 1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 632.936 818.569">
+<svg id="_레이어_1" data-name="레이어 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 620.468 781.048">
   <defs>
     <style>
       .cls-1 {
@@ -8,102 +8,110 @@
       }
 
       .cls-2 {
-        fill: none;
-        stroke: #707070;
+        stroke: red;
       }
 
       .cls-2, .cls-3, .cls-4, .cls-5, .cls-6 {
         stroke-miterlimit: 10;
       }
 
-      .cls-2, .cls-4, .cls-5 {
+      .cls-2, .cls-3, .cls-6 {
+        fill: none;
         stroke-width: 3px;
       }
 
-      .cls-7 {
-        font-size: 28px;
-        letter-spacing: -.025em;
-      }
-
-      .cls-7, .cls-8 {
-        font-family: Pretendard-Bold-KSCpc-EUC-H, Pretendard;
-        font-weight: 700;
+      .cls-2, .cls-6 {
+        stroke-dasharray: 0 0 7 4;
       }
 
       .cls-3 {
+        stroke: #707070;
+      }
+
+      .cls-4 {
         fill: #caebfc;
         stroke: #3295c3;
       }
 
-      .cls-8 {
+      .cls-7 {
         font-size: 26px;
         letter-spacing: -.025em;
       }
 
-      .cls-4 {
-        fill: #fff;
-        filter: url(#drop-shadow-2);
-      }
-
-      .cls-4, .cls-5 {
-        stroke: #6f92aa;
+      .cls-7, .cls-8, .cls-9 {
+        font-family: Pretendard-Bold-KSCpc-EUC-H, Pretendard;
+        font-weight: 700;
       }
 
       .cls-5 {
-        fill: #fffad9;
-        stroke-dasharray: 0 0 7 4;
-      }
-
-      .cls-6 {
         fill: #d9cfff;
         stroke: #8c7bc6;
       }
+
+      .cls-8 {
+        fill: red;
+      }
+
+      .cls-8, .cls-9 {
+        font-size: 28px;
+        letter-spacing: -.025em;
+      }
+
+      .cls-9 {
+        fill: #6400e0;
+      }
+
+      .cls-6 {
+        stroke: #6400e0;
+      }
     </style>
-    <filter id="drop-shadow-2" filterUnits="userSpaceOnUse">
-      <feOffset dx="3" dy="3"/>
-      <feGaussianBlur result="blur" stdDeviation="5"/>
-      <feFlood flood-color="#000" flood-opacity=".4"/>
-      <feComposite in2="blur" operator="in"/>
-      <feComposite in="SourceGraphic"/>
-    </filter>
   </defs>
-  <rect class="cls-4" x="13.968" y="44.214" width="578.323" height="754.839" rx="10" ry="10"/>
-  <rect class="cls-5" x="124.677" y="308.988" width="408.774" height="326.323" rx="10" ry="10"/>
-  <polyline class="cls-2" points="399.516 406.41 479.258 406.41 479.258 608.601 311.258 608.601"/>
-  <polyline class="cls-2" points="291.129 734.409 291.129 765.375 69.71 765.375 69.71 75.019 311.131 75.019"/>
-  <text class="cls-7" transform="translate(133.351 292.307)"><tspan x="0" y="0">안쪽 선택 구조</tspan></text>
+  <rect class="cls-6" x="1.5" y="44.214" width="578.323" height="735.334" rx="25" ry="25"/>
   <g>
-    <line class="cls-2" x1="311.102" y1="246.553" x2="311.102" y2="331.902"/>
-    <polygon class="cls-1" points="303.622 329.714 311.102 342.666 318.581 329.714 303.622 329.714"/>
+    <rect class="cls-2" x="112.21" y="284.164" width="408.774" height="326.323" rx="10" ry="10"/>
+    <g>
+      <polyline class="cls-3" points="387.048 381.585 466.79 381.585 466.79 583.777 307.401 583.777"/>
+      <polygon class="cls-1" points="309.152 577.793 298.79 583.777 309.152 589.76 309.152 577.793"/>
+    </g>
+    <g>
+      <polyline class="cls-3" points="298.683 709.585 298.683 740.551 57.242 740.551 57.242 158.369 170.846 158.369"/>
+      <polygon class="cls-1" points="169.095 164.353 179.457 158.369 169.095 152.386 169.095 164.353"/>
+    </g>
+    <text class="cls-8" transform="translate(120.883 267.483)"><tspan x="0" y="0">안쪽 선택 구조</tspan></text>
+    <g>
+      <line class="cls-3" x1="298.634" y1="217.111" x2="298.634" y2="309.231"/>
+      <polygon class="cls-1" points="292.65 307.48 298.634 317.841 304.617 307.48 292.65 307.48"/>
+    </g>
+    <g>
+      <line class="cls-3" x1="298.634" y1="443.853" x2="298.634" y2="485.943"/>
+      <polygon class="cls-1" points="292.65 484.192 298.634 494.554 304.617 484.192 292.65 484.192"/>
+    </g>
+    <g>
+      <line class="cls-3" x1="298.634" y1="541.376" x2="298.634" y2="634.392"/>
+      <polygon class="cls-1" points="292.65 632.641 298.634 643.003 304.617 632.641 292.65 632.641"/>
+    </g>
+    <text class="cls-7" transform="translate(451.303 140.438)"><tspan x="0" y="0">아니요</tspan></text>
+    <text class="cls-7" transform="translate(410.787 343.277)"><tspan x="0" y="0">아니요</tspan></text>
+    <g>
+      <line class="cls-3" x1="298.634" y1="25" x2="298.634" y2="86.328"/>
+      <polygon class="cls-1" points="292.65 84.577 298.634 94.939 304.617 84.577 292.65 84.577"/>
+    </g>
+    <g>
+      <line class="cls-3" x1="406.459" y1="158.468" x2="611.857" y2="158.468"/>
+      <polygon class="cls-1" points="610.106 164.451 620.468 158.468 610.106 152.485 610.106 164.451"/>
+    </g>
+    <text class="cls-7" transform="translate(315.704 247.304)"><tspan x="0" y="0">예</tspan></text>
+    <text class="cls-7" transform="translate(315.704 472.594)"><tspan x="0" y="0">예</tspan></text>
+    <rect class="cls-4" x="192.068" y="494.971" width="208.998" height="66.462"/>
+    <text class="cls-7" transform="translate(213.368 536.546)"><tspan x="0" y="0">‘합’에 ‘수’ 더하기</tspan></text>
+    <rect class="cls-4" x="192.068" y="643.683" width="208.998" height="66.462"/>
+    <text class="cls-7" transform="translate(246.536 685.256)"><tspan x="0" y="0">‘수’ 1 증가</tspan></text>
+    <g>
+      <polygon class="cls-5" points="298.846 318.713 180.503 381.884 298.846 445.056 417.189 381.884 298.846 318.713"/>
+      <text class="cls-7" transform="translate(276.559 372.728)"><tspan x="0" y="0">수가</tspan><tspan x="-28.491" y="30">짝수인가?</tspan></text>
+    </g>
+    <polygon class="cls-5" points="298.459 95.192 180.116 158.363 298.459 221.535 416.802 158.363 298.459 95.192"/>
+    <text class="cls-7" transform="translate(276.172 136.277)"><tspan x="0" y="0">수가</tspan><tspan x="-24.954" y="30">100 이하</tspan><tspan x="-6.67" y="60">인가?</tspan></text>
   </g>
-  <g>
-    <line class="cls-2" x1="311.102" y1="470.074" x2="311.102" y2="508.614"/>
-    <polygon class="cls-1" points="303.622 506.426 311.102 519.378 318.581 506.426 303.622 506.426"/>
-  </g>
-  <g>
-    <line class="cls-2" x1="311.102" y1="566.201" x2="311.102" y2="657.063"/>
-    <polygon class="cls-1" points="303.622 654.875 311.102 667.827 318.581 654.875 303.622 654.875"/>
-  </g>
-  <text class="cls-8" transform="translate(463.771 165.262)"><tspan x="0" y="0">아니요</tspan></text>
-  <text class="cls-8" transform="translate(423.255 368.101)"><tspan x="0" y="0">아니요</tspan></text>
-  <g>
-    <line class="cls-2" x1="311.102" y1="24.824" x2="311.102" y2="109"/>
-    <polygon class="cls-1" points="303.622 106.811 311.102 119.763 318.581 106.811 303.622 106.811"/>
-  </g>
-  <g>
-    <line class="cls-2" x1="418.927" y1="183.292" x2="622.172" y2="183.292"/>
-    <polygon class="cls-1" points="619.983 190.772 632.936 183.292 619.983 175.813 619.983 190.772"/>
-  </g>
-  <text class="cls-8" transform="translate(328.172 272.128)"><tspan x="0" y="0">예</tspan></text>
-  <rect class="cls-3" x="204.536" y="519.795" width="208.998" height="66.462"/>
-  <text class="cls-8" transform="translate(225.836 561.371)"><tspan x="0" y="0">‘합’에 ‘수’ 더하기</tspan></text>
-  <rect class="cls-3" x="204.536" y="668.507" width="208.998" height="66.462"/>
-  <text class="cls-8" transform="translate(259.004 710.08)"><tspan x="0" y="0">‘수’ 1 증가</tspan></text>
-  <g>
-    <polygon class="cls-6" points="311.314 343.537 192.971 406.709 311.314 469.88 429.657 406.709 311.314 343.537"/>
-    <text class="cls-8" transform="translate(289.026 397.552)"><tspan x="0" y="0">수가</tspan><tspan x="-28.491" y="30">짝수인가?</tspan></text>
-  </g>
-  <polygon class="cls-6" points="310.927 120.016 192.584 183.188 310.927 246.359 429.27 183.188 310.927 120.016"/>
-  <text class="cls-8" transform="translate(288.64 161.101)"><tspan x="0" y="0">수가</tspan><tspan x="-24.954" y="30">100 이하</tspan><tspan x="-6.67" y="60">인가?</tspan></text>
-  <text class="cls-7" transform="translate(33.647 26.646)"><tspan x="0" y="0">바깥 선택 구조</tspan></text>
+  <text class="cls-9" transform="translate(21.179 26.646)"><tspan x="0" y="0">바깥 반복 구조</tspan></text>
 </svg>

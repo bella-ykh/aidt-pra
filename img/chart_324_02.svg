@@ -1,43 +1,34 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg id="_레이어_1" data-name="레이어 1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 840 625.364">
+<svg id="_레이어_1" data-name="레이어 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 768.241 675.581">
   <defs>
     <style>
       .cls-1 {
         fill: #707070;
       }
 
-      .cls-1, .cls-2, .cls-3 {
+      .cls-1, .cls-2 {
         stroke-width: 0px;
+      }
+
+      .cls-3 {
+        stroke: red;
+      }
+
+      .cls-3, .cls-4, .cls-5, .cls-6, .cls-7 {
+        stroke-miterlimit: 10;
+      }
+
+      .cls-3, .cls-4, .cls-7 {
+        fill: none;
+        stroke-width: 3px;
+      }
+
+      .cls-3, .cls-7 {
+        stroke-dasharray: 0 0 7 4;
       }
 
       .cls-4 {
         stroke: #707070;
-      }
-
-      .cls-4, .cls-5, .cls-6, .cls-7, .cls-8 {
-        stroke-miterlimit: 10;
-      }
-
-      .cls-4, .cls-6 {
-        fill: none;
-      }
-
-      .cls-4, .cls-6, .cls-8 {
-        stroke-width: 3px;
-      }
-
-      .cls-9 {
-        font-size: 28px;
-        letter-spacing: -.025em;
-      }
-
-      .cls-9, .cls-10 {
-        font-family: Pretendard-Bold-KSCpc-EUC-H, Pretendard;
-        font-weight: 700;
-      }
-
-      .cls-2 {
-        fill: #fffad9;
       }
 
       .cls-5 {
@@ -45,81 +36,80 @@
         stroke: #3295c3;
       }
 
-      .cls-6 {
-        stroke-dasharray: 0 0 6.995 3.997;
-      }
-
-      .cls-6, .cls-8 {
-        stroke: #6f92aa;
-      }
-
-      .cls-10 {
+      .cls-8 {
         font-size: 26px;
         letter-spacing: -.025em;
       }
 
-      .cls-3 {
+      .cls-8, .cls-9, .cls-10 {
+        font-family: Pretendard-Bold-KSCpc-EUC-H, Pretendard;
+        font-weight: 700;
+      }
+
+      .cls-2 {
         fill: #7a7a7a;
       }
 
-      .cls-7 {
+      .cls-6 {
         fill: #d9cfff;
         stroke: #8c7bc6;
       }
 
-      .cls-8 {
-        fill: #fff;
-        filter: url(#drop-shadow-1);
+      .cls-9 {
+        fill: red;
+      }
+
+      .cls-9, .cls-10 {
+        font-size: 28px;
+        letter-spacing: -.025em;
+      }
+
+      .cls-10 {
+        fill: #6400e0;
+      }
+
+      .cls-7 {
+        stroke: #6400e0;
       }
     </style>
-    <filter id="drop-shadow-1" filterUnits="userSpaceOnUse">
-      <feOffset dx="3" dy="3"/>
-      <feGaussianBlur result="blur" stdDeviation="5"/>
-      <feFlood flood-color="#000" flood-opacity=".4"/>
-      <feComposite in2="blur" operator="in"/>
-      <feComposite in="SourceGraphic"/>
-    </filter>
   </defs>
-  <path class="cls-8" d="m797.119,48.797H34.039c-11.046,0-20,9.352-20,20.889v499.112c0,11.537,8.954,20.889,20,20.889h763.081c12.794,0,23.167-9.352,23.167-20.889V69.686c0-11.537-10.372-20.889-23.167-20.889Z"/>
+  <path class="cls-3" d="m744.752,48.797H20.483c-10.484,0-18.983,9.981-18.983,22.293v532.65c0,12.312,8.499,22.293,18.983,22.293h724.27c12.144,0,21.988-9.981,21.988-22.293V71.09c0-12.312-9.845-22.293-21.988-22.293Z"/>
+  <rect class="cls-7" x="294.483" y="186.29" width="406.323" height="377.806" rx="20" ry="20"/>
+  <path class="cls-2" d="m578.698,515.327-192.441-.056"/>
+  <text class="cls-10" transform="translate(535.474 167.467)"><tspan x="0" y="0">안쪽 반복 구조</tspan></text>
   <g>
-    <rect class="cls-2" x="294.323" y="119.103" width="447.297" height="377.868" rx="20" ry="20"/>
-    <rect class="cls-6" x="294.323" y="119.103" width="447.297" height="377.868" rx="20" ry="20"/>
-  </g>
-  <path class="cls-3" d="m609.817,515.327-192.441-.056"/>
-  <text class="cls-9" transform="translate(312.658 102.435)"><tspan x="0" y="0">안쪽 선택 구조</tspan></text>
-  <g>
-    <line class="cls-4" x1="527.329" y1="287.006" x2="527.329" y2="347.657"/>
-    <polygon class="cls-1" points="521.345 345.907 527.329 356.268 533.312 345.907 521.345 345.907"/>
+    <line class="cls-4" x1="496.21" y1="343.522" x2="496.21" y2="404.173"/>
+    <polygon class="cls-1" points="490.226 402.423 496.21 412.785 502.193 402.423 490.226 402.423"/>
   </g>
   <g>
-    <line class="cls-4" x1="164.988" y1="289.426" x2="164.988" y2="614.6"/>
-    <polygon class="cls-1" points="157.508 612.412 164.988 625.364 172.466 612.412 157.508 612.412"/>
+    <line class="cls-4" x1="152.449" y1="220.522" x2="152.449" y2="664.817"/>
+    <polygon class="cls-1" points="144.97 662.629 152.449 675.581 159.928 662.629 144.97 662.629"/>
   </g>
   <g>
-    <line class="cls-4" x1="272.813" y1="226.165" x2="391.533" y2="226.165"/>
-    <polygon class="cls-1" points="389.344 233.645 402.297 226.165 389.344 218.686 389.344 233.645"/>
+    <polyline class="cls-4" points="260.275 157.649 495.773 157.649 495.773 209.421"/>
+    <polygon class="cls-1" points="489.789 207.671 495.773 218.032 501.756 207.671 489.789 207.671"/>
   </g>
   <g>
-    <polyline class="cls-4" points="175.796 543.236 786.323 543.236 786.323 225.748 641.161 225.748"/>
-    <polygon class="cls-1" points="177.984 550.716 165.032 543.236 177.984 535.757 177.984 550.716"/>
+    <polyline class="cls-4" points="163.257 593.516 732.676 593.516 732.676 280.742 597.191 280.742"/>
+    <polygon class="cls-1" points="165.446 600.996 152.494 593.516 165.446 586.037 165.446 600.996"/>
   </g>
-  <text class="cls-10" transform="translate(77.272 337.966)"><tspan x="0" y="0">아니요</tspan></text>
-  <text class="cls-10" transform="translate(544.11 326.697)"><tspan x="0" y="0">아니요</tspan></text>
-  <text class="cls-10" transform="translate(648.123 214.352)"><tspan x="0" y="0">예</tspan></text>
-  <text class="cls-10" transform="translate(351.866 214.352)"><tspan x="0" y="0">예</tspan></text>
+  <text class="cls-8" transform="translate(168.475 252.031)"><tspan x="0" y="0">아니요</tspan></text>
+  <text class="cls-8" transform="translate(512.991 380.116)"><tspan x="0" y="0">아니요</tspan></text>
+  <text class="cls-8" transform="translate(630.165 266.223)"><tspan x="0" y="0">예</tspan></text>
+  <text class="cls-8" transform="translate(276.617 147.771)"><tspan x="0" y="0">예</tspan></text>
   <g>
-    <polyline class="cls-4" points="428.103 392.458 348.877 392.458 348.877 235.976"/>
-    <polygon class="cls-1" points="354.861 237.727 348.877 227.365 342.894 237.727 354.861 237.727"/>
+    <polyline class="cls-4" points="495.773 479.71 495.773 521.516 329.321 521.516 329.321 281.559 368.711 281.559"/>
+    <polygon class="cls-1" points="366.96 287.542 377.321 281.559 366.96 275.576 366.96 287.542"/>
   </g>
-  <rect class="cls-5" x="423.067" y="357.728" width="208.998" height="66.462"/>
-  <text class="cls-10" transform="translate(445.869 399.304)"><tspan x="0" y="0">별 복제본 만들기</tspan></text>
-  <polygon class="cls-7" points="527.522 162.889 409.18 226.061 527.522 289.232 645.865 226.061 527.522 162.889"/>
-  <text class="cls-10" transform="translate(502.121 212.906)"><tspan x="0" y="0">10번</tspan><tspan x="-47.196" y="30">반복하였는가?</tspan></text>
-  <polygon class="cls-7" points="164.813 162.889 46.47 226.061 164.813 289.232 283.156 226.061 164.813 162.889"/>
-  <text class="cls-10" transform="translate(131.617 216.906)"><tspan x="0" y="0">대답이</tspan><tspan x="-12.875" y="33">‘별’인가?</tspan></text>
+  <rect class="cls-5" x="391.948" y="414.244" width="208.998" height="66.462"/>
+  <text class="cls-8" transform="translate(414.75 455.821)"><tspan x="0" y="0">별 복제본 만들기</tspan></text>
+  <polygon class="cls-6" points="496.403 217.857 378.06 281.028 496.403 344.2 614.746 281.028 496.403 217.857"/>
+  <text class="cls-8" transform="translate(471.002 267.873)"><tspan x="0" y="0">10번</tspan><tspan x="-47.196" y="30">반복하였는가?</tspan></text>
+  <polygon class="cls-6" points="152.274 94.373 33.931 157.544 152.274 220.716 270.617 157.544 152.274 94.373"/>
+  <text class="cls-8" transform="translate(119.078 148.39)"><tspan x="0" y="0">대답이</tspan><tspan x="-12.875" y="33">‘별’인가?</tspan></text>
   <g>
-    <line class="cls-4" x1="164.988" y1="26.912" x2="164.988" y2="151.375"/>
-    <polygon class="cls-1" points="157.508 149.186 164.988 162.138 172.466 149.186 157.508 149.186"/>
+    <line class="cls-4" x1="152.449" y1="26.912" x2="152.449" y2="83.011"/>
+    <polygon class="cls-1" points="144.97 80.822 152.449 93.774 159.928 80.822 144.97 80.822"/>
   </g>
-  <text class="cls-9" transform="translate(641.891 26.646)"><tspan x="0" y="0">바깥 선택 구조</tspan></text>
+  <text class="cls-9" transform="translate(597.611 26.646)"><tspan x="0" y="0">바깥 선택 구조</tspan></text>
 </svg>
