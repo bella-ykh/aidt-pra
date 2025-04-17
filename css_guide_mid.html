@@ -37,16 +37,12 @@
 <div class="cm_txt"></div>
 
 <!--미리보기 동영상-->
-<div class="cm_video">
-  <h3 class="cm_video_title">프로그램 결과 미리보기</h3>
-  <div class="cm_view">
-      <video width="100%" height="auto" controls class="cm_video_form">
-        <source src=".mp4" type="video/mp4">
-        <track src=".vtt" kind="subtitles" srclang="ko" label="Korean">
-        브라우저가 동영상을 지원하지 않습니다.
-      </video>
-  </div>
-</div>
+<figure class="cm_video">
+    <figcaption class="cm_video_title" tabindex="0">프로그램 결과 미리보기</figcaption>
+    <div class="cm_view" tabindex="0">
+        <video width="100%" height="auto" controls class="cm_video_form" data-src=""></video>
+    </div>
+</figure>
 
 <!-- 순서도 -->
 <div class="cm_chart">
@@ -169,43 +165,75 @@
 
 
 <!--슬라이드 영역-->
-<div class="cm_slide_container">
+<section class="cm_slide_container" tabindex="0">
   <div class="cm_slides">
-    <div class="cm_slide">
-      슬라이드1 
-    </div>
-    <div class="cm_slide">
-      슬라이드2
-    </div>
-    <div class="cm_slide">
-      슬라이드3
-    </div>
-    <div class="cm_slide">
-      슬라이드4            
-    </div>
+      <section class="cm_slide" aria-label="슬라이드 첫 번째 화면입니다." tabindex="0"></section>
+      <section class="cm_slide" aria-label="슬라이드 두 번째 화면입니다." tabindex="0"></section>
   </div>
-</div>
-<!--이전,다음,인디케이터-->
-<div class="cm_foot">
-  <div class="cm_navigation">
-    <button class="cm_nav_button cm_prev">
-      <img src="img/btn_prev.png" alt="이전">
-      <img src="img/btn_prev_disabled.png" alt="이전" class="disabled">
-    </button>
-    <button class="cm_nav_button cm_next">
-      <img src="img/btn_next.png" alt="다음">
-      <img src="img/btn_next_disabled.png" alt="다음" class="disabled">
-    </button>
-  </div>
-  <div class="cm_indicators">
-      <div class="cm_indicator cm_current"></div>
-      <div class="cm_indicator"></div>
-      <div class="cm_indicator"></div>
-      <div class="cm_indicator"></div>
-  </div>
-</div>
-<script src="js/cm_script.js"></script>
+</section>
 
+<!--이전,다음,인디케이터-->
+<nav class="cm_foot" aria-label="슬라이드 네비게이션">
+  <div class="cm_navigation" tabindex="0">
+      <button class="cm_nav_button cm_prev" tabindex="0" aria-label="이전 슬라이드">
+        <img src="img/btn_prev.png" alt="이전">
+        <img src="img/btn_prev_disabled.png" alt="이전" class="disabled">
+      </button>
+      <button class="cm_nav_button cm_next" tabindex="0" aria-label="다음 슬라이드">
+        <img src="img/btn_next.png" alt="다음">
+        <img src="img/btn_next_disabled.png" alt="다음" class="disabled">
+      </button>
+  </div>
+  <div class="cm_indicators" tabindex="0" aria-label="슬라이드 인디케이터">
+      <div class="cm_indicator cm_current" role="indicator" aria-label="첫 번째 슬라이드"></div>
+      <div class="cm_indicator" role="indicator" aria-label="두 번째 슬라이드"></div>
+      <div class="cm_indicator" role="indicator" aria-label="세 번째 슬라이드"></div>
+      <div class="cm_indicator" role="indicator" aria-label="네 번째 슬라이드"></div>
+  </div>
+</nav>
+
+<!-- 슬라이드js -->
+<script>
+  window.addEventListener("load", function () {
+      const slides = document.querySelector('.cm_slides');
+      const indicators = document.querySelectorAll('.cm_indicator');
+      const prevButton = document.querySelector('.cm_prev');
+      const nextButton = document.querySelector('.cm_next');
+      let currentSlide = 0;
+
+      function updateSlide(index) {
+          slides.style.transform = `translateX(-${index * 100}%)`;
+          indicators.forEach((indicator, i) => {
+              indicator.classList.toggle('cm_current', i === index);
+          });
+          prevButton.disabled = index === 0;
+          nextButton.disabled = index === indicators.length - 1;
+      }
+
+      prevButton.addEventListener('click', () => {
+          if (currentSlide > 0) {
+              currentSlide -= 1;
+              updateSlide(currentSlide);
+          }
+      });
+
+      nextButton.addEventListener('click', () => {
+          if (currentSlide < indicators.length - 1) {
+              currentSlide += 1;
+              updateSlide(currentSlide);
+          }
+      });
+
+      indicators.forEach((indicator, i) => {
+          indicator.addEventListener('click', () => {
+              currentSlide = i;
+              updateSlide(currentSlide);
+          });
+      });
+
+      updateSlide(currentSlide);
+  });
+</script>
 
 
 </body>

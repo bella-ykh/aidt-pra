@@ -11,259 +11,281 @@
     <script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=GoogleTranslateInitCallback"></script>
 </head>
 <body class="cmass-content">
-    <div class="cm_slide_container" tabindex="0">
+    <section class="cm_slide_container" tabindex="0">
         <div class="cm_slides">
-          <div class="cm_slide"  aria-label="슬라이드 첫 번째 화면입니다." tabindex="0">
-            <div class="cm_title_wrap">
-                <div class="cm_ico_01"></div>
-                <h1 class="cm_title_01" tabindex="0">반티 후보 등록하기</h1>
-            </div>
-            <div class="cm_txt" tabindex="0">
-                체육대회에 입을 반티를 결정하는 문제를 해결하기 위해 리스트를 활용하여 
-                ‘반티 선호도 조사’ 프로그램의 첫 번째 장면(등록하기)인 ‘반티 후보 등록’ 
-                프로그램을 작성해 보자.
-            </div>
-
-            <h2 class="cm_title_02 cm_pd_l0" tabindex="0"><span class="cm_num">1</span>문제 이해 및 분석</h2>
-            <div class="cm_txt cm_pd_l0" tabindex="0">
-                다양한 반티 후보를 추가, 삭제, 수정(바꾸기), 확인하는 프로그램을 작성한다.
-            </div>
-            
-            <div class="cm_video">
-                <h3 class="cm_video_title" tabindex="0">프로그램 결과 미리보기</h3>
-                <div class="cm_view" tabindex="0">
-                    <video width="100%" height="auto" controls class="cm_video_form">
-                        <source src=".mp4" type="video/mp4">
-                        <track src=".vtt" kind="subtitles" srclang="ko" label="Korean">
-                        브라우저가 동영상을 지원하지 않습니다.
-                    </video>
+            <section class="cm_slide"  aria-label="슬라이드 첫 번째 화면입니다." tabindex="0">
+                <div class="cm_title_wrap">
+                    <div class="cm_ico_01"></div>
+                    <h1 class="cm_title_01" tabindex="0">반티 후보 등록하기</h1>
                 </div>
-            </div>            
-          </div>
-
-          <div class="cm_slide"  aria-label="슬라이드 두 번째 화면입니다." tabindex="0">
-            <h2 class="cm_title_02" tabindex="0"><span class="cm_num">2</span>알고리즘 설계</h2>
-            <h3 class="cm_title_03" tabindex="0"><span class="cm_no">①</span>‘반티 후보 등록하기’ 단계를 위해 설계한 순서도를 확인해 보자.</h3>
-            <div class="cm_chart">
-                <h3 class="cm_chart_title" tabindex="0">순서도</h3>
-                <div class="cm_view_chart" tabindex="0">
-                    <img src="img/chart_322_02.svg" class="cm_w60" alt="반티 후보 등록 시작에서 실행이 시작되어, 반티 후보를 반티 리스트에 모두 추가할 때가지 항목을 추가하고, 등록이 완료되면 완료 메시지를 출력하고 종료하는 순서도" >
+                <div class="cm_txt" tabindex="0">
+                    체육대회에 입을 반티를 결정하는 문제를 해결하기 위해 리스트를 활용하여 
+                    ‘반티 선호도 조사’ 프로그램의 첫 번째 장면(등록하기)인 ‘반티 후보 등록’ 
+                    프로그램을 작성해 보자.
                 </div>
-            </div>
 
-            <h3 class="cm_title_03" tabindex="0"><span class="cm_no">②</span>문제 해결을 위해 오브젝트가 구현해야 할 기능을 생각해보자.</h3>
-            <div class="cm_tbl_wrap">
-                <table class="cm_tbl_01" tabindex="0">
-                    <caption>오브젝트가 구현해야 할 기능</caption>
-                    <colgroup>
-                      <col width="20%" />
-                      <col width="80%" />
-                    </colgroup>
-                    <tr>
-                      <th tabindex="0"><img src="img/object_add.svg" alt="추가하기 버튼 오브젝트"></th>
-                      <td tabindex="0">
-                        <ul class="cm_list">
-                            <li tabindex="0">오브젝트를 클릭하면 추가할 반티를 입력받는다.</li>
-                            <li tabindex="0">입력받은 항목을 리스트에 추가한다.</li>
-                        </ul>
-                      </td>
-                    </tr>
-                    <tr>
-                        <th tabindex="0"><img src="img/object_del.svg" alt="삭제하기 버튼 오브젝트"></th>
-                        <td tabindex="0">
-                          <ul class="cm_list">
-                              <li tabindex="0">오브젝트를 클릭하면 삭제할 항목 번호를 입력받는다.</li>
-                              <li tabindex="0">항목 번호에 해당하는 리스트의 항목을 삭제한다.</li>
-                          </ul>
-                        </td>
-                    </tr>
-                    <tr>
-                        <th tabindex="0"><img src="img/object_change.svg" alt="바꾸기 버튼 오브젝트"></th>
-                        <td tabindex="0">
-                          <ul class="cm_list">
-                              <li tabindex="0">오브젝트를 클릭하면 바꿀 항목 번호를 입력받는다.</li>
-                              <li tabindex="0">항목 번호를 저장한다.</li>
-                              <li tabindex="0">새로운 반티를 입력받는다.</li>
-                              <li tabindex="0">항목 번호에 해당하는 리스트의 항목을 반티로 바꾼다.</li>
-                          </ul>
-                        </td>
-                    </tr>
-                    <tr>
-                        <th tabindex="0"><img src="img/object_confirm.svg" alt="확인 버튼 오브젝트"></th>
-                        <td tabindex="0">
-                          <ul class="cm_list">
-                              <li tabindex="0">등록한 반티의 개수를 4초 동안 말한다.</li>
-                              <li tabindex="0">투표하기 장면으로 이동한다.</li>
-                          </ul>
-                          <div class="cm_tip_tbl">
-                            <div class="cm_tip_txt" tabindex="0">Tip</div>
-                            <div class="cm_tip_box" tabindex="0">
-                                <img src="img/object_plus.svg" alt="장면 추가하기 버튼" class="cm_h30"> 
-                                버튼을 클릭해서 새 장면을 추가할 수 있다. 장면을 추가하고 장면 이름을 ‘투표하기’로 변경한다.
-                            </div>
-                          </div>
-                        </td>
-                    </tr>
-                </table>
-            </div>
-          </div>
+                <h2 class="cm_title_02 cm_pd_l0" tabindex="0"><span class="cm_num">1</span>문제 이해 및 분석</h2>
+                <div class="cm_txt cm_pd_l0" tabindex="0">
+                    다양한 반티 후보를 추가, 삭제, 수정(바꾸기), 확인하는 프로그램을 작성한다.
+                </div>
+                
+                <figure class="cm_video">
+                    <figcaption class="cm_video_title" tabindex="0">프로그램 결과 미리보기</figcaption>
+                    <div class="cm_view" tabindex="0">
+                        <video width="100%" height="auto" controls class="cm_video_form" data-src=""></video>
+                    </div>
+                </figure>         
+            </section>
 
-          <div class="cm_slide"  aria-label="슬라이드 세 번째 화면입니다." tabindex="0">
-            <h2 class="cm_title_02" tabindex="0"><span class="cm_num">3</span>프로그래밍</h2>
-            <h3 class="cm_title_03" tabindex="0"><span class="cm_no">①</span>준비하기</h3>
-            <div class="cm_tbl_wrap">
-                <table class="cm_tbl_02" tabindex="0">
-                    <caption>[프로그래밍 준비하기] 오브젝트, 변수, 리스트</caption>
-                    <colgroup>
-                      <col width="15%" />
-                      <col width="85%" />
-                    </colgroup>
-                    <tr>
-                      <th tabindex="0">오브젝트</th>
-                      <td class="cm_h35" tabindex="0">
-                        <img src="img/object_add.svg" alt="추가하기 버튼 오브젝트">
-                        <img src="img/object_del.svg" alt="삭제하기 버튼 오브젝트">
-                        <img src="img/object_change.svg" alt="바꾸기 버튼 오브젝트">
-                        <img src="img/object_confirm.svg" alt="확인 버튼 오브젝트">
-                      </td>
-                    </tr>
-                    <tr>
-                        <th tabindex="0">변수</th>
-                        <td tabindex="0">
-                            바꿀번호
-                            <div class="cm_tip_tbl">
-                                <div class="cm_tip_txt" tabindex="0">Tip</div>
-                                <div class="cm_tip_box cm_pd_b0" tabindex="0">
-                                    실행 화면에서 보이지 않도록 속성 탭에서 숨긴다.
-                                    <div class="cm_tip_var" tabindex="0"><img src="img/tip_var_01.svg" alt="변수 '바꿀번호' 숨기기 이미지"></div>
+            <section class="cm_slide"  aria-label="슬라이드 두 번째 화면입니다." tabindex="0">
+                <h2 class="cm_title_02" tabindex="0"><span class="cm_num">2</span>알고리즘 설계</h2>
+                <h3 class="cm_title_03" tabindex="0"><span class="cm_no">①</span>‘반티 후보 등록하기’ 단계를 위해 설계한 순서도를 확인해 보자.</h3>
+                <div class="cm_chart">
+                    <h3 class="cm_chart_title" tabindex="0">순서도</h3>
+                    <div class="cm_view_chart" tabindex="0">
+                        <img src="img/chart_322_02.svg" class="cm_w60" alt="반티 후보 등록 시작에서 실행이 시작되어, 반티 후보를 반티 리스트에 모두 추가할 때가지 항목을 추가하고, 등록이 완료되면 완료 메시지를 출력하고 종료하는 순서도" >
+                    </div>
+                </div>
+
+                <h3 class="cm_title_03" tabindex="0"><span class="cm_no">②</span>문제 해결을 위해 오브젝트가 구현해야 할 기능을 생각해보자.</h3>
+                <div class="cm_tbl_wrap">
+                    <table class="cm_tbl_01" tabindex="0">
+                        <caption>오브젝트가 구현해야 할 기능</caption>
+                        <colgroup>
+                            <col width="20%" />
+                            <col width="80%" />
+                        </colgroup>
+                        <tr>
+                            <th tabindex="0">추가하기</th>
+                            <td class="cm_h35" tabindex="0">
+                                <ul class="cm_list">
+                                    <li tabindex="0">
+                                        <div class="cm_vt_c" tabindex="0">
+                                            <img src="img/object_add.svg" alt="추가하기 버튼 오브젝트">
+                                            오브젝트를 클릭하면 추가할 반티를 입력받는다.
+                                        </div>
+                                    </li>
+                                    <li tabindex="0">입력받은 항목을 리스트에 추가한다.</li>
+                                </ul>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th tabindex="0">삭제하기</th>
+                            <td class="cm_h35" tabindex="0">
+                                <ul class="cm_list">
+                                    <li tabindex="0">
+                                        <div class="cm_vt_c" tabindex="0">
+                                            <img src="img/object_del.svg" alt="삭제하기 버튼 오브젝트">
+                                            오브젝트를 클릭하면 삭제할 항목 번호를 입력받는다.
+                                        </div>
+                                    </li>
+                                    <li tabindex="0">항목 번호에 해당하는 리스트의 항목을 삭제한다.</li>
+                                </ul>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th tabindex="0">바꾸기</th>
+                            <td class="cm_h35" tabindex="0">
+                                <ul class="cm_list">
+                                    <li tabindex="0">
+                                        <div class="cm_vt_c" tabindex="0">
+                                            <img src="img/object_change.svg" alt="바꾸기 버튼 오브젝트">
+                                            오브젝트를 클릭하면 바꿀 항목 번호를 입력받는다.
+                                        </div>
+                                    </li>
+                                    <li tabindex="0">항목 번호를 저장한다.</li>
+                                    <li tabindex="0">새로운 반티를 입력받는다.</li>
+                                    <li tabindex="0">항목 번호에 해당하는 리스트의 항목을 반티로 바꾼다.</li>
+                                </ul>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th tabindex="0">확인</th>
+                            <td class="cm_h35" tabindex="0">
+                                <ul class="cm_list">
+                                    <li tabindex="0">
+                                        <div class="cm_vt_c" tabindex="0">
+                                            <img src="img/object_confirm.svg" alt="확인 버튼 오브젝트">
+                                            등록한 반티의 개수를 4초 동안 말한다.
+                                        </div>
+                                    </li>
+                                    <li tabindex="0">투표하기 장면으로 이동한다.</li>
+                                </ul>
+                                <div class="cm_tip_tbl">
+                                    <div class="cm_tip_txt" tabindex="0">Tip</div>
+                                    <div class="cm_tip_box" tabindex="0">
+                                        <img src="img/object_plus.svg" alt="장면 추가하기 버튼" class="cm_plus_h30"> 
+                                        버튼을 클릭해서 새 장면을 추가할 수 있다. 장면을 추가하고 장면 이름을 ‘투표하기’로 변경한다.
+                                    </div>
                                 </div>
-                            </div>
-                        </td>
-                    </tr>
-                    <tr>
-                        <th tabindex="0">리스트</th>
-                        <td tabindex="0">반티 리스트</td>
-                    </tr>
-                </table>
-            </div>
-            
-            <h3 class="cm_title_03" tabindex="0"><span class="cm_no">②</span>프로그램 작성하기</h3>
-            <div class="cm_tbl_wrap">
-                <table class="cm_tbl_02" tabindex="0">
-                    <caption>프로그램 작성하기</caption>
-                    <colgroup>
-                        <col width="15%" />
-                        <col width="85%" />
-                    </colgroup>
-                    <tr>
-                        <th tabindex="0"><img src="img/object_add.svg" alt="추가하기 버튼 오브젝트"></th>
-                        <td tabindex="0">
-                            <div class="cm_img_warp">
-                                <img src="img/img_322_02_01.png" alt="오브젝트를 클릭했을 때, '반티 이름을 입력하세요'를 묻고 대답 기다리기 블록과 빈칸이 포함된 블록이 순서대로 연결된 엔트리 블록들">
-                            </div>
-                        </td>
-                    </tr>
-                    <tr>
-                        <th tabindex="0"><img src="img/object_del.svg" alt="삭제하기 버튼 오브젝트"></th>
-                        <td tabindex="0">
-                            <div class="cm_img_warp">
-                                <img src="img/img_322_02_02.png" alt="오브젝트를 클릭했을 때, '삭제할 반티 번호를 입력하세요'를 묻고 대답 기다리기 블록과 빈칸이 포함된 블록이 순서대로 연결된 엔트리 블록들">
-                            </div>
-                        </td>
-                    </tr>
-                    <tr>
-                        <th tabindex="0"><img src="img/object_change.svg" alt="바꾸기 버튼 오브젝트"></th>
-                        <td tabindex="0">
-                            <div class="cm_img_warp">
-                                <img src="img/img_322_02_03.png" alt="오브젝트를 클릭했을 때, 반티 리스트에서 바꿀 반티 후보를 입력받기 위한 블록과 빈칸이 포함된 블록이 순서대로 연결된 엔트리 블록들">
-                            </div>
-                        </td>
-                    </tr>
-                    <tr>
-                        <th tabindex="0"><img src="img/object_confirm.svg" alt="확인 버튼 오브젝트"></th>
-                        <td tabindex="0">
-                            <div class="cm_img_warp">
-                                <img src="img/img_322_02_04.png" alt="오브젝트를 클릭했을 때, 입력된 반티 리스트 항목 개수를 출력하고, 투표하기 장면 시작하기 블록이 순서대로 연결된 엔트리 블록들">
-                            </div>
-                        </td>
-                    </tr>
-                </table>
-            </div>
-            <div class="cm_tip cm_mg_b20">
-                <div class="cm_tip_txt" tabindex="0">Tip</div>
-                <div class="cm_tip_box" tabindex="0">
-                    등록한 반티 후보의 개수는 아래의 블록을 통해 알 수 있다.
-                    <div class="cm_tip_322" tabindex="0"><img src="img/img_322_02_05.svg" alt="반티 리스트 항목 수 블록"></div>
+                            </td>
+                        </tr>
+                    </table>
                 </div>
-            </div>
-          </div>
+            </section>
+
+            <section class="cm_slide"  aria-label="슬라이드 세 번째 화면입니다." tabindex="0">
+                <h2 class="cm_title_02" tabindex="0"><span class="cm_num">3</span>프로그래밍</h2>
+                <h3 class="cm_title_03" tabindex="0"><span class="cm_no">①</span>준비하기</h3>
+                <div class="cm_tbl_wrap">
+                    <table class="cm_tbl_02" tabindex="0">
+                        <caption>[프로그래밍 준비하기] 오브젝트, 변수, 리스트</caption>
+                        <colgroup>
+                            <col width="15%" />
+                            <col width="85%" />
+                        </colgroup>
+                        <tr>
+                            <th tabindex="0">오브젝트</th>
+                            <td class="cm_h35" tabindex="0">
+                                <img src="img/object_add.svg" alt="추가하기 버튼 오브젝트">
+                                <img src="img/object_del.svg" alt="삭제하기 버튼 오브젝트">
+                                <img src="img/object_change.svg" alt="바꾸기 버튼 오브젝트">
+                                <img src="img/object_confirm.svg" alt="확인 버튼 오브젝트">
+                            </td>
+                        </tr>
+                        <tr>
+                            <th tabindex="0">변수</th>
+                            <td tabindex="0">
+                                바꿀번호
+                                <div class="cm_tip_tbl">
+                                    <div class="cm_tip_txt" tabindex="0">Tip</div>
+                                    <div class="cm_tip_box cm_pd_b0" tabindex="0">
+                                        실행 화면에서 보이지 않도록 속성 탭에서 숨긴다.
+                                        <div class="cm_tip_var cm_align_c" tabindex="0"><img src="img/tip_var_01.svg" alt="변수 '바꿀번호' 숨기기 이미지"></div>
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th tabindex="0">리스트</th>
+                            <td tabindex="0">반티 리스트</td>
+                        </tr>
+                    </table>
+                </div>
+                
+                <h3 class="cm_title_03" tabindex="0"><span class="cm_no">②</span>프로그램 작성하기</h3>
+                <div class="cm_tbl_wrap">
+                    <table class="cm_tbl_02" tabindex="0">
+                        <caption>프로그램 작성하기</caption>
+                        <colgroup>
+                            <col width="15%" />
+                            <col width="85%" />
+                        </colgroup>
+                        <thead>
+                            <th tabindex="0">오브젝트</th>
+                            <th tabindex="0">명령 블록</th>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th tabindex="0"><img src="img/object_add.svg" alt="추가하기 버튼 오브젝트"></th>
+                                <td tabindex="0">
+                                    <div class="cm_img_warp">
+                                        <img src="img/img_322_02_01.png" alt="오브젝트를 클릭했을 때, '반티 이름을 입력하세요'를 묻고 대답 기다리기 블록과 빈칸이 포함된 블록이 순서대로 연결된 엔트리 블록들">
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th tabindex="0"><img src="img/object_del.svg" alt="삭제하기 버튼 오브젝트"></th>
+                                <td tabindex="0">
+                                    <div class="cm_img_warp">
+                                        <img src="img/img_322_02_02.png" alt="오브젝트를 클릭했을 때, '삭제할 반티 번호를 입력하세요'를 묻고 대답 기다리기 블록과 빈칸이 포함된 블록이 순서대로 연결된 엔트리 블록들">
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th tabindex="0"><img src="img/object_change.svg" alt="바꾸기 버튼 오브젝트"></th>
+                                <td tabindex="0">
+                                    <div class="cm_img_warp">
+                                        <img src="img/img_322_02_03.png" alt="오브젝트를 클릭했을 때, 반티 리스트에서 바꿀 반티 후보를 입력받기 위한 블록과 빈칸이 포함된 블록이 순서대로 연결된 엔트리 블록들">
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th tabindex="0"><img src="img/object_confirm.svg" alt="확인 버튼 오브젝트"></th>
+                                <td tabindex="0">
+                                    <div class="cm_img_warp">
+                                        <img src="img/img_322_02_04.png" alt="오브젝트를 클릭했을 때, 입력된 반티 리스트 항목 개수를 출력하고, 투표하기 장면 시작하기 블록이 순서대로 연결된 엔트리 블록들">
+                                    </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="cm_tip cm_mg_b20">
+                    <div class="cm_tip_txt" tabindex="0">Tip</div>
+                    <div class="cm_tip_box" tabindex="0">
+                        등록한 반티 후보의 개수는 아래의 블록을 통해 알 수 있다.
+                        <div class="cm_tip_322" tabindex="0"><img src="img/img_322_02_05.svg" alt="반티 리스트 항목 수 블록"></div>
+                    </div>
+                </div>
+            </section>
           
-          <div class="cm_slide"  aria-label="슬라이드 네 번째 화면입니다." tabindex="0">
-            <h2 class="cm_title_02" tabindex="0"><span class="cm_num">4</span>결과 확인 및 디버깅</h2>
-            <div class="cm_txt" tabindex="0">프로그램을 실행하여 실행 결과를 확인해 보자.</div>
-          </div>
+            <section class="cm_slide"  aria-label="슬라이드 네 번째 화면입니다." tabindex="0">
+                <h2 class="cm_title_02" tabindex="0"><span class="cm_num">4</span>결과 확인 및 디버깅</h2>
+                <div class="cm_txt" tabindex="0">프로그램을 실행하여 실행 결과를 확인해 보자.</div>
+            </section>
         </div>
-        
-    </div>
-    <div class="cm_foot" tabindex="0">
+    </section>
+
+    <nav class="cm_foot" aria-label="슬라이드 네비게이션">
         <div class="cm_navigation" tabindex="0">
-            <button class="cm_nav_button cm_prev" tabindex="0">
-                <img src="img/btn_prev.png" alt="이전">
-                <img src="img/btn_prev_disabled.png" alt="이전" class="disabled">
+            <button class="cm_nav_button cm_prev" tabindex="0" aria-label="이전 슬라이드">
+              <img src="img/btn_prev.png" alt="이전">
+              <img src="img/btn_prev_disabled.png" alt="이전" class="disabled">
             </button>
-            <button class="cm_nav_button cm_next" tabindex="0">
-                <img src="img/btn_next.png" alt="다음">
-                <img src="img/btn_next_disabled.png" alt="다음" class="disabled">
+            <button class="cm_nav_button cm_next" tabindex="0" aria-label="다음 슬라이드">
+              <img src="img/btn_next.png" alt="다음">
+              <img src="img/btn_next_disabled.png" alt="다음" class="disabled">
             </button>
         </div>
-        <div class="cm_indicators">
-            <div class="cm_indicator cm_current" tabindex="0"></div>
-            <div class="cm_indicator" tabindex="0"></div>
-            <div class="cm_indicator" tabindex="0"></div>
-            <div class="cm_indicator" tabindex="0"></div>
+        <div class="cm_indicators" tabindex="0" aria-label="슬라이드 인디케이터">
+            <div class="cm_indicator cm_current" role="indicator" aria-label="첫 번째 슬라이드"></div>
+            <div class="cm_indicator" role="indicator" aria-label="두 번째 슬라이드"></div>
+            <div class="cm_indicator" role="indicator" aria-label="세 번째 슬라이드"></div>
+            <div class="cm_indicator" role="indicator" aria-label="네 번째 슬라이드"></div>
         </div>
-    </div>
+    </nav>
     <script>
         window.addEventListener("load", function () {
-          const slides = document.querySelector('.cm_slides');
-          const indicators = document.querySelectorAll('.cm_indicator');
-          const prevButton = document.querySelector('.cm_prev');
-          const nextButton = document.querySelector('.cm_next');
-          let currentSlide = 0;
+            const slides = document.querySelector('.cm_slides');
+            const indicators = document.querySelectorAll('.cm_indicator');
+            const prevButton = document.querySelector('.cm_prev');
+            const nextButton = document.querySelector('.cm_next');
+            let currentSlide = 0;
 
-          function updateSlide(index) {
-              slides.style.transform = `translateX(-${index * 100}%)`;
-              indicators.forEach((indicator, i) => {
-                  indicator.classList.toggle('cm_current', i === index);
-              });
-              prevButton.disabled = index === 0;
-              nextButton.disabled = index === indicators.length - 1;
-          }
+            function updateSlide(index) {
+                slides.style.transform = `translateX(-${index * 100}%)`;
+                indicators.forEach((indicator, i) => {
+                    indicator.classList.toggle('cm_current', i === index);
+                });
+                prevButton.disabled = index === 0;
+                nextButton.disabled = index === indicators.length - 1;
+            }
 
-          prevButton.addEventListener('click', () => {
-              if (currentSlide > 0) {
-                  currentSlide -= 1;
-                  updateSlide(currentSlide);
-              }
-          });
+            prevButton.addEventListener('click', () => {
+                if (currentSlide > 0) {
+                    currentSlide -= 1;
+                    updateSlide(currentSlide);
+                }
+            });
 
-          nextButton.addEventListener('click', () => {
-              if (currentSlide < indicators.length - 1) {
-                  currentSlide += 1;
-                  updateSlide(currentSlide);
-              }
-          });
+            nextButton.addEventListener('click', () => {
+                if (currentSlide < indicators.length - 1) {
+                    currentSlide += 1;
+                    updateSlide(currentSlide);
+                }
+            });
 
-          indicators.forEach((indicator, i) => {
-              indicator.addEventListener('click', () => {
-                  currentSlide = i;
-                  updateSlide(currentSlide);
-              });
-          });
+            indicators.forEach((indicator, i) => {
+                indicator.addEventListener('click', () => {
+                    currentSlide = i;
+                    updateSlide(currentSlide);
+                });
+            });
 
-          updateSlide(currentSlide);
-      });
-      </script>
+            updateSlide(currentSlide);
+        });
+    </script>
 
 </body>
 </html>
