@@ -11,135 +11,200 @@
     <script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=GoogleTranslateInitCallback"></script>
 </head>
 <body class="cmass-content">
-    <div class="cm_slide_container">
+    <section class="cm_slide_container">
         <div class="cm_slides">
-          <div class="cm_slide" aria-label="슬라이드 첫 번째 화면입니다." tabindex="0">
-            <div class="cm_title_wrap">
-                <div class="cm_ico_01"></div>
-                <h1 class="cm_title_01" tabindex="0">‘점수 합계’ 함수 오류 디버깅</h1>
-            </div>
-            <div class="cm_txt" tabindex="0">
-                ‘반티 선호도 조사’ 프로그램  ‘투표하기’ 장면에서 반티별 점수 합계를 구하는 부분을 함수로 정의해 보았다.  
-                프로그램이 생각대로 동작하지 않는다면 무엇이 문제이고 어떻게 해결할지 생각해 보자.
-            </div>
-            <h2 class="cm_title_02 cm_pd_l0" tabindex="0"><span class="cm_num">1</span>함수 정의하고, 코드 수정하기</h2>
-            <div class="cm_txt cm_pd_l0" tabindex="0">
-                ‘투표하기’ 장면에서 반티 오브젝트를 클릭할 때마다, 반티 후보 별로 점수의 합계를 계산한다. 이 동작을 함수로 정의하고, 정의한 함수를 호출하는 방식으로 코드를 수정하였다.
-            </div>
-            <div class="cm_img" tabindex="0"><img src="/public/cmass-editor/img/img_325_04_01.svg" alt="반티 오브젝트를 클릭할 때마다, 반티 후보 별로 점수의 합계를 계산하는 부분을 매개 변수가 있는 '점수 합계' 함수로 구현한 것을 표현한 코드"></div>
-          </div>
+            <section class="cm_slide" aria-label="슬라이드 첫 번째 화면입니다." tabindex="0">
+                <div class="cm_title_wrap">
+                    <div class="cm_ico_01"></div>
+                    <h1 class="cm_title_01" tabindex="0">아기 양의 미로 탈출 게임</h1>
+                </div>
+                <div class="cm_txt" tabindex="0">
+                    아기 양이 불쑥 불쑥 나타나는 늑대를 피해 안전한 집까지 도착하는 게임을 만들었다. 프로그램이 생각대로 동작하는지 테스트 해보고 오류를 찾아 수정해 보자.
+                </div>
+                <h2 class="cm_title_02 cm_pd_l0" tabindex="0"><span class="cm_num">1</span>프로그램 이해 및 분석</h2>
+                <div class="cm_txt cm_pd_l0" tabindex="0">
+                    게임의 조건을 알아보자.
+                    <ul class="cm_list_num">
+                        <li tabindex="0"><span>①</span>아기 양이 집까지 도착하면, 초시계를 정지하고 게임을 종료한다.</li>
+                        <li tabindex="0"><span>②</span>아기 양은 방향 키로 이동할 수 있다.</li>
+                        <li tabindex="0"><span>③</span>아기 양이 미로에 닿으면 시작 위치(100, -95)로 돌아간다.</li>
+                        <li tabindex="0"><span>④</span>늑대는 1초 간격으로 실행 화면의 무작위 위치에 나타났다 사라진다.</li>
+                        <li tabindex="0"><span>⑤</span>아기 양이 늑대에 닿으면 초시계를 정지하고 게임을 종료한다.</li>
+                    </ul>  
+                    <div class="cm_mg_t20">※ 엔트리 실행 화면 안의 x 좌표 범위는 -240~240이고, y 좌표 범위는 -135~135 이다.</div>                        
+                </div>
+            </section>
 
-          <div class="cm_slide" aria-label="슬라이드 두 번째 화면입니다." tabindex="0">
-            <h2 class="cm_title_02" tabindex="0"><span class="cm_num">2</span>테스트하기</h2>
-            <div class="cm_txt" tabindex="0">
-                프로그램을 실행 해보니, 반티 오브젝트를 클릭했을 때 프로그램에서 반티 점수를 입력받는 코드가 동작하지 않았다. 잘못된 곳을 찾아 보자.
+            <section class="cm_slide" aria-label="슬라이드 두 번째 화면입니다." tabindex="0">
+                <h2 class="cm_title_02" tabindex="0"><span class="cm_num">2</span>테스트하기</h2>
+                <div class="cm_txt" tabindex="0">
+                    테스트하며 오류가 발생하는 부분이 있는지 찾아 보자.
+                </div>
+
+                <figure class="cm_video">
+                    <figcaption class="cm_video_title" tabindex="0">프로그램 결과 미리보기</figcaption>
+                    <div class="cm_view" tabindex="0">
+                        <video width="100%" height="auto" controls class="cm_video_form" data-src=""></video>
+                    </div>
+                </figure>
+
+                <ul class="cm_list_bull">
+                    <li><div><strong class="cm_font_bold">오류 사항 1.</strong> 늑대가 미로 밖에 나타난다.</div></li>
+                    <li><div><strong class="cm_font_bold">오류 사항 2.</strong> 아기 양이 집에 도착해도 초시계가 멈추지 않고, 말풍선이 나타나지 않는다.</div></li>
+                </ul>
+            </section>
+
+            <section class="cm_slide" aria-label="슬라이드 세 번째 화면입니다." tabindex="0">
+                <h2 class="cm_title_02" tabindex="0"><span class="cm_num">3</span>디버깅하기</h2>
+                <div class="cm_txt" tabindex="0">
+                    오류가 발생한 이유를 찾고, 잘못된 곳을 바르게 동작하도록 수정해 보자.
+                </div>
+
+                <div class="cm_video">
+                    <div class="cm_chart_title" tabindex="0">오류 사항 1</div>
+                    <div class="cm_view_chart " tabindex="0">
+                        <div class="cm_err_txt">늑대가 미로 밖에 나타난다.</div>
+                        <div class="cm_tbl_wrap">
+                            <table class="cm_tbl_02" tabindex="0">
+                                <caption>오류 사항</caption>
+                                <colgroup>
+                                    <col width="10%" />
+                                    <col width="90%" />
+                                </colgroup>
+                                <thead>
+                                    <th tabindex="0">오브젝트</th>
+                                    <th tabindex="0">명령 블록</th>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <th tabindex="0">
+                                            <img src="/public/cmass-editor/img/object_wolf.png" alt="늑대인간 오브젝트" class="cm_h80">
+                                        </th>
+                                        <td tabindex="0">
+                                            <img src="/public/cmass-editor/img/img_325_04_01.svg" alt="시작하기 버튼을 클릭했을 때, 위치를 무작위로 이동하며 1초 간격으로 모양 숨기기와 보이기를 계속 반복하도록 조립된 엔트리 코드">
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+
+                            <div class="cm_tip">
+                                <div class="cm_tip_txt">Tip</div>
+                                <div class="cm_tip_box cm_align_l">
+                                    미로가 자리잡은 영역의 범위를 <strong class="cm_font_bold">x 좌표는 -170~170, y 좌표는 -120~70</strong> 이라고 가정하고, 
+                                    늑대가 미로 안쪽에서 이동하도록 좌표를 정해준다.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    
+                </div>
 
                 <div class="cm_video cm_mg_t50">
-                    <h3 class="cm_video_title" tabindex="0">프로그램 결과 미리보기</h3>
-                    <div class="cm_view" tabindex="0">
-                        <video width="100%" height="auto" controls class="cm_video_form" data-src=".m3u8"></video>
+                    <div class="cm_chart_title" tabindex="0">오류 사항 2</div>
+                    <div class="cm_view_chart " tabindex="0">
+                        <div class="cm_err_txt">아기 양이 집에 도착해도 초시계가 멈추지 않고, 말풍선이 나타나지 않는다.</div>
+                        <div class="cm_tbl_wrap">
+                            <table class="cm_tbl_02" tabindex="0">
+                                <caption>오류 사항</caption>
+                                <colgroup>
+                                    <col width="15%" />
+                                    <col width="85%" />
+                                </colgroup>
+                                <thead>
+                                    <th tabindex="0">오브젝트</th>
+                                    <th tabindex="0">명령 블록</th>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <th tabindex="0">
+                                            <img src="/public/cmass-editor/img/object_sheep.png" alt="아기 양 오브젝트">
+                                        </th>
+                                        <td tabindex="0">
+                                            <img src="/public/cmass-editor/img/img_325_04_02.svg" class="cm_w75" alt="시작하기 버튼을 클릭했을 때, 위치를 무작위로 이동하며 1초 간격으로 모양 숨기기와 보이기를 계속 반복하도록 조립된 엔트리 코드">
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+
+                            <div class="cm_tip">
+                                <div class="cm_tip_txt">Tip</div>
+                                <div class="cm_tip_box cm_align_l">
+                                    <div class="cm_align_c cm_mg_b20"><img src="/public/cmass-editor/img/img_325_04_03.svg" alt="'모든' 코드 멈추기 블록" class="cm_w200"></div>
+                                    작품의 모든 블록이 실행을 멈춘다. 하지만 모든 코드를 멈추어도 현재 실행 중인 동작을 멈출 뿐 작품을 중지하는 것은 아니다. <br>
+                                    ※ 비슷하게 동작하는 늑대인간 오브젝트의 코드를 확인해보며 다른 점을 찾아보자.
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
-            </div>
-            
-          </div>
+            </section>
 
-          <div class="cm_slide" aria-label="슬라이드 세 번째 화면입니다." tabindex="0">
-            <h2 class="cm_title_02" tabindex="0"><span class="cm_num">3</span>디버깅하기</h2>
-            <div class="cm_txt" tabindex="0">
-                함수를 정의하고 사용하는 과정에서 오류가 발생한 이유를 찾고, 잘못된 곳을 바르게 동작하도록 수정해 보자.
-            </div>
-
-            <div class="cm_error">
-                <h3 class="cm_error_title" tabindex="0">오류가 발생한 코드</h3>
-                <div class="cm_error_img" tabindex="0">
-                    <img src="/public/cmass-editor/img/img_325_04_02.svg" alt="반티 항목별 점수를 입력받아 반티 총점 리스트에 더하는 동작을 매개 변수가 있는 '점수 합계' 함수로 정의한 엔트리 코드">
-                </div>
-            </div>
-
-            <div class="cm_img_warp cm_mg_t20" tabindex="0">
-                <img src="/public/cmass-editor/img/img_325_04_03.svg" alt="반티 오브젝트를 클릭했을 때, 총 인원이 모두 투표할 때까지 '점수 합계' 함수를 호출하도록 수정한 엔트리 코드" class="cm_w75">
-            </div>
-            
-            <div class="cm_tip">
-                <div class="cm_tip_txt">Tip</div>
-                <div class="cm_tip_box">
-                    <div class="cm_vt_c" tabindex="0">
-                        함수 안에
-                        <img src="/public/cmass-editor/img/img_325_04_04.svg" alt="안녕을 4초 동안 말하기 블록" class="cm_w300"> 블록을 삽입하여
-                        <img src="/public/cmass-editor/img/img_325_04_05.svg" alt="변수 'n'값 블록" class="cm_w80">을 출력해 확인하면서 디버깅해 보자.
-                    </div>
-                </div>
-              </div>
-
-          </div>
-
-          <div class="cm_slide" aria-label="슬라이드 네 번째 화면입니다." tabindex="0">
-            <h2 class="cm_title_02" tabindex="0"><span class="cm_num">4</span>결과 확인 및 디버깅</h2>
-            <div class="cm_txt" tabindex="0">프로그램을 실행하여 실행 결과를 확인해 보자.</div>
-          </div>
+            <section class="cm_slide" aria-label="슬라이드 네 번째 화면입니다." tabindex="0">
+                <h2 class="cm_title_02" tabindex="0"><span class="cm_num">4</span>결과 확인</h2>
+                <div class="cm_txt" tabindex="0">프로그램을 실행하여 오류가 수정되었는지 실행 결과를 확인해 보자.</div>
+            </section>
         </div>
-        
-    </div>
-    <div class="cm_foot" tabindex="0">
-        <div class="cm_navigation">
-            <button class="cm_nav_button cm_prev" tabindex="0">
-                <img src="/public/cmass-editor/img/btn_prev.png" alt="이전">
-                <img src="/public/cmass-editor/img/btn_prev_disabled.png" alt="이전" class="disabled">
+    </section>
+    <nav class="cm_foot" aria-label="슬라이드 네비게이션">
+        <div class="cm_navigation" tabindex="0">
+            <button class="cm_nav_button cm_prev" tabindex="0" aria-label="이전 슬라이드">
+              <img src="/public/cmass-editor/img/btn_prev.png" alt="이전">
+              <img src="/public/cmass-editor/img/btn_prev_disabled.png" alt="이전" class="disabled">
             </button>
-            <button class="cm_nav_button cm_next" tabindex="0">
-                <img src="/public/cmass-editor/img/btn_next.png" alt="다음">
-                <img src="/public/cmass-editor/img/btn_next_disabled.png" alt="다음" class="disabled">
+            <button class="cm_nav_button cm_next" tabindex="0" aria-label="다음 슬라이드">
+              <img src="/public/cmass-editor/img/btn_next.png" alt="다음">
+              <img src="/public/cmass-editor/img/btn_next_disabled.png" alt="다음" class="disabled">
             </button>
         </div>
-        <div class="cm_indicators">
-            <div class="cm_indicator cm_current" tabindex="0"></div>
-            <div class="cm_indicator" tabindex="0"></div>
-            <div class="cm_indicator" tabindex="0"></div>
-            <div class="cm_indicator" tabindex="0"></div>
+        <div class="cm_indicators" tabindex="0" aria-label="슬라이드 인디케이터">
+            <div class="cm_indicator cm_current" role="indicator" aria-label="첫 번째 슬라이드"></div>
+            <div class="cm_indicator" role="indicator" aria-label="두 번째 슬라이드"></div>
+            <div class="cm_indicator" role="indicator" aria-label="세 번째 슬라이드"></div>
+            <div class="cm_indicator" role="indicator" aria-label="네 번째 슬라이드"></div>
         </div>
-    </div>
+    </nav>
     <script>
         window.addEventListener("load", function () {
-          const slides = document.querySelector('.cm_slides');
-          const indicators = document.querySelectorAll('.cm_indicator');
-          const prevButton = document.querySelector('.cm_prev');
-          const nextButton = document.querySelector('.cm_next');
-          let currentSlide = 0;
+            const slides = document.querySelector('.cm_slides');
+            const indicators = document.querySelectorAll('.cm_indicator');
+            const prevButton = document.querySelector('.cm_prev');
+            const nextButton = document.querySelector('.cm_next');
+            let currentSlide = 0;
 
-          function updateSlide(index) {
-              slides.style.transform = `translateX(-${index * 100}%)`;
-              indicators.forEach((indicator, i) => {
-                  indicator.classList.toggle('cm_current', i === index);
-              });
-              prevButton.disabled = index === 0;
-              nextButton.disabled = index === indicators.length - 1;
-          }
+            function updateSlide(index) {
+                slides.style.transform = `translateX(-${index * 100}%)`;
+                indicators.forEach((indicator, i) => {
+                    indicator.classList.toggle('cm_current', i === index);
+                });
+                prevButton.disabled = index === 0;
+                nextButton.disabled = index === indicators.length - 1;
+            }
 
-          prevButton.addEventListener('click', () => {
-              if (currentSlide > 0) {
-                  currentSlide -= 1;
-                  updateSlide(currentSlide);
-              }
-          });
+            prevButton.addEventListener('click', () => {
+                if (currentSlide > 0) {
+                    currentSlide -= 1;
+                    updateSlide(currentSlide);
+                }
+            });
 
-          nextButton.addEventListener('click', () => {
-              if (currentSlide < indicators.length - 1) {
-                  currentSlide += 1;
-                  updateSlide(currentSlide);
-              }
-          });
+            nextButton.addEventListener('click', () => {
+                if (currentSlide < indicators.length - 1) {
+                    currentSlide += 1;
+                    updateSlide(currentSlide);
+                }
+            });
 
-          indicators.forEach((indicator, i) => {
-              indicator.addEventListener('click', () => {
-                  currentSlide = i;
-                  updateSlide(currentSlide);
-              });
-          });
+            indicators.forEach((indicator, i) => {
+                indicator.addEventListener('click', () => {
+                    currentSlide = i;
+                    updateSlide(currentSlide);
+                });
+            });
 
-          updateSlide(currentSlide);
-      });
-      </script>
+            updateSlide(currentSlide);
+        });
+    </script>
 
 </body>
 </html>

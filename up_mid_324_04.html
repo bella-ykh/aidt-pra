@@ -11,195 +11,200 @@
     <script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=GoogleTranslateInitCallback"></script>
 </head>
 <body class="cmass-content">
-    <div class="cm_slide_container">
+    <section class="cm_slide_container">
         <div class="cm_slides">
-          <div class="cm_slide" aria-label="슬라이드 첫 번째 화면입니다." tabindex="0">
-            <div class="cm_title_wrap">
-                <div class="cm_ico_01"></div>
-                <h1 class="cm_title_01" tabindex="0">짝수의 합</h1>
-            </div>
-            <div class="cm_txt" tabindex="0">
-                반복 구조와 선택 구조를 중첩하여 1부터 100까지의 수 중에서 짝수만 더하는 프로그램을 작성해 보자.
-            </div>
-            <h2 class="cm_title_02 cm_pd_l0" tabindex="0"><span class="cm_num">1</span>문제 이해 및 분석</h2>
-            <div class="cm_txt cm_pd_l0" tabindex="0">
-                1부터 100까지의 자연수 중 짝수의 합을 구한다.
-            </div>
-            
-            <div class="cm_video">
-                <h3 class="cm_video_title" tabindex="0">프로그램 결과 미리보기</h3>
-                <div class="cm_view" tabindex="0" tabindex="0" tabindex="0" tabindex="0">
-                    <video width="100%" height="auto" controls class="cm_video_form" data-src=".m3u8"></video>
+            <section class="cm_slide" aria-label="슬라이드 첫 번째 화면입니다." tabindex="0">
+                <div class="cm_title_wrap">
+                    <div class="cm_ico_01"></div>
+                    <h1 class="cm_title_01" tabindex="0">짝수의 합</h1>
                 </div>
-            </div>
-          </div>
-
-          <div class="cm_slide" aria-label="슬라이드 두 번째 화면입니다." tabindex="0">
-            <h2 class="cm_title_02" tabindex="0"><span class="cm_num">2</span>알고리즘 설계</h2>
-            <div class="cm_txt" tabindex="0">
-                미세 먼지 농도를 입력하면 이에 따라 신호등 모양을 바꾸고 행동 요령을 안내한다. 
-                <ul class="cm_list_num">
-                    <li tabindex="0"><span>①</span>바깥 반복 구조: ‘수’ 변수를 1씩 더해 가면서 반복한다. ‘수’ 변수는 1부터 시작하여 100 이하인 동안 반복한다.</li>
-                    <li tabindex="0"><span>②</span>안쪽 반복 구조: ‘수’ 변숫값이 짝수인지 확인하고 짝수면 ‘합’ 변수에 더한다.</li>
-                </ul>
-            </div>
-            <div class="cm_chart">
-                <h3 class="cm_chart_title" tabindex="0">순서도</h3>
-                <div class="cm_view_chart" tabindex="0">
-                    <img src="/public/cmass-editor/img/chart_324_04.svg" alt="수가 100이 될 때까지 짝수만 더하는 과정을 반복 구조 안의 선택구조로 설명한 순서도">
+                <div class="cm_txt" tabindex="0">
+                    반복 구조와 선택 구조를 중첩하여 1부터 100까지의 수 중에서 짝수만 더하는 프로그램을 작성해 보자.
                 </div>
-            </div>
-          </div>
+                <h2 class="cm_title_02 cm_pd_l0" tabindex="0"><span class="cm_num">1</span>문제 이해 및 분석</h2>
+                <div class="cm_txt cm_pd_l0" tabindex="0">
+                    1부터 100까지의 자연수 중 짝수의 합을 구한다.
+                </div>
+                
+                <figure class="cm_video">
+                    <figcaption class="cm_video_title" tabindex="0">프로그램 결과 미리보기</figcaption>
+                    <div class="cm_view" tabindex="0">
+                        <video width="100%" height="auto" controls class="cm_video_form" data-src=""></video>
+                    </div>
+                </figure>
+            </section>
 
-          <div class="cm_slide" aria-label="슬라이드 세 번째 화면입니다." tabindex="0">
-            <h2 class="cm_title_02" tabindex="0"><span class="cm_num">3</span>프로그래밍</h2>
-            <h3 class="cm_title_03" tabindex="0"><span class="cm_no">①</span>준비하기</h3>
-            <div class="cm_tbl_wrap">
-                <table class="cm_tbl_02" tabindex="0">
-                    <caption>프로그래밍 준비하기</caption>
-                    <colgroup>
-                      <col width="15%" />
-                      <col width="85%" />
-                    </colgroup>
-                    <tr>
-                      <th tabindex="0">오브젝트</th>
-                      <td tabindex="0"><img src="/public/cmass-editor/img/object_character.png" alt="엔트리봇 오브젝트" class="cm_h80"></td>
-                    </tr>
-                    <tr>
-                        <th tabindex="0">변수</th>
-                        <td>
-                            <ul class="cm_list">
-                                <li tabindex="0">수</li>
-                                <li tabindex="0">합</li>
-                            </ul>
-                        </td>
-                    </tr>
-                </table>
-            </div>
-            
-            <h3 class="cm_title_03" tabindex="0"><span class="cm_no">②</span>프로그램 작성하기</h3>
-            <div class="cm_tbl_wrap">
-                <table class="cm_tbl_02" tabindex="0">
-                    <caption>프로그램 작성하기</caption>
-                    <colgroup>
-                      <col width="15%" />
-                      <col width="85%" />
-                    </colgroup>
-                    <tr>
-                        <th tabindex="0"><img src="/public/cmass-editor/img/object_character.png" alt="엔트리봇 오브젝트" class="cm_h80"></th>
-                        <td tabindex="0">
-                            <img src="/public/cmass-editor/img/img_324_04_01.svg" alt="시작하기 버튼을 클릭했을 때, 수가 1부터 100이 될 때까지 짝수만 더하여 합을 출력하도록 조립된 빈칸을 포함한 엔트리 코드">
-                            <div class="cm_tip_tbl">
-                                <div class="cm_tip_txt" tabindex="0">Tip</div>
-                                <div class="cm_tip_box" tabindex="0">
-                                    짝수를 판단하는 기준을 주의 깊게 살펴보자. 어떤 수를 2로 나눈 나머지가 0이면 짝수라 할 수 있다.
+            <section class="cm_slide" aria-label="슬라이드 두 번째 화면입니다." tabindex="0">
+                <h2 class="cm_title_02" tabindex="0"><span class="cm_num">2</span>알고리즘 설계</h2>
+                <div class="cm_txt" tabindex="0">
+                    미세 먼지 농도를 입력하면 이에 따라 신호등 모양을 바꾸고 행동 요령을 안내한다. 
+                    <ul class="cm_list_num">
+                        <li tabindex="0"><span>①</span>바깥 반복 구조: ‘수’ 변수를 1씩 더해 가면서 반복한다. ‘수’ 변수는 1부터 시작하여 100 이하인 동안 반복한다.</li>
+                        <li tabindex="0"><span>②</span>안쪽 반복 구조: ‘수’ 변숫값이 짝수인지 확인하고 짝수면 ‘합’ 변수에 더한다.</li>
+                    </ul>
+                </div>
+                <div class="cm_chart">
+                    <h3 class="cm_chart_title" tabindex="0">순서도</h3>
+                    <div class="cm_view_chart" tabindex="0">
+                        <img src="/public/cmass-editor/img/chart_324_04.svg" alt="수가 100이 될 때까지 짝수만 더하는 과정을 반복 구조 안의 선택구조로 설명한 순서도">
+                    </div>
+                </div>
+            </section>
+
+            <section class="cm_slide" aria-label="슬라이드 세 번째 화면입니다." tabindex="0">
+                <h2 class="cm_title_02" tabindex="0"><span class="cm_num">3</span>프로그래밍</h2>
+                <h3 class="cm_title_03" tabindex="0"><span class="cm_no">①</span>준비하기</h3>
+                <div class="cm_tbl_wrap">
+                    <table class="cm_tbl_02" tabindex="0">
+                        <caption>프로그래밍 준비하기</caption>
+                        <colgroup>
+                            <col width="15%" />
+                            <col width="85%" />
+                        </colgroup>
+                        <tr>
+                            <th tabindex="0">오브젝트</th>
+                            <td tabindex="0"><img src="/public/cmass-editor/img/object_character.png" alt="엔트리봇 오브젝트" class="cm_h80"></td>
+                        </tr>
+                        <tr>
+                            <th tabindex="0">변수</th>
+                            <td>
+                                <ul class="cm_list">
+                                    <li tabindex="0">수</li>
+                                    <li tabindex="0">합</li>
+                                </ul>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                
+                <h3 class="cm_title_03" tabindex="0"><span class="cm_no">②</span>프로그램 작성하기</h3>
+                <div class="cm_tbl_wrap">
+                    <table class="cm_tbl_02" tabindex="0">
+                        <caption>프로그램 작성하기</caption>
+                        <colgroup>
+                            <col width="15%" />
+                            <col width="85%" />
+                        </colgroup>
+                        <thead>
+                            <th tabindex="0">오브젝트</th>
+                            <th tabindex="0">명령 블록</th>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th tabindex="0"><img src="/public/cmass-editor/img/object_character.png" alt="엔트리봇 오브젝트" class="cm_h80"></th>
+                                <td tabindex="0">
+                                    <img src="/public/cmass-editor/img/img_324_04_01.svg" alt="시작하기 버튼을 클릭했을 때, 수가 1부터 100이 될 때까지 짝수만 더하여 합을 출력하도록 조립된 빈칸을 포함한 엔트리 코드">
+                                    <div class="cm_tip_tbl">
+                                        <div class="cm_tip_txt" tabindex="0">Tip</div>
+                                        <div class="cm_tip_box" tabindex="0">
+                                            짝수를 판단하는 기준을 주의 깊게 살펴보자. 어떤 수를 2로 나눈 나머지가 0이면 짝수라 할 수 있다.
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="cm_tip cm_mg_b20">
+                    <div class="cm_tip_txt" tabindex="0">Tip</div>
+                    <div class="cm_tip_box" tabindex="0">
+                        <div class="cm_align_c"><img src="/public/cmass-editor/img/tip_324_04_01.svg" alt="참이 될 때까지 반복하기 블록" class="cm_w300 cm_mg_t10"></div>
+                        <ul class="cm_list_tip cm_pd_t10">
+                            <li tabindex="0">
+                                <div class="cm_vt_c">
+                                    판단 블록( <img src="/public/cmass-editor/img/tip_324_04_02.svg" alt="판단 블록" class="cm_h30"> )에 따라 감싸인 블록이 반복 동작할지 결정한다.
                                 </div>
-                            </div>
-                        </td>
-                    </tr>
-                </table>
-            </div>
-            <div class="cm_tip cm_mg_b20">
-                <div class="cm_tip_txt" tabindex="0">Tip</div>
-                <div class="cm_tip_box" tabindex="0">
-                    <img src="/public/cmass-editor/img/tip_324_04_01.svg" alt="참이 될 때까지 반복하기 블록" class="cm_w320">
-                    <ul class="cm_list_tip cm_pd_t10">
-                        <li tabindex="0">
-                            <div class="cm_vt_c">
-                                판단 블록( <img src="/public/cmass-editor/img/tip_324_04_02.svg" alt="판단 블록" class="cm_h30"> )에 따라 감싸인 블록이 반복 동작할지 결정한다.
-                            </div>
-                        </li>
-                        <li tabindex="0">
-                            <div class="cm_vt_c">
-                                목록 상자( <img src="/public/cmass-editor/img/tip_324_04_03.svg" alt="목록 상자" class="cm_h30"> )를 클릭하면 반복을 멈추는 시점을 바꿀 수 있다.
-                            </div>
-                        </li>
-                    </ul>
-                    <ul class="cm_list_tip2">
-                        <li tabindex="0">
-                            <div class="cm_vt_c">
-                                <img src="/public/cmass-editor/img/tip_324_04_04.svg" alt="" class="cm_h30"> 
-                                : 판단 블록( <img src="/public/cmass-editor/img/tip_324_04_02.svg" alt="판단 블록" class="cm_h30"> )
-                                이 참이 될 때까지(거짓인 동안) 반복한다.
-                            </div>
-                        </li>
-                        <li tabindex="0">
-                            <div class="cm_vt_c">
-                                <img src="/public/cmass-editor/img/tip_324_04_05.svg" alt="" class="cm_h30"> 
-                                : 판단 블록( <img src="/public/cmass-editor/img/tip_324_04_02.svg" alt="판단 블록" class="cm_h30"> )
-                                이 참인 동안(거짓이 될 때까지) 반복한다.
-                            </div>
-                        </li>
-                    </ul>
+                            </li>
+                            <li tabindex="0">
+                                <div class="cm_vt_c">
+                                    목록 상자( <img src="/public/cmass-editor/img/tip_324_04_03.svg" alt="목록 상자" class="cm_h30"> )를 클릭하면 반복을 멈추는 시점을 바꿀 수 있다.
+                                </div>
+                            </li>
+                        </ul>
+                        <ul class="cm_list_tip2">
+                            <li tabindex="0">
+                                <div class="cm_vt_c">
+                                    <img src="/public/cmass-editor/img/tip_324_04_04.svg" alt="이 될때까지" class="cm_h30"> 
+                                    : 판단 블록( <img src="/public/cmass-editor/img/tip_324_04_02.svg" alt="판단 블록" class="cm_h30"> )
+                                    이 참이 될 때까지(거짓인 동안) 반복한다.
+                                </div>
+                            </li>
+                            <li tabindex="0">
+                                <div class="cm_vt_c">
+                                    <img src="/public/cmass-editor/img/tip_324_04_05.svg" alt="인 동안" class="cm_h30"> 
+                                    : 판단 블록( <img src="/public/cmass-editor/img/tip_324_04_02.svg" alt="판단 블록" class="cm_h30"> )
+                                    이 참인 동안(거짓이 될 때까지) 반복한다.
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
-              </div>
-          </div>
+            </section>
 
-          <div class="cm_slide" aria-label="슬라이드 네 번째 화면입니다." tabindex="0">
-            <h2 class="cm_title_02" tabindex="0"><span class="cm_num">4</span>결과 확인 및 디버깅</h2>
-            <div class="cm_txt" tabindex="0">프로그램을 실행하여 실행 결과를 확인해 보자.</div>
-          </div>
+            <section class="cm_slide" aria-label="슬라이드 네 번째 화면입니다." tabindex="0">
+                <h2 class="cm_title_02" tabindex="0"><span class="cm_num">4</span>결과 확인 및 디버깅</h2>
+                <div class="cm_txt" tabindex="0">프로그램을 실행하여 실행 결과를 확인해 보자.</div>
+            </section>
         </div>
-        
-    </div>
-    <div class="cm_foot" tabindex="0">
-        <div class="cm_navigation">
-            <button class="cm_nav_button cm_prev" tabindex="0">
-                <img src="/public/cmass-editor/img/btn_prev.png" alt="이전">
-                <img src="/public/cmass-editor/img/btn_prev_disabled.png" alt="이전" class="disabled">
+    </section>
+    <nav class="cm_foot" aria-label="슬라이드 네비게이션">
+        <div class="cm_navigation" tabindex="0">
+            <button class="cm_nav_button cm_prev" tabindex="0" aria-label="이전 슬라이드">
+              <img src="/public/cmass-editor/img/btn_prev.png" alt="이전">
+              <img src="/public/cmass-editor/img/btn_prev_disabled.png" alt="이전" class="disabled">
             </button>
-            <button class="cm_nav_button cm_next" tabindex="0">
-                <img src="/public/cmass-editor/img/btn_next.png" alt="다음">
-                <img src="/public/cmass-editor/img/btn_next_disabled.png" alt="다음" class="disabled">
+            <button class="cm_nav_button cm_next" tabindex="0" aria-label="다음 슬라이드">
+              <img src="/public/cmass-editor/img/btn_next.png" alt="다음">
+              <img src="/public/cmass-editor/img/btn_next_disabled.png" alt="다음" class="disabled">
             </button>
         </div>
-        <div class="cm_indicators">
-            <div class="cm_indicator cm_current" tabindex="0"></div>
-            <div class="cm_indicator" tabindex="0"></div>
-            <div class="cm_indicator" tabindex="0"></div>
-            <div class="cm_indicator" tabindex="0"></div>
+        <div class="cm_indicators" tabindex="0" aria-label="슬라이드 인디케이터">
+            <div class="cm_indicator cm_current" role="indicator" aria-label="첫 번째 슬라이드"></div>
+            <div class="cm_indicator" role="indicator" aria-label="두 번째 슬라이드"></div>
+            <div class="cm_indicator" role="indicator" aria-label="세 번째 슬라이드"></div>
+            <div class="cm_indicator" role="indicator" aria-label="네 번째 슬라이드"></div>
         </div>
-    </div>
+    </nav>
     <script>
         window.addEventListener("load", function () {
-          const slides = document.querySelector('.cm_slides');
-          const indicators = document.querySelectorAll('.cm_indicator');
-          const prevButton = document.querySelector('.cm_prev');
-          const nextButton = document.querySelector('.cm_next');
-          let currentSlide = 0;
+            const slides = document.querySelector('.cm_slides');
+            const indicators = document.querySelectorAll('.cm_indicator');
+            const prevButton = document.querySelector('.cm_prev');
+            const nextButton = document.querySelector('.cm_next');
+            let currentSlide = 0;
 
-          function updateSlide(index) {
-              slides.style.transform = `translateX(-${index * 100}%)`;
-              indicators.forEach((indicator, i) => {
-                  indicator.classList.toggle('cm_current', i === index);
-              });
-              prevButton.disabled = index === 0;
-              nextButton.disabled = index === indicators.length - 1;
-          }
+            function updateSlide(index) {
+                slides.style.transform = `translateX(-${index * 100}%)`;
+                indicators.forEach((indicator, i) => {
+                    indicator.classList.toggle('cm_current', i === index);
+                });
+                prevButton.disabled = index === 0;
+                nextButton.disabled = index === indicators.length - 1;
+            }
 
-          prevButton.addEventListener('click', () => {
-              if (currentSlide > 0) {
-                  currentSlide -= 1;
-                  updateSlide(currentSlide);
-              }
-          });
+            prevButton.addEventListener('click', () => {
+                if (currentSlide > 0) {
+                    currentSlide -= 1;
+                    updateSlide(currentSlide);
+                }
+            });
 
-          nextButton.addEventListener('click', () => {
-              if (currentSlide < indicators.length - 1) {
-                  currentSlide += 1;
-                  updateSlide(currentSlide);
-              }
-          });
+            nextButton.addEventListener('click', () => {
+                if (currentSlide < indicators.length - 1) {
+                    currentSlide += 1;
+                    updateSlide(currentSlide);
+                }
+            });
 
-          indicators.forEach((indicator, i) => {
-              indicator.addEventListener('click', () => {
-                  currentSlide = i;
-                  updateSlide(currentSlide);
-              });
-          });
+            indicators.forEach((indicator, i) => {
+                indicator.addEventListener('click', () => {
+                    currentSlide = i;
+                    updateSlide(currentSlide);
+                });
+            });
 
-          updateSlide(currentSlide);
-      });
+            updateSlide(currentSlide);
+        });
     </script>
 
 </body>
