@@ -11,76 +11,81 @@
     <script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=GoogleTranslateInitCallback"></script>
 </head>
 <body class="cmass-content">
-    <div class="cm_wrap_h">
-        <div class="cm_title_bg">
-            <h1 class="cm_title_h1" tabindex="0">구구단 출력 프로그램</h1>
-        </div>
-
-        <div class="cm_txt" tabindex="0">
-            for문 안에 for문이 들어간 중첩 제어 구조를 사용하여 2~9단까지 구구단을 출력하는 프로그램을 작성해 보자.
-        </div>
-
-        <div class="cm_txt_bold" tabindex="0"><span class="cm_bull"></span>실행 결과</div>
-        <div class="cm_code_white" tabindex="0">
-            <pre class="cm_code2">2단부터 9단까지 구구단을 출력합니다.
-구구단 2단을 출력합니다.
-2 X 1 = 2
-2 X 2 = 4
-(중략)
-2 X 9 = 18
-구구단 끝!
-구구단 3단을 출력합니다.
-3 X 1 = 3
-3 X 2 = 9
-(중략)
-구구단 9단을 출력합니다.
-9 X 1 = 9
-9 X 2 = 18
-9 X 3 = 27
-9 X 4 = 36
-9 X 5 = 45
-9 X 6 = 54
-9 X 7 = 63
-9 X 8 = 72
-9 X 9 = 81
-구구단 끝!</pre>
-        </div>        
-
-        <div class="cm_title_bg2">
-            <h2 class="cm_title_h2" tabindex="0">1. 프로그래밍</h2>
-        </div>
-
-        <h3 class="cm_title_h3" tabindex="0">코드를 보고 빈 칸을 채워 프로그램을 완성해 보자.</h3>
-        <div class="cm_code_number" tabindex="0">
-            <div class="cm_line_numbers" aria-hidden="true">
-                <span>1</span>
-                <span>2</span>
-                <span>3</span>
-                <span>4</span>
-                <span>5</span>
-                <span>6</span>
-                <span>7</span>
-                <span>8</span>
+    <section class="cm_wrap_h">
+        <section>
+            <div class="cm_title_bg">
+                <h1 class="cm_title_h1" tabindex="0">구구단 출력 프로그램</h1>
             </div>
-            <pre class="cm_code cm_mg_l40">print('2단부터 9단까지 구구단을 출력합니다.')
+    
+            <div class="cm_txt" tabindex="0">
+                for문 안에 for문이 들어간 중첩 제어 구조를 사용하여 2~9단까지 구구단을 출력하는 프로그램을 작성해 보자.
+            </div>
+    
+            <div class="cm_txt_bold" tabindex="0"><span class="cm_bull"></span>실행 결과</div>
+            <div class="cm_code_white" tabindex="0">
+                <pre class="cm_code2">2단부터 9단까지 구구단을 출력합니다.
+    구구단 2단을 출력합니다.
+    2 X 1 = 2
+    2 X 2 = 4
+    (중략)
+    2 X 9 = 18
+    구구단 끝!
+    구구단 3단을 출력합니다.
+    3 X 1 = 3
+    3 X 2 = 9
+    (중략)
+    구구단 9단을 출력합니다.
+    9 X 1 = 9
+    9 X 2 = 18
+    9 X 3 = 27
+    9 X 4 = 36
+    9 X 5 = 45
+    9 X 6 = 54
+    9 X 7 = 63
+    9 X 8 = 72
+    9 X 9 = 81
+    구구단 끝!</pre>
+            </div>    
+        </section>
+            
+        <section>
+            <div class="cm_title_bg2">
+                <h2 class="cm_title_h2" tabindex="0">1. 프로그래밍</h2>
+            </div>
+    
+            <h3 class="cm_title_h3" tabindex="0">코드를 보고 빈 칸을 채워 프로그램을 완성해 보자.</h3>
+            <div class="cm_code_number" tabindex="0">
+                <div class="cm_line_count" aria-hidden="true"><span>1</span></div>
+                <pre class="cm_code3" tabindex="0">print('2단부터 9단까지 구구단을 출력합니다.')</pre>
+                <div class="cm_line_count" aria-hidden="true"><span>2</span></div>
+                <pre class="cm_code3" tabindex="0"> </pre>
+                <div class="cm_line_count" aria-hidden="true"><span>3</span></div>
+                <pre class="cm_code3" tabindex="0">for dan in range(2, 10): <span class="cm_keyword"># 2단부터 9단까지 반복</span></pre>
+                <div class="cm_line_count" aria-hidden="true"><span>4</span></div>
+                <pre class="cm_code3" tabindex="0">    print(f'\n구구단 {dan}단을 출력합니다.') <span class="cm_keyword"># 단 제목 출력</span></pre>
+                <div class="cm_line_count" aria-hidden="true"><span>5</span></div>
+                <pre class="cm_code3" tabindex="0">    for i in range(1, 10): <span class="cm_keyword"># 1부터 9까지 곱하는 반복문</span></pre>
+                <div class="cm_line_count" aria-hidden="true"><span>6</span></div>
+                <pre class="cm_code3" tabindex="0">        print(f'{dan} X {i} = {dan * i}') <span class="cm_keyword"># 각 단의 결과 출력</span></pre>
+                <div class="cm_line_count" aria-hidden="true"><span>7</span></div>
+                <pre class="cm_code3" tabindex="0"> </pre>
+                <div class="cm_line_count" aria-hidden="true"><span>8</span></div>
+                <pre class="cm_code3" tabindex="0">print('구구단 끝!')</pre>
+            </div>
+        </section>
+        
+        <section>
+            <div class="cm_title_bg2">
+                <h2 class="cm_title_h2" tabindex="0">2. 결과 확인 및 디버깅</h2>
+            </div>
+    
+            <ul class="cm_list_num_h">
+                <li tabindex="0"><span>①</span>프로그램을 실행하여 [실행 결과]와 같이 결과가 출력되는지 확인해 보자.</li>
+                <li tabindex="0"><span>②</span>결과를 출력했다면 ‘제출하기’ 버튼을 눌러 실습의 결과를 확인해 보자.</li>
+            </ul>
+        </section>
+        
 
-for dan in range(2, 10): <span class="cm_keyword"># 2단부터 9단까지 반복</span>
-    print(f'\n구구단 {dan}단을 출력합니다.') <span class="cm_keyword"># 단 제목 출력</span>
-    for i in range(1, 10): <span class="cm_keyword"># 1부터 9까지 곱하는 반복문</span>
-        print(f'{dan} X {i} = {dan * i}') <span class="cm_keyword"># 각 단의 결과 출력</span>
-
-print('구구단 끝!')</pre>
-        </div>
-
-        <div class="cm_title_bg2">
-            <h2 class="cm_title_h2" tabindex="0">2. 결과 확인 및 디버깅</h2>
-        </div>
-
-        <ul class="cm_list_num_h">
-            <li tabindex="0"><span>①</span>프로그램을 실행하여 [실행 결과]와 같이 결과가 출력되는지 확인해 보자.</li>
-            <li tabindex="0"><span>②</span>결과를 출력했다면 ‘제출하기’ 버튼을 눌러 실습의 결과를 확인해 보자.</li>
-        </ul>
-
-    </div>
+    </section>
 </body>
 </html>

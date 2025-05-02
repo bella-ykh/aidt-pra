@@ -11,114 +11,122 @@
     <script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=GoogleTranslateInitCallback"></script>
 </head>
 <body class="cmass-content">
-    <div class="cm_wrap_h">
-        <div class="cm_title_bg">
-            <h1 class="cm_title_h1" tabindex="0">독서록 프로그램</h1>
-        </div>
-
-        <div class="cm_txt" tabindex="0">
-            파일입출력 함수를 사용하여 책에 대한 한 줄 평을 텍스트 파일에 저장하는 프로그램을 완성해 보자. 
-        </div>
-
-        // [저장된 텍스트 파일 예시] // 이미지 제작??? 
-
-        <div class="cm_title_bg2">
-            <h2 class="cm_title_h2" tabindex="0">1. 프로그래밍</h2>
-        </div>
-
-        <div class="cm_txt_bold" tabindex="0">코드를 작성하여 ‘bookervier.txt’ 파일에 독서록을 저장하는 프로그램을 완성해보자.</div>
-
-        <div class="cm_hint_container">
-            <div class="cm_hint_header" tabindex="0">
-                Hint<span class="cm_hint_sub">‘bookervier.txt’ 파일을 추가 모드로 여는 방법</span>
+    <section class="cm_wrap_h">
+        <section>
+            <div class="cm_title_bg">
+                <h1 class="cm_title_h1" tabindex="0">독서록 프로그램</h1>
             </div>
-            <div class="cm_hint_content">
-                <div class="cm_code_number" tabindex="0">
-                    <div class="cm_line_numbers" aria-hidden="true">
-                        <span>2</span>
+    
+            <div class="cm_txt" tabindex="0">
+                파일입출력 함수를 사용하여 책에 대한 한 줄 평을 텍스트 파일에 저장하는 프로그램을 완성해 보자. 
+            </div>
+    
+            // [저장된 텍스트 파일 예시] // 이미지 제작??? 
+        </section>
+        
+        <section>
+            <div class="cm_title_bg2">
+                <h2 class="cm_title_h2" tabindex="0">1. 프로그래밍</h2>
+            </div>
+    
+            <div class="cm_txt_bold" tabindex="0">코드를 작성하여 ‘bookervier.txt’ 파일에 독서록을 저장하는 프로그램을 완성해보자.</div>
+    
+            <div class="cm_hint_container">
+                <div class="cm_hint_header" tabindex="0">
+                    Hint<span class="cm_hint_sub">‘bookervier.txt’ 파일을 추가 모드로 여는 방법</span>
+                </div>
+                <div class="cm_hint_content">
+                    <div class="cm_code_number" tabindex="0">
+                        <div class="cm_line_count" aria-hidden="true"><span>2</span></div>
+                        <pre class="cm_code3" tabindex="0">f = open('bookreview.txt', 'a')</pre>
                     </div>
-                    <pre class="cm_code">f = open('bookreview.txt', 'a')</pre>
                 </div>
             </div>
-        </div>
-
-        <div class="cm_hint_container">
-            <div class="cm_hint_header" tabindex="0">
-                Hint<span class="cm_hint_sub">저장할 책 정보를 입력받는 방법</span>
-            </div>
-            <div class="cm_hint_content">
-                <div class="cm_code_number" tabindex="0">
-                    <div class="cm_line_numbers" aria-hidden="true">
-                        <span>4</span>
-                        <span>5</span>
+    
+            <div class="cm_hint_container">
+                <div class="cm_hint_header" tabindex="0">
+                    Hint<span class="cm_hint_sub">저장할 책 정보를 입력받는 방법</span>
+                </div>
+                <div class="cm_hint_content">
+                    <div class="cm_code_number" tabindex="0">
+                        <div class="cm_line_count" aria-hidden="true"><span>4</span></div>
+                        <pre class="cm_code3" tabindex="0">title = input('책 제목: ')</pre>
+                        <div class="cm_line_count" aria-hidden="true"><span>5</span></div>
+                        <pre class="cm_code3" tabindex="0">review = input('한 줄 평: ')</pre>
                     </div>
-                    <pre class="cm_code">title = input('책 제목: ')
-review = input('한 줄 평: ')</pre>
                 </div>
             </div>
-        </div>
-
-        <div class="cm_tip_h">
-            <div class="cm_tip_bg" tabindex="0"><span class="cm_tip_txt2">Tip!</span></div>
-            <div class="cm_tip_cont">
-                <ul class="cm_list_tip_h">
-                    <li tabindex="0">
-                        write( ) 함수의 인수로 문자열과 변수가 혼합된 값을 입력하려고 할 때, ‘+’ (더하기) 기호로 값을 연결한다. 
-                    </li>
-                    <li tabindex="0">
-                        화면이나 파일에 한 줄을 쓰고 커서를 다음 줄로 옮기고자 할 때, ‘\n’ (newline) 기호를 사용한다.
-                    </li>
-                </ul>
+    
+            <div class="cm_tip_h">
+                <div class="cm_tip_bg" tabindex="0"><span class="cm_tip_txt2">Tip!</span></div>
+                <div class="cm_tip_cont">
+                    <ul class="cm_list_tip_h">
+                        <li tabindex="0">
+                            write( ) 함수의 인수로 문자열과 변수가 혼합된 값을 입력하려고 할 때, ‘+’ (더하기) 기호로 값을 연결한다. 
+                        </li>
+                        <li tabindex="0">
+                            화면이나 파일에 한 줄을 쓰고 커서를 다음 줄로 옮기고자 할 때, ‘\n’ (newline) 기호를 사용한다.
+                        </li>
+                    </ul>
+                </div>
             </div>
-        </div>
-
-        <div class="cm_title_bg2">
-            <h2 class="cm_title_h2" tabindex="0">2. 결과 확인 및 디버깅</h2>
-        </div>
-
-        <h3 class="cm_title_h3" tabindex="0"><span class="cm_no">①</span>프로그램을 실행하여 독서록 내용을 입력해 보자. </h3>
-        <h3 class="cm_title_h3" tabindex="0"><span class="cm_no">②</span>완성한 코드 아래에 다음 코드를 추가하여 텍스트 파일에 저장된 내용을 확인해 보자.</h3>
-
-        <div class="cm_code_number" tabindex="0">
-            <div class="cm_line_numbers" aria-hidden="true">
-                <span>13</span>
-                <span>14</span>
-                <span>15</span>
-                <span>16</span>
-                <span>17</span>
-                <span>18</span>
+        </section>
+        
+        <section>
+            <div class="cm_title_bg2">
+                <h2 class="cm_title_h2" tabindex="0">2. 결과 확인 및 디버깅</h2>
             </div>
-            <pre class="cm_code cm_mg_l40"><span class="cm_keyword"># 파일 읽기</span>
-f = open('bookreview.txt', 'r') 
-a = f.read() 
-print(‘\n’)
-print(a) 
-f.close()</pre>
-        </div>
-
-        <h3 class="cm_title_h3 cm_pd_b40" tabindex="0"><span class="cm_no">③</span>텍스트 파일 예시와 같이 결과가 잘 출력된다면 ‘채점 하기’ 버튼을 눌러 실습 결과를 확인해 보자.</h3>
-
-    </div>
+    
+            <h3 class="cm_title_h3" tabindex="0"><span class="cm_no">①</span>프로그램을 실행하여 독서록 내용을 입력해 보자. </h3>
+            <h3 class="cm_title_h3" tabindex="0"><span class="cm_no">②</span>완성한 코드 아래에 다음 코드를 추가하여 텍스트 파일에 저장된 내용을 확인해 보자.</h3>
+    
+            <div class="cm_code_number" tabindex="0">
+                <div class="cm_line_count" aria-hidden="true"><span>13</span></div>
+                <pre class="cm_code3 cm_mg_l40" tabindex="0"># 파일 읽기</pre>
+                <div class="cm_line_count" aria-hidden="true"><span>14</span></div>
+                <pre class="cm_code3 cm_mg_l40" tabindex="0">f = open('bookreview.txt', 'r')</pre>
+                <div class="cm_line_count" aria-hidden="true"><span>15</span></div>
+                <pre class="cm_code3 cm_mg_l40" tabindex="0">a = f.read()</pre>
+                <div class="cm_line_count" aria-hidden="true"><span>16</span></div>
+                <pre class="cm_code3 cm_mg_l40" tabindex="0">print(‘\n’)</pre>
+                <div class="cm_line_count" aria-hidden="true"><span>17</span></div>
+                <pre class="cm_code3 cm_mg_l40" tabindex="0">print(a)</pre>
+                <div class="cm_line_count" aria-hidden="true"><span>18</span></div>
+                <pre class="cm_code3 cm_mg_l40" tabindex="0">f.close()</pre>
+            </div>
+    
+            <h3 class="cm_title_h3 cm_pd_b40" tabindex="0"><span class="cm_no">③</span>텍스트 파일 예시와 같이 결과가 잘 출력된다면 ‘채점 하기’ 버튼을 눌러 실습 결과를 확인해 보자.</h3>
+        </section>
+    </section>
     <script>
         window.addEventListener("load", function () {
-            // 모든 Hint 요소 선택
             const hintHeaders = document.querySelectorAll('.cm_hint_header');
-    
-            // 각 Hint에 이벤트 리스너 추가
+
             hintHeaders.forEach(hintHeader => {
                 hintHeader.addEventListener("click", function () {
-                    let hintContent = this.nextElementSibling; // 바로 다음 형제 요소 선택
-    
-                    // 열려있는 경우 닫기
+                    const hintContent = this.nextElementSibling;
+
                     if (hintContent.style.maxHeight) {
                         hintContent.style.maxHeight = null;
                         this.classList.remove('active');
-                    } 
-                    // 닫혀있는 경우 열기
-                    else {
+                    } else {
                         hintContent.style.maxHeight = hintContent.scrollHeight + "px";
                         this.classList.add('active');
                     }
+                });
+            });
+
+            // 창 크기 변경 시 열린 힌트의 높이 강제 재계산
+            window.addEventListener("resize", function () {
+                document.querySelectorAll('.cm_hint_header.active').forEach(activeHeader => {
+                    const hintContent = activeHeader.nextElementSibling;
+
+                    // 일시적으로 maxHeight 초기화 후 다시 적용 (강제 리플로우 유도)
+                    hintContent.style.maxHeight = "0px";
+                    // 다음 프레임에서 다시 계산
+                    requestAnimationFrame(() => {
+                        hintContent.style.maxHeight = hintContent.scrollHeight + "px";
+                    });
                 });
             });
         });
