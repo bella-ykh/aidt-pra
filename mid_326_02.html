@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>중-326-실습-02-설명</title>
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" type="text/css" href="css/font/pretendard.css" />
+    <link rel="stylesheet" type="text/css" href="css/font/pretendard-subset.css"/>
+    <script type="text/javascript" src="js/GoogleTranslate.js"></script>
+    <script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=GoogleTranslateInitCallback"></script>
+</head>
+<body class="cmass-content">
+    <section class="cm_slide_container">
+        <div class="cm_slides">
+            <section class="cm_slide" aria-label="슬라이드 첫 번째 화면입니다." tabindex="0">
+                <div class="cm_title_wrap">
+                    <div class="cm_ico_01"></div>
+                    <h1 class="cm_title_01 cm_pd_t20" tabindex="0">프로토타입 만들기</h1>
+                    <div class="cm_sb_tit">[창의·융합 프로젝트] 스마트 화분 만들기</div>
+                </div>
+                <div class="cm_txt" tabindex="0">설계한 스마트 화분의 프로토타입 알고리즘을 메이크코드 프로그램으로 구현해 보자.</div>
+
+                <h2 class="cm_title_02" tabindex="0"><span class="cm_num">1</span>프로그래밍</h2>
+                <div class="cm_txt" tabindex="0">메이크코드 블록을 연결하여 프로그램을 완성해 보자.</div>
+
+                <div>[프로그램 작성 예시]</div>
+                <ul class="cm_list_num cm_img">
+                    <li><span>①</span><img src="img/img_326_02_01.svg" alt="" class="cm_h120"></li>
+                    <li><span>②</span><img src="img/img_326_02_02.svg" alt=""class="cm_h120"></li>
+                    <li><span>③</span><img src="img/img_326_02_03.svg" alt=""class="cm_h120"></li>
+                    <li><span>④</span><img src="img/img_326_02_04.svg" alt=""class="cm_w350"></li>
+                </ul>
+            </section>
+
+            <section class="cm_slide" aria-label="슬라이드 두 번째 화면입니다." tabindex="0">
+                <h2 class="cm_title_02" tabindex="0"><span class="cm_num">2</span>결과 확인 및 디버깅</h2>
+                <div class="cm_txt" tabindex="0">프로그램을 실행하여 실행 결과를 확인해 보자.</div>
+
+                <figure class="cm_video">
+                    <figcaption class="cm_video_title" tabindex="0">프로그램 실행 예시</figcaption>
+                    <div class="cm_view" tabindex="0">
+                        <video width="100%" height="auto" controls class="cm_video_form" data-src=""></video>
+                    </div>
+                </figure>
+            </section>
+        </div>
+    </section>
+    <nav class="cm_foot" aria-label="슬라이드 네비게이션">
+        <div class="cm_navigation" tabindex="0">
+            <button class="cm_nav_button cm_prev" tabindex="0" aria-label="이전 슬라이드">
+              <img src="img/btn_prev.png" alt="이전">
+              <img src="img/btn_prev_disabled.png" alt="이전" class="disabled">
+            </button>
+            <button class="cm_nav_button cm_next" tabindex="0" aria-label="다음 슬라이드">
+              <img src="img/btn_next.png" alt="다음">
+              <img src="img/btn_next_disabled.png" alt="다음" class="disabled">
+            </button>
+        </div>
+        <div class="cm_indicators" tabindex="0" aria-label="슬라이드 인디케이터">
+            <div class="cm_indicator cm_current" role="indicator" aria-label="첫 번째 슬라이드"></div>
+            <div class="cm_indicator" role="indicator" aria-label="두 번째 슬라이드"></div>
+        </div>
+    </nav>
+    <script>
+        window.addEventListener("load", function () {
+            const slides = document.querySelector('.cm_slides');
+            const indicators = document.querySelectorAll('.cm_indicator');
+            const prevButton = document.querySelector('.cm_prev');
+            const nextButton = document.querySelector('.cm_next');
+            let currentSlide = 0;
+
+            function updateSlide(index) {
+                slides.style.transform = `translateX(-${index * 100}%)`;
+                indicators.forEach((indicator, i) => {
+                    indicator.classList.toggle('cm_current', i === index);
+                });
+                prevButton.disabled = index === 0;
+                nextButton.disabled = index === indicators.length - 1;
+            }
+
+            prevButton.addEventListener('click', () => {
+                if (currentSlide > 0) {
+                    currentSlide -= 1;
+                    updateSlide(currentSlide);
+                }
+            });
+
+            nextButton.addEventListener('click', () => {
+                if (currentSlide < indicators.length - 1) {
+                    currentSlide += 1;
+                    updateSlide(currentSlide);
+                }
+            });
+
+            indicators.forEach((indicator, i) => {
+                indicator.addEventListener('click', () => {
+                    currentSlide = i;
+                    updateSlide(currentSlide);
+                });
+            });
+
+            updateSlide(currentSlide);
+        });
+    </script>
+
+</body>
+</html>

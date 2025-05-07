@@ -86,6 +86,8 @@ a:visited { color: #333; }
 .cmass-content .cm_title_03 { display: flex; justify-content: flex-start; align-items: baseline; padding: 15px 0 10px; color: #222; font-size: 18px; line-height: 1.5rem; font-weight: normal; } 
 .cmass-content .cm_title_03 .cm_no { display: inline-block; text-indent: -20px; padding-left: 20px; color: #0d0572; padding-right: 7px; font-size: 22px; font-weight: normal; } 
 
+.cmass-content .cm_sb_tit { font-size: 13px; z-index: 2; position: absolute; left: 70px; top: 14px; color: #fff; }
+
 /* 고등 */
 .cmass-content .cm_title_bg { height: 68px; background: url('https://kr.object.gov-ncloudstorage.com/001-mid-01-vod/001-mid-01-in/title_bg.png') no-repeat 0 0; } 
 .cmass-content .cm_title_h1 { display: flex; align-items: center; background-color: #057f64; height: 68px; font-family: 'WAGURITTF'; margin-left: 100px; font-size: 30px; line-height: 36px; font-weight: normal; color: #fff; letter-spacing: 1px;/*상속css 초기화*/ width: auto !important; text-align: left; margin-bottom: 0; border-radius: 0; } 
@@ -368,6 +370,7 @@ color: #fff !important;background: none !important;border: none !important;borde
 .ckeditor-viewer .viewer-html-content .cmass-content img.cm_h50 { height: min(80px, 14vw) !important; } /*뷰어 이슈*/
 
 .cmass-content .cm_h100 { height: 100px !important; } 
+.cmass-content .cm_h120 { height: 120px !important; } 
 .cmass-content .cm_h150 { height: 150px !important; } 
  
  
@@ -389,6 +392,7 @@ color: #fff !important;background: none !important;border: none !important;borde
 .cmass-content .cm_w250 { width: min(250px, 55vw) !important; } 
 .cmass-content .cm_w300 { width: min(300px, 60vw) !important; } 
 .cmass-content .cm_w320 { width: 320px !important; } 
+.cmass-content .cm_w350 { width: 350px !important; } 
 
 
 /* 패딩, 마진, 정렬 */
