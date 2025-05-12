@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="_레이어_1" data-name="레이어 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 229.937 41.807">
+  <defs>
+    <style>
+      .cls-1, .cls-2 {
+        fill: #4f80ff;
+      }
+
+      .cls-1, .cls-3 {
+        stroke-width: 0px;
+      }
+
+      .cls-2 {
+        font-family: Pretendard-SemiBold-KSCpc-EUC-H, Pretendard;
+        font-size: 15.5px;
+        font-weight: 600;
+      }
+
+      .cls-3 {
+        fill: #fff;
+      }
+    </style>
+  </defs>
+  <g>
+    <rect class="cls-3" x=".5" y=".5" width="228.937" height="40.807" rx="3.871" ry="3.871"/>
+    <path class="cls-1" d="m225.566,1c1.859,0,3.371,1.512,3.371,3.371v33.065c0,1.859-1.512,3.371-3.371,3.371H4.371c-1.859,0-3.371-1.512-3.371-3.371V4.371c0-1.858,1.512-3.371,3.371-3.371h221.195m0-1H4.371C1.957,0,0,1.957,0,4.371v33.065c0,2.414,1.957,4.371,4.371,4.371h221.195c2.414,0,4.371-1.957,4.371-4.371V4.371c0-2.414-1.957-4.371-4.371-4.371h0Z"/>
+  </g>
+  <text class="cls-2" transform="translate(66.244 28.317)"><tspan x="0" y="0">테이블 추가하기</tspan></text>
+</svg>

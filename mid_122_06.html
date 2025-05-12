@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>중-122-C06</title>
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" type="text/css" href="css/font/pretendard.css" />
+    <link rel="stylesheet" type="text/css" href="css/font/pretendard-subset.css"/>
+    <script type="text/javascript" src="js/GoogleTranslate.js"></script>
+    <script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=GoogleTranslateInitCallback"></script>
+</head>
+<body class="cmass-content">
+    <section class="cm_slide_container" tabindex="0">
+        <div class="cm_slides">
+            <section class="cm_slide"  aria-label="슬라이드 첫 번째 화면입니다." tabindex="0">
+                <div class="cm_title_wrap">
+                    <div class="cm_ico_01"></div>
+                    <h1 class="cm_title_01 cm_font_22" tabindex="0">디지털 주사위 만들기(메이크코드)</h1>
+                </div>
+                <div class="cm_txt" tabindex="0">
+                    마이크로비트의 가속도 센서를 활용하여 디지털 주사위를 만드는 프로그램을 작성해 보자.
+                </div>
+
+                <div class="cm_chart cm_mg_t20">
+                    <div class="cm_chart_title" tabindex="0">문제상황</div>
+                    <div class="cm_view_chart cm_bg_gray cm_txt_left" tabindex="0">
+                        <div class="cm_txt_in cm_pd_b0">
+                            친구와 보드 게임을 하려던 중 주사위가 없어진 것을 발견했다. 
+                            그런데 주변에는 주사위를 만들 만한 종이나 블록을 구할 수 없는 상황이다. 
+                            그렇다면 종이나 블록 없이 주사위를 만들 수 있는 방법은 없을까?
+                        </div>
+                    </div>
+                </div>
+                
+                <figure class="cm_video cm_mg_t50">
+                    <figcaption class="cm_video_title" tabindex="0">프로그램 결과 미리보기</figcaption>
+                    <div class="cm_view" tabindex="0">
+                        <video width="100%" height="auto" controls class="cm_video_form" data-src=""></video>
+                    </div>
+                </figure>         
+            </section>
+
+            <section class="cm_slide"  aria-label="슬라이드 두 번째 화면입니다." tabindex="0">
+                <h2 class="cm_title_02" tabindex="0"><span class="cm_num">1</span>시스템 구성</h2>
+                <div class="cm_txt cm_mg_b10" tabindex="0">프로그램의 실행 화면을 구성해 보자.</div>
+
+                <div class="cm_tbl_wrap">
+                    <table class="cm_tbl_01" tabindex="0">
+                        <caption>프로그램의 실행 화면 구성 요소</caption>
+                        <colgroup>
+                            <col width="20%" />
+                            <col width="30%" />
+                            <col width="50%" />
+                        </colgroup>
+                        <thead class="sr-only"> <!-- 스크린 리더 전용 숨김 -->
+                            <tr>
+                                <th scope="col">구분</th>
+                                <th scope="col">이미지</th>
+                                <th scope="col">설명</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th scope="row">입력</th>
+                                <td><img src="" alt="마이크로비트 가속도 센서 이미지"></td>
+                                <td>
+                                    <strong>가속도 센서</strong><br>
+                                    가속도를 측정하여 움직임을 감지하는 센서
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">출력</th>
+                                <td><img src="" alt="LED 디스플레이 이미지"></td>
+                                <td>
+                                    <strong>LED 디스플레이</strong><br>
+                                    가속도 센서가 흔들림을 감지하면 LED 디스플레이에 숫자를 출력
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+
+            <section class="cm_slide"  aria-label="슬라이드 세 번째 화면입니다." tabindex="0">
+                <h2 class="cm_title_02" tabindex="0"><span class="cm_num">2</span>프로그래밍</h2>
+                <h3 class="cm_title_03" tabindex="0"><span class="cm_no">①</span>사용할 명령어 블록 알아보기</h3>
+                
+                <div class="cm_tbl_wrap cm_w100">
+                    <table class="cm_tbl_02" tabindex="0">
+                        <caption>사용할 명령어 블록 알아보기</caption>
+                        <col width="30%" />
+                            <col width="40%" />
+                            <col width="40%" />
+                        </colgroup>
+                        <thead class="sr-only">
+                            <tr>
+                                <th scope="col">명령어 카테고리</th>
+                                <th scope="col">블록 이미지</th>
+                                <th scope="col">설명</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th scope="row"><img src="" alt="기본 탭"></th>
+                                <td><img src="" alt="숫자 출력 블록"></td>
+                                <td>LED 디스플레이에  선택한 숫자를 표시한다.</td>
+                            </tr>
+                            <tr>
+                                <th scope="row"><img src="" alt="입력 탭"></th>
+                                <td><img src="" alt="흔들림 감지될 때 블록"></td>
+                                <td>흔들리는 동작을 감지했을 때 감싸고 있는 블록들을 실행한다.</td>
+                            </tr>
+                            <tr>
+                                <th scope="row"><img src="" alt="계산 탭"></th>
+                                <td><img src="" alt="0부터10 사이 랜덤 블록"></td>
+                                <td>0부터 10 사이의 숫자 중 하나를 무작위로 선택한다.</td>
+                            </tr>
+                        </tbody>
+                    </table>                    
+                </div>
+
+                <h3 class="cm_title_03" tabindex="0"><span class="cm_no">②</span>프로그램 작성하기</h3>
+                <div><img src="" alt="흔들림이 감지될 때 1부터 6 사이의 숫자를 랜덤으로 출력하는 코드"></div>
+            </section>
+          
+            <section class="cm_slide"  aria-label="슬라이드 네 번째 화면입니다." tabindex="0">
+                <h2 class="cm_title_02" tabindex="0"><span class="cm_num">3</span>결과 확인</h2>
+                <div class="cm_txt" tabindex="0">시뮬레이터의 SHAKE를 눌러 프로그램을 실행한 후 실행 결과를 확인해 보자.</div>
+
+                <h2 class="cm_title_02 cm_mg_t100" tabindex="0"><span class="cm_num">4</span>평가</h2>
+                <div class="cm_txt cm_mg_b10" tabindex="0">프로그램을 실행한 후 다음 항목을 확인해 보자.</div>
+                <div class="cm_tbl_wrap">
+                    <table class="cm_tbl_02" tabindex="0">
+                        <caption>평가 항목</caption>
+                        <colgroup>
+                            <col width="70%" />
+                            <col width="15%" />
+                            <col width="15%" />
+                        </colgroup>
+                        <thead>
+                            <tr>
+                                <th scope="col">평가 항목</th>
+                                <th scope="col">예</th>
+                                <th scope="col">아니요</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="cm_line_r">마이크로비트를 흔들었을 때 LED 디스플레이에 숫자가 출력되는가?</td>
+                                <td class="cm_txt_c">
+                                    <input type="radio" name="q1" id="q1-yes" tabindex="0" aria-label="예">
+                                </td>
+                                <td class="cm_align_c">
+                                    <input type="radio" name="q1" id="q1-no" tabindex="0" aria-label="아니오">
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+        </div>
+    </section>
+
+    <nav class="cm_foot" aria-label="슬라이드 네비게이션">
+        <div class="cm_navigation" tabindex="0">
+            <button class="cm_nav_button cm_prev" tabindex="0" aria-label="이전 슬라이드">
+              <img src="img/btn_prev.png" alt="이전">
+              <img src="img/btn_prev_disabled.png" alt="이전" class="disabled">
+            </button>
+            <button class="cm_nav_button cm_next" tabindex="0" aria-label="다음 슬라이드">
+              <img src="img/btn_next.png" alt="다음">
+              <img src="img/btn_next_disabled.png" alt="다음" class="disabled">
+            </button>
+        </div>
+        <div class="cm_indicators" tabindex="0" aria-label="슬라이드 인디케이터">
+            <div class="cm_indicator cm_current" role="indicator" aria-label="첫 번째 슬라이드"></div>
+            <div class="cm_indicator" role="indicator" aria-label="두 번째 슬라이드"></div>
+            <div class="cm_indicator" role="indicator" aria-label="세 번째 슬라이드"></div>
+            <div class="cm_indicator" role="indicator" aria-label="네 번째 슬라이드"></div>
+        </div>
+    </nav>
+    <script>
+        window.addEventListener("load", function () {
+            const slides = document.querySelector('.cm_slides');
+            const indicators = document.querySelectorAll('.cm_indicator');
+            const prevButton = document.querySelector('.cm_prev');
+            const nextButton = document.querySelector('.cm_next');
+            let currentSlide = 0;
+
+            function updateSlide(index) {
+                slides.style.transform = `translateX(-${index * 100}%)`;
+                indicators.forEach((indicator, i) => {
+                    indicator.classList.toggle('cm_current', i === index);
+                });
+                prevButton.disabled = index === 0;
+                nextButton.disabled = index === indicators.length - 1;
+            }
+
+            prevButton.addEventListener('click', () => {
+                if (currentSlide > 0) {
+                    currentSlide -= 1;
+                    updateSlide(currentSlide);
+                }
+            });
+
+            nextButton.addEventListener('click', () => {
+                if (currentSlide < indicators.length - 1) {
+                    currentSlide += 1;
+                    updateSlide(currentSlide);
+                }
+            });
+
+            indicators.forEach((indicator, i) => {
+                indicator.addEventListener('click', () => {
+                    currentSlide = i;
+                    updateSlide(currentSlide);
+                });
+            });
+
+            updateSlide(currentSlide);
+        });
+    </script>
+
+</body>
+</html>

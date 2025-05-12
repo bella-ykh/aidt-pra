@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>중-122-C02</title>
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" type="text/css" href="css/font/pretendard.css" />
+    <link rel="stylesheet" type="text/css" href="css/font/pretendard-subset.css"/>
+    <script type="text/javascript" src="js/GoogleTranslate.js"></script>
+    <script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=GoogleTranslateInitCallback"></script>
+</head>
+<body class="cmass-content">
+    <section class="cm_slide_container" tabindex="0">
+        <div class="cm_slides">
+            <section class="cm_slide"  aria-label="슬라이드 첫 번째 화면입니다." tabindex="0">
+                <div class="cm_title_wrap">
+                    <div class="cm_ico_01"></div>
+                    <h1 class="cm_title_01 cm_font_22" tabindex="0">입력된 소리가 커질수록 빠르게 움직이기(엔트리)</h1>
+                </div>
+                <div class="cm_txt" tabindex="0">
+                    달리기 반 대표가 된 서준이의 경쟁 상대는 학교에서 가장 달리기를 잘하는 지영이다. 
+                    풀이 죽어 있는 서준이가 힘을 낼 수 있도록 응원 소리가 클수록 서준이 오브젝트가 빨리 움직이는 프로그램을 만들어 보자.
+                </div>
+                
+                <figure class="cm_video">
+                    <figcaption class="cm_video_title" tabindex="0">프로그램 결과 미리보기</figcaption>
+                    <div class="cm_view" tabindex="0">
+                        <video width="100%" height="auto" controls class="cm_video_form" data-src=""></video>
+                    </div>
+                </figure>         
+            </section>
+
+            <section class="cm_slide"  aria-label="슬라이드 두 번째 화면입니다." tabindex="0">
+                <h2 class="cm_title_02" tabindex="0"><span class="cm_num">1</span>시스템 구성</h2>
+                <div class="cm_txt cm_mg_b10" tabindex="0">프로그램의 실행 화면을 구성해 보자.</div>
+
+                <div class="cm_tbl_wrap">
+                    <table class="cm_tbl_01" tabindex="0">
+                        <caption>프로그램의 실행 화면 구성 요소</caption>
+                        <colgroup>
+                          <col width="20%" />
+                          <col width="30%" />
+                          <col width="50%" />
+                        </colgroup>
+                        <thead class="sr-only"> <!-- 스크린 리더 전용 숨김 -->
+                            <tr>
+                              <th scope="col">구분</th>
+                              <th scope="col">이미지</th>
+                              <th scope="col">설명</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <th scope="row">입력</th>
+                            <td><img src="" alt="응원 소리를 입력받는 마이크 하드웨어"></td>
+                            <td>
+                              <strong>마이크(센서)</strong><br>
+                              응원 소리를 입력받는 하드웨어
+                            </td>
+                          </tr>
+                          <tr>
+                            <th scope="row" rowspan="2">출력</th>
+                            <td><img src="" alt="걷고 있는 사람(1) 오브젝트: 지영이"></td>
+                            <td>
+                              <strong>걷고 있는 사람(1) 오브젝트</strong><br>
+                              옆 반 달리기 선수 지영이 오브젝트
+                            </td>
+                          </tr>
+                          <tr>
+                            <td><img src="" alt="걷고 있는 사람(2) 오브젝트: 서준이"></td>
+                            <td>
+                              <strong>걷고 있는 사람(2) 오브젝트</strong><br>
+                              우리 반 달리기 선수 서준이 오브젝트
+                            </td>
+                          </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <h2 class="cm_title_02 cm_mg_t50" tabindex="0"><span class="cm_num">2</span>프로그래밍 준비</h2>
+                <ul class="cm_list_num">
+                    <li tabindex="0"><span>①</span>USB 케이블을 이용하여 마이크로비트를 컴퓨터와 연결한다.</li>
+                    <li tabindex="0"><span>②</span>하드웨어를 연결하여 마이크로비트 관련 블록을 사용할 수 있도록 한다.</li>
+                </ul>
+            </section>
+
+            <section class="cm_slide"  aria-label="슬라이드 세 번째 화면입니다." tabindex="0">
+                <h2 class="cm_title_02" tabindex="0"><span class="cm_num">3</span>프로그래밍</h2>
+                <h3 class="cm_title_03" tabindex="0"><span class="cm_no">①</span>시스템 구성하기</h3>
+                <ul class="cm_list cm_mg_l20">
+                    <li tabindex="0">[+오브젝트 추가하기] 버튼을 눌러 ‘걷고 있는 사람(1)’, ‘걷고 있는 사람(2)’ 오브젝트를 화면에 추가한다.</li>
+                    <li tabindex="0">
+                        오브젝트 속성 창에서 오브젝트의 위치를 설정한다.
+                        <div class="cm_tbl_wrap cm_w75">
+                            <div class="cm_pd_t20 cm_pd_b10" tabindex="0">※ 오브젝트의 위치</div>
+                            <table class="cm_tbl_02" tabindex="0">
+                                <caption>오브젝트의 위치</caption>
+                                <colgroup>
+                                    <col width="40%" />
+                                    <col width="20%" />
+                                    <col width="40%" />
+                                </colgroup>
+                                <thead class="sr-only">
+                                    <tr>
+                                        <th scope="col">오브젝트</th>
+                                        <th scope="col">축</th>
+                                        <th scope="col">값</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <th scope="row" rowspan="2">걷고 있는 사람</th>
+                                        <td class="cm_txt_c">X</td>
+                                        <td>-210.0</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="cm_txt_c">Y</td>
+                                        <td>-20.0</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row" rowspan="2">출력</th>
+                                        <td class="cm_txt_c">X</td>
+                                        <td>-160.0</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="cm_txt_c">Y</td>
+                                        <td>-60.0</td>
+                                    </tr>
+                                </tbody>
+                            </table>                                                       
+                        </div>
+                    </li>
+                    <li tabindex="0">[+오브젝트 추가하기] 버튼을 눌러 ‘실내체육관’을 배경으로 설정한다.</li>
+                </ul>
+                
+                <h3 class="cm_title_03" tabindex="0"><span class="cm_no">②</span>사용할 명령어 블록 알아보기</h3>
+                <div class="cm_tbl_wrap cm_w100">
+                    <table class="cm_tbl_02" tabindex="0">
+                        <caption>사용할 명령어 블록 알아보기</caption>
+                        <colgroup>
+                            <col width="30%" />
+                            <col width="40%" />
+                            <col width="40%" />
+                        </colgroup>
+                        <thead class="sr-only">
+                            <tr>
+                                <th scope="col">명령어 카테고리</th>
+                                <th scope="col">블록 이미지</th>
+                                <th scope="col">설명</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th scope="row"><img src="" alt="시작 탭"></th>
+                                <td><img src="" alt="시작하기 버튼을 클릭했을 때 블록"></td>
+                                <td>시작하기 버튼을 누르면 아래에 연결된 블록들을 실행한다.</td>
+                            </tr>
+                            <tr>
+                                <th scope="row" rowspan="2"><img src="" alt="흐름 탭"></th>
+                                <td><img src="" alt="10번 반복하기 블록"></td>
+                                <td>감싸고 있는 블록들을 계속해서 반복 실행한다.</td>
+                            </tr>
+                            <tr>
+                                <td><img src="" alt="2초 기다리기 블록"></td>
+                                <td>입력한 시간만큼 기다린 후 다음 블록을 실행한다.</td>
+                            </tr>
+                            <tr>
+                                <th scope="row"><img src="" alt="움직임 탭"></th>
+                                <td><img src="" alt="X 좌표를 10만큼 바꾸기 블록"></td>
+                                <td>오브젝트의 X 좌표를 입력한 값만큼 바꾼다.</td>
+                            </tr>
+                            <tr>
+                                <th scope="row"><img src="" alt="생김새 탭"></th>
+                                <td><img src="" alt="다음 모양으로 바꾸기 블록"></td>
+                                <td>오브젝트의 모양을 이전 또는 다음으로 바꾼다.</td>
+                            </tr>
+                            <tr>
+                                <th scope="row"><img src="" alt="하드웨어 탭"></th>
+                                <td><img src="" alt=""></td>
+                                <td>마이크에서 측정된 소리의 값이 크기 값이다.</td>
+                            </tr>
+                        </tbody>
+                    </table>                    
+                </div>
+
+                <h3 class="cm_title_03" tabindex="0"><span class="cm_no">③</span>프로그램 작성하기</h3>
+                <div class="cm_tbl_wrap">
+                    <table class="cm_tbl_02" tabindex="0">
+                        <caption>프로그래밍 작성하기</caption>
+                        <colgroup>
+                            <col width="15%" />
+                            <col width="85%" />
+                        </colgroup>
+                        <thead>
+                            <tr>
+                                <th scope="col">오브젝트</th>
+                                <th scope="col">명령 블럭</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><img src="" alt="걷고 있는 사람(1) 오브젝트로 적용"></td>
+                                <td><img src="" alt=""></td>
+                            </tr>
+                            <tr>
+                                <td><img src="" alt="걷고 있는 사람(2) 오브젝트로 적용"></td>
+                                <td><img src="" alt=""></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+          
+            <section class="cm_slide"  aria-label="슬라이드 네 번째 화면입니다." tabindex="0">
+                <h2 class="cm_title_02" tabindex="0"><span class="cm_num">4</span>결과 확인</h2>
+                <div class="cm_txt" tabindex="0">시작하기 버튼을 눌러 프로그램을 실행하여 실행 결과를 확인해 보자.</div>
+
+                <h2 class="cm_title_02 cm_mg_t100" tabindex="0"><span class="cm_num">5</span>평가</h2>
+                <div class="cm_txt cm_mg_b10" tabindex="0">프로그램을 실행한 후 다음 항목을 확인해 보자.</div>
+                <div class="cm_tbl_wrap">
+                    <table class="cm_tbl_02" tabindex="0">
+                        <caption>평가 항목</caption>
+                        <colgroup>
+                            <col width="70%" />
+                            <col width="15%" />
+                            <col width="15%" />
+                        </colgroup>
+                        <thead>
+                            <tr>
+                                <th scope="col">평가 항목</th>
+                                <th scope="col">예</th>
+                                <th scope="col">아니요</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="cm_line_r">프로그램이 시작되면 지영이가 전진하는가?</td>
+                                <td class="cm_txt_c">
+                                    <input type="radio" name="q1" id="q1-yes" tabindex="0" aria-label="예">
+                                </td>
+                                <td class="cm_align_c">
+                                    <input type="radio" name="q1" id="q1-no" tabindex="0" aria-label="아니오">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="cm_line_r">마이크에 입력된 소리가 커질수록 서준이의 달리기 속도가 빨라지는가?</td>
+                                <td class="cm_txt_c">
+                                    <input type="radio" name="q2" id="q2-yes" tabindex="0" aria-label="예">
+                                </td>
+                                <td class="cm_align_c">
+                                    <input type="radio" name="q2" id="q2-no" tabindex="0" aria-label="아니오">
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+        </div>
+    </section>
+
+    <nav class="cm_foot" aria-label="슬라이드 네비게이션">
+        <div class="cm_navigation" tabindex="0">
+            <button class="cm_nav_button cm_prev" tabindex="0" aria-label="이전 슬라이드">
+              <img src="img/btn_prev.png" alt="이전">
+              <img src="img/btn_prev_disabled.png" alt="이전" class="disabled">
+            </button>
+            <button class="cm_nav_button cm_next" tabindex="0" aria-label="다음 슬라이드">
+              <img src="img/btn_next.png" alt="다음">
+              <img src="img/btn_next_disabled.png" alt="다음" class="disabled">
+            </button>
+        </div>
+        <div class="cm_indicators" tabindex="0" aria-label="슬라이드 인디케이터">
+            <div class="cm_indicator cm_current" role="indicator" aria-label="첫 번째 슬라이드"></div>
+            <div class="cm_indicator" role="indicator" aria-label="두 번째 슬라이드"></div>
+            <div class="cm_indicator" role="indicator" aria-label="세 번째 슬라이드"></div>
+            <div class="cm_indicator" role="indicator" aria-label="네 번째 슬라이드"></div>
+        </div>
+    </nav>
+    <script>
+        window.addEventListener("load", function () {
+            const slides = document.querySelector('.cm_slides');
+            const indicators = document.querySelectorAll('.cm_indicator');
+            const prevButton = document.querySelector('.cm_prev');
+            const nextButton = document.querySelector('.cm_next');
+            let currentSlide = 0;
+
+            function updateSlide(index) {
+                slides.style.transform = `translateX(-${index * 100}%)`;
+                indicators.forEach((indicator, i) => {
+                    indicator.classList.toggle('cm_current', i === index);
+                });
+                prevButton.disabled = index === 0;
+                nextButton.disabled = index === indicators.length - 1;
+            }
+
+            prevButton.addEventListener('click', () => {
+                if (currentSlide > 0) {
+                    currentSlide -= 1;
+                    updateSlide(currentSlide);
+                }
+            });
+
+            nextButton.addEventListener('click', () => {
+                if (currentSlide < indicators.length - 1) {
+                    currentSlide += 1;
+                    updateSlide(currentSlide);
+                }
+            });
+
+            indicators.forEach((indicator, i) => {
+                indicator.addEventListener('click', () => {
+                    currentSlide = i;
+                    updateSlide(currentSlide);
+                });
+            });
+
+            updateSlide(currentSlide);
+        });
+    </script>
+
+</body>
+</html>

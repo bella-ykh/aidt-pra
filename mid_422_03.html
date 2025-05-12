@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>중-422-03</title>
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" type="text/css" href="css/font/pretendard.css" />
+    <link rel="stylesheet" type="text/css" href="css/font/pretendard-subset.css"/>
+    <script type="text/javascript" src="js/GoogleTranslate.js"></script>
+    <script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=GoogleTranslateInitCallback"></script>
+</head>
+<body class="cmass-content">
+    <section class="cm_slide_container" tabindex="0">
+        <div class="cm_slides">
+            <section class="cm_slide"  aria-label="슬라이드 첫 번째 화면입니다." tabindex="0">
+                <div class="cm_title_wrap">
+                    <div class="cm_ico_01"></div>
+                    <h1 class="cm_title_01 cm_font_22" tabindex="0">대화 도우미 챗봇 프로그램 </h1>
+                </div>
+                <div class="cm_txt" tabindex="0">
+                    텍스트 분류 모델을 활용하여 대화 도우미 챗봇 프로그램을 작성해 보자.
+                </div>
+
+                <figure class="cm_video">
+                    <figcaption class="cm_video_title" tabindex="0">프로그램 결과 미리보기</figcaption>
+                    <div class="cm_view" tabindex="0">
+                        <video width="100%" height="auto" controls class="cm_video_form" data-src=""></video>
+                    </div>
+                </figure>
+                
+            </section>
+
+            <section class="cm_slide"  aria-label="슬라이드 두 번째 화면입니다." tabindex="0">
+                <h2 class="cm_title_02" tabindex="0"><span class="cm_num">1</span>해결 방법 생각하기</h2>
+                <div class="cm_txt" tabindex="0">
+                    문제 상황에 맞는 해결 방법과 필요한 데이터 유형을 생각해 보자.
+                </div>
+
+                <dl class="cm_solution_box">
+                    <dt class="cm_font_bold">• 해결 방법</dt> 
+                    <dd class="cm_line_t">
+                        질문하는 내용(텍스트 데이터)을 학습시킨 후 강아지에게 질문을 하면 답변하도록 프로그램 작성하기
+                    </dd>
+                </dl>
+                <dl class="cm_solution_box">
+                    <dt class="cm_font_bold">• 데이터 유형</dt> 
+                    <dd class="cm_line_t">텍스트 데이터</dd>
+                </dl>
+
+            </section>
+
+            <section class="cm_slide"  aria-label="슬라이드 세 번째 화면입니다." tabindex="0">
+                <h2 class="cm_title_02" tabindex="0"><span class="cm_num">2</span>인공지능 모델 만들기</h2>
+                <div class="cm_txt cm_mg_b0" tabindex="0">
+                    문제를 해결하는 데 적합한 인공지능 모델을 만들어 보자.
+                </div>
+
+                <ul class="cm_list_num">
+                    <li><span>①</span>엔트리의 ‘인공지능’ 블록 카테고리의 ‘인공지능 모델 학습하기’를 선택한다.</li>
+                    <li><span>②</span>‘학습할 모델 선택하기’에서 ‘새로 만들기’의 ‘분류:소리’를 선택하고 ‘학습하기’를 클릭한다.</li>
+                    <li><span>③</span>모델 이름을 ‘반려견 챗봇’, 클래스 이름을 각각 ‘날씨’, ‘시간’, ‘음악’으로 입력한다.</li>
+                </ul>
+
+            </section>
+          
+            <section class="cm_slide"  aria-label="슬라이드 네 번째 화면입니다." tabindex="0">
+                <h2 class="cm_title_02" tabindex="0"><span class="cm_num">3</span>인공지능 모델 학습하기</h2>
+                <div class="cm_txt cm_mg_b0" tabindex="0">
+                    각 클래스에 학습 데이터를 5개 이상 입력하여 모델을 학습시키고 새로운 데이터로 결과를 확인해 보자.
+                </div>
+                <ul class="cm_list_num">
+                    <li><span>①</span>각 클래스에 해당하는 텍스트를 입력하거나 입력할 학습 데이터가 많다면 메모장 프로그램에 입력하여 txt 파일로 저장해서 업로드한다.</li>
+                    <li><span>②</span>학습 데이터를 입력한 후, ‘모델 학습하기’를 클릭하여 학습을 진행한다.</li>
+                    <li><span>③</span>모델 학습이 잘 이루어졌는지 새로운 데이터를 입력하여 결과를 확인한다.</li>
+                    <li><span>④</span>결과를 확인하여 ‘날씨’, ‘시간’, ‘음악’ 클래스를 잘 분류하면 ‘적용하기’를 클릭하고, 그렇지 않다면 해당 클래스의 학습 데이터를 추가하여 학습시킨다.</li>
+                </ul>
+            </section>
+
+            <section class="cm_slide"  aria-label="슬라이드 다섯 번째 화면입니다." tabindex="0">
+                <h2 class="cm_title_02" tabindex="0"><span class="cm_num">4</span>인공지능 모델 활용 프로그램 작성하기</h2>
+                <div class="cm_txt" tabindex="0">
+                    텍스트를 분류하는 ‘대화 도우미 챗봇’ 프로그램을 작성해 보자.
+                </div>
+                <div class="cm_tbl_wrap">
+                    <table class="cm_tbl_02" tabindex="0">
+                        <caption>프로그램 작성하기</caption>
+                        <colgroup>
+                            <col width="10%" />
+                            <col width="90%" />
+                        </colgroup>
+                        <thead>
+                            <th tabindex="0">오브젝트</th>
+                            <th tabindex="0">명령 블록</th>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th tabindex="0"><img src="img/object_add.svg" alt="추가하기 버튼 오브젝트"></th>
+                                <td tabindex="0">
+                                    <div class="cm_img_warp">
+                                        <img src="img/img_322_01_01.png" alt="오브젝트를 클릭했을 때, '추가할 버킷 리스트를 입력하세요'를 묻고 대답 기다리기 블록과 빈칸이 포함된 블록이 순서대로 연결된 엔트리 블록들">
+                                    </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+        </div>
+    </section>
+
+    <nav class="cm_foot" aria-label="슬라이드 네비게이션">
+        <div class="cm_navigation" tabindex="0">
+            <button class="cm_nav_button cm_prev" tabindex="0" aria-label="이전 슬라이드">
+              <img src="img/btn_prev.png" alt="이전">
+              <img src="img/btn_prev_disabled.png" alt="이전" class="disabled">
+            </button>
+            <button class="cm_nav_button cm_next" tabindex="0" aria-label="다음 슬라이드">
+              <img src="img/btn_next.png" alt="다음">
+              <img src="img/btn_next_disabled.png" alt="다음" class="disabled">
+            </button>
+        </div>
+        <div class="cm_indicators" tabindex="0" aria-label="슬라이드 인디케이터">
+            <button class="cm_indicator cm_current" aria-label="1번 슬라이드로 이동" role="tab" aria-selected="true"></button>
+            <button class="cm_indicator" aria-label="2번 슬라이드로 이동" role="tab" aria-selected="false"></button>
+            <button class="cm_indicator" aria-label="3번 슬라이드로 이동" role="tab" aria-selected="false"></button>
+            <button class="cm_indicator" aria-label="4번 슬라이드로 이동" role="tab" aria-selected="false"></button>
+            <button class="cm_indicator" aria-label="5번 슬라이드로 이동" role="tab" aria-selected="false"></button>
+        </div>          
+    </nav>
+    <script>
+        window.addEventListener("load", function () {
+            const slides = document.querySelector('.cm_slides');
+            const indicators = document.querySelectorAll('.cm_indicator');
+            const prevButton = document.querySelector('.cm_prev');
+            const nextButton = document.querySelector('.cm_next');
+            let currentSlide = 0;
+    
+            function updateSlide(index) {
+                slides.style.transform = `translateX(-${index * 100}%)`;
+                indicators.forEach((indicator, i) => {
+                    indicator.classList.toggle('cm_current', i === index);
+                    indicator.setAttribute('aria-selected', i === index);
+                });
+                prevButton.disabled = index === 0;
+                nextButton.disabled = index === indicators.length - 1;
+            }
+    
+            prevButton.addEventListener('click', () => {
+                if (currentSlide > 0) {
+                    currentSlide -= 1;
+                    updateSlide(currentSlide);
+                }
+            });
+    
+            nextButton.addEventListener('click', () => {
+                if (currentSlide < indicators.length - 1) {
+                    currentSlide += 1;
+                    updateSlide(currentSlide);
+                }
+            });
+    
+            indicators.forEach((indicator, i) => {
+                // 마우스 클릭 이벤트
+                indicator.addEventListener('click', () => {
+                    currentSlide = i;
+                    updateSlide(currentSlide);
+                    indicator.focus();
+                });
+    
+                // 키보드 접근성: Enter 또는 Space 키로 슬라이드 이동
+                indicator.addEventListener('keydown', (e) => {
+                    if (e.key === 'Enter' || e.key === ' ') {
+                        e.preventDefault();
+                        currentSlide = i;
+                        updateSlide(currentSlide);
+                        indicator.focus();
+                    }
+                });
+            });
+    
+            updateSlide(currentSlide);
+        });
+    </script>
+    
+
+</body>
+</html>

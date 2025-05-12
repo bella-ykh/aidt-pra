@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="_레이어_1" data-name="레이어 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 281.258 238.795">
+  <defs>
+    <style>
+      .cls-1 {
+        letter-spacing: .01em;
+      }
+
+      .cls-2 {
+        letter-spacing: .01em;
+      }
+
+      .cls-3 {
+        fill: #4f80ff;
+      }
+
+      .cls-3, .cls-4 {
+        font-family: Pretendard-Bold-KSCpc-EUC-H, Pretendard;
+        font-weight: 700;
+      }
+
+      .cls-3, .cls-4, .cls-5, .cls-6 {
+        font-size: 13px;
+      }
+
+      .cls-4 {
+        fill: #2c313d;
+      }
+
+      .cls-5 {
+        fill: #979797;
+      }
+
+      .cls-5, .cls-6 {
+        font-family: Pretendard-Regular-KSCpc-EUC-H, Pretendard;
+      }
+
+      .cls-7 {
+        letter-spacing: .009em;
+      }
+
+      .cls-8 {
+        fill: none;
+        stroke: #2c313d;
+      }
+
+      .cls-8, .cls-9, .cls-10 {
+        stroke-miterlimit: 10;
+      }
+
+      .cls-9 {
+        fill: #fff;
+      }
+
+      .cls-9, .cls-10 {
+        stroke: #d6e9f4;
+      }
+
+      .cls-11 {
+        font-family: Pretendard-SemiBold-KSCpc-EUC-H, Pretendard;
+        font-size: 15.5px;
+        font-weight: 600;
+        letter-spacing: .01em;
+      }
+
+      .cls-10 {
+        fill: #d6e9f4;
+      }
+    </style>
+  </defs>
+  <g>
+    <path class="cls-10" d="m273.886.5H7.372C3.577.5.5,3.577.5,7.372v36.163h280.258V7.372c0-3.796-3.077-6.872-6.872-6.872Z"/>
+    <path class="cls-9" d="m.5,43.535v188.025c0,3.719,3.015,6.735,6.735,6.735h266.789c3.719,0,6.735-3.015,6.735-6.735V43.535H.5Z"/>
+  </g>
+  <text class="cls-11" transform="translate(14.823 29.341)"><tspan x="0" y="0">월평균 미세먼지농도</tspan></text>
+  <text class="cls-6" transform="translate(14.565 70.244)"><tspan x="0" y="0">우리나라의 각 시도별 월평균 미세먼지 농도입니</tspan><tspan x="0" y="15.6">다.(㎍/m³)</tspan></text>
+  <text class="cls-5" transform="translate(14.823 116.954)"><tspan class="cls-1" x="0" y="0">연월</tspan><tspan class="cls-7" x="22.731" y="0">,</tspan><tspan class="cls-2" x="26.193" y="0" xml:space="preserve"> 연도</tspan><tspan class="cls-7" x="52.317" y="0">,</tspan><tspan class="cls-2" x="55.779" y="0" xml:space="preserve"> 월 외 18개의 속성</tspan></text>
+  <text class="cls-3" transform="translate(14.823 160.309)"><tspan x="0" y="0">공기가 가장 깨끗한 지역은 어딜까? &gt;</tspan></text>
+  <g>
+    <text class="cls-4" transform="translate(208.822 218.68)"><tspan x="0" y="0">자세히 보기</tspan></text>
+    <line class="cls-8" x1="208.822" y1="219.567" x2="267.984" y2="219.567"/>
+  </g>
+</svg>

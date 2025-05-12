@@ -163,6 +163,50 @@ c = 'Python'
   });
 </script>
 
+<!--키보드접근 추가-->
+<script>
+  window.addEventListener("load", function () {
+      const hintHeaders = document.querySelectorAll('.cm_hint_header');
+
+      hintHeaders.forEach(hintHeader => {
+          hintHeader.setAttribute("role", "button");
+          hintHeader.setAttribute("tabindex", "0");
+          hintHeader.setAttribute("aria-expanded", "false");
+
+          function toggleHint() {
+              const hintContent = hintHeader.nextElementSibling;
+              const isExpanded = hintHeader.classList.toggle('active');
+              hintHeader.setAttribute("aria-expanded", isExpanded);
+              if (isExpanded) {
+                  hintContent.style.maxHeight = hintContent.scrollHeight + "px";
+              } else {
+                  hintContent.style.maxHeight = null;
+              }
+          }
+
+          hintHeader.addEventListener("click", toggleHint);
+          hintHeader.addEventListener("keydown", function (e) {
+              if (e.key === "Enter" || e.key === " ") {
+                  e.preventDefault();
+                  toggleHint();
+              }
+          });
+      });
+
+      // 창 크기 변경 시 열린 힌트의 높이 강제 재계산
+      window.addEventListener("resize", function () {
+          document.querySelectorAll('.cm_hint_header.active').forEach(activeHeader => {
+              const hintContent = activeHeader.nextElementSibling;
+              hintContent.style.maxHeight = "0px";
+              requestAnimationFrame(() => {
+                  hintContent.style.maxHeight = hintContent.scrollHeight + "px";
+              });
+          });
+      });
+  });
+
+</script>
+
 <!-- 넘버링 코드창(스크롤)-->
 <div class="cm_code_scroll">
   <div class="cm_line_numbers" aria-hidden="true">
