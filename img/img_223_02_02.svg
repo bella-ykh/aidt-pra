@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="_레이어_2" data-name="레이어 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 125.786 44.633">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #4f80ff;
+        stroke-width: 0px;
+      }
+
+      .cls-2 {
+        fill: #fff;
+        font-family: Pretendard-SemiBold-KSCpc-EUC-H, Pretendard;
+        font-size: 17px;
+        font-weight: 600;
+      }
+    </style>
+  </defs>
+  <rect class="cls-1" x="0" width="125.786" height="44.633"/>
+  <text class="cls-2" transform="translate(24.145 30.232)"><tspan x="0" y="0">파일 올리기</tspan></text>
+</svg>
