@@ -36,8 +36,8 @@ body { padding: 20px; }
 h1 { width: 280px; font-weight: 500; font-size: 22px; text-align: center; padding: 10px; background-color: #c4c4c4; border-radius: 35px; margin: 0 auto 10px; }
 .mid { background-color: #4f80ff; color: #fff; }
 .high { background-color: #16a76f; color: #fff; }
-p { width: 280px; text-align: center; background-color: #666; border-radius: 5px; padding: 5px; margin: 0 auto; color: #fff; }
-.list_link { width: 100%; margin: 30px auto; border-bottom: solid 3px #333; padding-bottom: 20px; }
+p { width: fit-content; background-color: #666; border-radius: 5px; padding: 15px 45px; color: #fff; margin-bottom: 15px; }
+.list_link { width: 100%; margin: 20px auto 30px; border-bottom: solid 3px #333; padding-bottom: 20px; }
 .list_link li { margin-bottom: 5px; border-bottom: dashed 1px #666; padding: 10px 15px; }
 .list_link li:last-child { border-bottom: 0;}
 .list_link li a { font-size: 18px; color: #222;   }
