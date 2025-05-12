@@ -396,8 +396,10 @@ color: #fff !important; background: none !important; border: none !important; bo
 .cmass-content .cm_h150 { height: 150px !important; } 
  
  
+.cmass-content .cm_w20 { width: 25% !important; } 
 .cmass-content .cm_w30 { width: 30% !important; } 
 .cmass-content .cm_w40 { width: 40% !important; } 
+.cmass-content .cm_w45 { width: 45% !important; } 
 .cmass-content .cm_w50 { width: 50% !important; } 
 .cmass-content .cm_w60 { width: 60% !important; } 
 .cmass-content .cm_w75 { width: 75% !important; } 
@@ -429,6 +431,9 @@ color: #fff !important; background: none !important; border: none !important; bo
 .cmass-content .cm_pd_t5 { padding-top: 5px !important; } 
 .cmass-content .cm_pd_t10 { padding-top: 10px !important; } 
 .cmass-content .cm_pd_t20 { padding-top: 20px !important; } 
+
+.cmass-content .cm_pd_r80 { padding-right: 80px !important; } 
+
 
 .cmass-content .cm_mg_lr20 { margin-left: 20px !important; margin-right: 20px !important; } 
 .cmass-content .cm_mg_l20 { margin-left: 20px !important; } 
