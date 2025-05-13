@@ -19,7 +19,7 @@
                     <h1 class="cm_title_01" tabindex="0">아기 양의 미로 탈출 게임</h1>
                 </div>
                 <div class="cm_txt" tabindex="0">
-                    아기 양이 불쑥 불쑥 나타나는 늑대를 피해 안전한 집까지 도착하는 게임을 만들었다. 프로그램이 생각대로 동작하는지 테스트 해보고 오류를 찾아 수정해 보자.
+                    아기 양이 불쑥불쑥 나타나는 늑대를 피해 안전한 집까지 도착하는 게임을 만들었다. 프로그램이 생각대로 동작하는지 테스트 해보고 오류를 찾아 수정해 보자.
                 </div>
                 <h2 class="cm_title_02 cm_pd_l0" tabindex="0"><span class="cm_num">1</span>프로그램 이해 및 분석</h2>
                 <div class="cm_txt cm_pd_l0" tabindex="0">
@@ -27,7 +27,7 @@
                     <ul class="cm_list_num">
                         <li tabindex="0"><span>①</span>아기 양이 집까지 도착하면, 초시계를 정지하고 게임을 종료한다.</li>
                         <li tabindex="0"><span>②</span>아기 양은 방향 키로 이동할 수 있다.</li>
-                        <li tabindex="0"><span>③</span>아기 양이 미로에 닿으면 시작 위치(100, -95)로 돌아간다.</li>
+                        <li tabindex="0"><span>③</span>아기 양이 미로에 닿으면 시작 위치(X: 100, Y: -95)로 돌아간다.</li>
                         <li tabindex="0"><span>④</span>늑대는 1초 간격으로 실행 화면의 무작위 위치에 나타났다 사라진다.</li>
                         <li tabindex="0"><span>⑤</span>아기 양이 늑대에 닿으면 초시계를 정지하고 게임을 종료한다.</li>
                     </ul>  
@@ -38,13 +38,13 @@
             <section class="cm_slide" aria-label="슬라이드 두 번째 화면입니다." tabindex="0">
                 <h2 class="cm_title_02" tabindex="0"><span class="cm_num">2</span>테스트하기</h2>
                 <div class="cm_txt" tabindex="0">
-                    테스트하며 오류가 발생하는 부분이 있는지 찾아 보자.
+                    테스트하며 오류가 발생하는 부분이 있는지 찾아보자.
                 </div>
 
                 <figure class="cm_video">
-                    <figcaption class="cm_video_title" tabindex="0">프로그램 결과 미리보기</figcaption>
+                    <figcaption class="cm_video_title" tabindex="0">프로그램 결과 미리 보기</figcaption>
                     <div class="cm_view" tabindex="0">
-                        <video width="100%" height="auto" controls class="cm_video_form" data-src=""></video>
+                        <video width="100%" height="auto" controls class="cm_video_form" data-src="https://dwrzkqukakqw3693083.cdn.gov-ntruss.com/hls/wAPUYyGP2OFsZxX5r1YxZQ__/001-mid-01-out/,M-325-C04_1_4000k.mp4,M-325-C04_1_2000k.mp4,M-325-C04_1_1000k.mp4,lang/kor/M-325-C04_1.vtt,.smil/master.m3u8"></video>
                     </div>
                 </figure>
 
@@ -65,27 +65,29 @@
                     <div class="cm_view_chart " tabindex="0">
                         <div class="cm_err_txt">늑대가 미로 밖에 나타난다.</div>
                         <div class="cm_tbl_wrap">
-                            <table class="cm_tbl_02" tabindex="0">
+                            <table class="cm_tbl_02">
                                 <caption>오류 사항</caption>
                                 <colgroup>
                                     <col width="10%" />
                                     <col width="90%" />
                                 </colgroup>
                                 <thead>
-                                    <th tabindex="0">오브젝트</th>
-                                    <th tabindex="0">명령 블록</th>
+                                    <tr>
+                                        <th scope="col">오브젝트</th>
+                                        <th scope="col">명령 블록</th>
+                                    </tr>
                                 </thead>
                                 <tbody>
                                     <tr>
-                                        <th tabindex="0">
+                                        <th scope="row">
                                             <img src="img/object_wolf.png" alt="늑대인간 오브젝트" class="cm_h80">
                                         </th>
-                                        <td tabindex="0">
+                                        <td>
                                             <img src="img/img_325_04_01.svg" alt="시작하기 버튼을 클릭했을 때, 위치를 무작위로 이동하며 1초 간격으로 모양 숨기기와 보이기를 계속 반복하도록 조립된 엔트리 코드">
                                         </td>
                                     </tr>
                                 </tbody>
-                            </table>
+                            </table>                            
 
                             <div class="cm_tip">
                                 <div class="cm_tip_txt">Tip</div>
@@ -105,22 +107,24 @@
                     <div class="cm_view_chart " tabindex="0">
                         <div class="cm_err_txt">아기 양이 집에 도착해도 초시계가 멈추지 않고, 말풍선이 나타나지 않는다.</div>
                         <div class="cm_tbl_wrap">
-                            <table class="cm_tbl_02" tabindex="0">
+                            <table class="cm_tbl_02">
                                 <caption>오류 사항</caption>
                                 <colgroup>
                                     <col width="15%" />
                                     <col width="85%" />
                                 </colgroup>
                                 <thead>
-                                    <th tabindex="0">오브젝트</th>
-                                    <th tabindex="0">명령 블록</th>
+                                    <tr>
+                                        <th scope="col">오브젝트</th>
+                                        <th scope="col">명령 블록</th>
+                                    </tr>
                                 </thead>
                                 <tbody>
                                     <tr>
-                                        <th tabindex="0">
+                                        <th scope="row">
                                             <img src="img/object_sheep.png" alt="아기 양 오브젝트">
                                         </th>
-                                        <td tabindex="0">
+                                        <td>
                                             <img src="img/img_325_04_02.svg" class="cm_w75" alt="시작하기 버튼을 클릭했을 때, 위치를 무작위로 이동하며 1초 간격으로 모양 숨기기와 보이기를 계속 반복하도록 조립된 엔트리 코드">
                                         </td>
                                     </tr>
@@ -132,7 +136,7 @@
                                 <div class="cm_tip_box cm_align_l">
                                     <div class="cm_align_c cm_mg_b20"><img src="img/img_325_04_03.svg" alt="'모든' 코드 멈추기 블록" class="cm_w200"></div>
                                     작품의 모든 블록이 실행을 멈춘다. 하지만 모든 코드를 멈추어도 현재 실행 중인 동작을 멈출 뿐 작품을 중지하는 것은 아니다. <br>
-                                    ※ 비슷하게 동작하는 늑대인간 오브젝트의 코드를 확인해보며 다른 점을 찾아보자.
+                                    ※ 비슷하게 동작하는 늑대 인간 오브젝트의 코드를 확인해보며 다른 점을 찾아보자.
                                 </div>
                             </div>
                         </div>
@@ -158,11 +162,11 @@
             </button>
         </div>
         <div class="cm_indicators" tabindex="0" aria-label="슬라이드 인디케이터">
-            <div class="cm_indicator cm_current" role="indicator" aria-label="첫 번째 슬라이드"></div>
-            <div class="cm_indicator" role="indicator" aria-label="두 번째 슬라이드"></div>
-            <div class="cm_indicator" role="indicator" aria-label="세 번째 슬라이드"></div>
-            <div class="cm_indicator" role="indicator" aria-label="네 번째 슬라이드"></div>
-        </div>
+            <button class="cm_indicator cm_current" aria-label="1번 슬라이드로 이동" role="tab" aria-selected="true"></button>
+            <button class="cm_indicator" aria-label="2번 슬라이드로 이동" role="tab" aria-selected="false"></button>
+            <button class="cm_indicator" aria-label="3번 슬라이드로 이동" role="tab" aria-selected="false"></button>
+            <button class="cm_indicator" aria-label="4번 슬라이드로 이동" role="tab" aria-selected="false"></button>
+          </div>  
     </nav>
     <script>
         window.addEventListener("load", function () {
@@ -171,40 +175,53 @@
             const prevButton = document.querySelector('.cm_prev');
             const nextButton = document.querySelector('.cm_next');
             let currentSlide = 0;
-
+      
             function updateSlide(index) {
                 slides.style.transform = `translateX(-${index * 100}%)`;
                 indicators.forEach((indicator, i) => {
                     indicator.classList.toggle('cm_current', i === index);
+                    indicator.setAttribute('aria-selected', i === index);
                 });
                 prevButton.disabled = index === 0;
                 nextButton.disabled = index === indicators.length - 1;
             }
-
+      
             prevButton.addEventListener('click', () => {
                 if (currentSlide > 0) {
                     currentSlide -= 1;
                     updateSlide(currentSlide);
                 }
             });
-
+      
             nextButton.addEventListener('click', () => {
                 if (currentSlide < indicators.length - 1) {
                     currentSlide += 1;
                     updateSlide(currentSlide);
                 }
             });
-
+      
             indicators.forEach((indicator, i) => {
+                // 마우스 클릭 이벤트
                 indicator.addEventListener('click', () => {
                     currentSlide = i;
                     updateSlide(currentSlide);
+                    indicator.focus();
+                });
+      
+                // 키보드 접근성: Enter 또는 Space 키로 슬라이드 이동
+                indicator.addEventListener('keydown', (e) => {
+                    if (e.key === 'Enter' || e.key === ' ') {
+                        e.preventDefault();
+                        currentSlide = i;
+                        updateSlide(currentSlide);
+                        indicator.focus();
+                    }
                 });
             });
-
+      
             updateSlide(currentSlide);
         });
-    </script>
+      </script>
 
 </body>
 </html>

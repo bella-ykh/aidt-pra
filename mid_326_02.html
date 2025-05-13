@@ -24,12 +24,12 @@
                 <h2 class="cm_title_02" tabindex="0"><span class="cm_num">1</span>프로그래밍</h2>
                 <div class="cm_txt" tabindex="0">메이크코드 블록을 연결하여 프로그램을 완성해 보자.</div>
 
-                <div>[프로그램 작성 예시]</div>
+                <div tabindex="0">[프로그램 작성 예시]</div>
                 <ul class="cm_list_num cm_img">
-                    <li><span>①</span><img src="img/img_326_02_01.svg" alt="" class="cm_h120"></li>
-                    <li><span>②</span><img src="img/img_326_02_02.svg" alt=""class="cm_h120"></li>
-                    <li><span>③</span><img src="img/img_326_02_03.svg" alt=""class="cm_h120"></li>
-                    <li><span>④</span><img src="img/img_326_02_04.svg" alt=""class="cm_w350"></li>
+                    <li tabindex="0"><img src="img/img_326_02_01.svg" alt="" class="cm_h120"></li>
+                    <li tabindex="0"><img src="img/img_326_02_02.svg" alt=""class="cm_h120"></li>
+                    <li tabindex="0"><img src="img/img_326_02_03.svg" alt=""class="cm_h120"></li>
+                    <li tabindex="0"><img src="img/img_326_02_04.svg" alt=""class="cm_w350"></li>
                 </ul>
             </section>
 
@@ -58,9 +58,9 @@
             </button>
         </div>
         <div class="cm_indicators" tabindex="0" aria-label="슬라이드 인디케이터">
-            <div class="cm_indicator cm_current" role="indicator" aria-label="첫 번째 슬라이드"></div>
-            <div class="cm_indicator" role="indicator" aria-label="두 번째 슬라이드"></div>
-        </div>
+            <button class="cm_indicator cm_current" aria-label="1번 슬라이드로 이동" role="tab" aria-selected="true"></button>
+            <button class="cm_indicator" aria-label="2번 슬라이드로 이동" role="tab" aria-selected="false"></button>
+          </div>  
     </nav>
     <script>
         window.addEventListener("load", function () {
@@ -69,40 +69,53 @@
             const prevButton = document.querySelector('.cm_prev');
             const nextButton = document.querySelector('.cm_next');
             let currentSlide = 0;
-
+      
             function updateSlide(index) {
                 slides.style.transform = `translateX(-${index * 100}%)`;
                 indicators.forEach((indicator, i) => {
                     indicator.classList.toggle('cm_current', i === index);
+                    indicator.setAttribute('aria-selected', i === index);
                 });
                 prevButton.disabled = index === 0;
                 nextButton.disabled = index === indicators.length - 1;
             }
-
+      
             prevButton.addEventListener('click', () => {
                 if (currentSlide > 0) {
                     currentSlide -= 1;
                     updateSlide(currentSlide);
                 }
             });
-
+      
             nextButton.addEventListener('click', () => {
                 if (currentSlide < indicators.length - 1) {
                     currentSlide += 1;
                     updateSlide(currentSlide);
                 }
             });
-
+      
             indicators.forEach((indicator, i) => {
+                // 마우스 클릭 이벤트
                 indicator.addEventListener('click', () => {
                     currentSlide = i;
                     updateSlide(currentSlide);
+                    indicator.focus();
+                });
+      
+                // 키보드 접근성: Enter 또는 Space 키로 슬라이드 이동
+                indicator.addEventListener('keydown', (e) => {
+                    if (e.key === 'Enter' || e.key === ' ') {
+                        e.preventDefault();
+                        currentSlide = i;
+                        updateSlide(currentSlide);
+                        indicator.focus();
+                    }
                 });
             });
-
+      
             updateSlide(currentSlide);
         });
-    </script>
+      </script>
 
 </body>
 </html>

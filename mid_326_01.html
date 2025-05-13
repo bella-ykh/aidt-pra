@@ -20,7 +20,7 @@
                 </div>
                 <div class="cm_txt" tabindex="0">설계한 ‘교실 환경 신호등’ 알고리즘을 동작 제어 프로그램으로 구현해 보자.</div>
                 <div class="cm_tbl_wrap">
-                    <table class="cm_tbl_01" tabindex="0">
+                    <table class="cm_tbl_01">
                         <caption>설계한 알고리즘을 동작 제어 프로그램으로 구현</caption>
                         <colgroup>
                             <col width="40%" />
@@ -29,87 +29,92 @@
                         </colgroup>
                         <thead>
                             <tr>
-                                <th tabindex="0">온도 기준</th>
-                                <th tabindex="0">쾌적도</th>
-                                <th tabindex="0">신호등 아이콘</th>
+                                <th scope="col">온도 기준</th>
+                                <th scope="col">쾌적도</th>
+                                <th scope="col">신호등 아이콘</th>
                             </tr>
                         </thead>
                         <tbody>
                             <tr>
-                                <td class="cm_align_c" tabindex="0">18~27℃</td>
-                                <td class="cm_align_c" tabindex="0">좋음</td>
-                                <td class="cm_align_c" tabindex="0"><img src="img/img_326_01_07.png" alt="마이크로비트 앞면 LED에 웃음 모양으로 LED가 점등된 모양" class="cm_h50"></td>
+                                <td class="cm_align_c">18~27℃</td>
+                                <td class="cm_align_c">좋음</td>
+                                <td class="cm_align_c">
+                                    <img src="img/img_326_01_07.png" alt="마이크로비트 앞면 LED에 웃음 모양으로 LED가 점등된 모양" class="cm_h50">
+                                </td>
                             </tr>
                             <tr>
-                                <td class="cm_align_c" tabindex="0">8~17℃</td>
-                                <td class="cm_align_c" tabindex="0">보통</td>
-                                <td class="cm_align_c" tabindex="0"><img src="img/img_326_01_08.png" alt="마이크로비트 앞면 LED에 무표정 모양으로 LED가 점등된 모양" class="cm_h50"></td>
+                                <td class="cm_align_c">8~17℃</td>
+                                <td class="cm_align_c">보통</td>
+                                <td class="cm_align_c">
+                                    <img src="img/img_326_01_08.png" alt="마이크로비트 앞면 LED에 무표정 모양으로 LED가 점등된 모양" class="cm_h50">
+                                </td>
                             </tr>
                             <tr>
-                                <td class="cm_align_c" tabindex="0">7℃이하 또는 28℃이상</td>
-                                <td class="cm_align_c" tabindex="0">나쁨</td>
-                                <td class="cm_align_c" tabindex="0"><img src="img/img_326_01_09.png" alt="마이크로비트 앞면 LED에 슬픔 모양으로 LED가 점등된 모양" class="cm_h50"></td>
+                                <td class="cm_align_c">7℃이하 또는 28℃이상</td>
+                                <td class="cm_align_c">나쁨</td>
+                                <td class="cm_align_c">
+                                    <img src="img/img_326_01_09.png" alt="마이크로비트 앞면 LED에 슬픔 모양으로 LED가 점등된 모양" class="cm_h50">
+                                </td>
                             </tr>
                         </tbody>
-                    </table>
+                    </table>                    
                 </div>
                         
                 <figure class="cm_video">
-                    <figcaption class="cm_video_title" tabindex="0">프로그램 결과 미리보기</figcaption>
+                    <figcaption class="cm_video_title" tabindex="0">프로그램 결과 미리 보기</figcaption>
                     <div class="cm_view" tabindex="0">
-                        <video width="100%" height="auto" controls class="cm_video_form" data-src=""></video>
+                        <video width="100%" height="auto" controls class="cm_video_form" data-src="https://dwrzkqukakqw3693083.cdn.gov-ntruss.com/hls/wAPUYyGP2OFsZxX5r1YxZQ__/001-mid-01-out/,M-326-C01_1_4000k.mp4,M-326-C01_1_2000k.mp4,M-326-C01_1_1000k.mp4,lang/kor/M-326-C01_1.vtt,.smil/master.m3u8"></video>
                     </div>
                 </figure>
             </section>
 
             <section class="cm_slide" aria-label="슬라이드 두 번째 화면입니다." tabindex="0">
                 <h2 class="cm_title_02" tabindex="0"><span class="cm_num">1</span>프로그래밍</h2>
-
                 <h3 class="cm_title_03" tabindex="0"><span class="cm_no">①</span>준비하기</h3>
                 <div class="cm_tbl_wrap">
-                    <table class="cm_tbl_02" tabindex="0">
+                    <table class="cm_tbl_02">
                         <caption>프로그래밍 준비하기</caption>
                         <colgroup>
                             <col width="15%" />
                             <col width="85%" />
                         </colgroup>
                         <tr>
-                            <th tabindex="0">오브젝트</th>
-                            <td tabindex="0"><img src="img/object_character.png" alt="엔트리봇 오브젝트" class="cm_h80"></td>
+                            <th scope="row">오브젝트</th>
+                            <td><img src="img/object_character.png" alt="엔트리봇 오브젝트" class="cm_h80"></td>
                         </tr>
                         <tr>
-                            <th tabindex="0">변수</th>
+                            <th scope="row">변수</th>
                             <td>
                                 <ul class="cm_list">
-                                    <li tabindex="0">상태 (작동:1, 비작동:0)</li>
-                                    <li tabindex="0">교실 온도</li>
+                                    <li>상태 (작동:1, 비작동:0)</li>
+                                    <li>교실 온도</li>
                                 </ul>
                             </td>
                         </tr>
                         <tr>
-                            <th tabindex="0">신호</th>
+                            <th scope="row">신호</th>
                             <td>
                                 <ul class="cm_list">
-                                    <li tabindex="0">좋음</li>
-                                    <li tabindex="0">보통</li>
-                                    <li tabindex="0">나쁨</li>
+                                    <li>좋음</li>
+                                    <li>보통</li>
+                                    <li>나쁨</li>
                                 </ul>
                             </td>
                         </tr>
-                    </table>
+                    </table>                    
                 </div>
                 
                 <h3 class="cm_title_03" tabindex="0"><span class="cm_no">②</span>프로그램 작성하기</h3>
                 <div class="cm_tbl_wrap">
-                    <table class="cm_tbl_02" tabindex="0">
+                    <table class="cm_tbl_02">
                         <caption>프로그램 작성하기</caption>
                         <colgroup>
                             <col width="15%" />
                             <col width="85%" />
                         </colgroup>
                         <tr>
-                            <th tabindex="0"><img src="img/object_character.png" alt="엔트리봇 오브젝트" class="cm_h80"></th>
-                            <td class="cm_img_block" tabindex="0">
+                            <th scope="row"><img src="img/object_character.png" alt="엔트리봇 오브젝트" class="cm_h80"></th>
+                            <td class="cm_img_block">
                                 <div class="cm_img_warp">
                                     <img src="img/img_326_01_01.svg" alt="시작하기 버튼을 클릭했을 때 상태 변숫값은 0으로 정하고, 계속 반복하기 블록 안에서 교실 온도 변수를 온도 값으로 정하기 블록과 상태 변숫값이 1이면 교실 온도 값을 비교하여 온도 기준에 따라 좋음, 보통, 나쁨의 신호 보내기 블록을 조립한 빈칸이 포함된 엔트리 코드">
                                     <img src="img/img_326_01_02.png" alt="'A' 버튼을 눌렀을 때, 상태 변숫값을 1으로 정하고, '작동'을 1초 동안 말하기 블록이 조립된 엔트리 코드" class="cm_w75">
@@ -120,7 +125,7 @@
                                 </div>
                             </td>
                         </tr>
-                    </table>
+                    </table>                    
                 </div>
 
             </section>
@@ -143,10 +148,10 @@
             </button>
         </div>
         <div class="cm_indicators" tabindex="0" aria-label="슬라이드 인디케이터">
-            <div class="cm_indicator cm_current" role="indicator" aria-label="첫 번째 슬라이드"></div>
-            <div class="cm_indicator" role="indicator" aria-label="두 번째 슬라이드"></div>
-            <div class="cm_indicator" role="indicator" aria-label="세 번째 슬라이드"></div>
-        </div>
+            <button class="cm_indicator cm_current" aria-label="1번 슬라이드로 이동" role="tab" aria-selected="true"></button>
+            <button class="cm_indicator" aria-label="2번 슬라이드로 이동" role="tab" aria-selected="false"></button>
+            <button class="cm_indicator" aria-label="3번 슬라이드로 이동" role="tab" aria-selected="false"></button>
+          </div>  
     </nav>
     <script>
         window.addEventListener("load", function () {
@@ -155,40 +160,53 @@
             const prevButton = document.querySelector('.cm_prev');
             const nextButton = document.querySelector('.cm_next');
             let currentSlide = 0;
-
+      
             function updateSlide(index) {
                 slides.style.transform = `translateX(-${index * 100}%)`;
                 indicators.forEach((indicator, i) => {
                     indicator.classList.toggle('cm_current', i === index);
+                    indicator.setAttribute('aria-selected', i === index);
                 });
                 prevButton.disabled = index === 0;
                 nextButton.disabled = index === indicators.length - 1;
             }
-
+      
             prevButton.addEventListener('click', () => {
                 if (currentSlide > 0) {
                     currentSlide -= 1;
                     updateSlide(currentSlide);
                 }
             });
-
+      
             nextButton.addEventListener('click', () => {
                 if (currentSlide < indicators.length - 1) {
                     currentSlide += 1;
                     updateSlide(currentSlide);
                 }
             });
-
+      
             indicators.forEach((indicator, i) => {
+                // 마우스 클릭 이벤트
                 indicator.addEventListener('click', () => {
                     currentSlide = i;
                     updateSlide(currentSlide);
+                    indicator.focus();
+                });
+      
+                // 키보드 접근성: Enter 또는 Space 키로 슬라이드 이동
+                indicator.addEventListener('keydown', (e) => {
+                    if (e.key === 'Enter' || e.key === ' ') {
+                        e.preventDefault();
+                        currentSlide = i;
+                        updateSlide(currentSlide);
+                        indicator.focus();
+                    }
                 });
             });
-
+      
             updateSlide(currentSlide);
         });
-    </script>
+      </script>
 
 </body>
 </html>

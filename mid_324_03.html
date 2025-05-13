@@ -27,23 +27,20 @@
                 </div>
                 
                 <figure class="cm_video">
-                    <figcaption class="cm_video_title" tabindex="0">프로그램 결과 미리보기</figcaption>
+                    <figcaption class="cm_video_title" tabindex="0">프로그램 결과 미리 보기</figcaption>
                     <div class="cm_view" tabindex="0">
-                        <video width="100%" height="auto" controls class="cm_video_form" data-src="https://dwrzkqukakqw3693083.cdn.gov-ntruss.com/hls/wAPUYyGP2OFsZxX5r1YxZQ__/001-mid-01-out/,m-324-03-01_4000k.mp4,m-324-03-01_2000k.mp4,m-324-03-01_1000k.mp4,lang/kor/m-324-03-01.vtt,.smil/master.m3u8v"></video>
+                        <video width="100%" height="auto" controls class="cm_video_form" data-src="https://dwrzkqukakqw3693083.cdn.gov-ntruss.com/hls/wAPUYyGP2OFsZxX5r1YxZQ__/001-mid-01-out/,M-324-C03_1_4000k.mp4,M-324-C03_1_2000k.mp4,M-324-C03_1_1000k.mp4,lang/kor/M-324-C03_1.vtt,.smil/master.m3u8"></video>
                     </div>
                 </figure>
             </section>
 
             <section class="cm_slide" aria-label="슬라이드 두 번째 화면입니다." tabindex="0">
                 <h2 class="cm_title_02" tabindex="0"><span class="cm_num">2</span>알고리즘 설계</h2>
-                <div class="cm_txt">
-                    미세 먼지 농도를 입력하면 이에 따라 신호등 모양을 바꾸고 행동 요령을 안내한다. 
-                    <ul class="cm_list_num">
-                        <li tabindex="0"><span>①</span>바깥 반복 구조: ‘단’을 표현하며, 변수 ‘단’ 값을 1부터 시작하여 9번 반복한다. 반복할 때마다 변수 ‘단’ 값을 1씩 증가한다.</li>
-                        <li tabindex="0"><span>②</span>안쪽 반복 구조: 특정 ‘단’ 내부에서 반복을 표현한다. 변수 ‘곱하는 수’ 값이 1부터 시작하여 9번 반복한다. 반복할 때마다 변수 ‘곱하는 수’ 값을 1씩 증가하며, 변수 ‘단’ × ‘곱하는 수’의 계산 결과를 글상자에 쓴다.</li>
-                    </ul>
-                </div>
-                <div class="cm_chart">
+                <ul class="cm_list_num">
+                    <li tabindex="0"><span>①</span>바깥 반복 구조: ‘단’을 표현하며, 변수 ‘단’ 값을 1부터 시작하여 9번 반복한다. 반복할 때마다 변수 ‘단’ 값을 1씩 증가한다.</li>
+                    <li tabindex="0"><span>②</span>안쪽 반복 구조: 특정 ‘단’ 내부에서 반복을 표현한다. 변수 ‘곱하는 수’ 값이 1부터 시작하여 9번 반복한다. 반복할 때마다 변수 ‘곱하는 수’ 값을 1씩 증가하며, 변수 ‘단’ × ‘곱하는 수’의 계산 결과를 글상자에 쓴다.</li>
+                </ul>
+                <div class="cm_chart cm_mg_t20">
                     <h3 class="cm_chart_title" tabindex="0">순서도</h3>
                     <div class="cm_view_chart" tabindex="0">
                         <img src="img/chart_324_03.svg" alt="구구단을 출력하는 과정을 중첩 반복 구조로 설명한 순서도">
@@ -55,26 +52,26 @@
                 <h2 class="cm_title_02" tabindex="0"><span class="cm_num">3</span>프로그래밍</h2>
                 <h3 class="cm_title_03" tabindex="0"><span class="cm_no">①</span>준비하기</h3>
                 <div class="cm_tbl_wrap">
-                    <table class="cm_tbl_02" tabindex="0">
+                    <table class="cm_tbl_02">
                         <caption>프로그래밍 준비하기</caption>
                         <colgroup>
                             <col width="15%" />
                             <col width="85%" />
                         </colgroup>
                         <tr>
-                            <th tabindex="0">오브젝트</th>
-                            <td tabindex="0"><img src="img/object_gugu.svg" alt="'구구단' 글상자 오브젝트" class="cm_h30"></td>
+                            <th scope="row">오브젝트</th>
+                            <td><img src="img/object_gugu.svg" alt="'구구단' 글상자 오브젝트" class="cm_h30"></td>
                         </tr>
                         <tr>
-                            <th tabindex="0">변수</th>
+                            <th scope="row">변수</th>
                             <td>
                                 <ul class="cm_list">
-                                    <li tabindex="0">단</li>
-                                    <li tabindex="0">곱하는 수</li>
+                                    <li>단</li>
+                                    <li>곱하는 수</li>
                                 </ul>
                             </td>
                         </tr>
-                    </table>
+                    </table>                    
                 </div>
                 
                 <h3 class="cm_title_03" tabindex="0"><span class="cm_no">②</span>프로그램 작성하기</h3>
@@ -119,11 +116,11 @@
             </button>
         </div>
         <div class="cm_indicators" tabindex="0" aria-label="슬라이드 인디케이터">
-            <div class="cm_indicator cm_current" role="indicator" aria-label="첫 번째 슬라이드"></div>
-            <div class="cm_indicator" role="indicator" aria-label="두 번째 슬라이드"></div>
-            <div class="cm_indicator" role="indicator" aria-label="세 번째 슬라이드"></div>
-            <div class="cm_indicator" role="indicator" aria-label="네 번째 슬라이드"></div>
-        </div>
+            <button class="cm_indicator cm_current" aria-label="1번 슬라이드로 이동" role="tab" aria-selected="true"></button>
+            <button class="cm_indicator" aria-label="2번 슬라이드로 이동" role="tab" aria-selected="false"></button>
+            <button class="cm_indicator" aria-label="3번 슬라이드로 이동" role="tab" aria-selected="false"></button>
+            <button class="cm_indicator" aria-label="4번 슬라이드로 이동" role="tab" aria-selected="false"></button>
+          </div> 
     </nav>
     <script>
         window.addEventListener("load", function () {
@@ -132,40 +129,53 @@
             const prevButton = document.querySelector('.cm_prev');
             const nextButton = document.querySelector('.cm_next');
             let currentSlide = 0;
-
+      
             function updateSlide(index) {
                 slides.style.transform = `translateX(-${index * 100}%)`;
                 indicators.forEach((indicator, i) => {
                     indicator.classList.toggle('cm_current', i === index);
+                    indicator.setAttribute('aria-selected', i === index);
                 });
                 prevButton.disabled = index === 0;
                 nextButton.disabled = index === indicators.length - 1;
             }
-
+      
             prevButton.addEventListener('click', () => {
                 if (currentSlide > 0) {
                     currentSlide -= 1;
                     updateSlide(currentSlide);
                 }
             });
-
+      
             nextButton.addEventListener('click', () => {
                 if (currentSlide < indicators.length - 1) {
                     currentSlide += 1;
                     updateSlide(currentSlide);
                 }
             });
-
+      
             indicators.forEach((indicator, i) => {
+                // 마우스 클릭 이벤트
                 indicator.addEventListener('click', () => {
                     currentSlide = i;
                     updateSlide(currentSlide);
+                    indicator.focus();
+                });
+      
+                // 키보드 접근성: Enter 또는 Space 키로 슬라이드 이동
+                indicator.addEventListener('keydown', (e) => {
+                    if (e.key === 'Enter' || e.key === ' ') {
+                        e.preventDefault();
+                        currentSlide = i;
+                        updateSlide(currentSlide);
+                        indicator.focus();
+                    }
                 });
             });
-
+      
             updateSlide(currentSlide);
         });
-    </script>
+      </script>
 
 </body>
 </html>

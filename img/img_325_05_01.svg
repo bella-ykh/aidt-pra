@@ -50,6 +50,10 @@
         letter-spacing: -.025em;
       }
 
+      .cls-12 {
+        letter-spacing: -.05em;
+      }
+
       .cls-9 {
         fill: #ffe697;
         stroke: #bb7d0c;
@@ -108,20 +112,20 @@
   <text class="cls-3" transform="translate(40.925 158.405)"><tspan x="0" y="0">결괏값(성공)에 0 저장</tspan></text>
   <text class="cls-3" transform="translate(85.33 274.549)"><tspan x="0" y="0">사용자로부터</tspan><tspan x="-12.152" y="31">숫자(정수) 입력</tspan></text>
   <polygon class="cls-8" points="152.387 375.006 5.618 429.949 152.387 484.893 299.156 429.949 152.387 375.006"/>
-  <text class="cls-3" transform="translate(372.599 410.243)"><tspan x="0" y="0">아니요</tspan></text>
-  <text class="cls-2" transform="translate(88.42 570.145)"><tspan class="cls-4" x="0" y="0">‘정답입니다</tspan><tspan class="cls-10" x="115.309" y="0">.</tspan><tspan class="cls-11" x="119.534" y="0">’</tspan><tspan class="cls-4"><tspan x="-5.263" y="33">메세지를 출력</tspan></tspan></text>
-  <text class="cls-3" transform="translate(97.271 505.798)"><tspan x="0" y="0">예</tspan></text>
+  <text class="cls-3" transform="translate(372.6 410.243)"><tspan x="0" y="0">아니요</tspan></text>
+  <text class="cls-2" transform="translate(88.42 570.145)"><tspan class="cls-4" x="0" y="0">‘정답입니다</tspan><tspan class="cls-10" x="115.309" y="0">.</tspan><tspan class="cls-11" x="119.534" y="0">’</tspan><tspan class="cls-4"><tspan x="-5.263" y="33">메시지를 출력</tspan></tspan></text>
+  <text class="cls-3" transform="translate(97.271 505.797)"><tspan x="0" y="0">예</tspan></text>
   <text class="cls-3" transform="translate(83.173 438.296)"><tspan x="0" y="0">입력값 = 정답</tspan></text>
-  <polygon class="cls-9" points="579.776 728.661 329.78 728.661 379.783 623.661 629.779 623.661 579.776 728.661"/>
+  <polygon class="cls-9" points="579.775 728.661 329.779 728.661 379.782 623.661 629.778 623.661 579.775 728.661"/>
   <polygon class="cls-8" points="480.876 472.869 334.107 527.812 480.876 582.756 627.645 527.812 480.876 472.869"/>
-  <text class="cls-2" transform="translate(416.907 668.008)"><tspan class="cls-4" x="0" y="0">‘정답입니다</tspan><tspan class="cls-10" x="115.309" y="0">.</tspan><tspan class="cls-11" x="119.534" y="0">’</tspan><tspan class="cls-4"><tspan x="-5.263" y="33">메세지를 출력</tspan></tspan></text>
+  <text class="cls-3" transform="translate(386.165 683.595)"><tspan x="0" y="0">‘UP’ 메시지를 출력</tspan></text>
   <text class="cls-3" transform="translate(430.274 605.305)"><tspan x="0" y="0">예</tspan></text>
-  <text class="cls-3" transform="translate(411.66 536.159)"><tspan x="0" y="0">입력값 = 정답</tspan></text>
+  <text class="cls-3" transform="translate(411.661 536.159)"><tspan x="0" y="0">입력값 &lt; 정답</tspan></text>
   <g>
     <polyline class="cls-6" points="622.229 527.535 808.715 527.535 808.715 613.163"/>
     <polygon class="cls-1" points="802.731 611.413 808.715 621.774 814.698 611.413 802.731 611.413"/>
   </g>
   <text class="cls-3" transform="translate(701.535 507.829)"><tspan x="0" y="0">아니요</tspan></text>
-  <polygon class="cls-9" points="908.711 728.661 658.715 728.661 708.718 623.661 958.714 623.661 908.711 728.661"/>
-  <text class="cls-2" transform="translate(745.843 668.008)"><tspan class="cls-4" x="0" y="0">‘정답입니다</tspan><tspan class="cls-10" x="115.309" y="0">.</tspan><tspan class="cls-11" x="119.534" y="0">’</tspan><tspan class="cls-4"><tspan x="-5.263" y="33">메세지를 출력</tspan></tspan></text>
+  <polygon class="cls-9" points="908.71 728.661 658.714 728.661 708.717 623.661 958.713 623.661 908.71 728.661"/>
+  <text class="cls-2" transform="translate(692.226 683.595)"><tspan class="cls-4" x="0" y="0">‘D</tspan><tspan class="cls-12" x="23.786" y="0">O</tspan><tspan class="cls-4" x="42.052" y="0">WN’ 메시지를 출력</tspan></text>
 </svg>

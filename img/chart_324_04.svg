@@ -91,7 +91,7 @@
       <polygon class="cls-1" points="292.65 632.641 298.634 643.003 304.617 632.641 292.65 632.641"/>
     </g>
     <text class="cls-7" transform="translate(451.303 140.438)"><tspan x="0" y="0">아니요</tspan></text>
-    <text class="cls-7" transform="translate(410.787 343.277)"><tspan x="0" y="0">아니요</tspan></text>
+    <text class="cls-7" transform="translate(410.787 363.793)"><tspan x="0" y="0">아니요</tspan></text>
     <g>
       <line class="cls-3" x1="298.634" y1="25" x2="298.634" y2="86.328"/>
       <polygon class="cls-1" points="292.65 84.577 298.634 94.939 304.617 84.577 292.65 84.577"/>
@@ -102,9 +102,9 @@
     </g>
     <text class="cls-7" transform="translate(315.704 247.304)"><tspan x="0" y="0">예</tspan></text>
     <text class="cls-7" transform="translate(315.704 472.594)"><tspan x="0" y="0">예</tspan></text>
-    <rect class="cls-4" x="192.068" y="494.971" width="208.998" height="66.462"/>
+    <rect class="cls-4" x="182.067" y="494.971" width="229" height="66.462"/>
     <text class="cls-7" transform="translate(213.368 536.546)"><tspan x="0" y="0">‘합’에 ‘수’ 더하기</tspan></text>
-    <rect class="cls-4" x="192.068" y="643.683" width="208.998" height="66.462"/>
+    <rect class="cls-4" x="182.067" y="643.683" width="229" height="66.462"/>
     <text class="cls-7" transform="translate(246.536 685.256)"><tspan x="0" y="0">‘수’ 1 증가</tspan></text>
     <g>
       <polygon class="cls-5" points="298.846 318.713 180.503 381.884 298.846 445.056 417.189 381.884 298.846 318.713"/>

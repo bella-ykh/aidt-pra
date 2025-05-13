@@ -26,22 +26,20 @@
                 </div>
                 
                 <figure class="cm_video">
-                    <figcaption class="cm_video_title" tabindex="0">프로그램 결과 미리보기</figcaption>
+                    <figcaption class="cm_video_title" tabindex="0">프로그램 결과 미리 보기</figcaption>
                     <div class="cm_view" tabindex="0">
-                        <video width="100%" height="auto" controls class="cm_video_form" data-src=""></video>
+                        <video width="100%" height="auto" controls class="cm_video_form" data-src="https://dwrzkqukakqw3693083.cdn.gov-ntruss.com/hls/wAPUYyGP2OFsZxX5r1YxZQ__/001-mid-01-out/,M-324-C05_1_4000k.mp4,M-324-C05_1_2000k.mp4,M-324-C05_1_1000k.mp4,lang/kor/M-324-C05_1.vtt,.smil/master.m3u8"></video>
                     </div>
                 </figure>
             </section>
 
             <section class="cm_slide" aria-label="슬라이드 두 번째 화면입니다." tabindex="0">
                 <h2 class="cm_title_02" tabindex="0"><span class="cm_num">2</span>알고리즘 설계</h2>
-                <div class="cm_txt ">
-                    <ul class="cm_list_num cm_pd_t0">
-                        <li tabindex="0"><span>①</span>바깥 선택 구조: ‘투표한 사람 변숫값 &lt; 총 인원 변숫값’이면 안쪽 블록을 실행한다.</li>
-                        <li tabindex="0"><span>②</span>안쪽 반복 구조: 반티 리스트 항목 수만큼 반복하여 점수를 입력받는다.</li>
-                    </ul>
-                </div>
-                <div class="cm_chart">
+                <ul class="cm_list_num">
+                    <li tabindex="0"><span>①</span>바깥 선택 구조: ‘투표한 사람 변숫값 &lt; 총 인원 변숫값’이면 안쪽 블록을 실행한다.</li>
+                    <li tabindex="0"><span>②</span>안쪽 반복 구조: 반티 리스트 항목 수만큼 반복하여 점수를 입력받는다.</li>
+                </ul>
+                <div class="cm_chart cm_mg_t20">
                     <h3 class="cm_chart_title" tabindex="0">순서도</h3>
                     <div class="cm_view_chart" tabindex="0">
                         <img src="img/chart_324_05.svg" alt="오브젝트를 클릭했을 때, 투표한 사람이 총 인원과 같아질 때까지 반복하여 반티 후보의 점수를 입력받고 점수를 누적하는 과정을 설명한 순서도">
@@ -53,15 +51,15 @@
                 <h2 class="cm_title_02" tabindex="0"><span class="cm_num">3</span>프로그래밍</h2>
                 <h3 class="cm_title_03" tabindex="0"><span class="cm_no">①</span>준비하기</h3>
                 <div class="cm_tbl_wrap">
-                    <table class="cm_tbl_02" tabindex="0">
+                    <table class="cm_tbl_02">
                         <caption>프로그래밍 준비하기</caption>
                         <colgroup>
                             <col width="15%" />
                             <col width="85%" />
                         </colgroup>
                         <tr>
-                            <th tabindex="0"><img src="img/object_bant.png" alt="[묶음] 반티 오브젝트" class="cm_h80"></th>
-                            <td class="cm_img_block" tabindex="0">
+                            <th scope="row"><img src="img/object_bant.png" alt="[묶음] 반티 오브젝트" class="cm_h80"></th>
+                            <td class="cm_img_block">
                                 <div class="cm_img_warp">
                                     <img src="img/img_324_05_01.svg" alt="오브젝트를 클릭했을 때, 투표한 사람이 총 인원과 같아질 때까지 반복하여 반티 후보의 점수를 입력받고 점수를 누적하도록 조립된 빈칸이 포함된 엔트리 코드">
                                     <img src="img/img_324_05_02.png" alt="10은 10보다 작다 판단 블록" class="cm_w75">
@@ -71,7 +69,7 @@
                                 </div>
                             </td>
                         </tr>
-                    </table>
+                    </table>                    
                 </div>
             </section>
             
@@ -93,11 +91,11 @@
             </button>
         </div>
         <div class="cm_indicators" tabindex="0" aria-label="슬라이드 인디케이터">
-            <div class="cm_indicator cm_current" role="indicator" aria-label="첫 번째 슬라이드"></div>
-            <div class="cm_indicator" role="indicator" aria-label="두 번째 슬라이드"></div>
-            <div class="cm_indicator" role="indicator" aria-label="세 번째 슬라이드"></div>
-            <div class="cm_indicator" role="indicator" aria-label="네 번째 슬라이드"></div>
-        </div>
+            <button class="cm_indicator cm_current" aria-label="1번 슬라이드로 이동" role="tab" aria-selected="true"></button>
+            <button class="cm_indicator" aria-label="2번 슬라이드로 이동" role="tab" aria-selected="false"></button>
+            <button class="cm_indicator" aria-label="3번 슬라이드로 이동" role="tab" aria-selected="false"></button>
+            <button class="cm_indicator" aria-label="4번 슬라이드로 이동" role="tab" aria-selected="false"></button>
+          </div>
     </nav>
     <script>
         window.addEventListener("load", function () {
@@ -106,39 +104,52 @@
             const prevButton = document.querySelector('.cm_prev');
             const nextButton = document.querySelector('.cm_next');
             let currentSlide = 0;
-
+      
             function updateSlide(index) {
                 slides.style.transform = `translateX(-${index * 100}%)`;
                 indicators.forEach((indicator, i) => {
                     indicator.classList.toggle('cm_current', i === index);
+                    indicator.setAttribute('aria-selected', i === index);
                 });
                 prevButton.disabled = index === 0;
                 nextButton.disabled = index === indicators.length - 1;
             }
-
+      
             prevButton.addEventListener('click', () => {
                 if (currentSlide > 0) {
                     currentSlide -= 1;
                     updateSlide(currentSlide);
                 }
             });
-
+      
             nextButton.addEventListener('click', () => {
                 if (currentSlide < indicators.length - 1) {
                     currentSlide += 1;
                     updateSlide(currentSlide);
                 }
             });
-
+      
             indicators.forEach((indicator, i) => {
+                // 마우스 클릭 이벤트
                 indicator.addEventListener('click', () => {
                     currentSlide = i;
                     updateSlide(currentSlide);
+                    indicator.focus();
+                });
+      
+                // 키보드 접근성: Enter 또는 Space 키로 슬라이드 이동
+                indicator.addEventListener('keydown', (e) => {
+                    if (e.key === 'Enter' || e.key === ' ') {
+                        e.preventDefault();
+                        currentSlide = i;
+                        updateSlide(currentSlide);
+                        indicator.focus();
+                    }
                 });
             });
-
+      
             updateSlide(currentSlide);
         });
-    </script>
+      </script>
 </body>
 </html>

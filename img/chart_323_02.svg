@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg id="_레이어_1" data-name="레이어 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 677.572 862.207">
+<svg id="_레이어_1" data-name="레이어 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 677.072 862.207">
   <defs>
     <style>
       .cls-1 {
@@ -45,54 +45,56 @@
       }
     </style>
   </defs>
-  <rect class="cls-4" x="66.302" y="110.518" width="311.223" height="73.746"/>
+  <rect class="cls-4" x="66.302" y="110.018" width="311.223" height="73.746"/>
   <g>
-    <polyline class="cls-3" points="539.094 669.659 539.094 299.888 350.144 299.888"/>
-    <polygon class="cls-1" points="546.574 667.471 539.094 680.423 531.616 667.471 546.574 667.471"/>
+    <polyline class="cls-3" points="539.094 669.159 539.094 299.388 350.144 299.388"/>
+    <polygon class="cls-1" points="546.574 666.971 539.094 679.923 531.616 666.971 546.574 666.971"/>
   </g>
   <g>
-    <line class="cls-3" x1="221.914" y1="183.6" x2="221.914" y2="211.961"/>
-    <polygon class="cls-1" points="215.93 210.211 221.914 220.572 227.897 210.211 215.93 210.211"/>
+    <line class="cls-3" x1="221.914" y1="183.1" x2="221.914" y2="211.461"/>
+    <polygon class="cls-1" points="215.93 209.71 221.914 220.072 227.896 209.71 215.93 209.71"/>
   </g>
-  <text class="cls-7" transform="translate(117.429 155.737)"><tspan x="0" y="0">반티 후보 번호(n)=0</tspan></text>
+  <text class="cls-7" transform="translate(117.429 155.237)"><tspan x="0" y="0">반티 후보 번호(n)=0</tspan></text>
   <g>
-    <line class="cls-3" x1="221.914" y1="70.967" x2="221.914" y2="101.845"/>
-    <polygon class="cls-1" points="215.93 100.095 221.914 110.456 227.897 100.095 215.93 100.095"/>
+    <line class="cls-3" x1="221.914" y1="70.467" x2="221.914" y2="101.345"/>
+    <polygon class="cls-1" points="215.93 99.594 221.914 109.956 227.896 99.594 215.93 99.594"/>
   </g>
-  <rect class="cls-2" x="78.574" y="1" width="287.747" height="70" rx="35" ry="35"/>
-  <text class="cls-7" transform="translate(108.002 45.19)"><tspan x="0" y="0">오브젝트를 클릭했을 때</tspan></text>
+  <rect class="cls-2" x="78.574" y=".5" width="287.747" height="70" rx="35" ry="35"/>
+  <text class="cls-7" transform="translate(108.002 44.69)"><tspan x="0" y="0">오브젝트를 클릭했을 때</tspan></text>
   <g>
-    <line class="cls-3" x1="221.914" y1="498.597" x2="221.914" y2="528.273"/>
-    <polygon class="cls-1" points="215.93 526.523 221.914 536.884 227.897 526.523 215.93 526.523"/>
+    <line class="cls-3" x1="221.914" y1="498.097" x2="221.914" y2="527.773"/>
+    <polygon class="cls-1" points="215.93 526.022 221.914 536.384 227.896 526.022 215.93 526.022"/>
   </g>
-  <rect class="cls-4" x="66.302" y="425.265" width="311.223" height="73.746"/>
-  <text class="cls-7" transform="translate(100.923 470.492)"><tspan x="0" y="0">반티 후보 번호(n) 1 증가</tspan></text>
-  <rect class="cls-2" x="412.662" y="791.207" width="252.744" height="70" rx="35" ry="35"/>
-  <text class="cls-7" transform="translate(527.798 835.161)"><tspan x="0" y="0">끝</tspan></text>
+  <rect class="cls-4" x="66.302" y="424.765" width="311.223" height="73.746"/>
+  <text class="cls-7" transform="translate(125.415 469.992)"><tspan x="0" y="0">반티 후보(n) 1 증가</tspan></text>
   <g>
-    <line class="cls-3" x1="538.946" y1="753.817" x2="538.946" y2="782.596"/>
-    <polygon class="cls-1" points="532.963 780.845 538.946 791.207 544.929 780.845 532.963 780.845"/>
+    <line class="cls-3" x1="538.946" y1="753.317" x2="538.946" y2="782.096"/>
+    <polygon class="cls-1" points="532.963 780.345 538.946 790.707 544.929 780.345 532.963 780.345"/>
   </g>
-  <rect class="cls-4" x="403.336" y="680.485" width="273.221" height="73.746"/>
-  <text class="cls-7" transform="translate(437.553 725.714)"><tspan x="0" y="0">투표한 사람 수 1증가</tspan></text>
+  <rect class="cls-4" x="403.336" y="679.985" width="273.221" height="73.746"/>
+  <text class="cls-7" transform="translate(437.553 725.214)"><tspan x="0" y="0">투표한 사람 수 1증가</tspan></text>
   <g>
-    <line class="cls-3" x1="221.914" y1="376.018" x2="221.914" y2="416.592"/>
-    <polygon class="cls-1" points="215.93 414.841 221.914 425.203 227.897 414.841 215.93 414.841"/>
+    <line class="cls-3" x1="221.914" y1="375.518" x2="221.914" y2="416.092"/>
+    <polygon class="cls-1" points="215.93 414.341 221.914 424.703 227.896 414.341 215.93 414.341"/>
   </g>
-  <polygon class="cls-5" points="221.914 220.572 80.992 299.888 221.914 379.204 362.835 299.888 221.914 220.572"/>
-  <text class="cls-7" transform="translate(161.691 277.235)"><tspan x="0" y="0">반티 리스트 </tspan><tspan x="-2.671" y="30">항목 수 만큼 </tspan><tspan x="-1.328" y="60">반복했는가?</tspan></text>
-  <text class="cls-7" transform="translate(243.12 404.989)"><tspan x="0" y="0">아니요</tspan></text>
-  <text class="cls-7" transform="translate(374.519 281.795)"><tspan x="0" y="0">예</tspan></text>
+  <polygon class="cls-5" points="221.914 220.072 80.992 299.388 221.914 378.704 362.835 299.388 221.914 220.072"/>
+  <text class="cls-7" transform="translate(161.691 276.735)"><tspan x="0" y="0">반티 리스트 </tspan><tspan x="0" y="30">항목 수만큼 </tspan><tspan x="-1.328" y="60">반복했는가?</tspan></text>
+  <text class="cls-7" transform="translate(243.12 404.489)"><tspan x="0" y="0">아니요</tspan></text>
+  <text class="cls-7" transform="translate(374.519 281.296)"><tspan x="0" y="0">예</tspan></text>
   <g>
-    <line class="cls-3" x1="221.702" y1="622.465" x2="221.702" y2="649.213"/>
-    <polygon class="cls-1" points="215.719 647.462 221.702 657.824 227.685 647.462 215.719 647.462"/>
+    <line class="cls-3" x1="221.702" y1="621.966" x2="221.702" y2="648.713"/>
+    <polygon class="cls-1" points="215.719 646.962 221.702 657.324 227.685 646.962 215.719 646.962"/>
   </g>
-  <polygon class="cls-6" points="331.911 622.476 51.912 622.476 111.916 537.478 391.915 537.478 331.911 622.476"/>
-  <text class="cls-7" transform="translate(132.156 572.671)"><tspan x="0" y="0">n번째 반티 후보의</tspan><tspan x="42.847" y="33">점수 입력</tspan></text>
+  <polygon class="cls-6" points="331.911 621.976 51.912 621.976 111.916 536.978 391.915 536.978 331.911 621.976"/>
+  <text class="cls-7" transform="translate(132.156 572.171)"><tspan x="0" y="0">n번째 반티 후보의</tspan><tspan x="42.847" y="33">점수 입력</tspan></text>
   <g>
-    <polyline class="cls-3" points="221.914 754.156 221.914 797.607 1.5 797.607 1.5 299.888 67.212 299.888"/>
-    <polygon class="cls-1" points="65.461 305.871 75.823 299.888 65.461 293.905 65.461 305.871"/>
+    <polyline class="cls-3" points="221.913 753.655 221.913 797.107 1.5 797.107 1.5 299.388 71.982 299.388"/>
+    <polygon class="cls-1" points="70.232 305.371 80.593 299.388 70.232 293.405 70.232 305.371"/>
   </g>
-  <rect class="cls-4" x="66.302" y="657.886" width="311.223" height="95.683"/>
-  <text class="cls-7" transform="translate(97.023 697.857)"><tspan x="0" y="0">n번째 반티 후보의 점수를</tspan><tspan x="21.026" y="33">반티 총점에 누적하기</tspan></text>
+  <rect class="cls-4" x="66.302" y="657.386" width="311.223" height="95.683"/>
+  <text class="cls-7" transform="translate(97.023 697.357)"><tspan x="0" y="0">n번째 반티 후보의 점수를</tspan><tspan x="21.026" y="33">반티 총점에 누적하기</tspan></text>
+  <g>
+    <rect class="cls-2" x="453.417" y="791.707" width="171.736" height="70" rx="35" ry="35"/>
+    <text class="cls-7" transform="translate(528.374 835.897)"><tspan x="0" y="0">끝</tspan></text>
+  </g>
 </svg>
