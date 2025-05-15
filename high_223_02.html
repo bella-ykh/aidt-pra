@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>고-223-02</title>
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" type="text/css" href="css/font/pretendard.css" />
+    <link rel="stylesheet" type="text/css" href="css/font/pretendard-subset.css"/>
+    <script type="text/javascript" src="js/GoogleTranslate.js"></script>
+    <script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=GoogleTranslateInitCallback"></script>
+</head>
+<body class="cmass-content">
+    <section class="cm_wrap_h">
+        <section>
+            <div class="cm_title_bg">
+                <h1 class="cm_title_h1" tabindex="0">칼로리 데이터와 운동 데이터의 시각화(박스 플롯)</h1>
+            </div>
+    
+            <div class="cm_txt" tabindex="0">
+                박스 플롯은 데이터의 통계 분포와 이상치를 시각화하기 좋은 도구이다. 코답을 사용하여 박스 플롯을 표현하는 방법을 알아보자. 
+            </div>
+        </section>
+
+        <section>
+            <div class="cm_title_bg2">
+                <h2 class="cm_title_h2" tabindex="0">1. 문제 상황 이해하기</h2>
+            </div>
+            <div class="cm_txt_h" tabindex="0">
+                칼로리와 운동 데이터에 있는 속성 중 남녀 성별에 따른 키의 통곗값과 이상치를 분석하려고 한다. 원활한 분석을 위해 데이터를 시각화해 보자.
+            </div>
+        </section>
+        
+        <section>
+            <div class="cm_title_bg2">
+                <h2 class="cm_title_h2" tabindex="0">2. 데이터 수집하기</h2>
+            </div>
+            <div class="cm_txt_h" tabindex="0">
+                빅데이터 전처리 과정을 통해 정리한 칼로리-운동 데이터를 사용한다.
+            </div>
+        </section>
+
+        <section>
+            <div class="cm_title_bg2">
+                <h2 class="cm_title_h2" tabindex="0">3. 데이터 탐색하기</h2>
+            </div>
+            <ul class="cm_list_num_h">
+                <li><span>①</span>팝업창의 새 문서 버튼을 클릭한다.</li>
+                <li><span>②</span>오른쪽 상단의 실습 파일 보기 버튼(             )을 클릭하여 distribution_height.codap의 주소를 복사한다.</li>
+                <li><span>③</span>메뉴(        )의 ‘가져오기’에서 URL 탭을 선택하여 복사한 주소를 붙여 넣은 뒤 데이터 가져오기 버튼을 클릭한다.</li>
+            </ul>
+        </section>
+
+        <section>
+            <div class="cm_title_bg2">
+                <h2 class="cm_title_h2" tabindex="0">4. 데이터 시각화하기</h2>
+            </div>
+            <ul class="cm_list_num_h">
+                <li><span>①</span>그래프를 선택한 뒤,      를 선택한다.</li>
+                <li><span>②</span>▼ Box Plot and Normal Curve 항목에서 ‘상자그림’, ‘이상치 보기’를 선택한다.</li>
+                <li><span>③</span>▶ Measure of Spread 항목에서 ‘표준편차’를 선택한다.</li>
+                <li><span>④</span>▶ Measure of Center 항목에서 ‘평균’, ‘중앙값’을 선택한다.</li>
+                <li><span>⑤</span>'측정 레이블 보이기' 항목을 선택한다.</li>
+                <li><span>⑥</span>마우스 커서를 그래프에 보이는 이상치 표시(+)에 가져가 값을 확인해 본다.</li>
+              </ul>
+        </section>
+
+        <section>
+            <div class="cm_title_bg2">
+                <h2 class="cm_title_h2" tabindex="0">5. 결과 해석하기</h2>
+            </div>
+            <div class="cm_txt_h" tabindex="0">
+                박스 플롯을 보고 그래프의 결과를 해석해 보자.
+            </div>
+
+            <div class="cm_txt_h" tabindex="0">
+                시각화한 결과를 보면, 남성 키의 평균값은 184.5cm, 중앙값은 184cm임을 알 수 있다. 
+                또한 최솟값은 151cm이고, 최댓값은 217cm이다. 
+                한편, 여성 키의 평균값은 164.4cm이고, 중앙값은 165cm, 최솟값 123cm, 최댓값 197cm임을 알 수 있다.
+            </div>
+
+            <div class="cm_tip_h">
+                <div class="cm_tip_bg"><span class="cm_tip_txt2">Tip!</span></div>
+                <div class="cm_tip_cont">
+                    중앙값(Median): 어떤 주어진 값들을 크기의 순서대로 정렬했을 때 가장 중앙에 위치하는 값을 의미한다. 
+                    예를 들어, 150, 152, 178 세수의 평균값은 160이고, 중앙값은 152이다. 
+                    이처럼 다른 데이터와 다른 극단적이 값이 있을 때는 평균값보다는 중앙값이 통계적으로 더 의미가 있다.
+                </div>
+            </div>
+        </section>
+        
+    </section>
+</body>
+</html>

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>고-223-02</title>
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" type="text/css" href="css/font/pretendard.css" />
+    <link rel="stylesheet" type="text/css" href="css/font/pretendard-subset.css"/>
+    <script type="text/javascript" src="js/GoogleTranslate.js"></script>
+    <script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=GoogleTranslateInitCallback"></script>
+</head>
+<body class="cmass-content">
+    <section class="cm_wrap_h">
+        <section>
+            <div class="cm_title_bg">
+                <h1 class="cm_title_h1" tabindex="0">칼로리 데이터와 운동 데이터의 시각화(산점도)</h1>
+            </div>
+    
+            <div class="cm_txt" tabindex="0">
+                산점도는 두 개의 수치형 변수 간의 상관관계를 시각화하기 좋은 도구이다. 코답을 사용하여 산점도를 표현하는 방법을 알아보자. 
+            </div>
+        </section>
+
+        <section>
+            <div class="cm_title_bg2">
+                <h2 class="cm_title_h2" tabindex="0">1. 문제 상황 이해하기</h2>
+            </div>
+            <div class="cm_txt_h" tabindex="0">
+                칼로리와 운동 데이터에 있는 속성 중 운동 시간 및 심장 박동수, 체온과 열량 소모와의 관계를 분석하려고 한다.
+            </div>
+        </section>
+        
+        <section>
+            <div class="cm_title_bg2">
+                <h2 class="cm_title_h2" tabindex="0">2. 데이터 수집하기</h2>
+            </div>
+            <div class="cm_txt_h" tabindex="0">
+                빅데이터 전처리 과정을 통해 정리한 칼로리-운동 데이터를 사용한다.
+            </div>
+        </section>
+
+        <section>
+            <div class="cm_title_bg2">
+                <h2 class="cm_title_h2" tabindex="0">3. 데이터 탐색하기</h2>
+            </div>
+            <ul class="cm_list_num_h">
+                <li><span>①</span>팝업창의 새 문서 버튼을 클릭한다.</li>
+                <li><span>②</span>오른쪽 상단의 실습 파일 보기 버튼(            )을 클릭하여 calories_exercise.csv의 주소를 복사한다.</li>
+                <li><span>③</span>메뉴(       )의 ‘가져오기’에서 URL 탭을 선택하여 복사한 주소를 붙여 넣은 뒤 데이터 가져오기 버튼을 클릭한다.</li>
+            </ul>
+        </section>
+
+        <section>
+            <div class="cm_title_bg2">
+                <h2 class="cm_title_h2" tabindex="0">4. 데이터 시각화하기</h2>
+            </div>
+            <ul class="cm_list_num_h">
+                <li><span>①</span>그래프 아이콘(      )을 클릭하여 새로운 그래프를 생성한다.</li>
+                <li><span>②</span>임의의 그래프가 생기면 그래프 이름을 더블 클릭하여 'cases'에서 ‘운동 시간과 열량 소모의 관계’로 변경한다.</li>
+                <li><span>③</span>그래프의 x축 속성을 클릭하여 Duration 속성을 선택한다.</li>
+                <li><span>④</span>그래프의 y축 속성을 클릭하여 Calories 속성을 선택한다.</li>
+                <li><span>⑤</span>'측정 레이블 보이기' 항목을 선택한다.</li>
+                <li><span>⑥</span>를 클릭하고 최소제곱선을 선택한다.</li>
+            </ul>
+        </section>
+
+        <section>
+            <div class="cm_title_bg2">
+                <h2 class="cm_title_h2" tabindex="0">5. 결과 해석하기</h2>
+            </div>
+            <div class="cm_txt_h" tabindex="0">
+                최소제곱선을 표시한 산점도를 보고 그래프의 결과를 해석해 보자.
+            </div>
+
+            <div class="cm_txt_h" tabindex="0">
+                시각화한 결과를 보면, 운동 시간이 짧으면 열량 소모가 적고, 운동 시간이 길면 열량 소모가 많은 것을 확인할 수 있다. 
+                즉 운동 시간과 열량 소모는 서로 관계가 있고, 관계가 있다는 것은 운동 시간을 통해 열량 소모를 예측하는 것이 가능하다는 의미이다. 
+                이 관계는 최소제곱선을 통해서도 확인할 수 있다. 최소제곱선이 일정한 기울기를 갖는 일차함수로 표시되면 두 속성은 관계가 있다고 해석할 수 있다.
+            </div>
+
+            <div class="cm_tip_h">
+                <div class="cm_tip_bg"><span class="cm_tip_txt2">Tip!</span></div>
+                <div class="cm_tip_cont">
+                    최소제곱선: 두 변수의 관계를 확인할 수 있는 지표로 이 선의 기울기가 1에 가까울 수록 두 변수는 상관관계가 높다고 할 수 있다. 
+                    최소제곱선이라고 부르는 일차함수의 기울기가 그래프에 r²으로 표시되어 있다. 
+                    r²은 결정계수라고도 하는데, 한 변수로 다른 변수를 예측한 결과에 대한 객관적 정확도를 나타낸다. 
+                    r² = 0.913은 기울기가 1에 가깝다는 것과 예측한 결과가 91.3%으로 정확도가 높다는 것을 의미한다.
+                </div>
+            </div>
+        </section>
+        
+    </section>
+</body>
+</html>
