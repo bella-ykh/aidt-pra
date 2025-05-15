@@ -184,9 +184,9 @@ color: #fff !important; background: none !important; border: none !important; bo
 .cmass-content .cm_solution_box { width: 80%; min-width: 180px; border: solid 2px #1a509f; border-radius: 20px; padding: 20px; font-size: 18px; line-height: 1.5rem; margin-bottom: 20px; } 
 
 
-.cmass-content .cm_tip_321 { display: flex; flex-direction: row; justify-content: center; gap: 50px; margin-top: 20px; margin-left: 0 !important; margin-bottom: 0 !important; } /*저작도구 이슈*/ 
+.cmass-content .cm_tip_321 { display: flex; flex-direction: row; justify-content: center; gap: 30px; margin-top: 20px; margin-left: 0 !important; margin-bottom: 0 !important; } /*저작도구 이슈*/ 
 .cmass-content .cm_tip_321 li { text-align: center; } 
-.cmass-content .cm_tip_321 li img { width: 100px; border: solid 1px #96bc61; border-radius: 10px; background-color: #fff; } 
+.cmass-content .cm_tip_321 li img { width: 100%; max-width: 100px; border: solid 1px #96bc61; border-radius: 10px; background-color: #fff; } 
 .cmass-content .cm_tip_321 li span { display: block; text-align: center; font-size: 18px; } 
 
 .cmass-content .cm_tip_322 { text-align: center; padding-top: 10px; } 
@@ -199,9 +199,8 @@ color: #fff !important; background: none !important; border: none !important; bo
 .cmass-content .cm_tbl_02 td .cm_tip_var img { height: 50px !important; margin-bottom: 20px; } 
 .cmass-content .cm_tbl_02 td .cm_tip_var img.cm_mg_none { margin-bottom: 0 !important; } 
 
-
 .cmass-content .cm_tip_323_wrap { display: flex; justify-content: center; flex-wrap: wrap; } 
-.cmass-content .cm_tip_323 { width: fit-content; background-color: #fff; border: solid 1px #c6dca8; border-radius: 20px; padding: 5px 20px; margin: 20px auto; } 
+.cmass-content .cm_tip_323 { width: fit-content; background-color: #fff; border: solid 1px #c6dca8; border-radius: 20px; padding: 5px 19px; margin: 20px auto; } 
 
 .cmass-content .cm_tip_324 { display: inline-block; line-height: 24px; } 
 .cmass-content .cm_tip_324 img { width: 200px; vertical-align: middle; margin-right: 0 !important; } 
@@ -265,11 +264,14 @@ color: #fff !important; background: none !important; border: none !important; bo
 .cmass-content .cm_tbl_01 td img.cm_w50 { width: 50% !important; } 
 .cmass-content .cm_tbl_01 td img.cm_w30 { width: 30% !important; } 
 .cmass-content .cm_tbl_01 td img.cm_w80 { width: 80% !important; } 
+.cmass-content .cm_tbl_01.cm_word_bk td { word-break: break-all;}
+
 
 .cmass-content .cm_tbl_02 { width: 100%; border-top: 6px solid #4f80ff; border-collapse: separate; border-spacing: 0; } 
 .cmass-content .cm_tbl_02 caption { display: none; } /* 저작도구 이슈 */
 .cmass-content .cm_tbl_02 th { background-color: #d6e9f4; border-right: solid 4px #fff; border-bottom: solid 4px #fff; padding: 10px; font-size: 18px; color: #222; text-align: center; } 
 .cmass-content .cm_tbl_02 th:last-child { border-right: 0; } 
+.cmass-content .cm_tbl_02 th.cm_h35 img { height: 35px !important; display: inline-block !important; } /* 저작도구 이슈*/
 .cmass-content .cm_tbl_02 th img { display: inline-block !important; margin: 0 auto !important; } /* 뷰어 이슈*/
 .cmass-content .cm_tbl_02 th img.cm_h20 { height: 20px !important; } 
 .cmass-content .cm_tbl_02 th img.cm_h45 { height: 45px !important; } 
@@ -277,6 +279,8 @@ color: #fff !important; background: none !important; border: none !important; bo
 .cmass-content .cm_tbl_02 th img.cm_h70 { height: 70px /*min(70px, 12vw)*/ !important; } 
 .cmass-content .cm_tbl_02 th img.cm_h80 { height: 80px /*min(80px, 10vw)*/ !important; } 
 .cmass-content .cm_tbl_02 th img.cm_h100 { height: 100px /*min(100px, 20vw)*/ !important; } 
+.cmass-content .cm_tbl_02 th img.cm_w50 { width: 50% !important } 
+.cmass-content .cm_tbl_02 th img.cm_w70 { width: 70% !important } 
 .cmass-content .cm_tbl_02 th img.cm_w100 { width: 100% !important } 
 .cmass-content .cm_tbl_02 td { background-color: #f7fcff; border-bottom: solid 4px #fff; padding: 15px 10px; font-size: 18px; color: #222; } 
 .cmass-content .cm_tbl_02 td img { margin: 5px auto !important; display: inline-block !important; padding: 0 5px; } 
@@ -292,6 +296,7 @@ color: #fff !important; background: none !important; border: none !important; bo
 .cmass-content .cm_tbl_02 td img.cm_w65 { width: 65% !important; } 
 .cmass-content .cm_tbl_02 td img.cm_w80 { width: 80% !important; } 
 .cmass-content .cm_tbl_02 td img.cm_w100 { width: 100% !important; } 
+.cmass-content .cm_tbl_02 td img.cm_mw200 { max-width: 200px !important; } 
 
 .cmass-content .cm_tbl_02 td.cm_h35 img { height: 35px !important; display: inline-block !important; } /* 저작도구 이슈*/
 .cmass-content .cm_tbl_02 td.cm_h35 img.cm_h80 { height: 80px !important; display: inline-block !important; } /* 저작도구 이슈*/
@@ -300,6 +305,7 @@ color: #fff !important; background: none !important; border: none !important; bo
 .cmass-content .cm_tbl_02 td.cm_txt_c { text-align: center; border-right: solid 4px #fff; } 
 .cmass-content .cm_tbl_02 td.cm_line_r { border-right: solid 4px #fff; } 
 .cmass-content .cm_tbl_02 td.cm_align_c { text-align: center; } 
+
 
 
 .cmass-content input[type="radio"] { width: 20px; height: 20px; border: 0px solid #007bff; border-radius: 50%; outline: none; transition: all 0.3s ease; cursor: pointer; } 
@@ -449,6 +455,9 @@ color: #fff !important; background: none !important; border: none !important; bo
 .cmass-content .cm_w300 { width: 300px !important; } 
 .cmass-content .cm_w320 { width: 320px !important; } 
 .cmass-content .cm_w350 { width: 350px !important; } 
+.cmass-content .cm_mw250 { max-width: 250px !important; } 
+.cmass-content .cm_mw300 { max-width: 300px !important; } 
+.cmass-content .cm_mw400 { max-width: 400px !important; } 
 
 
 /* 패딩, 마진, 정렬 */
@@ -456,6 +465,8 @@ color: #fff !important; background: none !important; border: none !important; bo
 .cmass-content .cm_pd_t0 { padding-top: 0 !important; } 
 .cmass-content .cm_pd_b0 { padding-bottom: 0 !important; } 
 .cmass-content .cm_pd_tb0 { padding-top: 0 !important; padding-bottom: 0 !important; } 
+
+.cmass-content .cm_pd_tb5 { padding-top: 5px !important; padding-bottom: 5px !important; } 
 
 .cmass-content .cm_pd_b10 { padding-bottom: 10px !important; } 
 .cmass-content .cm_pd_b40 { padding-bottom: 40px !important; } 

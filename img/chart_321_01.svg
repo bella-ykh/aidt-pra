@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg id="_레이어_1" data-name="레이어 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 361.728 602.405">
+<svg id="_레이어_1" data-name="레이어 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 377.029 603.405">
   <defs>
     <style>
       .cls-1 {
@@ -46,37 +46,35 @@
       }
     </style>
   </defs>
-  <rect class="cls-5" x="54.492" y="531.905" width="252.744" height="70" rx="35" ry="35"/>
-  <rect class="cls-5" x="54.492" y=".5" width="252.744" height="70" rx="35" ry="35"/>
+  <rect class="cls-5" x="103.296" y="532.905" width="171.736" height="70" rx="35" ry="35"/>
+  <rect class="cls-5" x="103.296" y=".5" width="171.736" height="70" rx="35" ry="35"/>
   <g>
-    <line class="cls-6" x1="180.653" y1="70.467" x2="180.653" y2="98.491"/>
-    <polygon class="cls-1" points="174.669 96.741 180.653 107.102 186.636 96.741 174.669 96.741"/>
+    <line class="cls-6" x1="188.953" y1="70.967" x2="188.953" y2="98.991"/>
+    <polygon class="cls-1" points="182.969 97.241 188.953 107.602 194.936 97.241 182.969 97.241"/>
   </g>
-  <text class="cls-3" transform="translate(158.368 44.693)"><tspan x="0" y="0">시작</tspan></text>
-  <text class="cls-3" transform="translate(169.641 575.855)"><tspan x="0" y="0">끝</tspan></text>
+  <text class="cls-3" transform="translate(166.668 45.193)"><tspan x="0" y="0">시작</tspan></text>
   <g>
-    <line class="cls-6" x1="180.653" y1="212.777" x2="180.653" y2="240.048"/>
-    <polygon class="cls-1" points="174.669 238.297 180.653 248.659 186.636 238.297 174.669 238.297"/>
-  </g>
-  <g>
-    <polygon class="cls-7" points="300.863 212.856 .862 212.856 60.866 107.856 360.867 107.856 300.863 212.856"/>
-    <text class="cls-2" transform="translate(131.905 153.049)"><tspan class="cls-4"><tspan x="0" y="0">“안녕!”을</tspan></tspan><tspan class="cls-4" x="-32.984" y="33">2초 동안 말한다</tspan><tspan class="cls-9" x="123.844" y="33">.</tspan></text>
+    <line class="cls-6" x1="188.953" y1="213.277" x2="188.953" y2="240.548"/>
+    <polygon class="cls-1" points="182.969 238.798 188.953 249.159 194.936 238.798 182.969 238.798"/>
   </g>
   <g>
-    <line class="cls-6" x1="180.653" y1="353.678" x2="180.653" y2="380.916"/>
-    <polygon class="cls-1" points="174.669 379.165 180.653 389.526 186.636 379.165 174.669 379.165"/>
+    <polygon class="cls-7" points="316.163 213.356 1.161 213.356 61.165 108.356 376.167 108.356 316.163 213.356"/>
+    <text class="cls-2" transform="translate(140.205 153.549)"><tspan class="cls-4"><tspan x="0" y="0">“안녕!”을</tspan></tspan><tspan class="cls-4" x="-32.984" y="33">2초 동안 말한다</tspan><tspan class="cls-9" x="123.844" y="33">.</tspan></text>
   </g>
   <g>
-    <polygon class="cls-7" points="300.863 353.659 .862 353.659 60.866 248.659 360.867 248.659 300.863 353.659"/>
-    <text class="cls-2" transform="translate(65.581 293.851)"><tspan class="cls-4" x="0" y="0">“나는 엔트리봇이야</tspan><tspan class="cls-8" x="191.877" y="0">.</tspan><tspan class="cls-4" x="196.102" y="0">”를</tspan><tspan class="cls-4" x="33.601" y="33">2초 동안 말한다</tspan><tspan class="cls-9" x="190.428" y="33">.</tspan></text>
+    <line class="cls-6" x1="188.953" y1="354.178" x2="188.953" y2="381.416"/>
+    <polygon class="cls-1" points="182.969 379.665 188.953 390.026 194.936 379.665 182.969 379.665"/>
   </g>
   <g>
-    <line class="cls-6" x1="180.653" y1="494.516" x2="180.653" y2="523.294"/>
-    <polygon class="cls-1" points="174.669 521.543 180.653 531.905 186.636 521.543 174.669 521.543"/>
+    <polygon class="cls-7" points="316.163 354.159 1.161 354.159 61.165 249.159 376.167 249.159 316.163 354.159"/>
+    <text class="cls-2" transform="translate(73.88 294.351)"><tspan class="cls-4" x="0" y="0">“나는 엔트리봇이야</tspan><tspan class="cls-8" x="191.877" y="0">.</tspan><tspan class="cls-4" x="196.102" y="0">”를</tspan><tspan class="cls-4" x="33.601" y="33">2초 동안 말한다</tspan><tspan class="cls-9" x="190.428" y="33">.</tspan></text>
   </g>
   <g>
-    <polygon class="cls-7" points="300.863 494.526 .862 494.526 60.866 389.526 360.867 389.526 300.863 494.526"/>
-    <text class="cls-2" transform="translate(100.164 434.718)"><tspan class="cls-4"><tspan x="0" y="0">“날씨가 좋아”를</tspan></tspan><tspan class="cls-4" x="-1.243" y="33">2초 동안 말한다</tspan><tspan class="cls-9" x="155.584" y="33">.</tspan></text>
+    <line class="cls-6" x1="188.953" y1="495.016" x2="188.953" y2="523.794"/>
+    <polygon class="cls-1" points="182.969 522.043 188.953 532.405 194.936 522.043 182.969 522.043"/>
   </g>
-  <text class="cls-3" transform="translate(158.368 44.693)"><tspan x="0" y="0">시작</tspan></text>
+  <polygon class="cls-7" points="315.864 495.026 .862 495.026 60.866 390.026 375.868 390.026 315.864 495.026"/>
+  <text class="cls-2" transform="translate(49.726 435.219)"><tspan class="cls-4" x="0" y="0">“프로그램을 작성해 보자</tspan><tspan class="cls-8" x="240.86" y="0">.</tspan><tspan class="cls-4" x="245.085" y="0">”를</tspan><tspan class="cls-4" x="58.092" y="33">2초 동안 말한다</tspan><tspan class="cls-9" x="214.92" y="33">.</tspan></text>
+  <text class="cls-3" transform="translate(166.668 45.193)"><tspan x="0" y="0">시작</tspan></text>
+  <text class="cls-3" transform="translate(178.254 576.855)"><tspan x="0" y="0">끝</tspan></text>
 </svg>
