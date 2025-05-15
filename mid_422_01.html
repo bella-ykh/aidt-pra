@@ -21,9 +21,15 @@
                 <div class="cm_txt" tabindex="0">
                     이미지 분류 모델에 적용하여 주인의 얼굴을 인식하는 로봇 강아지 프로그램을 작성해 보자
                 </div>
+                <div class="cm_speech" tabindex="0">
+                    <img src="img/img_422_01_00.png" alt="할아버지 얼굴" class="cm_w130">
+                    <div class="cm_bubble" tabindex="0">
+                    로봇 강아지가 나를 알아보고 인사해 주면 좋겠구나.
+                    </div>                  
+                </div>
 
                 <figure class="cm_video">
-                    <figcaption class="cm_video_title" tabindex="0">프로그램 결과 미리보기</figcaption>
+                    <figcaption class="cm_video_title" tabindex="0">프로그램 결과 미리 보기</figcaption>
                     <div class="cm_view" tabindex="0">
                         <video width="100%" height="auto" controls class="cm_video_form" data-src=""></video>
                     </div>
@@ -38,14 +44,14 @@
                 </div>
 
                 <dl class="cm_solution_box">
-                    <dt class="cm_font_bold">• 해결 방법</dt> 
-                    <dd class="cm_line_t">
+                    <dt class="cm_font_bold" tabindex="0">• 해결 방법</dt> 
+                    <dd class="cm_line_t" tabindex="0">
                         할아버지 얼굴 이미지를 학습시켜 할아버지 이미지가 입력되면 로봇 강아지가 인사하도록 프로그램 작성하기
                     </dd>
                 </dl>
                 <dl class="cm_solution_box">
-                    <dt class="cm_font_bold">• 데이터 유형</dt> 
-                    <dd class="cm_line_t">이미지 데이터</dd>
+                    <dt class="cm_font_bold" tabindex="0">• 데이터 유형</dt> 
+                    <dd class="cm_line_t" tabindex="0">이미지 데이터</dd>
                 </dl>
 
             </section>
@@ -56,19 +62,31 @@
                     문제를 해결하는 데 적합한 인공지능 모델을 만들어 보자.
                 </div>
 
-                <ul class="cm_list_num">
-                    <li><span>①</span>엔트리의 ‘인공지능’ 블록 카테고리의 ‘인공지능 모델 학습하기’를 선택한다.</li>
-                    <li><span>②</span>② ‘학습할 모델 선택하기’에서 ‘새로 만들기’의 ‘분류:이미지’를 선택하고 ‘학습하기’를 클릭한다.</li>
-                    <li><span>③</span>모델 이름을 ‘주인 얼굴 인식’, 클래스 이름을 각각 ‘주인’, ‘다른 사람’으로 입력한다.</li>
-                </ul>
+                <h3 class="cm_title_03" tabindex="0"><span class="cm_no">①</span>엔트리의 ‘인공지능’ 블록 카테고리의 ‘인공지능 모델 학습하기’를 선택한다.</h3>
+                <div class="cm_img_row" tabindex="0">
+                    <img src="img/img_421_01_01.svg" alt="엔트리 블록 카테고리 인공지능" class="cm_223_01">
+                    <img src="img/img_321_01_02.png" alt="오른쪽 화살표" class="cm_223_02">
+                    <img src="img/img_422_01_03.svg" alt="인공지능 모델 학습하기 버튼" class="cm_223_03">
+                </div>
+
+                <h3 class="cm_title_03" tabindex="0"><span class="cm_no">②</span>‘학습할 모델 선택하기’에서 ‘새로 만들기’의 ‘분류:이미지’를 선택하고 ‘학습하기’를 클릭한다.</h3>
+                <div class="cm_img_row" tabindex="0">
+                    <img src="img/img_422_01_04.png" alt="학습할 모델 선택하기에서 업로드 또는 웹캠으로 촬영한 이미지를 분류할 수 있는 모델을 학습합니다라고 써진 분류: 이미지" class="cm_w50">
+                    <img src="img/img_321_01_02.png" alt="오른쪽 화살표" class="cm_223_02">
+                    <img src="img/img_422_01_05.svg" alt="학습하기 버튼" class="cm_w30">
+                </div>
+
+                <h3 class="cm_title_03" tabindex="0"><span class="cm_no">③</span>모델 이름을 ‘주인 얼굴 인식’, 클래스 이름을 각각 ‘주인’, ‘다른 사람’으로 입력한다.</h3>
+                <div class="cm_img_row" tabindex="0">
+                    <img src="img/img_422_01_06.png" class="cm_w90" alt="분류: 이미지 모델 학습하기에서 제목에 ‘주인 얼굴 인식’이라고 입력하고, ‘모델이 학습할 데이터를 입력합니다’라고 써진 데이터 입력의 첫째 클래스에 주인, 둘째 클래스에 다른 사람이라고 입력">
+                </div>
                 
-                <div class="cm_tip">
+                <div class="cm_tip" tabindex="0">
                     <div class="cm_tip_txt">Tip</div>
-                    <div class="cm_tip_box">
+                    <div class="cm_tip_box" tabindex="0">
                         클래스는 이미지가 어떤 카테고리에 속하는지를 나타내는 것으로, 레이블이라고도 한다. ‘클래스 추가하기’ 버튼을 클릭해서 클래스를 추가할 수 있다.
                     </div>
-                  </div>
-
+                </div>
             </section>
           
             <section class="cm_slide"  aria-label="슬라이드 네 번째 화면입니다." tabindex="0">
@@ -76,12 +94,15 @@
                 <div class="cm_txt" tabindex="0">
                     각 클래스에 학습 데이터를 입력하여 모델을 학습시키고 새로운 데이터로 결과를 확인해 보자.
                 </div>
-                <ul class="cm_list_num">
-                    <li><span>①</span>각 클래스에 해당하는 이미지를 업로드하거나 컴퓨터 카메라로 촬영하여 학습 데이터를 5개 이상 입력한다.</li>
-                    <li><span>②</span>학습 데이터를 입력한 후, ‘학습하기’를 클릭하여 학습을 진행한다.</li>
-                    <li><span>③</span>모델 학습이 잘 이루어졌는지 새로운 데이터를 업로드하거나 촬영하여 결과를 확인한다.</li>
-                    <li><span>④</span>결과를 확인하여 ‘주인’과 ‘다른 사람’ 얼굴을 잘 분류하면 ‘적용하기’를 클릭하고, 그렇지 않다면 해당 클래스의 이미지 학습 데이터를 추가하여 학습시킨다.</li>
+                <ul class="cm_list_num cm_pd_t0">
+                    <li tabindex="0"><span>①</span>각 클래스에 해당하는 이미지를 업로드하거나 컴퓨터 카메라로 촬영하여 학습 데이터를 5개 이상 입력한다.</li>
+                    <li tabindex="0"><span>②</span>학습 데이터를 입력한 후, ‘학습하기’를 클릭하여 학습을 진행한다.</li>
+                    <li tabindex="0"><span>③</span>모델 학습이 잘 이루어졌는지 새로운 데이터를 업로드하거나 촬영하여 결과를 확인한다.</li>
+                    <li tabindex="0"><span>④</span>결과를 확인하여 ‘주인’과 ‘다른 사람’ 얼굴을 잘 분류하면 ‘적용하기’를 클릭하고, 그렇지 않다면 해당 클래스의 이미지 학습 데이터를 추가하여 학습시킨다.</li>
                 </ul>
+                <div class="cm_img_wrap cm_mg_t20">
+                    <img src="img/img_422_01_07.png" class="cm_w100" alt="이미지 분류 모델 학습하기 화면. 왼쪽에는 ‘데이터 입력’ 영역이 있으며, ‘주인’ 클래스와 ‘다른 사람’ 클래스로 각각 5장의 이미지가 입력되어 있다. 가운데에는 ‘학습하기’ 버튼과 학습 진행률 100%가 표시된 학습 영역이 있다. 오른쪽 '결과' 영역에는 테스트 이미지로 나이 든 남성의 사진이 업로드되어 있으며, 분류한 클래스 결과로 '주인' 99.73%, '다른 사람' 0.26%가 표시되어 있다. '주인'으로 정확하게 분류된 결과가 막대 그래프로 나타나 있다.">
+                </div>
             </section>
 
             <section class="cm_slide"  aria-label="슬라이드 다섯 번째 화면입니다." tabindex="0">
@@ -89,25 +110,23 @@
                 <div class="cm_txt" tabindex="0">
                     이미지를 인식하는 ‘인공지능 로봇 강아지’ 프로그램을 작성해 보자.
                 </div>
-                <div class="cm_tbl_wrap">
-                    <table class="cm_tbl_02" tabindex="0">
-                        <caption>프로그램 작성하기</caption>
+                <div class="cm_tbl_wrap cm_mg_t20">
+                    <table class="cm_tbl_02">
+                        <caption>프로그래밍 작성하기</caption>
                         <colgroup>
-                            <col width="10%" />
-                            <col width="90%" />
+                            <col width="20%" />
+                            <col width="80%" />
                         </colgroup>
                         <thead>
-                            <th tabindex="0">오브젝트</th>
-                            <th tabindex="0">명령 블록</th>
+                            <tr>
+                                <th scope="col">오브젝트</th>
+                                <th scope="col">명령 블럭</th>
+                            </tr>
                         </thead>
                         <tbody>
                             <tr>
-                                <th tabindex="0"><img src="img/object_add.svg" alt="추가하기 버튼 오브젝트"></th>
-                                <td tabindex="0">
-                                    <div class="cm_img_warp">
-                                        <img src="img/img_322_01_01.png" alt="오브젝트를 클릭했을 때, '추가할 버킷 리스트를 입력하세요'를 묻고 대답 기다리기 블록과 빈칸이 포함된 블록이 순서대로 연결된 엔트리 블록들">
-                                    </div>
-                                </td>
+                                <td><img src="img/img_422_01_08.png" class="cm_w100" alt="로봇 개 오브젝트"></td>
+                                <td><img src="img/img_422_01_09.svg" alt=""></td>
                             </tr>
                         </tbody>
                     </table>
@@ -128,12 +147,12 @@
             </button>
         </div>
         <div class="cm_indicators" tabindex="0" aria-label="슬라이드 인디케이터">
-            <div class="cm_indicator cm_current" role="indicator" aria-label="첫 번째 슬라이드"></div>
-            <div class="cm_indicator" role="indicator" aria-label="두 번째 슬라이드"></div>
-            <div class="cm_indicator" role="indicator" aria-label="세 번째 슬라이드"></div>
-            <div class="cm_indicator" role="indicator" aria-label="네 번째 슬라이드"></div>
-            <div class="cm_indicator" role="indicator" aria-label="다섯 번째 슬라이드"></div>
-        </div>
+            <button class="cm_indicator cm_current" aria-label="1번 슬라이드로 이동" role="tab" aria-selected="true"></button>
+            <button class="cm_indicator" aria-label="2번 슬라이드로 이동" role="tab" aria-selected="false"></button>
+            <button class="cm_indicator" aria-label="3번 슬라이드로 이동" role="tab" aria-selected="false"></button>
+            <button class="cm_indicator" aria-label="4번 슬라이드로 이동" role="tab" aria-selected="false"></button>
+            <button class="cm_indicator" aria-label="5번 슬라이드로 이동" role="tab" aria-selected="false"></button>
+          </div>  
     </nav>
     <script>
         window.addEventListener("load", function () {
@@ -142,40 +161,53 @@
             const prevButton = document.querySelector('.cm_prev');
             const nextButton = document.querySelector('.cm_next');
             let currentSlide = 0;
-
+      
             function updateSlide(index) {
                 slides.style.transform = `translateX(-${index * 100}%)`;
                 indicators.forEach((indicator, i) => {
                     indicator.classList.toggle('cm_current', i === index);
+                    indicator.setAttribute('aria-selected', i === index);
                 });
                 prevButton.disabled = index === 0;
                 nextButton.disabled = index === indicators.length - 1;
             }
-
+      
             prevButton.addEventListener('click', () => {
                 if (currentSlide > 0) {
                     currentSlide -= 1;
                     updateSlide(currentSlide);
                 }
             });
-
+      
             nextButton.addEventListener('click', () => {
                 if (currentSlide < indicators.length - 1) {
                     currentSlide += 1;
                     updateSlide(currentSlide);
                 }
             });
-
+      
             indicators.forEach((indicator, i) => {
+                // 마우스 클릭 이벤트
                 indicator.addEventListener('click', () => {
                     currentSlide = i;
                     updateSlide(currentSlide);
+                    indicator.focus();
+                });
+      
+                // 키보드 접근성: Enter 또는 Space 키로 슬라이드 이동
+                indicator.addEventListener('keydown', (e) => {
+                    if (e.key === 'Enter' || e.key === ' ') {
+                        e.preventDefault();
+                        currentSlide = i;
+                        updateSlide(currentSlide);
+                        indicator.focus();
+                    }
                 });
             });
-
+      
             updateSlide(currentSlide);
         });
-    </script>
+      </script>
 
 </body>
 </html>

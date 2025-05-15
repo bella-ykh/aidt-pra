@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="_레이어_2" data-name="레이어 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 297.75 69">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #9400d3;
+      }
+
+      .cls-1, .cls-2 {
+        stroke-width: 0px;
+      }
+
+      .cls-2, .cls-3 {
+        fill: #fff;
+      }
+
+      .cls-3 {
+        font-family: D2Coding, D2Coding;
+        font-size: 26.581px;
+      }
+    </style>
+  </defs>
+  <rect class="cls-1" width="297.75" height="69"/>
+  <g>
+    <text class="cls-3" transform="translate(80.488 45.938)"><tspan x="0" y="0">계산</tspan></text>
+    <path class="cls-2" d="m46.904,17.951h-22.365c-2.307,0-4.176,1.87-4.176,4.176v26.615c0,2.307,1.87,4.176,4.176,4.176h22.365c2.307,0,4.176-1.87,4.176-4.176v-26.615c0-2.307-1.87-4.176-4.176-4.176Zm-17.558,30.476h-4.299v-4.299h4.299v4.299Zm0-8.694h-4.299v-4.299h4.299v4.299Zm8.525,8.694h-4.299v-4.299h4.299v4.299Zm0-8.694h-4.299v-4.299h4.299v4.299Zm8.525,8.694h-4.299v-12.992h4.299v12.992Zm0-17.387h-21.348v-8.597h21.348v8.597Z"/>
+  </g>
+</svg>

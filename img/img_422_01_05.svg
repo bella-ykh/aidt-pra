@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="_레이어_1" data-name="레이어 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 106.562 41.807">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #4f80ff;
+        stroke-width: 0px;
+      }
+
+      .cls-2 {
+        fill: #fff;
+        font-family: Pretendard-SemiBold-KSCpc-EUC-H, Pretendard;
+        font-size: 15.5px;
+        font-weight: 600;
+      }
+    </style>
+  </defs>
+  <rect class="cls-1" width="106.562" height="41.807" rx="3.899" ry="3.899"/>
+  <text class="cls-2" transform="translate(26.489 25.901)"><tspan x="0" y="0">학습하기</tspan></text>
+</svg>

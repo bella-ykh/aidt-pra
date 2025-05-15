@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="_레이어_2" data-name="레이어 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 333.82 55.065">
+  <defs>
+    <style>
+      .cls-1 {
+        stroke: #bfbfbf;
+      }
+
+      .cls-1, .cls-2 {
+        fill: #fff;
+      }
+
+      .cls-1, .cls-3 {
+        stroke-miterlimit: 10;
+      }
+
+      .cls-2 {
+        font-size: 26px;
+      }
+
+      .cls-2, .cls-4 {
+        font-family: D2Coding, D2Coding;
+      }
+
+      .cls-3 {
+        fill: #9400d3;
+        stroke: #6f009e;
+      }
+
+      .cls-4 {
+        fill: #575e75;
+        font-size: 23px;
+      }
+    </style>
+  </defs>
+  <rect class="cls-3" x=".5" y=".5" width="332.82" height="54.065" rx="27.032" ry="27.032"/>
+  <g>
+    <g>
+      <rect class="cls-1" x="8.308" y="6.021" width="53.674" height="43.022" rx="21.511" ry="21.511"/>
+      <text class="cls-4" transform="translate(29.396 34.201)"><tspan x="0" y="0">0</tspan></text>
+    </g>
+    <g>
+      <rect class="cls-1" x="133.533" y="6.021" width="53.674" height="43.022" rx="21.511" ry="21.511"/>
+      <text class="cls-4" transform="translate(148.814 34.201)"><tspan x="0" y="0">10</tspan></text>
+    </g>
+  </g>
+  <text class="cls-2" transform="translate(70.698 35.511)"><tspan x="0" y="0">부터</tspan></text>
+  <text class="cls-2" transform="translate(197.215 35.511)"><tspan x="0" y="0">사이 랜덤</tspan></text>
+</svg>

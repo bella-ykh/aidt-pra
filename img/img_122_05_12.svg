@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="_레이어_2" data-name="레이어 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 154.895 61.772">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #d400d4;
+        stroke: #9f009f;
+        stroke-miterlimit: 10;
+        stroke-width: 1.5px;
+      }
+
+      .cls-2 {
+        fill: #fff;
+        font-family: D2Coding, D2Coding;
+        font-size: 25px;
+      }
+    </style>
+  </defs>
+  <rect class="cls-1" x=".75" y=".75" width="153.395" height="60.272" rx="30.136" ry="30.136"/>
+  <text class="cls-2" transform="translate(21.197 37.923)"><tspan x="0" y="0">소리 크기</tspan></text>
+</svg>

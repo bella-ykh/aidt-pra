@@ -24,7 +24,7 @@
                 </div>
                 
                 <figure class="cm_video">
-                    <figcaption class="cm_video_title" tabindex="0">프로그램 결과 미리보기</figcaption>
+                    <figcaption class="cm_video_title" tabindex="0">프로그램 결과 미리 보기</figcaption>
                     <div class="cm_view" tabindex="0">
                         <video width="100%" height="auto" controls class="cm_video_form" data-src=""></video>
                     </div>
@@ -35,13 +35,13 @@
                 <h2 class="cm_title_02" tabindex="0"><span class="cm_num">1</span>시스템 구성</h2>
                 <div class="cm_txt cm_mg_b10" tabindex="0">프로그램의 실행 화면을 구성해 보자.</div>
 
-                <div class="cm_tbl_wrap">
-                    <table class="cm_tbl_01" tabindex="0">
+                <div class="cm_tbl_wrap" tabindex="0">
+                    <table class="cm_tbl_01">
                         <caption>프로그램의 실행 화면 구성 요소</caption>
                         <colgroup>
-                          <col width="20%" />
+                          <col width="10%" />
                           <col width="30%" />
-                          <col width="50%" />
+                          <col width="60%" />
                         </colgroup>
                         <thead class="sr-only"> <!-- 스크린 리더 전용 숨김 -->
                             <tr>
@@ -53,24 +53,26 @@
                         <tbody>
                           <tr>
                             <th scope="row">입력</th>
-                            <td><img src="" alt="응원 소리를 입력받는 마이크 하드웨어"></td>
+                            <td class="cm_align_c">
+                                <img src="img/img_122_02_01.png" class="cm_w100" alt="마이크 LED 부분이 강조된 마이크로비트 앞면와 마이크 부분이 강조된 마이크로비트 뒷면">
+                            </td>
                             <td>
-                              <strong>마이크(센서)</strong><br>
+                              <strong class="cm_font_bold">마이크(센서)</strong><br>
                               응원 소리를 입력받는 하드웨어
                             </td>
                           </tr>
                           <tr>
                             <th scope="row" rowspan="2">출력</th>
-                            <td><img src="" alt="걷고 있는 사람(1) 오브젝트: 지영이"></td>
+                            <td class="cm_align_c"><img src="img/img_122_02_02.png" class="cm_w30" alt="걷고 있는 사람(1) 오브젝트"></td>
                             <td>
-                              <strong>걷고 있는 사람(1) 오브젝트</strong><br>
+                              <strong class="cm_font_bold">걷고 있는 사람(1) 오브젝트</strong><br>
                               옆 반 달리기 선수 지영이 오브젝트
                             </td>
                           </tr>
                           <tr>
-                            <td><img src="" alt="걷고 있는 사람(2) 오브젝트: 서준이"></td>
+                            <td class="cm_align_c cm_left_line"><img src="img/img_122_02_03.png" class="cm_w30" alt="걷고 있는 사람(2) 오브젝트"></td>
                             <td>
-                              <strong>걷고 있는 사람(2) 오브젝트</strong><br>
+                              <strong class="cm_font_bold">걷고 있는 사람(2) 오브젝트</strong><br>
                               우리 반 달리기 선수 서준이 오브젝트
                             </td>
                           </tr>
@@ -92,7 +94,7 @@
                     <li tabindex="0">[+오브젝트 추가하기] 버튼을 눌러 ‘걷고 있는 사람(1)’, ‘걷고 있는 사람(2)’ 오브젝트를 화면에 추가한다.</li>
                     <li tabindex="0">
                         오브젝트 속성 창에서 오브젝트의 위치를 설정한다.
-                        <div class="cm_tbl_wrap cm_w75">
+                        <div class="cm_tbl_wrap cm_w75" tabindex="0">
                             <div class="cm_pd_t20 cm_pd_b10" tabindex="0">※ 오브젝트의 위치</div>
                             <table class="cm_tbl_02" tabindex="0">
                                 <caption>오브젝트의 위치</caption>
@@ -110,7 +112,7 @@
                                 </thead>
                                 <tbody>
                                     <tr>
-                                        <th scope="row" rowspan="2">걷고 있는 사람</th>
+                                        <th scope="row" rowspan="2">걷고 있는 사람(1)</th>
                                         <td class="cm_txt_c">X</td>
                                         <td>-210.0</td>
                                     </tr>
@@ -119,7 +121,7 @@
                                         <td>-20.0</td>
                                     </tr>
                                     <tr>
-                                        <th scope="row" rowspan="2">출력</th>
+                                        <th scope="row" rowspan="2">걷고 있는 사람(2)</th>
                                         <td class="cm_txt_c">X</td>
                                         <td>-160.0</td>
                                     </tr>
@@ -135,13 +137,13 @@
                 </ul>
                 
                 <h3 class="cm_title_03" tabindex="0"><span class="cm_no">②</span>사용할 명령어 블록 알아보기</h3>
-                <div class="cm_tbl_wrap cm_w100">
-                    <table class="cm_tbl_02" tabindex="0">
+                <div class="cm_tbl_wrap cm_w100" tabindex="0">
+                    <table class="cm_tbl_02">
                         <caption>사용할 명령어 블록 알아보기</caption>
                         <colgroup>
-                            <col width="30%" />
-                            <col width="40%" />
-                            <col width="40%" />
+                            <col width="20%" />
+                            <col width="55%" />
+                            <col width="25%" />
                         </colgroup>
                         <thead class="sr-only">
                             <tr>
@@ -152,32 +154,32 @@
                         </thead>
                         <tbody>
                             <tr>
-                                <th scope="row"><img src="" alt="시작 탭"></th>
-                                <td><img src="" alt="시작하기 버튼을 클릭했을 때 블록"></td>
+                                <th scope="row"><img src="img/img_122_02_04.svg" class="cm_w100" alt="시작 탭"></th>
+                                <td><img src="img/img_122_02_05.svg" class="cm_w100" alt="시작하기 버튼을 클릭했을 때 블록"></td>
                                 <td>시작하기 버튼을 누르면 아래에 연결된 블록들을 실행한다.</td>
                             </tr>
                             <tr>
-                                <th scope="row" rowspan="2"><img src="" alt="흐름 탭"></th>
-                                <td><img src="" alt="10번 반복하기 블록"></td>
+                                <th scope="row" rowspan="2"><img src="img/img_122_02_06.svg" class="cm_w100" alt="흐름 탭"></th>
+                                <td><img src="img/img_122_02_07.svg" class="cm_w100"  alt="10번 반복하기 블록"></td>
                                 <td>감싸고 있는 블록들을 계속해서 반복 실행한다.</td>
                             </tr>
                             <tr>
-                                <td><img src="" alt="2초 기다리기 블록"></td>
+                                <td><img src="img/img_122_02_08.svg" class="cm_w100" alt="2초 기다리기 블록"></td>
                                 <td>입력한 시간만큼 기다린 후 다음 블록을 실행한다.</td>
                             </tr>
                             <tr>
-                                <th scope="row"><img src="" alt="움직임 탭"></th>
-                                <td><img src="" alt="X 좌표를 10만큼 바꾸기 블록"></td>
+                                <th scope="row"><img src="img/img_122_02_09.svg" class="cm_w100" alt="움직임 탭"></th>
+                                <td><img src="img/img_122_02_10.svg" class="cm_w100" alt="X 좌표를 10만큼 바꾸기 블록"></td>
                                 <td>오브젝트의 X 좌표를 입력한 값만큼 바꾼다.</td>
                             </tr>
                             <tr>
-                                <th scope="row"><img src="" alt="생김새 탭"></th>
-                                <td><img src="" alt="다음 모양으로 바꾸기 블록"></td>
+                                <th scope="row"><img src="img/img_122_02_11.svg" class="cm_w100" alt="생김새 탭"></th>
+                                <td><img src="img/img_122_02_12.svg" class="cm_w100" alt="다음 모양으로 바꾸기 블록"></td>
                                 <td>오브젝트의 모양을 이전 또는 다음으로 바꾼다.</td>
                             </tr>
                             <tr>
-                                <th scope="row"><img src="" alt="하드웨어 탭"></th>
-                                <td><img src="" alt=""></td>
+                                <th scope="row"><img src="img/img_122_02_13.svg" class="cm_w100" alt="하드웨어 탭"></th>
+                                <td><img src="img/img_122_02_14.svg" class="cm_w100" alt="마이크 소리 크기"></td>
                                 <td>마이크에서 측정된 소리의 값이 크기 값이다.</td>
                             </tr>
                         </tbody>
@@ -185,12 +187,12 @@
                 </div>
 
                 <h3 class="cm_title_03" tabindex="0"><span class="cm_no">③</span>프로그램 작성하기</h3>
-                <div class="cm_tbl_wrap">
-                    <table class="cm_tbl_02" tabindex="0">
+                <div class="cm_tbl_wrap" tabindex="0">
+                    <table class="cm_tbl_02">
                         <caption>프로그래밍 작성하기</caption>
                         <colgroup>
-                            <col width="15%" />
-                            <col width="85%" />
+                            <col width="20%" />
+                            <col width="80%" />
                         </colgroup>
                         <thead>
                             <tr>
@@ -200,12 +202,20 @@
                         </thead>
                         <tbody>
                             <tr>
-                                <td><img src="" alt="걷고 있는 사람(1) 오브젝트로 적용"></td>
-                                <td><img src="" alt=""></td>
+                                <td class="cm_align_c"><img src="img/img_122_02_02.png" class="cm_w80" alt="걷고 있는 사람(1) 오브젝트"></td>
+                                <td>
+                                    <div class="cm_img_warp">
+                                        <img src="img/img_122_02_16.png" alt="시작하기 버튼을 클릭했을 때 블록 아래에 계속 반복하기 블록이 있으며, 그 안에는 다음 모양으로 바꾸기, X 좌표를 15만큼 바꾸기, 0.1초 기다리기 블록이 순서대로 배치된 엔트리 코드">
+                                    </div>
+                                </td>
                             </tr>
                             <tr>
-                                <td><img src="" alt="걷고 있는 사람(2) 오브젝트로 적용"></td>
-                                <td><img src="" alt=""></td>
+                                <td class="cm_align_c"><img src="img/img_122_02_03.png" class="cm_w80" alt="걷고 있는 사람(2) 오브젝트"></td>
+                                <td>
+                                    <div class="cm_img_warp">
+                                        <img src="img/img_122_02_18.svg" alt="시작하기 버튼을 클릭했을 때 블록 아래에 계속 반복하기 블록이 있으며, 그 안에는 다음 모양으로 바꾸기, X 좌표를 마이크 소리 크기 만큼 바꾸기, 0.1초 기다리기 블록이 순서대로 배치된 엔트리 코드">
+                                    </div>
+                                </td>
                             </tr>
                         </tbody>
                     </table>
@@ -218,8 +228,8 @@
 
                 <h2 class="cm_title_02 cm_mg_t100" tabindex="0"><span class="cm_num">5</span>평가</h2>
                 <div class="cm_txt cm_mg_b10" tabindex="0">프로그램을 실행한 후 다음 항목을 확인해 보자.</div>
-                <div class="cm_tbl_wrap">
-                    <table class="cm_tbl_02" tabindex="0">
+                <div class="cm_tbl_wrap" tabindex="0">
+                    <table class="cm_tbl_02">
                         <caption>평가 항목</caption>
                         <colgroup>
                             <col width="70%" />
@@ -271,11 +281,11 @@
             </button>
         </div>
         <div class="cm_indicators" tabindex="0" aria-label="슬라이드 인디케이터">
-            <div class="cm_indicator cm_current" role="indicator" aria-label="첫 번째 슬라이드"></div>
-            <div class="cm_indicator" role="indicator" aria-label="두 번째 슬라이드"></div>
-            <div class="cm_indicator" role="indicator" aria-label="세 번째 슬라이드"></div>
-            <div class="cm_indicator" role="indicator" aria-label="네 번째 슬라이드"></div>
-        </div>
+            <button class="cm_indicator cm_current" aria-label="1번 슬라이드로 이동" role="tab" aria-selected="true"></button>
+            <button class="cm_indicator" aria-label="2번 슬라이드로 이동" role="tab" aria-selected="false"></button>
+            <button class="cm_indicator" aria-label="3번 슬라이드로 이동" role="tab" aria-selected="false"></button>
+            <button class="cm_indicator" aria-label="4번 슬라이드로 이동" role="tab" aria-selected="false"></button>
+          </div> 
     </nav>
     <script>
         window.addEventListener("load", function () {
@@ -284,40 +294,53 @@
             const prevButton = document.querySelector('.cm_prev');
             const nextButton = document.querySelector('.cm_next');
             let currentSlide = 0;
-
+      
             function updateSlide(index) {
                 slides.style.transform = `translateX(-${index * 100}%)`;
                 indicators.forEach((indicator, i) => {
                     indicator.classList.toggle('cm_current', i === index);
+                    indicator.setAttribute('aria-selected', i === index);
                 });
                 prevButton.disabled = index === 0;
                 nextButton.disabled = index === indicators.length - 1;
             }
-
+      
             prevButton.addEventListener('click', () => {
                 if (currentSlide > 0) {
                     currentSlide -= 1;
                     updateSlide(currentSlide);
                 }
             });
-
+      
             nextButton.addEventListener('click', () => {
                 if (currentSlide < indicators.length - 1) {
                     currentSlide += 1;
                     updateSlide(currentSlide);
                 }
             });
-
+      
             indicators.forEach((indicator, i) => {
+                // 마우스 클릭 이벤트
                 indicator.addEventListener('click', () => {
                     currentSlide = i;
                     updateSlide(currentSlide);
+                    indicator.focus();
+                });
+      
+                // 키보드 접근성: Enter 또는 Space 키로 슬라이드 이동
+                indicator.addEventListener('keydown', (e) => {
+                    if (e.key === 'Enter' || e.key === ' ') {
+                        e.preventDefault();
+                        currentSlide = i;
+                        updateSlide(currentSlide);
+                        indicator.focus();
+                    }
                 });
             });
-
+      
             updateSlide(currentSlide);
         });
-    </script>
+      </script>
 
 </body>
 </html>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="_레이어_1" data-name="레이어 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 166.207 41.807">
+  <defs>
+    <style>
+      .cls-1, .cls-2 {
+        fill: #4f80ff;
+      }
+
+      .cls-1, .cls-3 {
+        stroke-width: 0px;
+      }
+
+      .cls-2 {
+        font-family: Pretendard-SemiBold-KSCpc-EUC-H, Pretendard;
+        font-size: 15.5px;
+        font-weight: 600;
+      }
+
+      .cls-3 {
+        fill: #fff;
+      }
+    </style>
+  </defs>
+  <g>
+    <rect class="cls-3" x=".5" y=".5" width="165.207" height="40.807" rx="5.983" ry="5.983"/>
+    <path class="cls-1" d="m159.724,1c3.023,0,5.483,2.46,5.483,5.483v28.841c0,3.023-2.46,5.483-5.483,5.483H6.483c-3.023,0-5.483-2.46-5.483-5.483V6.483C1,3.46,3.46,1,6.483,1h153.241m0-1H6.483C2.903,0,0,2.903,0,6.483v28.841c0,3.581,2.903,6.483,6.483,6.483h153.241c3.58,0,6.483-2.903,6.483-6.483V6.483c0-3.58-2.903-6.483-6.483-6.483h0Z"/>
+  </g>
+  <text class="cls-2" transform="translate(12.446 25.778)"><tspan x="0" y="0">인공지능 블록 불러오기</tspan></text>
+</svg>

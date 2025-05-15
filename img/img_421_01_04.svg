@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="_레이어_1" data-name="레이어 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 111.692 35.179">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #36518d;
+      }
+
+      .cls-1, .cls-2, .cls-3, .cls-4 {
+        stroke-width: 0px;
+      }
+
+      .cls-2 {
+        fill: #fff;
+      }
+
+      .cls-5 {
+        fill: #2c313d;
+        font-family: Pretendard-Bold-KSCpc-EUC-H, Pretendard;
+        font-size: 15.5px;
+        font-weight: 700;
+      }
+
+      .cls-3 {
+        fill: #ecf8ff;
+      }
+
+      .cls-4 {
+        fill: #2b406f;
+      }
+    </style>
+  </defs>
+  <g>
+    <rect class="cls-3" width="111.692" height="35.179"/>
+    <circle class="cls-2" cx="17.462" cy="17.589" r="14.809"/>
+  </g>
+  <text class="cls-5" transform="translate(37.19 22.622)"><tspan x="0" y="0">비디오 감지</tspan></text>
+  <g>
+    <g>
+      <rect class="cls-1" x="8.782" y="11.864" width="14.038" height="11.451" rx=".936" ry=".936"/>
+      <path class="cls-2" d="m17.944,17.453l-3.429-2.355c-.11-.076-.26.003-.26.137v4.71c0,.133.15.212.26.137l3.429-2.355c.096-.066.096-.207,0-.273Z"/>
+    </g>
+    <polygon class="cls-4" points="22.82 15.599 22.82 19.579 27.169 22.406 27.169 12.772 22.82 15.599"/>
+  </g>
+</svg>

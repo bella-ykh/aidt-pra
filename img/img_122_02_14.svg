@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="_레이어_1" data-name="레이어 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 180.074 45.806">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #008380;
+      }
+
+      .cls-1, .cls-2 {
+        stroke-width: 0px;
+      }
+
+      .cls-2 {
+        fill: #00b6b1;
+      }
+
+      .cls-3 {
+        fill: #fff;
+        font-family: Pretendard-Bold-KSCpc-EUC-H, Pretendard;
+        font-size: 22px;
+        font-weight: 700;
+      }
+    </style>
+  </defs>
+  <g>
+    <path class="cls-2" d="m22.903,44.807c-12.078,0-21.903-9.826-21.903-21.903S10.826,1,22.903,1h134.268c12.078,0,21.903,9.826,21.903,21.903s-9.826,21.903-21.903,21.903H22.903Z"/>
+    <path class="cls-1" d="m157.171,2c11.497,0,20.903,9.406,20.903,20.903s-9.407,20.903-20.903,20.903H22.903c-11.497,0-20.903-9.406-20.903-20.903S11.406,2,22.903,2h134.268m0-2H22.903C10.274,0,0,10.274,0,22.903s10.274,22.903,22.903,22.903h134.268c12.629,0,22.903-10.274,22.903-22.903S169.8,0,157.171,0h0Z"/>
+  </g>
+  <text class="cls-3" transform="translate(18.419 29.966)"><tspan x="0" y="0">마이크 소리 크기</tspan></text>
+</svg>

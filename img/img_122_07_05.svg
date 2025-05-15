@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="_레이어_2" data-name="레이어 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 222.264 90.4">
+  <defs>
+    <style>
+      .cls-1 {
+        font-size: 26.581px;
+      }
+
+      .cls-1, .cls-2 {
+        font-family: D2Coding, D2Coding;
+      }
+
+      .cls-1, .cls-3 {
+        fill: #fff;
+      }
+
+      .cls-4 {
+        fill: #1e90ff;
+        stroke: #176cbf;
+      }
+
+      .cls-4, .cls-3 {
+        stroke-miterlimit: 10;
+        stroke-width: 1.5px;
+      }
+
+      .cls-2 {
+        fill: #575e75;
+        font-size: 23px;
+      }
+
+      .cls-3 {
+        stroke: #bfbfbf;
+      }
+    </style>
+  </defs>
+  <g>
+    <path class="cls-4" d="m76.604.75c-1.691,0-3.304.712-4.443,1.962l-8.981,9.857c-1.139,1.25-2.752,1.963-4.443,1.963h-21.051c-1.723,0-3.364-.74-4.505-2.031L24.596,2.781c-1.141-1.292-2.781-2.031-4.505-2.031H6.761C3.441.75.75,3.441.75,6.761v63.097c0,3.32,2.691,6.011,6.011,6.011h13.331c1.723,0,3.364.74,4.505,2.031l8.586,9.72c1.141,1.292,2.781,2.031,4.505,2.031h21.051c1.691,0,3.304-.712,4.443-1.963l8.981-9.857c1.139-1.25,2.752-1.962,4.443-1.962h139.199c3.154,0,5.711-2.557,5.711-5.711V6.461c0-3.154-2.557-5.711-5.711-5.711H76.604Z"/>
+    <text class="cls-1" transform="translate(13.289 45.92)"><tspan x="0" y="0">숫자 출력</tspan></text>
+  </g>
+  <g>
+    <rect class="cls-3" x="146.21" y="13.845" width="60.126" height="48.194" rx="24.097" ry="24.097"/>
+    <text class="cls-2" transform="translate(170.523 45.2)"><tspan x="0" y="0">0</tspan></text>
+  </g>
+</svg>

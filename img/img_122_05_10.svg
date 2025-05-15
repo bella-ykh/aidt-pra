@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="_레이어_2" data-name="레이어 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 243.711 55.065">
+  <defs>
+    <style>
+      .cls-1 {
+        stroke: #bfbfbf;
+      }
+
+      .cls-1, .cls-2, .cls-3, .cls-4 {
+        stroke-miterlimit: 10;
+      }
+
+      .cls-1, .cls-2, .cls-5 {
+        fill: #fff;
+      }
+
+      .cls-2 {
+        stroke: #039799;
+      }
+
+      .cls-3 {
+        stroke-width: 1.5px;
+      }
+
+      .cls-3, .cls-4 {
+        fill: #00a4a6;
+        stroke: #007b7d;
+      }
+
+      .cls-6 {
+        fill: #575e75;
+        font-size: 23px;
+      }
+
+      .cls-6, .cls-5 {
+        font-family: D2Coding, D2Coding;
+      }
+
+      .cls-5 {
+        font-size: 30.796px;
+      }
+    </style>
+  </defs>
+  <polygon class="cls-3" points="217.842 .5 25.869 .5 1 27.532 25.869 54.565 217.842 54.565 242.711 27.532 217.842 .5"/>
+  <g>
+    <rect class="cls-4" x="91.136" y="5.545" width="61.438" height="43.974" rx="3.877" ry="3.877"/>
+    <text class="cls-5" transform="translate(101.583 36.421)"><tspan x="0" y="0">=</tspan></text>
+    <path class="cls-2" d="m133.282,31.998l-6.566-6.153c-1.259-1.18-.424-3.293,1.302-3.293h13.132c1.726,0,2.561,2.113,1.302,3.293l-6.566,6.153c-.732.686-1.871.686-2.603,0Z"/>
+  </g>
+  <g>
+    <g>
+      <rect class="cls-1" x="27.973" y="6.021" width="53.674" height="43.022" rx="21.511" ry="21.511"/>
+      <text class="cls-6" transform="translate(49.06 34.201)"><tspan x="0" y="0">0</tspan></text>
+    </g>
+    <g>
+      <rect class="cls-1" x="165.198" y="6.021" width="53.674" height="43.022" rx="21.511" ry="21.511"/>
+      <text class="cls-6" transform="translate(186.414 34.201)"><tspan x="0" y="0">0</tspan></text>
+    </g>
+  </g>
+</svg>

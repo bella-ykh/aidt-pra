@@ -61,11 +61,11 @@
             <section class="cm_slide"  aria-label="슬라이드 세 번째 화면입니다." tabindex="0">
                 <h2 class="cm_title_02" tabindex="0"><span class="cm_num">3</span>데이터 전처리</h2>
                 <ul class="cm_list_num">
-                    <li><span>①</span>수집한 데이터 파일을 연다.</li>
-                    <li><span>②</span>
+                    <li tabindex="0"><span>①</span>수집한 데이터 파일을 연다.</li>
+                    <li tabindex="0"><span>②</span>
                         <div>
                             필요한 데이터(위도, 경도, 약국 이름, 전화번호, 주소)를 제외하고, 필요하지 않은 데이터를 삭제한다.
-                            <div class="cm_tip cm_pd_l0 cm_mg_b20">
+                            <div class="cm_tip cm_pd_l0 cm_mg_b20" tabindex="0">
                                 <div class="cm_tip_txt">Tip</div>
                                 <div class="cm_tip_box">
                                     이 활동에서는 시도별 데이터가 제공되어 있다. 필요한 지역의 데이터만 전처리하여 사용한다.
@@ -73,10 +73,10 @@
                             </div>
                         </div>
                     </li>
-                    <li><span>③</span>
+                    <li tabindex="0"><span>③</span>
                         <div>
                             약국의 x좌표(경도)와 y좌표(위도) 값에서 기준 위치의 경도, 위도를 뺀 값을 기준으로, 지도 화면 크기(가로 -240~240, 세로 -135~135)에 맞게 숫자를 비례해서 조정한다.
-                            <div class="cm_tip cm_pd_l0 cm_mg_b20">
+                            <div class="cm_tip cm_pd_l0 cm_mg_b20" tabindex="0">
                                 <div class="cm_tip_txt">Tip</div>
                                 <div class="cm_tip_box">
                                     이 과정을 좌표 변환 또는 비율 조정이라고 하며, 실제 지도를 화면에 그릴 때 자주 사용하는 방법이다.
@@ -93,23 +93,23 @@
                 <div class="cm_txt_in cm_mg_l27" tabindex="0">
                     ‘데이터 분석’ 블록 꾸러미 ➜ ‘테이블 불러오기’ 클릭
                 </div>
-                <div class="cm_img_row">
-                    <img src="img/img_223_01_01.svg" alt="데이터 분석 버튼" class="cm_223_01" tabindex="0">
-                    <img src="img/img_321_01_02.png" alt="오른쪽 화살표" class="cm_223_02" tabindex="0">
-                    <img src="img/img_223_01_02.svg" alt="테이블 불러오기 버튼" class="cm_223_03" tabindex="0">
+                <div class="cm_img_row" tabindex="0">
+                    <img src="img/img_223_01_01.svg" alt="데이터 분석 버튼" class="cm_223_01">
+                    <img src="img/img_321_01_02.png" alt="오른쪽 화살표" class="cm_223_02">
+                    <img src="img/img_223_01_02.svg" alt="테이블 불러오기 버튼" class="cm_223_03">
                 </div>
 
                 <h3 class="cm_title_03 cm_mg_t20" tabindex="0"><span class="cm_no">②</span>데이터 추가하기</h3>
                 <div class="cm_txt_in cm_mg_l27" tabindex="0">
-                    테이블 추가하기 ➜ 테이블 선택 ➜ "월평균 미세 먼지 농도" 선택 ➜ 오른쪽 상단의 추가하기 클릭
+                    테이블 추가하기 ➜ 파일 올리기 ➜ '우리 동네 약국' 파일 업로드 ➜ 오른쪽 상단의 추가하기 클릭
                 </div>
-                <div class="cm_img_row">
+                <div class="cm_img_row" tabindex="0">
                     <img src="img/img_223_01_03.svg" alt="테이블 추가하기 버튼" class="cm_w45">
-                    <img src="img/img_321_01_02.png" alt="오른쪽 화살표" class="cm_223_02" tabindex="0">
+                    <img src="img/img_321_01_02.png" alt="오른쪽 화살표" class="cm_223_02">
                     <img src="img/img_223_02_02.svg" alt="파일 올리기 버튼" class="cm_w20">
-                    <img src="img/img_321_01_02.png" alt="오른쪽 화살표" class="cm_223_02" tabindex="0">
-                    <img src="img/img_223_02_01.svg" alt="파일 업로드 창" class="" tabindex="0">
-                    <img src="img/img_321_01_02.png" alt="오른쪽 화살표" class="cm_223_02" tabindex="0">
+                    <img src="img/img_321_01_02.png" alt="오른쪽 화살표" class="cm_223_02">
+                    <img src="img/img_223_02_01.svg" alt="파일 업로드 창">
+                    <img src="img/img_321_01_02.png" alt="오른쪽 화살표" class="cm_223_02">
                     <img src="img/img_223_01_05.svg" alt="추가하기 버튼" class="cm_w30">
                 </div>
             </section>
@@ -117,11 +117,11 @@
             <section class="cm_slide"  aria-label="슬라이드 다섯 번째 화면입니다." tabindex="0">
                 <h2 class="cm_title_02" tabindex="0"><span class="cm_num">5</span>프로그램 작성하기</h2>
                 <ul class="cm_list_num">
-                    <li><span>①</span>
+                    <li tabindex="0"><span>①</span>
                         <div>
                             지도 장면이 시작되면 약국 정보를 표시하기 위해, 테이블의 정보를 이용하여 약국의 개수만큼 동그란 버튼 오브젝트를 복제한다.
                             <div class="cm_tbl_wrap cm_mg_t20">
-                                <table class="cm_tbl_02" tabindex="0">
+                                <table class="cm_tbl_02">
                                     <caption>프로그래밍 작성하기</caption>
                                     <colgroup>
                                         <col width="15%" />
@@ -143,11 +143,11 @@
                             </div>
                         </div>
                     </li>
-                    <li><span>②</span>
+                    <li tabindex="0"><span>②</span>
                         <div>
                             약국을 나타내는 '동그란 버튼' 오브젝트가 생성 될 때마다, 저장된 약국의 위치 정보를 이용하여 오브젝트 위치를 이동하고 '표시정보' 변수에 약국 정보를 저장한다.
                             <div class="cm_tbl_wrap cm_mg_t20">
-                                <table class="cm_tbl_02" tabindex="0">
+                                <table class="cm_tbl_02">
                                     <caption>프로그래밍 작성하기</caption>
                                     <colgroup>
                                         <col width="15%" />
@@ -170,9 +170,9 @@
                         </div>
                     </li>
                 </ul>
-                <div class="cm_tip">
+                <div class="cm_tip" tabindex="0">
                     <div class="cm_tip_txt">Tip</div>
-                    <div class="cm_tip_box cm_vt_c">
+                    <div class="cm_tip_box cm_vt_c" tabindex="0">
                         우리 동네 약국 데이터 파일을 새롭게 추가했다면, 블록에서 <img src="img/blank_box.svg" alt="" class="cm_h30">영역의 테이블명을 사용할 파일로 변경한다.
                     </div>
                   </div>
