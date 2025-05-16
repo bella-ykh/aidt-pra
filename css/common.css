@@ -69,6 +69,8 @@ a:visited { color: #333; }
 
 /* 기본 텍스트박스 */
 .cmass-content .cm_txt { padding-top: 25px; margin-bottom: 25px; color: #222; font-size: 18px; line-height: 1.8rem; text-align: left; } 
+.cmass-content .cm_txt_h { margin-bottom: 25px; color: #222; font-size: 18px; line-height: 1.8rem; text-align: left; } 
+.cmass-content .cm_txt_h2 { color: #222; font-size: 18px; line-height: 1.8rem; text-align: left; } 
 .cmass-content .cm_txt_in { padding-bottom: 25px; color: #222; font-size: 18px; line-height: 1.8rem; } 
 
 
@@ -96,7 +98,7 @@ a:visited { color: #333; }
 .cmass-content .cm_title_bg { height: 68px; background: url('https://kr.object.gov-ncloudstorage.com/001-mid-01-vod/001-mid-01-in/title_bg.png') no-repeat 0 0; } 
 .cmass-content .cm_title_h1 { display: flex; align-items: center; background-color: #057f64; height: 68px; font-family: 'ONE Mobile Title'; margin-left: 100px; font-size: 30px; line-height: 36px; font-weight: normal; color: #fff; letter-spacing: 1px; /*상속css 초기화*/ width: auto !important; text-align: left; margin-bottom: 0; border-radius: 0; } 
 .cmass-content .cm_title_bg2 { height: 65px; background: url('https://kr.object.gov-ncloudstorage.com/001-mid-01-vod/001-mid-01-in/title_bg2.png') no-repeat 0 0; margin: 50px 0 25px; } 
-.cmass-content .cm_title_h2 { display: flex; align-items: center; justify-content: flex-start; background-color: #16a76f; width: fit-content; height: 50px; border-top-right-radius: 35px; border-bottom-right-radius: 35px; margin-left: 15px; padding-right: 22px; font-family: 'ONE Mobile Title'; font-size: 28px; color: #fff; letter-spacing: 1px; font-weight: normal; line-height: 36px; } 
+.cmass-content .cm_title_h2 { display: flex; align-items: center; justify-content: flex-start; background-color: #16a76f; width: fit-content; height: 50px; border-top-right-radius: 35px; border-bottom-right-radius: 35px; margin-left: 15px; padding-right: 22px; font-family: 'ONE Mobile Title'; font-size: 28px; color: #fff; font-weight: normal; line-height: 1.5rem; } 
 .cmass-content .cm_num_01 { display: inline-block; width: 33px; height: 33px; background: url(../img/num_01.png) no-repeat; text-indent: -9999px; font-size: 0; margin-right: 10px; } 
 .cmass-content .cm_num_02 { display: inline-block; width: 33px; height: 33px; background: url(../img/num_02.png) no-repeat; text-indent: -9999px; font-size: 0; margin-right: 10px; } 
 .cmass-content .cm_num_03 { display: inline-block; width: 33px; height: 33px; background: url(../img/num_03.png) no-repeat; text-indent: -9999px; font-size: 0; margin-right: 10px; } 
@@ -207,7 +209,7 @@ color: #fff !important; background: none !important; border: none !important; bo
 
 
 .cmass-content .cm_vt_c { display: inline-block; line-height: 24px; } 
-.cmass-content .cm_vt_c img { vertical-align: middle; margin-right: 0 !important; display: inline-block !important; } 
+.cmass-content .cm_vt_c img { vertical-align: middle; margin-right: 0 !important; display: inline-block !important; margin-top: 2px !important; margin-bottom: 2px !important; } 
 
 .cmass-content .cm_vt_txt { display: inline-block; line-height: 24px; margin-bottom: 20px; } 
 .cmass-content .cm_vt_txt img { vertical-align: text-top; margin-right: 0 !important; margin-top: -10px; } 
@@ -330,6 +332,7 @@ color: #fff !important; background: none !important; border: none !important; bo
 .cmass-content .cm_tbl_04 th:first-child { border-left: 0; } 
 .cmass-content .cm_tbl_04 td { background-color: #eee; border-bottom: solid 2px #fff; border-left: solid 3px #fff; padding: 7px; font-size: 18px; color: #222; text-align: center; } 
 .cmass-content .cm_tbl_04 td:first-child { border-left: 0; } 
+.cmass-content .cm_tbl_04 td.cm_align_l { text-align: left;}
 
 
 
@@ -349,7 +352,7 @@ color: #fff !important; background: none !important; border: none !important; bo
 .cmass-content .cm_list_num { padding-top: 20px; margin-left: 0 !important; margin-bottom: 0 !important; } /*저작도구 이슈*/ 
 .cmass-content .cm_list_num li { display: flex; justify-content: flex-start; align-items: flex-start; padding: 5px 0; line-height: 1.5rem; } 
 .cmass-content .cm_list_num li span { display: inline-block; text-indent: -25px; padding-left: 25px; color: #0d0572; font-size: 22px; margin-top: -2px; } 
-.cmass-content .cm_list_num li span.cm_high { font-family: 'WAGURITTF'; color: #16a76f; font-size: 22px; margin-top: -2px; } 
+.cmass-content .cm_list_num li span.cm_high { font-family: 'WAGURITTF'; color: #16a76f; font-size: 22px; margin-top: -2px; margin-right: 5px; } 
 .cmass-content .cm_list_num li span.cm_font_18 { text-indent: -20px; padding-left: 20px; font-size: 18px; } 
 .cmass-content .cm_list_num li span.cm_font_22 { font-size: 22px; margin-top: -2px; } 
 
@@ -434,7 +437,9 @@ color: #fff !important; background: none !important; border: none !important; bo
 .cmass-content .cm_h150 { height: 150px !important; } 
  
  
-.cmass-content .cm_w20 { width: 25% !important; } 
+.cmass-content .cm_w5 { width: 5% !important; } 
+.cmass-content .cm_w15 { width: 15% !important; } 
+.cmass-content .cm_w20 { width: 20% !important; } 
 .cmass-content .cm_w30 { width: 30% !important; } 
 .cmass-content .cm_w40 { width: 40% !important; } 
 .cmass-content .cm_w45 { width: 45% !important; } 
@@ -445,6 +450,8 @@ color: #fff !important; background: none !important; border: none !important; bo
 .cmass-content .cm_w90 { width: 90% !important; } 
 .cmass-content .cm_w100 { width: 100% !important; max-width: 100% !important; } 
 
+.cmass-content .cm_w40px { width: 40px !important; } 
+.cmass-content .cm_w50px { width: 50px !important; } 
 .cmass-content .cm_w80 { width: 80px !important; } 
 .cmass-content .cm_w115 { width: 115px !important; } 
 .cmass-content .cm_w130 { width: 130px !important; } 
@@ -458,6 +465,9 @@ color: #fff !important; background: none !important; border: none !important; bo
 .cmass-content .cm_mw250 { max-width: 250px !important; } 
 .cmass-content .cm_mw300 { max-width: 300px !important; } 
 .cmass-content .cm_mw400 { max-width: 400px !important; } 
+.cmass-content .cm_mw300w { width: 100% !important; max-width: 300px !important; } 
+.cmass-content .cm_mw250w { width: 100% !important; max-width: 250px !important; } 
+.cmass-content .cm_mw450w { width: 100% !important; max-width: 450px !important; } 
 
 
 /* 패딩, 마진, 정렬 */
@@ -468,7 +478,9 @@ color: #fff !important; background: none !important; border: none !important; bo
 
 .cmass-content .cm_pd_tb5 { padding-top: 5px !important; padding-bottom: 5px !important; } 
 
+.cmass-content .cm_pd_b5 { padding-bottom: 10px !important; } 
 .cmass-content .cm_pd_b10 { padding-bottom: 10px !important; } 
+.cmass-content .cm_pd_b20 { padding-bottom: 20px !important; } 
 .cmass-content .cm_pd_b40 { padding-bottom: 40px !important; } 
 
 .cmass-content .cm_pd_t5 { padding-top: 5px !important; } 
@@ -478,6 +490,7 @@ color: #fff !important; background: none !important; border: none !important; bo
 .cmass-content .cm_pd_r80 { padding-right: 80px !important; } 
 
 
+.cmass-content .cm_pd_lr0 { padding-left: 0 !important; padding-right: 0 !important; } 
 .cmass-content .cm_mg_lr20 { margin-left: 20px !important; margin-right: 20px !important; } 
 .cmass-content .cm_mg_l20 { margin-left: 20px !important; } 
 .cmass-content .cm_mg_l27 { margin-left: 27px !important; } 
@@ -496,6 +509,47 @@ color: #fff !important; background: none !important; border: none !important; bo
 
 .cmass-content .cm_align_c { text-align: center; margin: 0 auto; } 
 .cmass-content .cm_align_l { text-align: left; margin: 0 auto; } 
+
+/* 힌트 관련 추가 */
+.cm_hint_container {
+    margin: 10px 0;
+}
+.cm_hint_header {
+    cursor: pointer;
+    padding: 10px;
+    background-color: #f5f5f5;
+    border-radius: 4px;
+    position: relative;
+    user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+}
+.cm_hint_header:after {
+    content: '▼';
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    transition: transform 0.3s;
+    pointer-events: none;
+}
+.cm_hint_header.active:after {
+    transform: translateY(-50%) rotate(180deg);
+}
+.cm_hint_content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-out;
+    padding: 0;
+    margin: 0;
+}
+.cm_hint_header.active + .cm_hint_content {
+    max-height: 1000px;
+    padding: 10px;
+    margin: 5px 0;
+}
+    
 
 
 /* 저작도구, 뷰어에서 미디어쿼리 안먹음(분할화면 때문인듯)

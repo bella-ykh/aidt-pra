@@ -57,13 +57,27 @@
                     </div>
                     <ul class="cm_list_num">
                         <li><span class="cm_high">①</span>팝업창의 새 문서 버튼을 클릭한다.</li>
-                        <li><span class="cm_high">②</span>오른쪽 상단의 실습 파일 보기 버튼을 클릭하여 calories.csv의 주소를 복사(     )한다.</li>
-                        <li><span class="cm_high">③</span>메뉴(       )의 ‘가져오기’에서 URL 탭을 선택하여 복사한 주소를 붙여 넣은 뒤 데이터 가져오기 버튼을 클릭한다.</li>
-                        <li><span class="cm_high">④</span>Importer 팝업창에서 ‘모든 행 가져오기’를 선택하고 확인 버튼을 클릭한다.</li>
+                        <li>
+                            <span class="cm_high">②</span>
+                            <div class="cm_vt_c">
+                                오른쪽 상단의 실습 파일 보기 버튼을 클릭하여 calories.csv의 주소를 복사( <img src="img/h_ico_01.svg" class="cm_w40px" alt="복사 아이콘"> )한다.
+                            </div></li>
+                        <li>
+                            <span class="cm_high">③</span>
+                            <div class="cm_vt_c">
+                                메뉴( <img src="img/h_ico_02.svg" class="cm_w50px" alt="메뉴 버튼"> )의 ‘가져오기’에서 URL 탭을 선택하여 복사한 주소를 붙여 넣은 뒤 데이터 가져오기 버튼을 클릭한다.
+                            </div>
+                        </li>
+                        <li>
+                            <span class="cm_high">④</span>
+                            <div class="cm_img_wrap">
+                                Importer 팝업창에서 ‘모든 행 가져오기’를 선택하고 확인 버튼을 클릭한다.
+                                <div class="cm_align_c cm_mg_t10"><img src="img/h_img_222_01_01.png" class="cm_mw300w" alt="CSV 파일 가져오기 창으로, 임의 선택, 모두 선택, 모든 행 가져오기 중 선택 가능하게 되어 있으며, 확인 및 취소 버튼이 하단에 있다."></div>
+                            </div>
+                        </li>
                         <li><span class="cm_high">⑤</span>같은 방식으로 exercise.csv의 주소를 복사하여 데이터를 가져온다.</li>
                     </ul>
                 </div>
-                
             </section>
 
             <section class="cm_pd_b10">
@@ -74,7 +88,13 @@
                     </div>
                     <ul class="cm_list_num">
                         <li><span class="cm_high">①</span>데이터를 불러오면 calories와 exercise 두 개의 테이블이 생성된다.</li>
-                        <li><span class="cm_high">②</span>테이블의 좌측 상단의     을 클릭하면 각 속성명과 볼륨 및 범위에 대해 파악할 수 있고,       을 클릭하면 다시 테이블 형태로 전환할 수 있다.</li>
+                        <li>
+                            <span class="cm_high">②</span>
+                            <div class="cm_vt_c">
+                                테이블의 좌측 상단의 <img src="img/h_ico_03.svg" class="cm_w40px cm_mg_b5" alt="테이블 보기 아이콘">을 클릭하면 각 속성명과 볼륨 및 범위에 대해 파악할 수 있고,
+                                <img src="img/h_ico_04.svg" class="cm_w50px" alt="데이터 테이블 아이콘">을 클릭하면 다시 테이블 형태로 전환할 수 있다.
+                            </div>                            
+                        </li>
                     </ul>
                 </div>
                 
@@ -106,12 +126,29 @@
             <ul class="cm_list_num_h">
                 <li>
                     <span>①</span>
-                    테이블 툴 바에서    을 선택하고 'case의 새 속성'을 선택하여 exercise 테이블에 결측치 여부를 표시할 Calories Missing 속성을 추가한다.
+                    <div>
+                        <div class="cm_vt_c">
+                            테이블 툴 바에서 <img src="img/h_ico_05.svg" class="cm_w40px" alt="편집 아이콘">을 선택하고 'case의 새 속성'을 선택하여 exercise 테이블에 결측치 여부를 표시할 Calories Missing 속성을 추가한다.
+                        </div>
+                        <div class="cm_img_row cm_pd_lr0 cm_mg_t10" tabindex="0">
+                            <img src="img/h_img_222_01_02.PNG" class="cm_w180" alt="cases의 새 속성을 선택하는 창의 모습이다.">
+                            <img src="img/img_321_01_02.png" alt="오른쪽 화살표" class="cm_w5">
+                            <img src="img/h_img_222_01_03.PNG" class="cm_w115" alt="새 속성을 추가하는 모습이다.">
+                            <img src="img/img_321_01_02.png" alt="오른쪽 화살표" class="cm_w5">
+                            <img src="img/h_img_222_01_04.PNG" class="cm_w115" alt="해당 속성의 이름을 'Calories Missing'으로 지정하는 모습이다.">
+                        </div>
+                    </div>
                 </li>
                 <li>
                     <span>②</span>
-                    Calories Missing 속성의 이름을 클릭하고 '수식 편집'을 선택하여 아래와 같은 수식(isMissing(Calories))을 입력하고, 적용을 클릭한다. <br>
-                    Calories 속성에 누락된 값이 있으면 'true', 누락된 값이 없으면 'false'로 속성의 값이 채워진다.
+                    <div class="cm_img_wrap">
+                        Calories Missing 속성의 이름을 클릭하고 '수식 편집'을 선택하여 아래와 같은 수식(isMissing(Calories))을 입력하고, 적용을 클릭한다. <br>
+                        Calories 속성에 누락된 값이 있으면 'true', 누락된 값이 없으면 'false'로 속성의 값이 채워진다.
+
+                        <div class="cm_align_c cm_mg_t10" tabindex="0">
+                            <img src="img/h_img_222_01_05.png" class="cm_w300" alt="새 속성 'Calories Missing'을 정의하는 창으로 수식 입력란에 'isMissing(Calories)'가 입력되어 있으며, 적용및 취소 버튼이 하단에 있다.">
+                        </div>
+                    </div>
                 </li>
                 <li><span>③</span>Calories Missing 속성 이름을 클릭하고 '내림차순 정렬'을 선택하여 속성의 값이 true인 행을 찾는다.</li>
                 <li><span>④</span>해당 행의 인덱스 값(1)을 클릭하고 '케이스 삭제'를 선택하여 칼로리 값이 누락된 행을 삭제한다.</li>

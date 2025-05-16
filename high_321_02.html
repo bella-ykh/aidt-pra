@@ -17,7 +17,7 @@
                 <h1 class="cm_title_h1" tabindex="0">원의 둘레 계산기</h1>
             </div>
             <div class="cm_txt" tabindex="0">
-                원의 둘레를 구하는 프로그램을 완성하여 실행해보고, 연산 결과의 자료형을 확인해보자.
+                원의 둘레를 구하는 프로그램을 완성하여 실행해보고, 연산 결과의 자료형을 확인해 보자.
             </div>
     
             <div class="cm_txt_bold" tabindex="0"><span class="cm_bull"></span>실행 결과</div>
@@ -81,8 +81,10 @@
                     hintHeader.setAttribute("aria-expanded", isExpanded);
                     if (isExpanded) {
                         hintContent.style.maxHeight = hintContent.scrollHeight + "px";
+                        hintHeader.setAttribute('aria-label', '힌트 열림');  // 열릴 때 읽히는 메시지
                     } else {
                         hintContent.style.maxHeight = null;
+                        hintHeader.setAttribute('aria-label', '힌트 닫힘');  // 닫힐 때 읽히는 메시지
                     }
                 }
 
@@ -106,9 +108,6 @@
                 });
             });
         });
-
     </script>
-    
-    
 </body>
 </html>

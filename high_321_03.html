@@ -170,8 +170,10 @@
                     hintHeader.setAttribute("aria-expanded", isExpanded);
                     if (isExpanded) {
                         hintContent.style.maxHeight = hintContent.scrollHeight + "px";
+                        hintHeader.setAttribute('aria-label', '힌트 열림');  // 열릴 때 읽히는 메시지
                     } else {
                         hintContent.style.maxHeight = null;
+                        hintHeader.setAttribute('aria-label', '힌트 닫힘');  // 닫힐 때 읽히는 메시지
                     }
                 }
 
@@ -195,7 +197,6 @@
                 });
             });
         });
-
     </script>
 </body>
 </html>

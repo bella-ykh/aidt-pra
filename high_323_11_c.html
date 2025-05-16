@@ -232,35 +232,45 @@ c ← 특정 요일 시간표 출력 or 특정 요일과 교시 과목 출력 �
     <script>
         window.addEventListener("load", function () {
             const hintHeaders = document.querySelectorAll('.cm_hint_header');
-
+      
             hintHeaders.forEach(hintHeader => {
-                hintHeader.addEventListener("click", function () {
-                    const hintContent = this.nextElementSibling;
-
-                    if (hintContent.style.maxHeight) {
-                        hintContent.style.maxHeight = null;
-                        this.classList.remove('active');
-                    } else {
+                hintHeader.setAttribute("role", "button");
+                hintHeader.setAttribute("tabindex", "0");
+                hintHeader.setAttribute("aria-expanded", "false");
+      
+                function toggleHint() {
+                    const hintContent = hintHeader.nextElementSibling;
+                    const isExpanded = hintHeader.classList.toggle('active');
+                    hintHeader.setAttribute("aria-expanded", isExpanded);
+                    if (isExpanded) {
                         hintContent.style.maxHeight = hintContent.scrollHeight + "px";
-                        this.classList.add('active');
+                        hintHeader.setAttribute('aria-label', '힌트 열림');  // 열릴 때 읽히는 메시지
+                    } else {
+                        hintContent.style.maxHeight = null;
+                        hintHeader.setAttribute('aria-label', '힌트 닫힘');  // 닫힐 때 읽히는 메시지
+                    }
+                }
+      
+                hintHeader.addEventListener("click", toggleHint);
+                hintHeader.addEventListener("keydown", function (e) {
+                    if (e.key === "Enter" || e.key === " ") {
+                        e.preventDefault();
+                        toggleHint();
                     }
                 });
             });
-
+      
             // 창 크기 변경 시 열린 힌트의 높이 강제 재계산
             window.addEventListener("resize", function () {
                 document.querySelectorAll('.cm_hint_header.active').forEach(activeHeader => {
                     const hintContent = activeHeader.nextElementSibling;
-
-                    // 일시적으로 maxHeight 초기화 후 다시 적용 (강제 리플로우 유도)
                     hintContent.style.maxHeight = "0px";
-                    // 다음 프레임에서 다시 계산
                     requestAnimationFrame(() => {
                         hintContent.style.maxHeight = hintContent.scrollHeight + "px";
                     });
                 });
             });
         });
-    </script>
+      </script>
 </body>
 </html>
