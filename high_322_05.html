@@ -23,12 +23,12 @@
             <div class="cm_txt_in cm_txt_over" tabindex="0">
                 공공 데이터 포털 <br> 
                 (<a href="https://www.data.go.kr/data/15044234/fileData.do" target="_blank">https://www.data.go.kr/data/15044234/fileData.do</a>) 에서 내려받은 서울교통공사 물품 보관함 
-                위치 정보 파일(<span class="cm_point">서울교통공사_물품보관함 위치정보_20231031.csv</span>) 을 출력하려고 한다. 파일의 내용은 아래 그림과 같다.
+                위치 정보 파일(<span class="cm_point">서울교통공사_물품보관함 위치정보_20250331.csv</span>) 을 출력하려고 한다. 파일의 내용은 아래 그림과 같다.
             </div>
     
-            [물품 보관함 위치 정보 파일] <br><br>
+            [물품 보관함 위치 정보 파일]
             <div>
-                <img src="" alt="">
+                <img src="img/h_img_322_05_01.png" class="cm_w100" alt="‘물품 보관함 위치 정보 파일’ 내용의 일부를 캡쳐한 화면">
             </div>
     
             <div class="cm_tip_h">
@@ -56,7 +56,7 @@
                         <div class="cm_line_numbers" aria-hidden="true">
                             <span>1</span>
                         </div>
-                        <pre class="cm_code">with open('서울교통공사_물품보관함 위치정보_20241231.csv', 'r') as file:</pre>
+                        <pre class="cm_code">with open('서울교통공사_물품보관함 위치정보_20250331.csv', 'r') as file:</pre>
                     </div>
                 </div>
             </div>
@@ -102,13 +102,13 @@
             <div class="cm_txt_bold" tabindex="0"><span class="cm_bull"></span>실행 결과</div>
             <div class="cm_code_white" tabindex="0">
                 <pre class="cm_code2">['연번', '호선', '보관함명', '상세위치']
-['1', '1', '서울역A', '1호선 1/2번 출입구 사이 복도']
-['2', '1', '서울역D', '2/3번 출입구 복도 사이']
-['3', '1', '서울역E', '2/3번 출입구 복도 사이/화장실 주변']
-['4', '1', '시청A', '2/3번 출구 주변']
-['5', '1', '시청B', '2/3번 출구 엘리베이터 주변’]
+['1', '1', '서울역1~22', '1호선 1번 출입구 주변']
+['2', '1', '서울역23~44', '"2', '3번 출입구 복도 사이"']
+['3', '1', '서울역45~64', '"2', '3번 출입구 복도 사이/화장실 주변"']
+['4', '1', '시청29~44', '1번 출구 주변']
+['5', '1', '시청1~28', '"2', '3번 출구 주변"']
 
--- 생략 --</pre>
+--생략 --</pre>
             </div>
     
             <h3 class="cm_title_h3 cm_pd_b40" tabindex="0"><span class="cm_no">②</span>결과를 출력했다면 ‘제출하기’ 버튼을 눌러 실습의 결과를 확인해 보자.</h3>

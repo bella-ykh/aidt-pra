@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>고-223-04</title>
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" type="text/css" href="css/font/pretendard.css" />
+    <link rel="stylesheet" type="text/css" href="css/font/pretendard-subset.css"/>
+    <script type="text/javascript" src="js/GoogleTranslate.js"></script>
+    <script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=GoogleTranslateInitCallback"></script>
+</head>
+<body class="cmass-content">
+    <section class="cm_wrap_h">
+        <section>
+            <div class="cm_title_bg">
+                <h1 class="cm_title_h1 cm_pd_t20" tabindex="0">데이터 시각화하기</h1>
+                <div class="cm_sb_tit_h">[창의·융합 프로젝트] 안전 문제, 빅데이터로 해결해 볼까?</div>
+            </div>
+            <div class="cm_txt" tabindex="0">
+                어린이 보호 구역 데이터를 코답을 사용하여 시각화해 보자.
+            </div>
+        </section>
+
+        <section>
+            <div class="cm_title_bg2">
+                <h2 class="cm_title_h2" tabindex="0">1. 문제 상황 이해하기</h2>
+            </div>
+            <div class="cm_txt_h" tabindex="0">
+                분석하고 싶은 지역의 어린이 보호 구역 내 CCTV 설치 대수를 데이터를 시각화해 보자.
+            </div>
+        </section>
+        
+        <section>
+            <div class="cm_title_bg2">
+                <h2 class="cm_title_h2" tabindex="0">2. 데이터 수집 및 전처리하기</h2>
+            </div>
+            <ul class="cm_list">
+                <li class="cm_h_bull">공공 데이터 포털에서 분석하고 싶은 지역별 데이터를 내려 받는다.</li>
+                <li class="cm_h_bull"><div>웹 페이지: <a href="https://www.data.go.kr/tcs/lms/liv/selectLocationView.do" target="_blank">https://www.data.go.kr/tcs/lms/liv/selectLocationView.do</a></div></li>
+            </ul>
+            <div class="cm_mg_t20">
+                <img src="img/img_223_04_01.PNG" class="cm_mw450w" alt="서울특별시 종로구를 선택한 상태에서 보안등 정보, 스마트가로등 정보, 육교정보 등 위치정보 서비스 목록 중 항목을 선택할 수 있는 인터페이스로, 오른쪽 아래에 다운로드 버튼이 있다.">
+            </div>
+            <div class="cm_tip_h">
+                <div class="cm_tip_bg"><span class="cm_tip_txt2">Tip!</span></div>
+                <div class="cm_tip_cont">
+                    필요한 지역의 파일을 선택하여 다운로드 받은 후 불필요한 요소를 삭제하여 데이터를 미리 준비해 둔다.
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div class="cm_title_bg2">
+                <h2 class="cm_title_h2" tabindex="0">3. 데이터 가져오기</h2>
+            </div>
+            <div class="cm_txt_h" tabindex="0">
+                빅데이터 전처리 과정을 통해 정리한 어린이보호구역 정보(서울특별시_종로구) 데이터를 사용한다.
+            </div>
+            <ul class="cm_list_num_h cm_pd_b0">
+                <li><span>①</span>팝업창의 새 문서 버튼을 클릭한다.</li>
+                <li><span>②</span>오른쪽 상단의 실습 파일 보기 버튼을 클릭하여 어린이보호구역 정보(서울특별시_종로구).csv의 주소를 복사한다.</li>
+                <li><span>③</span>메뉴의 ‘가져오기’에서 URL 탭을 선택하여 복사한 주소를 붙여 넣은 뒤 데이터 가져오기 버튼을 클릭한다.</li>
+                <li><span>④</span>Importer 팝업창에서 ‘모든 행 가져오기’를 선택하고 확인 버튼을 클릭한다.</li>
+            </ul>
+            <div class="cm_tip_h">
+                <div class="cm_tip_bg"><span class="cm_tip_txt2">Tip!</span></div>
+                <div class="cm_tip_cont">
+                    지도에 CCTV 위치를 표시하기 위해, 데이터 파일에서 위도는 latitude, 경도는 longitude로 데이터 속성 이름을 수정한다.
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div class="cm_title_bg2">
+                <h2 class="cm_title_h2" tabindex="0">4. 데이터 시각화하기</h2>
+            </div>
+            <ul class="cm_list_num_h cm_pd_b0">
+                <li>
+                    <span>①</span>
+                    <div class="cm_vt_c">
+                        지도 아이콘( <img src="img/h_ico_07.PNG" class="cm_w40px" alt="지도 버튼"> )을 클릭한다.
+                    </div>                    
+                </li>
+                <li><span>②</span>CCTV 위치가 산점도로 표시된다.</li>
+                <li><span>③</span>CCTV 대수 셀을 지도에 드래그하면 CCTV 대수 별로 데이터가 구분되어 표시된다.</li>
+            </ul>
+        </section>
+
+        <section class="cm_pd_b40">
+            <div class="cm_title_bg2">
+                <h2 class="cm_title_h2" tabindex="0">5. 결과 해석하기</h2>
+            </div>
+            <div class="cm_txt_h" tabindex="0">
+                산점도로 시각화한 자료를 보고 결과를 해석해 보자.
+                <div class="cm_mg_t10">
+                    <img src="img/img_223_04_02.PNG" class="cm_mw450w" alt="서울 전역의 지도에서 CCTV 설치 지점이 빨간 점으로 표시되어 있고, 지하철역, 도로망, 공공시설 아이콘이 함께 표시되어 있으며 하단에는 색상 강도에 따른 범례가 존재한다.">
+                </div>
+            </div>
+        </section>
+        
+    </section>
+</body>
+</html>
