@@ -28,31 +28,27 @@
                 <h2 class="cm_title_h2" tabindex="0">1. 프로그래밍</h2>
             </div>
             <h3 class="cm_title_h3" tabindex="0"><span class="cm_no">①</span>코드를 보고 프로그램을 완성하고, 실행 결과를 확인해 보자.</h3>
-            <div class="cm_code_number" tabindex="0">
-                <div class="cm_line_numbers" aria-hidden="true">
-                    <span>1</span>
-                    <span>2</span>
-                    <span>3</span>
-                    <span>4</span>
-                    <span>5</span>
-                    <span>6</span>
-                </div>
-                <pre class="cm_code">a, b, c = 30, 30.0, '30'
-print(a, b, c) 
-print(type(a), type(b), type(c)) 
-    
-sum1 = a + b 
-print(sum1)</pre>
+            <div class="cm_code_number" tabindex="0" role="region" aria-label="자료형 연산 코드">
+                <div class="cm_line_count" aria-label="코드 라인 번호"><span>1</span></div>
+                <pre class="cm_code3" tabindex="0">a, b, c = 30, 30.0, '30'</pre>
+                <div class="cm_line_count" aria-label="코드 라인 번호"><span>2</span></div>
+                <pre class="cm_code3" tabindex="0">print(a, b, c)</pre>
+                <div class="cm_line_count" aria-label="코드 라인 번호"><span>3</span></div>
+                <pre class="cm_code3" tabindex="0">print(type(a), type(b), type(c))</pre>
+                <div class="cm_line_count" aria-label="코드 라인 번호"><span>4</span></div>
+                <pre class="cm_code3" tabindex="0"></pre>
+                <div class="cm_line_count" aria-label="코드 라인 번호"><span>5</span></div>
+                <pre class="cm_code3" tabindex="0">sum1 = a + b </pre>
+                <div class="cm_line_count" aria-label="코드 라인 번호"><span>6</span></div>
+                <pre class="cm_code3" tabindex="0">print(sum1)</pre>
             </div>
     
             <h3 class="cm_title_h3" tabindex="0"><span class="cm_no">②</span>아래 코드를 추가하여 프로그램을 수정해 보자.</h3>
-            <div class="cm_code_number" tabindex="0">
-                <div class="cm_line_numbers" aria-hidden="true">
-                    <span>8</span>
-                    <span>9</span>
-                </div>
-                <pre class="cm_code">sum2 = a + c 
-print(sum2)</pre>
+            <div class="cm_code_number" tabindex="0" role="region" aria-label="자료형 연산 추가 코드">
+                <div class="cm_line_count" aria-label="코드 라인 번호"><span>8</span></div>
+                <pre class="cm_code3" tabindex="0">sum2 = a + c </pre>
+                <div class="cm_line_count" aria-label="코드 라인 번호"><span>9</span></div>
+                <pre class="cm_code3" tabindex="0">print(sum2)</pre>
             </div>
         </section>
         
@@ -63,8 +59,14 @@ print(sum2)</pre>
             <h3 class="cm_title_h3" tabindex="0"><span class="cm_no">①</span>프로그램을 실행하여 결과를 확인한 후, 결과가 나온 이유에 대해 생각해 보자.</h3>
     
             <div class="cm_txt_bold" tabindex="0"><span class="cm_bull"></span>실행 결과</div>
-            <div class="cm_code_white" tabindex="0">
-                <pre class="cm_code2">입력 보류 /// 실제 도구에서 결과값 확인 필요//</pre>
+            <div class="cm_code_white" tabindex="0" role="region" aria-label="실행 결과 코드">
+                <pre class="cm_code2" tabindex="0">30 30.0 30
+&lt;class 'int'&gt; &lt;class 'float'&gt; &lt;class 'str'&gt;
+60.0
+Traceback (most recent call last) :
+    File “main.py”, line: 8 in &lt;module&gt;
+        sum2 = a + c
+TypeError: unsupported operand type(s) for +: 'int' and 'str'</pre>
             </div>
     
             <div class="cm_tip_h cm_mg_b20">
@@ -78,8 +80,8 @@ print(sum2)</pre>
     
             <h3 class="cm_title_h3" tabindex="0"><span class="cm_no">②</span>오류가 발생했다면, 아래와 같은 실행 결과가 나올 수 있도록 프로그램을 수정해 보자.</h3>
             <div class="cm_txt_bold" tabindex="0"><span class="cm_bull"></span>목표 실행 결과</div>
-            <div class="cm_code_white" tabindex="0">
-                <pre class="cm_code2">30 30.0 30
+            <div class="cm_code_white" tabindex="0" role="region" aria-label="목표 실행 결과 코드">
+                <pre class="cm_code2" tabindex="0">30 30.0 30
 &lt;class 'int'&gt; &lt;class 'float'&gt; &lt;class 'str'&gt;
 60.0
 3030</pre>
@@ -129,12 +131,15 @@ print(sum2)</pre>
             </div>
         </section>
         
-        <section>
+        <section class="cm_pd_b40">
             <div class="cm_title_bg2">
                 <h2 class="cm_title_h2" tabindex="0">3. 결과 제출하기</h2>
             </div>
-    
-            <div class="cm_txt_in" tabindex="0">프로그램을 실행하여 [목표 실행 결과]와 같이 결과를 출력했다면 ‘제출하기’ 버튼을 눌러 실습의 결과를 확인해 보자.</div>
+            <div class="cm_txt_in" tabindex="0">
+                <div class="cm_vt_c cm_mg_t-10">
+                    프로그램을 실행하여 [목표 실행 결과]와 같이 결과를 출력했다면 <strong class="cm_btn_mark">채점하기</strong> 버튼을 눌러 실습의 결과를 확인해 보자.
+                </div>
+            </div>
         </section>
         
     </section>

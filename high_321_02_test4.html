@@ -32,8 +32,8 @@
             </div>
             <div class="cm_txt_bold" tabindex="0">코드를 작성하여 프로그램을 완성해 보자.</div>
     
-            <div class="cm_hint_container" tabindex="0" >
-                <div class="cm_hint_header" role="button" aria-expanded="false">
+            <div class="cm_hint_container">
+                <div class="cm_hint_header" role="button" aria-expanded="false" tabindex="0">
                   Hint<span class="cm_hint_sub">원의 둘레를 계산하고, 결과를 출력하는 방법<br>
                     ※ 원의 둘레 = 2 * pi(원주율) * radius(반지름)</span>
                 </div>
@@ -66,14 +66,17 @@
         </section>
         
     </section>
-    <!-- 엔터키 접근+모코 스크립트: udl테스트랩때 사용코드 -->
+    <!-- 엔터키 접근+모코 스크립트: 엔터키 접근 수정 -->
     <script>
         window.addEventListener("load", function () {
             const hintHeaders = document.querySelectorAll('.cm_hint_header');
+            
             hintHeaders.forEach(hintHeader => {
                 hintHeader.setAttribute("role", "button");
                 hintHeader.setAttribute("tabindex", "0");
                 hintHeader.setAttribute("aria-expanded", "false");
+    
+                // 힌트 열기/닫기 함수
                 function toggleHint() {
                     const hintContent = hintHeader.nextElementSibling;
                     const isExpanded = hintHeader.classList.toggle('active');
@@ -84,15 +87,21 @@
                         hintContent.style.maxHeight = null;
                     }
                 }
+    
+                // 클릭 이벤트로 힌트 토글
                 hintHeader.addEventListener("click", toggleHint);
+    
+                // 키보드 이벤트 처리 (Enter 또는 Space로도 힌트 열기)
                 hintHeader.addEventListener("keydown", function (e) {
+                    // Enter 또는 Space 키가 눌렸을 때만 실행
                     if (e.key === "Enter" || e.key === " ") {
-                        e.preventDefault();
-                        toggleHint();
+                        e.preventDefault();  // 기본 동작 막기 (스크롤 등)
+                        toggleHint();        // 힌트 열기/닫기
                     }
                 });
             });
-            // 창 크기 변경 시 열린 힌트의 높이 강제 재계산
+    
+            // 창 크기 변경 시 열린 힌트의 높이 재계산
             window.addEventListener("resize", function () {
                 document.querySelectorAll('.cm_hint_header.active').forEach(activeHeader => {
                     const hintContent = activeHeader.nextElementSibling;
@@ -104,6 +113,7 @@
             });
         });
     </script>
+    
     
         <script>
             (function() {

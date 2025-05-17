@@ -134,11 +134,11 @@ a:visited { color: #333; }
 
 .cmass-content .cm_line_numbers { position: absolute; left: 21px; top: 17px; color: #666; text-align: right; font-family: 'D2Coding', monospace; user-select: none; } 
 .cmass-content .cm_line_numbers span { display: block; font-family: 'D2Coding', monospace; } 
-.cmass-content .cm_code { overflow-x: auto; margin-left: 30px; word-wrap: break-word; font-family: 'D2Coding', monospace; font-size: 14px; /*상속css 초기화*/ 
+.cmass-content .cm_code { overflow-x: auto; margin-left: 30px; word-wrap: break-word; font-family: 'D2Coding', monospace; font-size: 16px; /*상속css 초기화*/ 
 color: #fff !important; background: none !important; border: none !important; border-radius: 0 !important; min-width: 200px !important; font-style: normal !important; padding: 0 !important; } 
-.cmass-content .cm_code2 { white-space: pre-wrap; word-wrap: break-word; font-family: 'D2Coding', monospace; font-size: 14px; /*상속css 초기화*/ 
+.cmass-content .cm_code2 { white-space: pre-wrap; word-wrap: break-word; font-family: 'D2Coding', monospace; font-size: 16px; /*상속css 초기화*/ 
 color: #333 !important; background: none !important; border: none !important; border-radius: 0 !important; min-width: 200px !important; font-style: normal !important; padding: 0 !important; } /* 라인번호 없는 하얀 코드창 */
-.cmass-content .cm_code3 { margin-left: 30px; white-space: pre-wrap; word-wrap: break-word; font-family: 'D2Coding', monospace; font-size: 14px; /*상속css 초기화*/ 
+.cmass-content .cm_code3 { margin-left: 30px; white-space: pre-wrap; word-wrap: break-word; font-family: 'D2Coding', monospace; font-size: 16px; /*상속css 초기화*/ 
 color: #fff !important; background: none !important; border: none !important; border-radius: 0 !important; min-width: 200px !important; font-style: normal !important; padding: 0 !important; } /* 라인 개별 블럭 */
 .cmass-content .cm_keyword { color: #00b050; font-weight: bold; font-family: 'D2Coding', monospace; } 
 .cmass-content .cm_function { color: #7ec699; font-weight: bold; font-family: 'D2Coding', monospace; } 
@@ -147,7 +147,7 @@ color: #fff !important; background: none !important; border: none !important; bo
 
 .cmass-content .cm_line_wrap { border: solid 1px red; } 
 .cmass-content .cm_line_count { position: absolute; left: 21px; color: #666; text-align: right; font-family: 'D2Coding', monospace; user-select: none; } 
-.cmass-content .cm_line_count span { display: block; font-family: 'D2Coding', monospace; } 
+.cmass-content .cm_line_count span { display: block; font-family: 'D2Coding', monospace; font-size: 16px; } 
 
 
 
@@ -223,7 +223,7 @@ color: #fff !important; background: none !important; border: none !important; bo
 .cmass-content .cm_tip_cont { padding-top: 35px; line-height: 26px; } 
 
 .cmass-content .cm_var_box { width: fit-content; text-align: center; background-color: #ddd; padding: 15px 50px; font-weight: bold; border-radius: 10px; margin: 20px auto 0; } 
-
+.cmass-content .cm_btn_mark { display: inline-block; width: fit-content; background-color: #fff; color: #4e4e4e; border-radius: 13px; padding: 8px 20px; border: solid 1px #c9c9c9; box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1); margin:0 3px;}
 
 /*** Hint ***/
 .cmass-content .cm_hint_container { max-width: 580px; background: #f2f2f2; border: 1px solid #ddd; border-radius: 15px; box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); padding: 20px 15px; user-select: none; margin: 10px 0 30px; font-size: 18px; } 
@@ -502,6 +502,7 @@ color: #fff !important; background: none !important; border: none !important; bo
 .cmass-content .cm_mg_l27 { margin-left: 27px !important; } 
 .cmass-content .cm_mg_l40 { margin-left: 40px !important; } 
  
+.cmass-content .cm_mg_t-10 { margin-top: -10px !important; } 
 .cmass-content .cm_mg_t0 { margin-top: 0 !important; } 
 .cmass-content .cm_mg_t10 { margin-top: 10px !important; } 
 .cmass-content .cm_mg_t20 { margin-top: 20px !important; } 

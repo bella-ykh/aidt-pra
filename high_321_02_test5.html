@@ -21,8 +21,8 @@
             </div>
     
             <div class="cm_txt_bold" tabindex="0"><span class="cm_bull"></span>실행 결과</div>
-            <div class="cm_code_white" tabindex="0" role="region" aria-label="실행 결과 출력 코드">
-                <pre class="cm_code2" tabindex="0">length에 계산된 값은 31.41592 이고 자료형은 &lt;class 'float'&gt; 이다.</pre>
+            <div class="cm_code_white" tabindex="0">
+                <pre class="cm_code2">length에 계산된 값은 31.41592 이고 자료형은 &lt;class 'float'&gt; 이다.</pre>
             </div>
         </section>
         
@@ -38,10 +38,10 @@
                     ※ 원의 둘레 = 2 * pi(원주율) * radius(반지름)</span>
                 </button>
                 <div class="cm_hint_content">
-                    <div class="cm_code_number" tabindex="0" role="region" aria-label="원의 둘레 계산 출력 코드">
-                        <div class="cm_line_count" aria-label="코드 라인 번호"><span>3</span></div>
+                    <div class="cm_code_number" tabindex="0" role="region" aria-label="원의 둘레를 계산, 결과 출력 코드">
+                        <div class="cm_line_count" aria-hidden="true"><span>3</span></div>
                         <pre class="cm_code3" tabindex="0">length = 2 * pi * radius</pre>
-                        <div class="cm_line_count" aria-label="코드 라인 번호"><span>4</span></div>
+                        <div class="cm_line_count" aria-hidden="true"><span>4</span></div>
                         <pre class="cm_code3" tabindex="0">print(‘length에 계산된 값은’, length, ‘이고 자료형은’, type(length), ‘이다.’)</pre>
                     </div>
                 </div>
@@ -61,15 +61,12 @@
             </div>
             <ul class="cm_list_num_h">
                 <li tabindex="0"><span>①</span>프로그램을 실행하여 [실행 결과] 와 같이 출력된 이유를 생각해 보자.</li>
-                <li tabindex="0">
-                    <span>②</span>
-                    <div class="cm_vt_c cm_mg_t-10">
-                        [실행 결과]와 같이 출력했다면 <strong class="cm_btn_mark">채점하기</strong> 버튼을 눌러 실습 결과를 확인해 보자.
-                    </div>
-                </li>
+                <li tabindex="0"><span>②</span>결과를 출력했다면 ‘제출하기’ 버튼을 눌러 실습의 결과를 확인해 보자.</li>
             </ul>
         </section>
+        
     </section>
+    <!-- 엔터키 접근+열고닫기 안내메시지 // 가장 최신 수정코드+뷰어테스트 완료(0517) -->
     <script>
         window.addEventListener("load", function () {
             const hintHeaders = document.querySelectorAll('.cm_hint_header');
@@ -120,6 +117,91 @@
             });
         });
     </script>
-    <!-- 엔터키 접근+열고닫기 안내메시지 // 가장 최신 수정코드+뷰어테스트 완료(0517) -->
+    
+    
+    <!-- 힌트창 관련 추가수정(0517)  -->
+    <script>
+        (function() {
+            // iframe 내부에서 실행 중인지 확인
+            const isInIframe = window.self !== window.top;
+            
+            function initializeHints() {
+                const hintHeaders = document.querySelectorAll('.cm_hint_header');
+                
+                // 초기 상태 설정
+                hintHeaders.forEach(header => {
+                    const content = header.nextElementSibling;
+                    if (content && content.classList.contains('cm_hint_content')) {
+                        content.style.maxHeight = '0';
+                    }
+                });
+                // 각 힌트 헤더에 직접 이벤트 리스너 추가
+                hintHeaders.forEach(header => {
+                    // 기존 이벤트 리스너 제거
+                    header.removeEventListener('click', handleHintClick);
+                    // 새 이벤트 리스너 추가
+                    header.addEventListener('click', handleHintClick);
+                });
+            }
+            function handleHintClick(e) {
+                e.preventDefault();
+                e.stopPropagation();
+                
+                const header = this;
+                const content = header.nextElementSibling;
+                
+                if (!content || !content.classList.contains('cm_hint_content')) return;
+                // 모든 다른 힌트 닫기
+                document.querySelectorAll('.cm_hint_header').forEach(h => {
+                    if (h !== header) {
+                        h.classList.remove('active');
+                        const otherContent = h.nextElementSibling;
+                        if (otherContent && otherContent.classList.contains('cm_hint_content')) {
+                            otherContent.style.maxHeight = '0';
+                        }
+                    }
+                });
+                // 현재 힌트 토글
+                if (header.classList.contains('active')) {
+                    header.classList.remove('active');
+                    content.style.maxHeight = '0';
+                } else {
+                    header.classList.add('active');
+                    content.style.maxHeight = content.scrollHeight + 'px';
+                }
+            }
+            // DOM이 완전히 로드된 후 실행
+            if (document.readyState === 'loading') {
+                document.addEventListener('DOMContentLoaded', initializeHints);
+            } else {
+                initializeHints();
+            }
+            // 리사이즈 이벤트 처리
+            window.addEventListener('resize', function() {
+                document.querySelectorAll('.cm_hint_header.active').forEach(header => {
+                    const content = header.nextElementSibling;
+                    if (content && content.classList.contains('cm_hint_content')) {
+                        content.style.maxHeight = content.scrollHeight + 'px';
+                    }
+                });
+            });
+            // iframe 내부에서 실행 중이면 부모 창에 로드 완료 메시지 전송
+            if (isInIframe) {
+                window.parent.postMessage({ type: 'hintContentLoaded' }, '*');
+            }
+            // 부모 창으로부터 메시지 수신
+            window.addEventListener('message', function(e) {
+                if (e.data && e.data.type === 'resizeHint') {
+                    document.querySelectorAll('.cm_hint_header.active').forEach(header => {
+                        const content = header.nextElementSibling;
+                        if (content && content.classList.contains('cm_hint_content')) {
+                            content.style.maxHeight = content.scrollHeight + 'px';
+                        }
+                    });
+                }
+            });
+        })();
+    </script>
+    
 </body>
 </html>
