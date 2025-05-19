@@ -21,9 +21,9 @@
                 시간표를 매일 기억하는 것이 어려우므로 요일별 시간표를 출력해 주는 프로그램을 작성해 보자.
             </div>
     
-            <div class="cm_txt_bold"><span class="cm_bull"></span>시간표 예시</div>
+            <div class="cm_txt_bold cm_mg_b10"><span class="cm_bull"></span>시간표 예시</div>
             <div class="cm_tbl_wrap">
-                <table class="cm_tbl_03 cm_font_s">
+                <table class="cm_tbl_03 cm_word_bk">
                     <caption>시간표 예시</caption>
                     <colgroup>
                         <col width="9%" />
@@ -129,7 +129,7 @@
                 <h2 class="cm_title_h2" tabindex="0">1. 문제 이해 및 분석</h2>
             </div>
     
-            <div class="cm_txt_bold cm_mg_b20" tabindex="0">문제 이해를 위해 문제 상태를 정의해 보자.</div>
+            <div class="cm_txt_h" tabindex="0">문제 이해를 위해 문제 상태를 정의해 보자.</div>
             <div class="cm_tbl_wrap">
                 <table class="cm_tbl_03" tabindex="0">
                     <caption>문제 이해를 위해 문제 상태 정의</caption>
@@ -172,7 +172,7 @@
                 <h2 class="cm_title_h2" tabindex="0">2. 알고리즘 설계</h2>
             </div>
     
-            <div class="cm_txt_bold cm_mg_b20" tabindex="0">의사 코드로 작성한 알고리즘을 살펴보자.</div>
+            <div class="cm_txt_h" tabindex="0">의사 코드로 작성한 알고리즘을 살펴보자.</div>
             <div class="cm_code_container">
                 <div class="cm_code_title" tabindex="0">의사 코드</div>
                 <div class="cm_code_txt" tabindex="0">시작
@@ -199,7 +199,7 @@ time ←  [<span class="cm_masked cm_w220" aria-label="가려짐"></span>]
                 <h2 class="cm_title_h2" tabindex="0">3. 프로그래밍</h2>
             </div>
             
-            <div class="cm_txt_bold" tabindex="0">의사 코드를 참조하여 코드를 완성해 보자.</div>
+            <div class="cm_txt_h" tabindex="0">의사 코드를 참조하여 코드를 완성해 보자.</div>
     
             <div class="cm_hint_container">
                 <div class="cm_hint_header" tabindex="0">
@@ -267,35 +267,42 @@ time ←  [<span class="cm_masked cm_w220" aria-label="가려짐"></span>]
     <script>
         window.addEventListener("load", function () {
             const hintHeaders = document.querySelectorAll('.cm_hint_header');
-      
+        
             hintHeaders.forEach(hintHeader => {
                 hintHeader.setAttribute("role", "button");
                 hintHeader.setAttribute("tabindex", "0");
                 hintHeader.setAttribute("aria-expanded", "false");
-      
+        
+                // 힌트를 열고 닫는 함수
                 function toggleHint() {
                     const hintContent = hintHeader.nextElementSibling;
                     const isExpanded = hintHeader.classList.toggle('active');
                     hintHeader.setAttribute("aria-expanded", isExpanded);
+                    
+                    // 열릴 때 '힌트 열림' 메시지
                     if (isExpanded) {
                         hintContent.style.maxHeight = hintContent.scrollHeight + "px";
-                        hintHeader.setAttribute('aria-label', '힌트 열림');  // 열릴 때 읽히는 메시지
+                        hintHeader.setAttribute('aria-label', '힌트 열림');  // 열릴 때 리더기에 읽히는 메시지
                     } else {
                         hintContent.style.maxHeight = null;
-                        hintHeader.setAttribute('aria-label', '힌트 닫힘');  // 닫힐 때 읽히는 메시지
+                        hintHeader.setAttribute('aria-label', '힌트 닫힘');  // 닫힐 때 리더기에 읽히는 메시지
                     }
                 }
-      
+        
+                // 클릭 이벤트로 힌트 열기/닫기
                 hintHeader.addEventListener("click", toggleHint);
+        
+                // Enter 또는 Space 키로 힌트 열기/닫기
                 hintHeader.addEventListener("keydown", function (e) {
+                    // Enter 또는 Space 키가 눌렸을 때
                     if (e.key === "Enter" || e.key === " ") {
-                        e.preventDefault();
-                        toggleHint();
+                        e.preventDefault(); // 기본 동작 막기
+                        toggleHint(); // 힌트 열기/닫기
                     }
                 });
             });
-      
-            // 창 크기 변경 시 열린 힌트의 높이 강제 재계산
+        
+            // 창 크기 변경 시 열린 힌트의 높이를 재계산
             window.addEventListener("resize", function () {
                 document.querySelectorAll('.cm_hint_header.active').forEach(activeHeader => {
                     const hintContent = activeHeader.nextElementSibling;
@@ -306,6 +313,7 @@ time ←  [<span class="cm_masked cm_w220" aria-label="가려짐"></span>]
                 });
             });
         });
-      </script>
+    </script>
+<!-- 엔터키 접근+열고닫기 안내메시지 // 가장 최신 수정코드+뷰어테스트 완료(0517) -->
 </body>
 </html>

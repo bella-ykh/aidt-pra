@@ -46,7 +46,7 @@
                 <h2 class="cm_title_h2" tabindex="0">1. 프로그래밍</h2>
             </div>
     
-            <h3 class="cm_title_h3" tabindex="0">코드를 작성하여 프로그램을 완성해 보자.</h3>
+            <div class="cm_txt_h" tabindex="0">코드를 작성하여 프로그램을 완성해 보자.</div>
             <div class="cm_hint_container">
                 <button class="cm_hint_header" tabindex="0">
                     Hint<span class="cm_hint_sub">quiz 리스트 항목의 수만큼 반복하는 방법</span>
@@ -98,35 +98,42 @@
     <script>
         window.addEventListener("load", function () {
             const hintHeaders = document.querySelectorAll('.cm_hint_header');
-      
+        
             hintHeaders.forEach(hintHeader => {
                 hintHeader.setAttribute("role", "button");
                 hintHeader.setAttribute("tabindex", "0");
                 hintHeader.setAttribute("aria-expanded", "false");
-      
+        
+                // 힌트를 열고 닫는 함수
                 function toggleHint() {
                     const hintContent = hintHeader.nextElementSibling;
                     const isExpanded = hintHeader.classList.toggle('active');
                     hintHeader.setAttribute("aria-expanded", isExpanded);
+                    
+                    // 열릴 때 '힌트 열림' 메시지
                     if (isExpanded) {
                         hintContent.style.maxHeight = hintContent.scrollHeight + "px";
-                        hintHeader.setAttribute('aria-label', '힌트 열림');  // 열릴 때 읽히는 메시지
+                        hintHeader.setAttribute('aria-label', '힌트 열림');  // 열릴 때 리더기에 읽히는 메시지
                     } else {
                         hintContent.style.maxHeight = null;
-                        hintHeader.setAttribute('aria-label', '힌트 닫힘');  // 닫힐 때 읽히는 메시지
+                        hintHeader.setAttribute('aria-label', '힌트 닫힘');  // 닫힐 때 리더기에 읽히는 메시지
                     }
                 }
-      
+        
+                // 클릭 이벤트로 힌트 열기/닫기
                 hintHeader.addEventListener("click", toggleHint);
+        
+                // Enter 또는 Space 키로 힌트 열기/닫기
                 hintHeader.addEventListener("keydown", function (e) {
+                    // Enter 또는 Space 키가 눌렸을 때
                     if (e.key === "Enter" || e.key === " ") {
-                        e.preventDefault();
-                        toggleHint();
+                        e.preventDefault(); // 기본 동작 막기
+                        toggleHint(); // 힌트 열기/닫기
                     }
                 });
             });
-      
-            // 창 크기 변경 시 열린 힌트의 높이 강제 재계산
+        
+            // 창 크기 변경 시 열린 힌트의 높이를 재계산
             window.addEventListener("resize", function () {
                 document.querySelectorAll('.cm_hint_header.active').forEach(activeHeader => {
                     const hintContent = activeHeader.nextElementSibling;
@@ -137,6 +144,7 @@
                 });
             });
         });
-      </script>
+    </script>
+<!-- 엔터키 접근+열고닫기 안내메시지 // 가장 최신 수정코드+뷰어테스트 완료(0517) -->
 </body>
 </html>

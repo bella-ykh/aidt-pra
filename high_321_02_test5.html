@@ -119,7 +119,7 @@
     </script>
     
     
-    <!-- 힌트창 관련 추가수정(0517)  -->
+    <!-- 힌트창 관련 최종 수정(0519)  -->
     <script>
         (function() {
             // iframe 내부에서 실행 중인지 확인
@@ -132,7 +132,7 @@
                 hintHeaders.forEach(header => {
                     const content = header.nextElementSibling;
                     if (content && content.classList.contains('cm_hint_content')) {
-                        content.style.maxHeight = '0';
+                        content.style.maxHeight = '0';  // 모든 힌트를 닫음
                     }
                 });
                 // 각 힌트 헤더에 직접 이벤트 리스너 추가
@@ -143,6 +143,7 @@
                     header.addEventListener('click', handleHintClick);
                 });
             }
+    
             function handleHintClick(e) {
                 e.preventDefault();
                 e.stopPropagation();
@@ -151,31 +152,24 @@
                 const content = header.nextElementSibling;
                 
                 if (!content || !content.classList.contains('cm_hint_content')) return;
-                // 모든 다른 힌트 닫기
-                document.querySelectorAll('.cm_hint_header').forEach(h => {
-                    if (h !== header) {
-                        h.classList.remove('active');
-                        const otherContent = h.nextElementSibling;
-                        if (otherContent && otherContent.classList.contains('cm_hint_content')) {
-                            otherContent.style.maxHeight = '0';
-                        }
-                    }
-                });
-                // 현재 힌트 토글
+                
+                // 현재 클릭한 힌트만 열기/닫기
                 if (header.classList.contains('active')) {
                     header.classList.remove('active');
-                    content.style.maxHeight = '0';
+                    content.style.maxHeight = '0'; // 닫기
                 } else {
                     header.classList.add('active');
-                    content.style.maxHeight = content.scrollHeight + 'px';
+                    content.style.maxHeight = content.scrollHeight + 'px'; // 열기
                 }
             }
+    
             // DOM이 완전히 로드된 후 실행
             if (document.readyState === 'loading') {
                 document.addEventListener('DOMContentLoaded', initializeHints);
             } else {
                 initializeHints();
             }
+    
             // 리사이즈 이벤트 처리
             window.addEventListener('resize', function() {
                 document.querySelectorAll('.cm_hint_header.active').forEach(header => {
@@ -185,10 +179,12 @@
                     }
                 });
             });
+    
             // iframe 내부에서 실행 중이면 부모 창에 로드 완료 메시지 전송
             if (isInIframe) {
                 window.parent.postMessage({ type: 'hintContentLoaded' }, '*');
             }
+    
             // 부모 창으로부터 메시지 수신
             window.addEventListener('message', function(e) {
                 if (e.data && e.data.type === 'resizeHint') {
@@ -202,6 +198,7 @@
             });
         })();
     </script>
+    
     
 </body>
 </html>

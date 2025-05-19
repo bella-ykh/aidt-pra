@@ -126,11 +126,11 @@ a:visited { color: #333; }
 
 
 /*** 코드창 ***/
-.cmass-content .cm_code_number { max-width: 580px; background-color: #2d2d2d; color: #fff; padding: 15px; border-radius: 15px; font-family: 'D2Coding', monospace; position: relative; margin: 10px 0; line-height: 26px; font-size: 18px; white-space: nowrap; } 
+.cmass-content .cm_code_number { background-color: #2d2d2d; color: #fff; padding: 15px; border-radius: 15px; font-family: 'D2Coding', monospace; position: relative; margin: 10px 0; line-height: 26px; font-size: 18px; white-space: nowrap; } 
 .cmass-content .cm_code_scroll { background-color: #2d2d2d; color: #fff; padding: 15px; border-radius: 15px; font-family: 'D2Coding', monospace; position: relative; margin: 10px 0; line-height: 26px; font-size: 18px; white-space: nowrap; } 
 
 .cmass-content .cm_code_black { background-color: #2d2d2d; color: #fff; padding: 15px; border-radius: 15px; font-family: 'D2Coding', monospace; margin: 10px 0; line-height: 26px; font-size: 18px; } 
-.cmass-content .cm_code_white { max-width: 580px; background-color: #f5f5f5; border: solid 1px #ddd; color: #333; padding: 15px; border-radius: 15px; font-family: 'D2Coding', monospace; word-wrap: break-word; box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1); line-height: 30px; margin: 10px 0; font-size: 18px; } 
+.cmass-content .cm_code_white { background-color: #f5f5f5; border: solid 1px #ddd; color: #333; padding: 15px; border-radius: 15px; font-family: 'D2Coding', monospace; word-wrap: break-word; box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1); line-height: 30px; margin: 10px 0; font-size: 18px; } 
 
 .cmass-content .cm_line_numbers { position: absolute; left: 21px; top: 17px; color: #666; text-align: right; font-family: 'D2Coding', monospace; user-select: none; } 
 .cmass-content .cm_line_numbers span { display: block; font-family: 'D2Coding', monospace; } 
@@ -217,7 +217,7 @@ color: #fff !important; background: none !important; border: none !important; bo
 
 
 /* TIP 고등 */
-.cmass-content .cm_tip_h { max-width: 560px; position: relative; border: solid 5px #ffc515; border-radius: 15px; padding: 20px 15px; margin: 40px 13px; font-size: 18px; } 
+.cmass-content .cm_tip_h { position: relative; border: solid 5px #ffc515; border-radius: 15px; padding: 20px 15px; margin: 40px 13px; font-size: 18px; } 
 .cmass-content .cm_tip_bg { position: absolute; top: 8px; left: -13px; height: 48px; background: url('../img/tip_bg.png') no-repeat 0 0; display: flex; justify-content: flex-start; } 
 .cmass-content .cm_tip_txt2 { background-color: #ffc000; height: 39px; border-top-right-radius: 35px; border-bottom-right-radius: 35px; padding: 3px 10px; font-family: 'WAGURITTF'; font-size: 22px; } /*뷰어*/
 .cmass-content .cm_tip_cont { padding-top: 35px; line-height: 26px; } 
@@ -235,7 +235,7 @@ color: #fff !important; background: none !important; border: none !important; bo
 
 
 
-.cmass-content .cm_hint_sub { color: #222; padding-left: 15px; } 
+.cmass-content .cm_hint_sub { color: #222; padding-left: 15px; text-align: left; } 
 .cmass-content .cm_hint_content { max-height: 0; overflow: hidden; transition: max-height 0.3s ease-in-out; border-top: 1px solid #619800; } 
 .cmass-content .cm_hint_content .cm_code_number { width: 100% !important; } 
 .cmass-content .cm_hint_txt { padding-top: 10px; } 
@@ -318,7 +318,7 @@ color: #fff !important; background: none !important; border: none !important; bo
 
 
 /* 고등tbl */
-.cmass-content .cm_tbl_03 { width: 100%; max-width: 580px; border-top: 5px solid #057f64; border-collapse: separate; border-spacing: 0; } 
+.cmass-content .cm_tbl_03 { width: 100%; border-top: 5px solid #057f64; border-collapse: separate; border-spacing: 0; } 
 .cmass-content .cm_no_line { border-top: solid 2px #fff !important; } 
 .cmass-content .cm_tbl_03 caption { display: none; } /* 저작도구 이슈 */
 .cmass-content .cm_tbl_03 th { background-color: #95cec1; border-bottom: solid 2px #fff; border-left: solid 3px #fff; padding: 10px; font-size: 18px; color: #000; text-align: center; } 
@@ -330,15 +330,17 @@ color: #fff !important; background: none !important; border: none !important; bo
 .cmass-content .cm_tbl_03 td:first-child { border-left: 0; } 
 .cmass-content .cm_tbl_03 td.cm_txt_l { text-align: left; } 
 .cmass-content .cm_tbl_03 td.cm_bg_g { background-color: #aaa; } 
+.cmass-content .cm_tbl_03.cm_word_bk th,.cmass-content .cm_tbl_03.cm_word_bk td { word-break: break-all; }
 
 
-.cmass-content .cm_tbl_04 { width: 100%; min-width: 200px; border-top: 5px solid #ffc000; border-collapse: separate; border-spacing: 0; } 
+.cmass-content .cm_tbl_04 { width: 100%; border-top: 5px solid #ffc000; border-collapse: separate; border-spacing: 0; } 
 .cmass-content .cm_tbl_04 caption { display: none; } /* 저작도구 이슈 */
 .cmass-content .cm_tbl_04 th { background-color: #ffec83; border-bottom: solid 2px #fff; border-left: solid 3px #fff; padding: 5px; font-size: 18px; color: #000; text-align: center; } 
 .cmass-content .cm_tbl_04 th:first-child { border-left: 0; } 
 .cmass-content .cm_tbl_04 td { background-color: #eee; border-bottom: solid 2px #fff; border-left: solid 3px #fff; padding: 7px; font-size: 18px; color: #222; text-align: center; } 
 .cmass-content .cm_tbl_04 td:first-child { border-left: 0; } 
 .cmass-content .cm_tbl_04 td.cm_align_l { text-align: left; } 
+.cmass-content .cm_tbl_04.cm_word_bk th,.cmass-content .cm_tbl_04.cm_word_bk td { word-break: break-all; } 
 
 
 
@@ -372,7 +374,7 @@ color: #fff !important; background: none !important; border: none !important; bo
 .cmass-content .cm_list_tip2 li::before { content: "ㄴ"; position: absolute; left: -22px; top: -4px; color: #2c6900; font-size: 24px; font-weight: bold; } 
 .cmass-content .cm_list_tip2 li span { display: block; line-height: 26px; } 
 
-.cmass-content .cm_list_num_h { padding-bottom: 40px; margin-left: 0 !important; margin-bottom: 0 !important; } 
+.cmass-content .cm_list_num_h { margin-left: 0 !important; margin-bottom: 0 !important; } 
 .cmass-content .cm_list_num_h li { display: flex; justify-content: flex-start; align-items: flex-start; padding: 10px 0; font-size: 18px; line-height: 28px; } 
 .cmass-content .cm_list_num_h li:first-child { padding-top: 0 !important; } 
 .cmass-content .cm_list_num_h li span { display: inline-block; text-indent: -30px; padding-left: 30px; font-family: 'WAGURITTF'; color: #16a76f; font-size: 24px; } 
