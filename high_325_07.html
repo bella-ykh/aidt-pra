@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>고-325-실습-04-설명</title>
+    <title>고-325-실습-07-설명</title>
     <link rel="stylesheet" href="css/common.css">
     <link rel="stylesheet" type="text/css" href="css/font/pretendard.css" />
     <link rel="stylesheet" type="text/css" href="css/font/pretendard-subset.css"/>
@@ -14,7 +14,8 @@
     <section class="cm_wrap_h">
         <section>
             <div class="cm_title_bg">
-                <h1 class="cm_title_h1" tabindex="0">[창의·융합] 별 정보를 어떻게 효율적으로 관리할까?</h1>
+                <h1 class="cm_title_h1 cm_pd_t20" tabindex="0">프로그램 작성하기</h1>
+                <div class="cm_sb_tit_h">[창의·융합 프로젝트] 별 정보를 어떻게 효율적으로 관리할까?</div>
             </div>
     
             <div class="cm_txt" tabindex="0">
@@ -68,15 +69,14 @@
             </div> 
         </section>
                
-        <section>
+        <section class="cm_pd_t20">
             <div class="cm_hint_container">
                 <button class="cm_hint_header" tabindex="0">
                     Hint<span class="cm_hint_sub">메뉴 타이틀을 출력하는 방법</span>
                 </button>
                 <div class="cm_hint_content">
                     <div class="cm_code_number" tabindex="0">
-                        <div class="cm_line_count" aria-label="코드 라인 번호"><span>7</span></div>
-                        <pre class="cm_code3" tabindex="0">print(f"\n{'=' * 15} <메뉴> {'=' * 15}")</pre>
+                        <pre class="cm_code3 cm_mg_l0" tabindex="0">print(f"\n{'=' * 15} <메뉴> {'=' * 15}")</pre>
                     </div>
                 </div>
             </div>
@@ -87,20 +87,13 @@
                 </button>
                 <div class="cm_hint_content">
                     <div class="cm_code_number" tabindex="0">
-                        <div class="cm_line_count" aria-label="코드 라인 번호"><span>16</span></div>
-                        <pre class="cm_code3 cm_mg_l40" tabindex="0">while True:</pre>
-                        <div class="cm_line_count" aria-label="코드 라인 번호"><span>17</span></div>
-                        <pre class="cm_code3 cm_mg_l40" tabindex="0">    a = int(input('메뉴를 선택해 주세요: '))</pre>
-                        <div class="cm_line_count" aria-label="코드 라인 번호"><span>18</span></div>
-                        <pre class="cm_code3 cm_mg_l40" tabindex="0"> </pre>
-                        <div class="cm_line_count" aria-label="코드 라인 번호"><span>19</span></div>
-                        <pre class="cm_code3 cm_mg_l40" tabindex="0">    if a==1: # 정보 입력</pre>
-                        <div class="cm_line_count" aria-label="코드 라인 번호"><span>20</span></div>
-                        <pre class="cm_code3 cm_mg_l40" tabindex="0">    elif a==2: # 별의 색 검색</pre>
-                        <div class="cm_line_count" aria-label="코드 라인 번호"><span>21</span></div>
-                        <pre class="cm_code3 cm_mg_l40" tabindex="0">    elif a==3: # 두 별의 표면 온도 비교</pre>
-                        <div class="cm_line_count" aria-label="코드 라인 번호"><span>22</span></div>
-                        <pre class="cm_code3 cm_mg_l40" tabindex="0">    elif a==4: print('프로그램을 종료합니다.'); break</pre>
+                        <pre class="cm_code3 cm_mg_l0" tabindex="0">while True:</pre>
+                        <pre class="cm_code3 cm_mg_l0" tabindex="0">    a = int(input('메뉴를 선택해 주세요: '))</pre>
+                        <pre class="cm_code3 cm_mg_l0" tabindex="0"> </pre>
+                        <pre class="cm_code3 cm_mg_l0" tabindex="0">    if a==1: <span class="cm_keyword" aria-label="# 주석"># 정보 입력</span></pre>
+                        <pre class="cm_code3 cm_mg_l0" tabindex="0">    elif a==2: <span class="cm_keyword" aria-label="# 주석"># 별의 색 검색</span></pre>
+                        <pre class="cm_code3 cm_mg_l0" tabindex="0">    elif a==3: <span class="cm_keyword" aria-label="# 주석"># 두 별의 표면 온도 비교</span></pre>
+                        <pre class="cm_code3 cm_mg_l0" tabindex="0">    elif a==4: print('프로그램을 종료합니다.'); break</pre>
                     </div>
                 </div>
             </div>
@@ -111,16 +104,11 @@
                 </button>
                 <div class="cm_hint_content">
                     <div class="cm_code_number" tabindex="0">
-                        <div class="cm_line_count" aria-label="코드 라인 번호"><span>16</span></div>
-                        <pre class="cm_code3 cm_mg_l40" tabindex="0">try:</pre>
-                        <div class="cm_line_count" aria-label="코드 라인 번호"><span>17</span></div>
-                        <pre class="cm_code3 cm_mg_l40" tabindex="0">    a = int(input('메뉴를 선택해 주세요: '))</pre>
-                        <div class="cm_line_count" aria-label="코드 라인 번호"><span>18</span></div>
-                        <pre class="cm_code3 cm_mg_l40" tabindex="0">except:</pre>
-                        <div class="cm_line_count" aria-label="코드 라인 번호"><span>19</span></div>
-                        <pre class="cm_code3 cm_mg_l40" tabindex="0">    print('숫자를 입력하세요.\n')</pre>
-                        <div class="cm_line_count" aria-label="코드 라인 번호"><span>20</span></div>
-                        <pre class="cm_code3 cm_mg_l40" tabindex="0">    continue</pre>
+                        <pre class="cm_code3 cm_mg_l0" tabindex="0">try:</pre>
+                        <pre class="cm_code3 cm_mg_l0" tabindex="0">    a = int(input('메뉴를 선택해 주세요: '))</pre>
+                        <pre class="cm_code3 cm_mg_l0" tabindex="0">except:</pre>
+                        <pre class="cm_code3 cm_mg_l0" tabindex="0">    print('숫자를 입력하세요.\n')</pre>
+                        <pre class="cm_code3 cm_mg_l0" tabindex="0">    continue</pre>
                     </div>
                 </div>
             </div>
@@ -131,12 +119,9 @@
                 </button>
                 <div class="cm_hint_content">
                     <div class="cm_code_number" tabindex="0">
-                        <div class="cm_line_count" aria-label="코드 라인 번호"><span>16</span></div>
-                        <pre class="cm_code3 cm_mg_l40" tabindex="0">def 함수명(매개 변수):</pre>
-                        <div class="cm_line_count" aria-label="코드 라인 번호"><span>17</span></div>
-                        <pre class="cm_code3 cm_mg_l40" tabindex="0">    # 들여쓰기 후 명령어 정의</pre>
-                        <div class="cm_line_count" aria-label="코드 라인 번호"><span>18</span></div>
-                        <pre class="cm_code3 cm_mg_l40" tabindex="0">    # return 반환 값 (필요 시 정의)</pre>
+                        <pre class="cm_code3 cm_mg_l0" tabindex="0">def 함수명(매개 변수):</pre>
+                        <pre class="cm_code3 cm_mg_l0" tabindex="0">    <span class="cm_keyword" aria-label="# 주석"># 들여쓰기 후 명령어 정의</span></pre>
+                        <pre class="cm_code3 cm_mg_l0" tabindex="0">    <span class="cm_keyword" aria-label="# 주석"># return 반환 값 (필요 시 정의)</span></pre>
                     </div>
                 </div>
             </div>
