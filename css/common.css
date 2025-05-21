@@ -409,13 +409,14 @@ color: #fff !important; background: none !important; border: none !important; bo
 /* 말풍선 */
 .cmass-content .cm_speech { display: flex; align-items: center; justify-content: center; margin-bottom: 25px; } 
 .cmass-content .cm_face img { width: 50%; height: auto; } 
-.cmass-content .cm_bubble { background-color: #f7e9a7; padding: 15px; border-radius: 10px; max-width: 200px; position: relative; margin-left: 20px; font-family: 'Arial', sans-serif; } 
+.cmass-content .cm_bubble { background-color: #f7e9a7; padding: 15px; border-radius: 10px; max-width: 210px; position: relative; margin-left: 20px; text-align: center;} 
 .cmass-content .cm_bubble::after { content: ''; position: absolute; top: 15px; left: -15px; border-width: 15px; border-style: solid; border-color: #f7e9a7 transparent transparent transparent; transform: rotate(-170deg); } 
  
 /* 로봇개 */
 .cmass-content .cm_dog { display: flex; justify-content: space-around; align-items: end; margin-top: 20px; } 
-.cmass-content .cm_dog dl { width: 30%; } 
+.cmass-content .cm_dog dl { width: 25%; } 
 .cmass-content .cm_dog dl dt img { width: 100%; } 
+.cmass-content .cm_dog dl dd { text-align: center;}
 
 /* 사이즈, 폰트 */
 .cmass-content .cm_flex_inline { display: flex; justify-content: flex-start; align-items: flex-start; gap: 10px; } 

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="_레이어_2" data-name="레이어 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 76.963 25.71">
+  <defs>
+    <style>
+      .cls-1 {
+        font-family: Pretendard-Medium-KSCpc-EUC-H, Pretendard;
+        font-size: 12px;
+        font-weight: 500;
+      }
+
+      .cls-2 {
+        fill: #e1e1e1;
+        stroke: #bcbcbc;
+        stroke-miterlimit: 10;
+        stroke-width: .5px;
+      }
+    </style>
+  </defs>
+  <rect class="cls-2" x=".25" y=".25" width="76.463" height="25.21" rx="5.802" ry="5.802"/>
+  <text class="cls-1" transform="translate(4.438 16.766)"><tspan x="0" y="0">실습 파일 보기</tspan></text>
+</svg>
