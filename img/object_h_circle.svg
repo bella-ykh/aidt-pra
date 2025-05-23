@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="_레이어_2" data-name="레이어 2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 40 40.468">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #b72102;
+      }
+
+      .cls-1, .cls-2 {
+        stroke-width: 0px;
+      }
+
+      .cls-2 {
+        fill: url(#_무제_그라디언트_20);
+      }
+    </style>
+    <radialGradient id="_무제_그라디언트_20" data-name="무제 그라디언트 20" cx="20" cy="20.234" fx="20" fy="20.234" r="19.731" gradientTransform="translate(.231) scale(.988 1)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#ee7500"/>
+      <stop offset=".503" stop-color="#e05c00"/>
+      <stop offset="1" stop-color="#c42e00"/>
+    </radialGradient>
+  </defs>
+  <ellipse class="cls-2" cx="20" cy="20.234" rx="19.5" ry="19.734"/>
+  <path class="cls-1" d="m20,1c10.477,0,19,8.628,19,19.234s-8.523,19.234-19,19.234S1,30.839,1,20.234,9.523,1,20,1m0-1C8.954,0,0,9.059,0,20.234s8.954,20.234,20,20.234,20-9.059,20-20.234S31.046,0,20,0h0Z"/>
+</svg>

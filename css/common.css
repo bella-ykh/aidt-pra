@@ -112,7 +112,7 @@ a:visited { color: #333; }
 .cmass-content .cm_video { display: flex; flex-direction: column; } 
 .cmass-content .cm_chart { max-width: 580px; display: flex; flex-direction: column; margin-bottom: 20px; } 
 
-.cmass-content .cm_video_title { height: 70px; width: 284px; padding-top: 12px; padding-right: 30px; color: #fff; font-size: 20px; background: url(../img/bg_title.png) no-repeat 0 0; text-align: center; } 
+.cmass-content .cm_video_title { height: 70px; width: 284px; padding-top: 8px; padding-right: 30px; color: #fff; font-size: 20px; background: url(../img/bg_title.png) no-repeat 0 0; text-align: center; } 
 .cmass-content .cm_chart_title { height: 70px; width: 165px; padding-top: 12px; padding-right: 30px; color: #fff; font-size: 20px; background: url(../img/bg_title2.png) no-repeat 0 0; text-align: center; } 
 
 .cmass-content .cm_view { width: 100%; background: linear-gradient(to top left, #22dcfd 0%, #1c91e2 50%, #5865b9 100%); margin-top: -21px; padding: 3px; border-radius: 20px; } 
@@ -542,8 +542,8 @@ color: #fff !important; background: none !important; border: none !important; bo
  .cmass-content .cm_list_num_h li span { font-size: min(24px, 6vw); text-indent: -25px; } 
 
 /*중등*/
- .cmass-content .cm_title_01 { font-size: min(24px, 6vw); } 
- .cmass-content .cm_title_02 { font-size: min(22px, 5vw); } 
+ .cmass-content .cm_title_01 { font-size: 1.2rem !important; } 
+ .cmass-content .cm_title_02 { font-size: 1.1rem !important; } 
  .cmass-content .cm_foot { height: 3.4rem; }
  .cmass-content .cm_nav_button img { width: 30px; }
  .cmass-content .cm_indicators { margin-top: 20px; }

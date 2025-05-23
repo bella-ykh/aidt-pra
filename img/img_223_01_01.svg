@@ -3,36 +3,28 @@
   <defs>
     <style>
       .cls-1 {
-        fill: #d6e9f4;
-      }
-
-      .cls-1, .cls-2, .cls-3 {
-        stroke-width: 0px;
-      }
-
-      .cls-2 {
-        fill: #25aeff;
-      }
-
-      .cls-3 {
-        fill: #ecf8ff;
-      }
-
-      .cls-4 {
-        fill: #595959;
         font-family: Pretendard-SemiBold-KSCpc-EUC-H, Pretendard;
         font-size: 11px;
         font-weight: 600;
       }
+
+      .cls-1, .cls-2 {
+        fill: #fff;
+      }
+
+      .cls-2, .cls-3 {
+        stroke-width: 0px;
+      }
+
+      .cls-3 {
+        fill: #17a6d1;
+      }
     </style>
   </defs>
+  <rect class="cls-3" width="55" height="50"/>
+  <text class="cls-1" transform="translate(2.467 44.392)"><tspan x="0" y="0">데이터 분석</tspan></text>
   <g>
-    <rect class="cls-3" x=".5" y=".5" width="54" height="49"/>
-    <path class="cls-1" d="m54,1v48H1V1h53m1-1H0v50h55V0h0Z"/>
-  </g>
-  <text class="cls-4" transform="translate(2.466 44.393)"><tspan x="0" y="0">데이터 분석</tspan></text>
-  <g>
-    <path class="cls-2" d="m26.774,10.926c-4.162.376-7.424,3.871-7.424,8.131,0,1.944.682,3.727,1.815,5.129l5.609-5.609v-7.651Z"/>
+    <path class="cls-2" d="m26.773,10.926c-4.162.376-7.424,3.871-7.424,8.131,0,1.944.682,3.727,1.815,5.129l5.609-5.609v-7.651Z"/>
     <path class="cls-2" d="m22.14,25.195c1.438,1.26,3.316,2.03,5.378,2.03,4.271,0,7.771-3.279,8.132-7.457h-8.084l-5.426,5.426Z"/>
     <path class="cls-2" d="m35.651,18.365c-.334-3.969-3.501-7.125-7.474-7.443v7.443h7.474Z"/>
   </g>
