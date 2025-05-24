@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="_레이어_1" data-name="레이어 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 768.241 1013.601">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #707070;
+      }
+
+      .cls-1, .cls-2 {
+        stroke-width: 0px;
+      }
+
+      .cls-3 {
+        stroke: red;
+      }
+
+      .cls-3, .cls-4, .cls-5, .cls-6, .cls-7, .cls-8, .cls-9 {
+        stroke-miterlimit: 10;
+      }
+
+      .cls-3, .cls-5, .cls-9 {
+        fill: none;
+        stroke-width: 3px;
+      }
+
+      .cls-3, .cls-9 {
+        stroke-dasharray: 0 0 7 4;
+      }
+
+      .cls-4 {
+        fill: #b6eda2;
+        stroke: #6ea159;
+      }
+
+      .cls-5 {
+        stroke: #707070;
+      }
+
+      .cls-6 {
+        fill: #caebfc;
+        stroke: #3295c3;
+      }
+
+      .cls-10 {
+        font-size: 26px;
+        letter-spacing: -.025em;
+      }
+
+      .cls-10, .cls-11, .cls-12 {
+        font-family: Pretendard-Bold-KSCpc-EUC-H, Pretendard;
+        font-weight: 700;
+      }
+
+      .cls-2 {
+        fill: #7a7a7a;
+      }
+
+      .cls-7 {
+        fill: #d9cfff;
+        stroke: #8c7bc6;
+      }
+
+      .cls-11 {
+        fill: red;
+      }
+
+      .cls-11, .cls-12 {
+        font-size: 28px;
+        letter-spacing: -.025em;
+      }
+
+      .cls-12 {
+        fill: #6400e0;
+      }
+
+      .cls-8 {
+        fill: #ffe697;
+        stroke: #bb7d0c;
+      }
+
+      .cls-9 {
+        stroke: #6400e0;
+      }
+    </style>
+  </defs>
+  <polyline class="cls-5" points="152.134 910.902 515.721 910.902 515.721 820.868"/>
+  <g>
+    <g>
+      <line class="cls-5" x1="260.275" y1="804.248" x2="383.337" y2="804.248"/>
+      <polygon class="cls-1" points="381.586 810.232 391.948 804.248 381.586 798.265 381.586 810.232"/>
+    </g>
+    <g>
+      <line class="cls-5" x1="152.449" y1="845.173" x2="152.449" y2="932.337"/>
+      <polygon class="cls-1" points="144.97 930.148 152.449 943.101 159.928 930.148 144.97 930.148"/>
+    </g>
+    <path class="cls-3" d="m744.752,201.045H20.483c-10.484,0-18.983,9.981-18.983,22.293v461.183c0,12.312,8.499,22.293,18.983,22.293h724.27c12.144,0,21.988-9.981,21.988-22.293V223.337c0-12.312-9.845-22.293-21.988-22.293Z"/>
+    <rect class="cls-9" x="294.483" y="327.537" width="406.323" height="324.342" rx="20" ry="20"/>
+    <path class="cls-2" d="m578.698,617.11-192.441-1.358"/>
+    <text class="cls-12" transform="translate(535.474 308.714)"><tspan x="0" y="0">안쪽 반복 구조</tspan></text>
+    <g>
+      <line class="cls-5" x1="496.21" y1="474.808" x2="496.21" y2="520.458"/>
+      <polygon class="cls-1" points="490.226 518.707 496.21 529.069 502.193 518.707 490.226 518.707"/>
+    </g>
+    <g>
+      <line class="cls-5" x1="152.449" y1="301.889" x2="152.449" y2="729.596"/>
+      <polygon class="cls-1" points="144.97 727.408 152.449 740.36 159.928 727.408 144.97 727.408"/>
+    </g>
+    <g>
+      <polyline class="cls-5" points="260.275 293.79 495.773 293.79 495.773 350.668"/>
+      <polygon class="cls-1" points="489.789 348.917 495.773 359.279 501.756 348.917 489.789 348.917"/>
+    </g>
+    <g>
+      <polyline class="cls-5" points="163.257 679.298 732.676 679.298 732.676 417.274 597.191 417.274"/>
+      <polygon class="cls-1" points="165.446 686.777 152.494 679.298 165.446 671.819 165.446 686.777"/>
+    </g>
+    <text class="cls-10" transform="translate(168.475 378.31)"><tspan x="0" y="0">아니요</tspan></text>
+    <text class="cls-10" transform="translate(168.475 892.635)"><tspan x="0" y="0">아니요</tspan></text>
+    <text class="cls-10" transform="translate(509.894 504.794)"><tspan x="0" y="0">아니요</tspan></text>
+    <text class="cls-10" transform="translate(630.165 407.469)"><tspan x="0" y="0">예</tspan></text>
+    <text class="cls-10" transform="translate(276.617 281.34)"><tspan x="0" y="0">예</tspan></text>
+    <text class="cls-10" transform="translate(276.617 792.449)"><tspan x="0" y="0">예</tspan></text>
+    <g>
+      <polyline class="cls-5" points="495.773 591.99 495.773 621.997 329.321 621.997 329.321 417.274 368.711 417.274"/>
+      <polygon class="cls-1" points="366.96 423.258 377.321 417.274 366.96 411.291 366.96 423.258"/>
+    </g>
+    <rect class="cls-6" x="391.948" y="529.069" width="208.998" height="66.462"/>
+    <text class="cls-10" transform="translate(414.75 570.646)"><tspan x="0" y="0">별 복제본 만들기</tspan></text>
+    <rect class="cls-6" x="391.948" y="771.017" width="246.896" height="66.462"/>
+    <text class="cls-10" transform="translate(411.86 812.593)"><tspan x="0" y="0">모든 복제본 삭제하기</tspan></text>
+    <polygon class="cls-7" points="496.403 359.104 378.06 417.274 496.403 475.445 614.746 417.274 496.403 359.104"/>
+    <text class="cls-10" transform="translate(471.002 404.119)"><tspan x="0" y="0">10번</tspan><tspan x="-47.196" y="30">반복하였는가?</tspan></text>
+    <polygon class="cls-7" points="152.274 235.62 33.931 293.791 152.274 351.962 270.617 293.791 152.274 235.62"/>
+    <text class="cls-10" transform="translate(119.078 284.636)"><tspan x="0" y="0">대답이</tspan><tspan x="-12.875" y="33">‘별’인가?</tspan></text>
+    <polygon class="cls-7" points="152.274 741.077 29.931 804.248 152.274 867.42 274.617 804.248 152.274 741.077"/>
+    <text class="cls-10" transform="translate(119.078 791.45)"><tspan x="0" y="0">대답이</tspan><tspan x="-34.696" y="33">‘지우기’인가?</tspan></text>
+    <g>
+      <line class="cls-5" x1="152.449" y1="179.16" x2="152.449" y2="224.257"/>
+      <polygon class="cls-1" points="144.97 222.069 152.449 235.021 159.928 222.069 144.97 222.069"/>
+    </g>
+    <text class="cls-11" transform="translate(597.611 178.894)"><tspan x="0" y="0">바깥 선택 구조</tspan></text>
+  </g>
+  <rect class="cls-4" x="67.289" y=".5" width="171.736" height="70" rx="35" ry="35"/>
+  <polygon class="cls-8" points="257.606 179.16 1.603 179.16 46.663 105.542 302.665 105.542 257.606 179.16"/>
+  <text class="cls-10" transform="translate(44.884 150.699)"><tspan x="0" y="0" xml:space="preserve">&apos;별&apos; 또는 &apos;지우기&apos;  입력</tspan></text>
+  <g>
+    <line class="cls-5" x1="152.134" y1="70.967" x2="152.134" y2="96.931"/>
+    <polygon class="cls-1" points="146.151 95.18 152.134 105.542 158.117 95.18 146.151 95.18"/>
+  </g>
+  <text class="cls-10" transform="translate(129.664 45.192)"><tspan x="0" y="0">시작</tspan></text>
+  <rect class="cls-4" x="67.289" y="943.101" width="171.736" height="70" rx="35" ry="35"/>
+  <text class="cls-10" transform="translate(129.664 987.791)"><tspan x="0" y="0">종료</tspan></text>
+</svg>

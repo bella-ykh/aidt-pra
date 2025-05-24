@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="_레이어_1" data-name="레이어 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 829.131 1185.491">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #707070;
+        stroke-width: 0px;
+      }
+
+      .cls-2 {
+        fill: #b6eda2;
+        stroke: #6ea159;
+      }
+
+      .cls-2, .cls-3, .cls-4, .cls-5, .cls-6, .cls-7 {
+        stroke-miterlimit: 10;
+      }
+
+      .cls-3 {
+        stroke-dasharray: 0 0 6.997 3.999;
+      }
+
+      .cls-3, .cls-4, .cls-7 {
+        fill: none;
+        stroke-width: 3px;
+      }
+
+      .cls-3, .cls-7 {
+        stroke: #6400e0;
+      }
+
+      .cls-4 {
+        stroke: #707070;
+      }
+
+      .cls-5 {
+        fill: #caebfc;
+        stroke: #3295c3;
+      }
+
+      .cls-8, .cls-9 {
+        font-size: 26px;
+        letter-spacing: -.025em;
+      }
+
+      .cls-8, .cls-10 {
+        font-family: Pretendard-Bold-KSCpc-EUC-H, Pretendard;
+        font-weight: 700;
+      }
+
+      .cls-6 {
+        fill: #d9cfff;
+        stroke: #8c7bc6;
+      }
+
+      .cls-9 {
+        font-family: Pretendard-Medium-KSCpc-EUC-H, Pretendard;
+        font-weight: 500;
+      }
+
+      .cls-10 {
+        fill: #6400e0;
+        font-size: 28px;
+        letter-spacing: -.025em;
+      }
+
+      .cls-7 {
+        stroke-dasharray: 0 0 7 4;
+      }
+    </style>
+  </defs>
+  <g>
+    <rect class="cls-7" x="1.5" y="194.666" width="795.455" height="849.311" rx="25" ry="25"/>
+    <g>
+      <polyline class="cls-4" points="644.626 285.351 827.631 285.351 827.631 1072.831 510.295 1072.831 510.295 1106.38"/>
+      <polygon class="cls-1" points="504.311 1104.629 510.295 1114.991 516.278 1104.629 504.311 1104.629"/>
+    </g>
+    <g>
+      <polyline class="cls-4" points="510.295 945.8 510.295 988.829 734.833 988.829 734.833 643.754 658.306 643.754"/>
+      <polygon class="cls-1" points="660.056 637.77 649.695 643.754 660.056 649.737 660.056 637.77"/>
+    </g>
+    <text class="cls-8" transform="translate(668.29 267.812)"><tspan x="0" y="0">예</tspan></text>
+    <rect class="cls-3" x="300.867" y="540.948" width="466.121" height="474.767" rx="20" ry="20"/>
+    <g>
+      <line class="cls-4" x1="372.636" y1="643.754" x2="271.009" y2="643.754"/>
+      <polygon class="cls-1" points="272.759 637.77 262.398 643.754 272.759 649.737 272.759 637.77"/>
+    </g>
+    <g>
+      <line class="cls-4" x1="508.303" y1="170.885" x2="508.303" y2="213.425"/>
+      <polygon class="cls-1" points="502.319 211.674 508.303 222.035 514.285 211.674 502.319 211.674"/>
+    </g>
+    <g>
+      <line class="cls-4" x1="508.303" y1="479.211" x2="508.303" y2="570.316"/>
+      <polygon class="cls-1" points="502.319 568.565 508.303 578.926 514.285 568.565 502.319 568.565"/>
+    </g>
+    <g>
+      <line class="cls-4" x1="510.294" y1="831.764" x2="510.294" y2="868.482"/>
+      <polygon class="cls-1" points="504.311 866.732 510.294 877.093 516.278 866.732 504.311 866.732"/>
+    </g>
+    <g>
+      <polyline class="cls-4" points="357.527 285.299 149.353 285.299 149.353 615.746"/>
+      <polygon class="cls-1" points="355.776 279.316 366.138 285.299 355.776 291.282 355.776 279.316"/>
+    </g>
+    <rect class="cls-5" x="379.689" y="97.088" width="257.219" height="73.746"/>
+    <text class="cls-8" transform="translate(425.196 142.318)"><tspan x="0" y="0">‘단’을 1로 정하기</tspan></text>
+    <rect class="cls-5" x="352.691" y="405.403" width="311.223" height="73.746"/>
+    <text class="cls-8" transform="translate(389.793 450.629)"><tspan x="0" y="0">‘곱하는 수’를 1로 정하기</tspan></text>
+    <rect class="cls-5" x="36.455" y="606.881" width="225.943" height="73.746"/>
+    <text class="cls-8" transform="translate(55.391 652.124)"><tspan x="0" y="0">‘단’에 1만큼 더하기</tspan></text>
+    <g>
+      <line class="cls-4" x1="508.303" y1="348.666" x2="508.303" y2="396.729"/>
+      <polygon class="cls-1" points="502.319 394.979 508.303 405.34 514.285 394.979 502.319 394.979"/>
+    </g>
+    <polygon class="cls-6" points="508.303 222.035 367.381 285.351 508.303 348.666 649.224 285.351 508.303 222.035"/>
+    <text class="cls-8" transform="translate(464.543 278.698)"><tspan x="0" y="0">9번 반복</tspan><tspan x="-6.881" y="30">하였는가?</tspan></text>
+    <text class="cls-8" transform="translate(529.509 382.223)"><tspan x="0" y="0">아니요</tspan></text>
+    <rect class="cls-5" x="354.226" y="757.771" width="311.223" height="73.746"/>
+    <text class="cls-8" transform="translate(373.146 802.997)"><tspan x="0" y="0">‘단’x ‘곱하는 수’를 출력하기</tspan></text>
+    <g>
+      <line class="cls-4" x1="508.303" y1="697.49" x2="508.303" y2="747.942"/>
+      <polygon class="cls-1" points="502.319 746.191 508.303 756.553 514.285 746.191 502.319 746.191"/>
+    </g>
+    <text class="cls-8" transform="translate(528.865 736.068)"><tspan x="0" y="0">아니요</tspan></text>
+    <rect class="cls-5" x="354.683" y="877.155" width="311.223" height="73.746"/>
+    <text class="cls-8" transform="translate(402.696 922.381)"><tspan x="0" y="0">‘곱하는 수’에 1 더하기</tspan></text>
+    <text class="cls-9" transform="translate(325.961 628.452)"><tspan x="0" y="0">예</tspan></text>
+    <polygon class="cls-6" points="508.303 580.438 367.381 643.754 508.303 707.069 649.224 643.754 508.303 580.438"/>
+    <text class="cls-8" transform="translate(464.543 637.099)"><tspan x="0" y="0">9번 반복</tspan><tspan x="-6.881" y="30">하였는가?</tspan></text>
+    <text class="cls-10" transform="translate(32.735 174.001)"><tspan x="0" y="0">바깥 반복 구조</tspan></text>
+    <text class="cls-10" transform="translate(312.355 520.842)"><tspan x="0" y="0">안쪽 반복 구조</tspan></text>
+  </g>
+  <g>
+    <line class="cls-4" x1="508.303" y1="40.099" x2="508.303" y2="88.426"/>
+    <polygon class="cls-1" points="502.319 86.675 508.303 97.036 514.285 86.675 502.319 86.675"/>
+  </g>
+  <g>
+    <rect class="cls-2" x="422.435" y=".5" width="171.736" height="70" rx="35" ry="35"/>
+    <text class="cls-8" transform="translate(484.81 45.192)"><tspan x="0" y="0">시작</tspan></text>
+  </g>
+  <g>
+    <rect class="cls-2" x="422.435" y="1114.991" width="171.736" height="70" rx="35" ry="35"/>
+    <text class="cls-8" transform="translate(484.81 1159.682)"><tspan x="0" y="0">종료</tspan></text>
+  </g>
+</svg>

@@ -1,0 +1,268 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="_레이어_1" data-name="레이어 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 937.194 2486.765">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #707070;
+        stroke-width: 0px;
+      }
+
+      .cls-2, .cls-3 {
+        font-size: 26px;
+      }
+
+      .cls-2, .cls-3, .cls-4 {
+        font-family: Pretendard-Bold-KSCpc-EUC-H, Pretendard;
+        font-weight: 700;
+      }
+
+      .cls-5, .cls-3 {
+        letter-spacing: -.025em;
+      }
+
+      .cls-6 {
+        stroke: red;
+        stroke-dasharray: 0 0 7 4;
+      }
+
+      .cls-6, .cls-7, .cls-8, .cls-9, .cls-10, .cls-11 {
+        stroke-miterlimit: 10;
+      }
+
+      .cls-6, .cls-8 {
+        fill: none;
+        stroke-width: 3px;
+      }
+
+      .cls-7 {
+        fill: #b6eda2;
+        stroke: #6ea159;
+      }
+
+      .cls-12 {
+        letter-spacing: -.12em;
+      }
+
+      .cls-8 {
+        stroke: #707070;
+      }
+
+      .cls-9 {
+        fill: #caebfc;
+        stroke: #3295c3;
+      }
+
+      .cls-10 {
+        fill: #d9cfff;
+        stroke: #8c7bc6;
+      }
+
+      .cls-13 {
+        letter-spacing: -.025em;
+      }
+
+      .cls-4 {
+        fill: red;
+        font-size: 28px;
+        letter-spacing: -.025em;
+      }
+
+      .cls-11 {
+        fill: #ffe697;
+        stroke: #bb7d0c;
+      }
+    </style>
+  </defs>
+  <g>
+    <polyline class="cls-8" points="158.427 1002.984 396.104 1002.984 396.104 925.141"/>
+    <polyline class="cls-8" points="396.104 1002.984 708.803 1002.984 708.803 932.823"/>
+    <polyline class="cls-8" points="396.104 798.415 709.779 798.415 709.779 719.746"/>
+    <g>
+      <line class="cls-8" x1="396.233" y1="755.917" x2="396.233" y2="816.607"/>
+      <polygon class="cls-1" points="388.753 814.418 396.233 827.371 403.712 814.418 388.753 814.418"/>
+    </g>
+    <text class="cls-3" transform="translate(409.916 782.951)"><tspan x="0" y="0">아니요</tspan></text>
+    <text class="cls-3" transform="translate(409.916 971.854)"><tspan x="0" y="0">아니요</tspan></text>
+    <polyline class="cls-8" points="396.104 609.458 709.779 609.458 709.779 515.789"/>
+    <rect class="cls-9" x="595.954" y="838.309" width="226.999" height="96.465"/>
+    <path class="cls-6" d="m910.694,986.178H26.5c-13.75,0-25-12.891-25-28.647V314.885c0-15.756,11.25-28.647,25-28.647h884.194c13.75,0,25,12.891,25,28.647v642.646c0,15.756-11.25,28.647-25,28.647Z"/>
+    <rect class="cls-6" x="250.147" y="397.048" width="619.742" height="198.482" rx="15.624" ry="15.624"/>
+    <g>
+      <line class="cls-8" x1="396.233" y1="551.959" x2="396.233" y2="626.651"/>
+      <polygon class="cls-1" points="388.753 624.462 396.233 637.414 403.712 624.462 388.753 624.462"/>
+    </g>
+    <g>
+      <line class="cls-8" x1="516.271" y1="491.152" x2="584.54" y2="491.152"/>
+      <polygon class="cls-1" points="582.352 498.631 595.304 491.152 582.352 483.673 582.352 498.631"/>
+    </g>
+    <g>
+      <line class="cls-8" x1="516.271" y1="696.456" x2="584.54" y2="696.456"/>
+      <polygon class="cls-1" points="582.352 703.936 595.304 696.456 582.352 688.977 582.352 703.936"/>
+    </g>
+    <rect class="cls-9" x="595.304" y="457.921" width="226.999" height="66.462"/>
+    <text class="cls-2" transform="translate(611.183 878.388)"><tspan class="cls-5" x="0" y="0">‘사람이 이겼습니다</tspan><tspan class="cls-12" x="186.113" y="0">.</tspan><tspan class="cls-5" x="190.338" y="0">’</tspan><tspan class="cls-5"><tspan x="76.451" y="33">출력</tspan></tspan></text>
+    <text class="cls-2" transform="translate(621.442 499.499)"><tspan class="cls-5" x="0" y="0">‘비겼습니다</tspan><tspan class="cls-12" x="115.309" y="0">.</tspan><tspan class="cls-13" x="119.534" y="0">’ 출력</tspan></text>
+    <rect class="cls-9" x="595.629" y="648.224" width="226.999" height="96.465"/>
+    <text class="cls-2" transform="translate(621.767 688.303)"><tspan class="cls-5" x="0" y="0">‘사람이 졌습니다</tspan><tspan class="cls-12" x="164.292" y="0">.</tspan><tspan class="cls-5" x="168.518" y="0">’</tspan><tspan class="cls-5"><tspan x="65.541" y="33">출력</tspan></tspan></text>
+    <text class="cls-3" transform="translate(409.916 578.993)"><tspan x="0" y="0">아니요</tspan></text>
+    <text class="cls-3" transform="translate(527.877 479.166)"><tspan x="0" y="0">예</tspan></text>
+    <text class="cls-3" transform="translate(527.877 685.181)"><tspan x="0" y="0">예</tspan></text>
+    <polygon class="cls-10" points="396.233 428.11 271.89 491.281 396.233 554.453 520.576 491.281 396.233 428.11"/>
+    <text class="cls-3" transform="translate(328.1 488.129)"><tspan x="0" y="0">컴퓨터 선택이</tspan><tspan x="11.616" y="30">‘가위’인가?</tspan></text>
+    <polygon class="cls-10" points="396.233 637.414 271.89 696.585 396.233 755.756 520.576 696.585 396.233 637.414"/>
+    <text class="cls-3" transform="translate(328.1 693.432)"><tspan x="0" y="0">컴퓨터 선택이</tspan><tspan x="11.616" y="30">‘바위’인가?</tspan></text>
+    <g>
+      <line class="cls-8" x1="516.271" y1="886.412" x2="584.54" y2="886.412"/>
+      <polygon class="cls-1" points="582.352 893.892 595.304 886.412 582.352 878.933 582.352 893.892"/>
+    </g>
+    <text class="cls-3" transform="translate(527.877 875.138)"><tspan x="0" y="0">예</tspan></text>
+    <g>
+      <line class="cls-8" x1="158.231" y1="372.715" x2="158.231" y2="1026.089"/>
+      <polygon class="cls-1" points="150.752 1023.901 158.231 1036.853 165.71 1023.901 150.752 1023.901"/>
+    </g>
+    <g>
+      <line class="cls-8" x1="158.231" y1="255.468" x2="158.231" y2="304.268"/>
+      <polygon class="cls-1" points="150.752 302.079 158.231 315.032 165.71 302.079 150.752 302.079"/>
+    </g>
+    <text class="cls-3" transform="translate(169.999 461.207)"><tspan x="0" y="0">아니요</tspan></text>
+    <g>
+      <polyline class="cls-8" points="273.565 374.334 396.104 374.334 396.104 417.217"/>
+      <polygon class="cls-1" points="388.624 415.028 396.104 427.98 403.583 415.028 388.624 415.028"/>
+    </g>
+    <text class="cls-3" transform="translate(301.077 362.347)"><tspan x="0" y="0">예</tspan></text>
+    <text class="cls-4" transform="translate(747.435 275.088)"><tspan x="0" y="0">바깥 선택 구조</tspan></text>
+    <text class="cls-4" transform="translate(685.113 436.508)"><tspan x="0" y="0">안쪽 선택 구조</tspan></text>
+    <polygon class="cls-10" points="158.102 315.163 33.759 374.334 158.102 433.505 282.446 374.334 158.102 315.163"/>
+    <text class="cls-3" transform="translate(111.789 367.181)"><tspan x="0" y="0">내 선택이</tspan><tspan x="-10.204" y="30">‘가위’인가?</tspan></text>
+    <polygon class="cls-10" points="396.233 827.241 271.89 886.412 396.233 945.583 520.576 886.412 396.233 827.241"/>
+    <text class="cls-3" transform="translate(328.1 884.389)"><tspan x="0" y="0">컴퓨터 선택이</tspan><tspan x="22.526" y="30">‘보’인가?</tspan></text>
+  </g>
+  <g>
+    <polyline class="cls-8" points="158.427 1691.865 396.104 1691.865 396.104 1632.313"/>
+    <polyline class="cls-8" points="396.104 1691.865 708.803 1691.865 708.803 1637.894"/>
+    <polyline class="cls-8" points="396.104 1505.587 709.779 1505.587 709.779 1426.919"/>
+    <g>
+      <line class="cls-8" x1="396.233" y1="1463.089" x2="396.233" y2="1523.779"/>
+      <polygon class="cls-1" points="388.753 1521.591 396.233 1534.543 403.712 1521.591 388.753 1521.591"/>
+    </g>
+    <text class="cls-3" transform="translate(409.916 1490.123)"><tspan x="0" y="0">아니요</tspan></text>
+    <text class="cls-3" transform="translate(409.916 1678.252)"><tspan x="0" y="0">아니요</tspan></text>
+    <polyline class="cls-8" points="396.104 1316.631 709.779 1316.631 709.779 1239.963"/>
+    <rect class="cls-9" x="595.954" y="1545.481" width="226.999" height="96.465"/>
+    <g>
+      <line class="cls-8" x1="396.233" y1="1276.133" x2="396.233" y2="1333.823"/>
+      <polygon class="cls-1" points="388.753 1331.635 396.233 1344.587 403.712 1331.635 388.753 1331.635"/>
+    </g>
+    <g>
+      <line class="cls-8" x1="516.271" y1="1215.326" x2="584.54" y2="1215.326"/>
+      <polygon class="cls-1" points="582.352 1222.806 595.304 1215.326 582.352 1207.847 582.352 1222.806"/>
+    </g>
+    <g>
+      <line class="cls-8" x1="516.271" y1="1403.628" x2="584.54" y2="1403.628"/>
+      <polygon class="cls-1" points="582.352 1411.108 595.304 1403.628 582.352 1396.15 582.352 1411.108"/>
+    </g>
+    <text class="cls-2" transform="translate(622.093 1585.56)"><tspan class="cls-5" x="0" y="0">‘사람이 졌습니다</tspan><tspan class="cls-12" x="164.292" y="0">.</tspan><tspan class="cls-5" x="168.518" y="0">’</tspan><tspan class="cls-5"><tspan x="65.541" y="33">출력</tspan></tspan></text>
+    <rect class="cls-9" x="595.304" y="1370.527" width="226.999" height="66.462"/>
+    <text class="cls-2" transform="translate(621.442 1412.104)"><tspan class="cls-5" x="0" y="0">‘비겼습니다</tspan><tspan class="cls-12" x="115.309" y="0">.</tspan><tspan class="cls-13" x="119.534" y="0">’ 출력</tspan></text>
+    <text class="cls-3" transform="translate(409.916 1303.167)"><tspan x="0" y="0">아니요</tspan></text>
+    <text class="cls-3" transform="translate(527.877 1203.34)"><tspan x="0" y="0">예</tspan></text>
+    <text class="cls-3" transform="translate(527.877 1392.353)"><tspan x="0" y="0">예</tspan></text>
+    <polygon class="cls-10" points="396.233 1152.284 271.89 1215.455 396.233 1278.627 520.576 1215.455 396.233 1152.284"/>
+    <text class="cls-3" transform="translate(328.1 1212.302)"><tspan x="0" y="0">컴퓨터 선택이</tspan><tspan x="11.616" y="30">‘가위’인가?</tspan></text>
+    <polygon class="cls-10" points="396.233 1344.587 271.89 1403.758 396.233 1462.929 520.576 1403.758 396.233 1344.587"/>
+    <text class="cls-3" transform="translate(328.1 1400.604)"><tspan x="0" y="0">컴퓨터 선택이</tspan><tspan x="11.616" y="30">‘바위’인가?</tspan></text>
+    <g>
+      <line class="cls-8" x1="516.271" y1="1593.585" x2="584.54" y2="1593.585"/>
+      <polygon class="cls-1" points="582.352 1601.064 595.304 1593.585 582.352 1586.106 582.352 1601.064"/>
+    </g>
+    <text class="cls-3" transform="translate(527.877 1582.31)"><tspan x="0" y="0">예</tspan></text>
+    <g>
+      <line class="cls-8" x1="158.231" y1="1096.889" x2="158.231" y2="1717.713"/>
+      <polygon class="cls-1" points="150.752 1715.525 158.231 1728.477 165.71 1715.525 150.752 1715.525"/>
+    </g>
+    <text class="cls-3" transform="translate(169.999 1185.381)"><tspan x="0" y="0">아니요</tspan></text>
+    <g>
+      <polyline class="cls-8" points="273.565 1098.508 396.104 1098.508 396.104 1141.391"/>
+      <polygon class="cls-1" points="388.624 1139.203 396.104 1152.154 403.583 1139.203 388.624 1139.203"/>
+    </g>
+    <text class="cls-3" transform="translate(301.077 1086.521)"><tspan x="0" y="0">예</tspan></text>
+    <polygon class="cls-10" points="158.102 1039.337 33.759 1098.508 158.102 1157.68 282.446 1098.508 158.102 1039.337"/>
+    <text class="cls-3" transform="translate(111.789 1091.355)"><tspan x="0" y="0">내 선택이</tspan><tspan x="-10.204" y="30">‘바위’인가?</tspan></text>
+    <polygon class="cls-10" points="396.233 1534.413 271.89 1593.585 396.233 1652.756 520.576 1593.585 396.233 1534.413"/>
+    <text class="cls-3" transform="translate(328.1 1591.561)"><tspan x="0" y="0">컴퓨터 선택이</tspan><tspan x="22.526" y="30">‘보’인가?</tspan></text>
+    <rect class="cls-9" x="595.954" y="1164.069" width="226.999" height="96.465"/>
+    <text class="cls-2" transform="translate(611.183 1204.148)"><tspan class="cls-5" x="0" y="0">‘사람이 이겼습니다</tspan><tspan class="cls-12" x="186.113" y="0">.</tspan><tspan class="cls-5" x="190.338" y="0">’</tspan><tspan class="cls-5"><tspan x="76.451" y="33">출력</tspan></tspan></text>
+  </g>
+  <g>
+    <polyline class="cls-8" points="158.427 2379.653 396.104 2379.653 396.104 2320.101"/>
+    <polyline class="cls-8" points="396.104 2379.653 708.803 2379.653 708.803 2310.681"/>
+    <polyline class="cls-8" points="396.104 2193.375 709.779 2193.375 709.779 2114.707"/>
+    <g>
+      <line class="cls-8" x1="396.233" y1="2150.878" x2="396.233" y2="2211.568"/>
+      <polygon class="cls-1" points="388.753 2209.379 396.233 2222.331 403.712 2209.379 388.753 2209.379"/>
+    </g>
+    <text class="cls-3" transform="translate(409.916 2177.912)"><tspan x="0" y="0">아니요</tspan></text>
+    <text class="cls-3" transform="translate(409.916 2366.041)"><tspan x="0" y="0">아니요</tspan></text>
+    <polyline class="cls-8" points="396.104 2004.419 709.779 2004.419 709.779 1927.751"/>
+    <rect class="cls-9" x="595.954" y="2043.313" width="226.999" height="96.465"/>
+    <g>
+      <line class="cls-8" x1="396.233" y1="1963.922" x2="396.233" y2="2021.611"/>
+      <polygon class="cls-1" points="388.753 2019.423 396.233 2032.375 403.712 2019.423 388.753 2019.423"/>
+    </g>
+    <g>
+      <line class="cls-8" x1="516.271" y1="1903.114" x2="584.54" y2="1903.114"/>
+      <polygon class="cls-1" points="582.352 1910.594 595.304 1903.114 582.352 1895.636 582.352 1910.594"/>
+    </g>
+    <g>
+      <line class="cls-8" x1="516.271" y1="2091.417" x2="584.54" y2="2091.417"/>
+      <polygon class="cls-1" points="582.352 2098.896 595.304 2091.417 582.352 2083.938 582.352 2098.896"/>
+    </g>
+    <text class="cls-2" transform="translate(611.183 2083.392)"><tspan class="cls-5" x="0" y="0">‘사람이 이겼습니다</tspan><tspan class="cls-12" x="186.113" y="0">.</tspan><tspan class="cls-5" x="190.338" y="0">’</tspan><tspan class="cls-5"><tspan x="76.451" y="33">출력</tspan></tspan></text>
+    <text class="cls-3" transform="translate(409.916 1990.955)"><tspan x="0" y="0">아니요</tspan></text>
+    <text class="cls-3" transform="translate(537.877 1891.128)"><tspan x="0" y="0">예</tspan></text>
+    <text class="cls-3" transform="translate(537.877 2080.142)"><tspan x="0" y="0">예</tspan></text>
+    <polygon class="cls-10" points="396.233 1840.072 271.89 1903.244 396.233 1966.415 520.576 1903.244 396.233 1840.072"/>
+    <text class="cls-3" transform="translate(328.1 1900.091)"><tspan x="0" y="0">컴퓨터 선택이</tspan><tspan x="11.616" y="30">‘가위’인가?</tspan></text>
+    <polygon class="cls-10" points="396.233 2032.375 271.89 2091.546 396.233 2150.717 520.576 2091.546 396.233 2032.375"/>
+    <text class="cls-3" transform="translate(328.1 2088.393)"><tspan x="0" y="0">컴퓨터 선택이</tspan><tspan x="11.616" y="30">‘바위’인가?</tspan></text>
+    <g>
+      <line class="cls-8" x1="516.271" y1="2281.373" x2="584.54" y2="2281.373"/>
+      <polygon class="cls-1" points="582.352 2288.852 595.304 2281.373 582.352 2273.894 582.352 2288.852"/>
+    </g>
+    <text class="cls-3" transform="translate(537.877 2270.098)"><tspan x="0" y="0">예</tspan></text>
+    <g>
+      <line class="cls-8" x1="158.231" y1="1784.677" x2="158.231" y2="2405.501"/>
+      <polygon class="cls-1" points="150.752 2403.313 158.231 2416.265 165.71 2403.313 150.752 2403.313"/>
+    </g>
+    <text class="cls-3" transform="translate(169.999 1873.17)"><tspan x="0" y="0">아니요</tspan></text>
+    <g>
+      <polyline class="cls-8" points="273.565 1786.297 396.104 1786.297 396.104 1829.179"/>
+      <polygon class="cls-1" points="388.624 1826.991 396.104 1839.943 403.583 1826.991 388.624 1826.991"/>
+    </g>
+    <text class="cls-3" transform="translate(301.077 1774.31)"><tspan x="0" y="0">예</tspan></text>
+    <polygon class="cls-10" points="158.102 1727.126 33.759 1786.297 158.102 1845.468 282.446 1786.297 158.102 1727.126"/>
+    <text class="cls-3" transform="translate(111.789 1779.143)"><tspan x="0" y="0">내 선택이</tspan><tspan x=".706" y="30">‘보’인가?</tspan></text>
+    <polygon class="cls-10" points="396.233 2222.202 271.89 2281.373 396.233 2340.544 520.576 2281.373 396.233 2222.202"/>
+    <text class="cls-3" transform="translate(328.1 2279.35)"><tspan x="0" y="0">컴퓨터 선택이</tspan><tspan x="22.526" y="30">‘보’인가?</tspan></text>
+    <rect class="cls-9" x="595.954" y="1851.858" width="226.999" height="96.465"/>
+    <text class="cls-2" transform="translate(622.093 1891.936)"><tspan class="cls-5" x="0" y="0">‘사람이 졌습니다</tspan><tspan class="cls-12" x="164.292" y="0">.</tspan><tspan class="cls-5" x="168.518" y="0">’</tspan><tspan class="cls-5"><tspan x="65.541" y="33">출력</tspan></tspan></text>
+    <rect class="cls-9" x="595.304" y="2248.142" width="226.999" height="66.462"/>
+    <text class="cls-2" transform="translate(621.442 2289.719)"><tspan class="cls-5" x="0" y="0">‘비겼습니다</tspan><tspan class="cls-12" x="115.309" y="0">.</tspan><tspan class="cls-13" x="119.534" y="0">’ 출력</tspan></text>
+  </g>
+  <rect class="cls-7" x="72.559" y="2416.265" width="171.736" height="70" rx="35" ry="35"/>
+  <text class="cls-3" transform="translate(134.934 2460.957)"><tspan x="0" y="0">종료</tspan></text>
+  <rect class="cls-7" x="73.071" y=".5" width="171.736" height="70" rx="35" ry="35"/>
+  <polygon class="cls-11" points="242.886 170.733 31.888 170.733 72.947 102.116 283.945 102.116 242.886 170.733"/>
+  <text class="cls-3" transform="translate(98.022 144.772)"><tspan x="0" y="0">내 선택 입력</tspan></text>
+  <g>
+    <line class="cls-8" x1="157.916" y1="70.967" x2="157.916" y2="93.505"/>
+    <polygon class="cls-1" points="151.933 91.754 157.916 102.116 163.899 91.754 151.933 91.754"/>
+  </g>
+  <g>
+    <line class="cls-8" x1="157.916" y1="170.733" x2="157.916" y2="193.272"/>
+    <polygon class="cls-1" points="151.933 191.521 157.916 201.883 163.899 191.521 151.933 191.521"/>
+  </g>
+  <text class="cls-3" transform="translate(135.446 45.192)"><tspan x="0" y="0">시작</tspan></text>
+  <rect class="cls-9" x="44.417" y="202.276" width="226.999" height="66.462"/>
+  <text class="cls-3" transform="translate(100.694 243.855)"><tspan x="0" y="0">컴퓨터 선택</tspan></text>
+</svg>

@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="_레이어_1" data-name="레이어 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 609.601 1031.656">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #707070;
+        stroke-width: 0px;
+      }
+
+      .cls-2, .cls-3 {
+        font-size: 26px;
+      }
+
+      .cls-2, .cls-3, .cls-4, .cls-5 {
+        font-family: Pretendard-Bold-KSCpc-EUC-H, Pretendard;
+        font-weight: 700;
+      }
+
+      .cls-6, .cls-3 {
+        letter-spacing: -.025em;
+      }
+
+      .cls-7 {
+        stroke: red;
+      }
+
+      .cls-7, .cls-8, .cls-9, .cls-10, .cls-11, .cls-12 {
+        stroke-miterlimit: 10;
+      }
+
+      .cls-7, .cls-9, .cls-12 {
+        fill: none;
+        stroke-width: 3px;
+      }
+
+      .cls-7, .cls-12 {
+        stroke-dasharray: 0 0 7 4;
+      }
+
+      .cls-8 {
+        fill: #b6eda2;
+        stroke: #6ea159;
+      }
+
+      .cls-13 {
+        letter-spacing: -.063em;
+      }
+
+      .cls-9 {
+        stroke: #707070;
+      }
+
+      .cls-10 {
+        fill: #caebfc;
+        stroke: #3295c3;
+      }
+
+      .cls-11 {
+        fill: #d9cfff;
+        stroke: #8c7bc6;
+      }
+
+      .cls-14 {
+        letter-spacing: -.057em;
+      }
+
+      .cls-15 {
+        letter-spacing: -.025em;
+      }
+
+      .cls-4 {
+        fill: red;
+      }
+
+      .cls-4, .cls-5 {
+        font-size: 28px;
+        letter-spacing: -.025em;
+      }
+
+      .cls-5 {
+        fill: #6400e0;
+      }
+
+      .cls-12 {
+        stroke: #6400e0;
+      }
+    </style>
+  </defs>
+  <g>
+    <line class="cls-9" x1="298.697" y1="40.099" x2="298.697" y2="96.426"/>
+    <polygon class="cls-1" points="292.713 94.676 298.697 105.037 304.68 94.676 292.713 94.676"/>
+  </g>
+  <g>
+    <rect class="cls-12" x="1.5" y="233.937" width="564.321" height="668.328" rx="25" ry="25"/>
+    <g>
+      <rect class="cls-7" x="112.21" y="435.985" width="408.774" height="311.604" rx="9.772" ry="9.772"/>
+      <polyline class="cls-9" points="387.048 525.95 477.791 525.95 477.791 723.779 298.79 723.779"/>
+      <g>
+        <polyline class="cls-9" points="298.683 842.037 298.683 874.618 57.242 874.618 57.242 321.729 162.845 321.729"/>
+        <polygon class="cls-1" points="161.095 327.713 171.456 321.729 161.095 315.746 161.095 327.713"/>
+      </g>
+      <text class="cls-4" transform="translate(120.883 419.304)"><tspan x="0" y="0">안쪽 선택 구조</tspan></text>
+      <g>
+        <line class="cls-9" x1="298.634" y1="379.824" x2="298.634" y2="459.169"/>
+        <polygon class="cls-1" points="292.65 457.418 298.634 467.779 304.617 457.418 292.65 457.418"/>
+      </g>
+      <g>
+        <line class="cls-9" x1="298.634" y1="584.121" x2="298.634" y2="626.211"/>
+        <polygon class="cls-1" points="292.65 624.46 298.634 634.822 304.617 624.46 292.65 624.46"/>
+      </g>
+      <g>
+        <line class="cls-9" x1="298.634" y1="701.284" x2="298.634" y2="769.942"/>
+        <polygon class="cls-1" points="292.65 768.192 298.634 778.553 304.617 768.192 292.65 768.192"/>
+      </g>
+      <text class="cls-3" transform="translate(420.787 306.798)"><tspan x="0" y="0">아니요</tspan></text>
+      <text class="cls-3" transform="translate(420.787 511.149)"><tspan x="0" y="0">아니요</tspan></text>
+      <g>
+        <line class="cls-9" x1="298.634" y1="173.611" x2="298.634" y2="254.942"/>
+        <polygon class="cls-1" points="292.65 253.191 298.634 263.553 304.617 253.191 292.65 253.191"/>
+      </g>
+      <g>
+        <polyline class="cls-9" points="414.46 321.828 608.101 321.828 608.101 927.03 298.318 927.03 298.318 952.545"/>
+        <polygon class="cls-1" points="292.334 950.795 298.318 961.156 304.301 950.795 292.334 950.795"/>
+      </g>
+      <text class="cls-3" transform="translate(315.704 410.016)"><tspan x="0" y="0">예</tspan></text>
+      <text class="cls-3" transform="translate(315.704 612.862)"><tspan x="0" y="0">예</tspan></text>
+      <rect class="cls-10" x="182.067" y="634.822" width="229" height="66.462"/>
+      <text class="cls-3" transform="translate(213.368 676.397)"><tspan x="0" y="0">‘합’에 ‘수’ 더하기</tspan></text>
+      <rect class="cls-10" x="182.067" y="779.235" width="229" height="66.462"/>
+      <text class="cls-3" transform="translate(246.536 820.808)"><tspan x="0" y="0">‘수’ 1 증가</tspan></text>
+      <g>
+        <polygon class="cls-11" points="298.846 467.779 173.503 525.95 298.846 584.121 417.189 525.95 298.846 467.779"/>
+        <text class="cls-3" transform="translate(270.353 516.794)"><tspan x="0" y="0">‘수’가</tspan><tspan x="-22.286" y="30">짝수인가?</tspan></text>
+      </g>
+      <polygon class="cls-11" points="298.459 263.553 172.116 321.723 298.459 379.894 424.803 321.723 298.459 263.553"/>
+      <text class="cls-3" transform="translate(220.521 322.904)"><tspan x="0" y="0">‘수’가 100 이하</tspan><tspan x="48.981" y="30">인가?</tspan></text>
+    </g>
+    <text class="cls-5" transform="translate(14.211 216.369)"><tspan x="0" y="0">바깥 반복 구조</tspan></text>
+  </g>
+  <g>
+    <rect class="cls-8" x="212.829" y=".5" width="171.736" height="70" rx="35" ry="35"/>
+    <text class="cls-3" transform="translate(275.204 45.191)"><tspan x="0" y="0">시작</tspan></text>
+  </g>
+  <g>
+    <rect class="cls-8" x="212.829" y="961.156" width="171.736" height="70" rx="35" ry="35"/>
+    <text class="cls-3" transform="translate(275.204 1005.847)"><tspan x="0" y="0">종료</tspan></text>
+  </g>
+  <rect class="cls-10" x="143.085" y="105.1" width="311.223" height="73.746"/>
+  <text class="cls-2" transform="translate(162.604 150.326)"><tspan class="cls-6" x="0" y="0">‘수‘는 </tspan><tspan class="cls-13" x="61.395" y="0">1</tspan><tspan class="cls-14" x="71.955" y="0">,</tspan><tspan class="cls-15" x="77.944" y="0" xml:space="preserve"> &apos;합&apos;은 0으로 정하기</tspan></text>
+</svg>

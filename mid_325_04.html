@@ -31,7 +31,7 @@
                         <li tabindex="0"><span>④</span>늑대는 1초 간격으로 실행 화면의 무작위 위치에 나타났다 사라진다.</li>
                         <li tabindex="0"><span>⑤</span>아기 양이 늑대에 닿으면 초시계를 정지하고 게임을 종료한다.</li>
                     </ul>  
-                    <div class="cm_mg_t20">※ 엔트리 실행 화면 안의 x 좌표 범위는 -240~240이고, y 좌표 범위는 -135~135 이다.</div>                        
+                    <div class="cm_txt_gray"> ※ 엔트리 실행 화면 안의 x 좌표 범위는 -240~240이고, y 좌표 범위는 -135~135 이다.</div>                        
                 </div>
             </section>
 
@@ -48,7 +48,7 @@
                     </div>
                 </figure>
 
-                <ul class="cm_list_bull">
+                <ul class="cm_list_bull cm_pd_t20">
                     <li><div><strong class="cm_font_bold">오류 사항 1.</strong> 늑대가 미로 밖에 나타난다.</div></li>
                     <li><div><strong class="cm_font_bold">오류 사항 2.</strong> 아기 양이 집에 도착해도 초시계가 멈추지 않고, 말풍선이 나타나지 않는다.</div></li>
                 </ul>
@@ -61,15 +61,15 @@
                 </div>
 
                 <div class="cm_video">
-                    <div class="cm_chart_title" tabindex="0">오류 사항 1</div>
+                    <div class="cm_err_title cm_font_18" tabindex="0">오류 사항 1</div>
                     <div class="cm_view_chart " tabindex="0">
                         <div class="cm_err_txt">늑대가 미로 밖에 나타난다.</div>
                         <div class="cm_tbl_wrap">
                             <table class="cm_tbl_02">
                                 <caption>오류 사항</caption>
                                 <colgroup>
-                                    <col width="10%" />
-                                    <col width="90%" />
+                                    <col width="15%" />
+                                    <col width="85%" />
                                 </colgroup>
                                 <thead>
                                     <tr>
@@ -80,10 +80,10 @@
                                 <tbody>
                                     <tr>
                                         <th scope="row">
-                                            <img src="img/object_wolf.png" alt="늑대인간 오브젝트" class="cm_w100">
+                                            <img src="img/object_wolf.png" class="cm_w100" style="max-width: 70px !important;" alt="늑대인간 오브젝트">
                                         </th>
                                         <td>
-                                            <img src="img/img_325_04_01.svg" alt="시작하기 버튼을 클릭했을 때, 위치를 무작위로 이동하며 1초 간격으로 모양 숨기기와 보이기를 계속 반복하도록 조립된 엔트리 코드">
+                                            <img src="img/img_325_04_01.svg" class="cm_w100" alt="시작하기 버튼을 클릭했을 때, 위치를 무작위로 이동하며 1초 간격으로 모양 숨기기와 보이기를 계속 반복하도록 조립된 엔트리 코드">
                                         </td>
                                     </tr>
                                 </tbody>
@@ -103,7 +103,7 @@
                 </div>
 
                 <div class="cm_video cm_mg_t50">
-                    <div class="cm_chart_title" tabindex="0">오류 사항 2</div>
+                    <div class="cm_err_title" tabindex="0">오류 사항 2</div>
                     <div class="cm_view_chart " tabindex="0">
                         <div class="cm_err_txt">아기 양이 집에 도착해도 초시계가 멈추지 않고, 말풍선이 나타나지 않는다.</div>
                         <div class="cm_tbl_wrap">
@@ -122,10 +122,10 @@
                                 <tbody>
                                     <tr>
                                         <th scope="row">
-                                            <img src="img/object_sheep.png" class="cm_w100" alt="아기 양 오브젝트">
+                                            <img src="img/object_sheep.png" class="cm_w100" style="max-width: 70px !important;" alt="아기 양 오브젝트">
                                         </th>
-                                        <td>
-                                            <img src="img/img_325_04_02.svg" class="cm_w75" alt="시작하기 버튼을 클릭했을 때, 위치를 무작위로 이동하며 1초 간격으로 모양 숨기기와 보이기를 계속 반복하도록 조립된 엔트리 코드">
+                                        <td class="cm_align_l">
+                                            <img src="img/img_325_04_02.svg" class="cm_w100" style="max-width: 400px !important;" alt="시작하기 버튼을 클릭했을 때, 위치를 무작위로 이동하며 1초 간격으로 모양 숨기기와 보이기를 계속 반복하도록 조립된 엔트리 코드">
                                         </td>
                                     </tr>
                                 </tbody>
@@ -134,7 +134,9 @@
                             <div class="cm_tip">
                                 <div class="cm_tip_txt">Tip</div>
                                 <div class="cm_tip_box cm_align_l">
-                                    <div class="cm_align_c cm_mg_b20"><img src="img/img_325_04_03.svg" alt="'모든' 코드 멈추기 블록" class="cm_w200"></div>
+                                    <div class="cm_align_c cm_mg_b20">
+                                        <img src="img/img_325_04_03.svg" class="cm_w100" style="max-width: 200px !important;" alt="'모든' 코드 멈추기 블록">
+                                    </div>
                                     작품의 모든 블록이 실행을 멈춘다. 하지만 모든 코드를 멈추어도 현재 실행 중인 동작을 멈출 뿐 작품을 중지하는 것은 아니다. <br>
                                     ※ 비슷하게 동작하는 늑대 인간 오브젝트의 코드를 확인해 보며 다른 점을 찾아보자.
                                 </div>
