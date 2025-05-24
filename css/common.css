@@ -385,7 +385,7 @@ color: #fff !important; background: none !important; border: none !important; bo
 .cmass-content .cm_list_tip_h li span { display: inline-block; font-weight: bold; padding-right: 10px; } 
 .cmass-content .cm_list_tip_h li.cm_point_bull::before { color: #057f64 !important; } 
 
-.cmass-content .cm_list_img { margin-top: 20px; } 
+.cmass-content .cm_list_img { margin-top: 20px; margin-left: 0 !important; margin-bottom: 0 !important;} /* 뷰어이슈 */
 .cmass-content .cm_list_img li { padding-bottom: 15px; } 
 
 
@@ -414,7 +414,8 @@ color: #fff !important; background: none !important; border: none !important; bo
 /* 로봇개 */
 .cmass-content .cm_dog { display: flex; justify-content: space-around; align-items: end; margin-top: 20px; } 
 .cmass-content .cm_dog dl { width: 25%; } 
-.cmass-content .cm_dog dl dt img { width: 100%; } 
+.cmass-content .cm_dog dl dt { text-align: center; margin: 0 auto; } 
+.cmass-content .cm_dog dl dt img { width: 100%; margin: 0 auto; } 
 .cmass-content .cm_dog dl dd { text-align: center;}
 
 /* 사이즈, 폰트 */
