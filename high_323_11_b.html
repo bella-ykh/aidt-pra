@@ -177,18 +177,18 @@
                 <div class="cm_code_title" tabindex="0">의사 코드</div>
                 <div class="cm_code_txt" tabindex="0">시작
     
-timetable ← [<span class="cm_masked cm_w220" aria-label="가려짐"></span>]
+timetable ← [<span class="cm_masked cm_w40" aria-label="가려짐"></span>]
 
 메뉴 선택하기 안내 메시지 출력
 c ← 특정 요일 시간표 출력 or 특정 요일과 교시 과목 출력 선택
 
 만약 c가 1이면 (특정 요일 시간표)
-day ← [<span class="cm_masked cm_w220" aria-label="가려짐"></span>]
+day ← [<span class="cm_masked cm_w40" aria-label="가려짐"></span>]
 해당 요일 시간표 전체 출력하기
 
 만약 c가 2이면 (특정  요일 시간의 과목)
-day ← [<span class="cm_masked cm_w220" aria-label="가려짐"></span>]
-time ←  [<span class="cm_masked cm_w220" aria-label="가려짐"></span>]
+day ← [<span class="cm_masked cm_w40" aria-label="가려짐"></span>]
+time ←  [<span class="cm_masked cm_w40" aria-label="가려짐"></span>]
 해당 요일 교시 시간표 과목 출력하기
 </div>
             </div>
@@ -207,22 +207,20 @@ time ←  [<span class="cm_masked cm_w220" aria-label="가려짐"></span>]
                 </div>
                 <div class="cm_hint_content">
                     <div class="cm_code_number" tabindex="0">
-                        <div class="cm_code_number" tabindex="0">
-                            <div class="cm_line_count" aria-hidden="true"><span>2</span></div>
-                            <pre class="cm_code3" tabindex="0">timetable = {</pre>
-                            <div class="cm_line_count" aria-hidden="true"><span>3</span></div>
-                            <pre class="cm_code3" tabindex="0">    '월' : {1:'국어', 2:'수학', 3:'영어', 4:'국사', 5:'체육', 6:'사회'}, <span class="cm_keyword"># 월요일</span></pre>
-                            <div class="cm_line_count" aria-hidden="true"><span>4</span></div>
-                            <pre class="cm_code3" tabindex="0">    '화' : {1:'과학', 2:'수학', 3:'영어', 4:'미술', 5:'미술', 6:'정보', 7:'국어'}, <span class="cm_keyword"># 화요일</span></pre>
-                            <div class="cm_line_count" aria-hidden="true"><span>5</span></div>
-                            <pre class="cm_code3" tabindex="0">    '수' : {1:'국어', 2:'사회', 3:'과학', 4:'체육', 5:'수학', 6:'정보', 7:'영어'}, <span class="cm_keyword"># 수요일</span></pre>
-                            <div class="cm_line_count" aria-hidden="true"><span>6</span></div>
-                            <pre class="cm_code3" tabindex="0">    '목' : {1:'영어', 2:'국사', 3:'국어', 4:'과학', 5:'음악', 6:'체육'}, <span class="cm_keyword"># 목요일</span></pre>
-                            <div class="cm_line_count" aria-hidden="true"><span>7</span></div>
-                            <pre class="cm_code3" tabindex="0">    '금' : {1:'체육', 2:'사회', 3:'미술', 4:'국사', 5:'수학', 6:'국어'} <span class="cm_keyword"># 금요일</span></pre>
-                            <div class="cm_line_count" aria-hidden="true"><span>8</span></div>
-                            <pre class="cm_code3" tabindex="0">}</pre>
-                        </div>
+                        <div class="cm_line_count" aria-hidden="true"><span>2</span></div>
+                        <pre class="cm_code3" tabindex="0">timetable = {</pre>
+                        <div class="cm_line_count" aria-hidden="true"><span>3</span></div>
+                        <pre class="cm_code3" tabindex="0">    '월' : {1:'국어', 2:'수학', 3:'영어', 4:'국사', 5:'체육', 6:'사회'}, <span class="cm_keyword"># 월요일</span></pre>
+                        <div class="cm_line_count" aria-hidden="true"><span>4</span></div>
+                        <pre class="cm_code3" tabindex="0">    '화' : {1:'과학', 2:'수학', 3:'영어', 4:'미술', 5:'미술', 6:'정보', 7:'국어'}, <span class="cm_keyword"># 화요일</span></pre>
+                        <div class="cm_line_count" aria-hidden="true"><span>5</span></div>
+                        <pre class="cm_code3" tabindex="0">    '수' : {1:'국어', 2:'사회', 3:'과학', 4:'체육', 5:'수학', 6:'정보', 7:'영어'}, <span class="cm_keyword"># 수요일</span></pre>
+                        <div class="cm_line_count" aria-hidden="true"><span>6</span></div>
+                        <pre class="cm_code3" tabindex="0">    '목' : {1:'영어', 2:'국사', 3:'국어', 4:'과학', 5:'음악', 6:'체육'}, <span class="cm_keyword"># 목요일</span></pre>
+                        <div class="cm_line_count" aria-hidden="true"><span>7</span></div>
+                        <pre class="cm_code3" tabindex="0">    '금' : {1:'체육', 2:'사회', 3:'미술', 4:'국사', 5:'수학', 6:'국어'} <span class="cm_keyword"># 금요일</span></pre>
+                        <div class="cm_line_count" aria-hidden="true"><span>8</span></div>
+                        <pre class="cm_code3" tabindex="0">}</pre>
                     </div>
                 </div>
             </div>
@@ -260,7 +258,12 @@ time ←  [<span class="cm_masked cm_w220" aria-label="가려짐"></span>]
     
             <ul class="cm_list_num_h">
                 <li tabindex="0"><span>①</span>프로그램을 실행하여 [실행 결과 예시]와 같이 결과가 출력되는지 확인해 보자.</li>
-                <li tabindex="0"><span>②</span>예시와 같이 결과를 출력했다면 ‘제출하기’ 버튼을 눌러 실습의 결과를 확인해 보자.</li>
+                <li tabindex="0">
+                    <span>②</span>
+                    <div class="cm_vt_c cm_mg_t-10">
+                        예시와 같이 결과를 출력했다면 <strong class="cm_btn_mark">채점하기</strong> 버튼을 눌러 실습 결과를 확인해 보자.
+                    </div>
+                </li>
             </ul> 
         </section>
     </section>
