@@ -733,4 +733,7 @@
   <rect class="cls-17" x="327.542" y="678.485" width="30.968" height="39.613" rx="3.355" ry="3.355"/>
   <rect class="cls-17" x="372.286" y="677.388" width="41.806" height="41.806" rx="20.903" ry="20.903"/>
   <rect class="cls-17" x="52.499" y="1046.507" width="115.364" height="41.806" rx="20.903" ry="20.903"/>
+  <text class="cls-30" transform="translate(215.862 317.704)"><tspan x="0" y="0">=</tspan></text>
+  <rect class="cls-6" x="338.618" y="292.338" width="139.795" height="39.613" rx="3.355" ry="3.355"/>
+  <rect class="cls-6" x="252.246" y="291.241" width="41.806" height="41.806" rx="20.903" ry="20.903"/>
 </svg>
