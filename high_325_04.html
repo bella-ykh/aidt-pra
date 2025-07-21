@@ -175,6 +175,7 @@
         
         // 🔹 리사이즈 이벤트 처리 (개선된 버전)
         window.addEventListener('resize', function() {
+            console.log('여기에 콘솔 로그를 찍다');
             document.querySelectorAll('.cm_hint_header.active').forEach(header => {
                 const content = header.nextElementSibling;
                 if (content && content.classList.contains('cm_hint_content')) {
