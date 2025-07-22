@@ -119,86 +119,301 @@
     </script>
     
     
-    <!-- 힌트창 관련 최종 수정(0519)  -->
-    <script>
-        (function() {
-            // iframe 내부에서 실행 중인지 확인
-            const isInIframe = window.self !== window.top;
+<!-- 힌트창 관련 최종 수정(0519)  -->
+<script>
+    (function() {
+        // iframe 내부에서 실행 중인지 확인
+        const isInIframe = window.self !== window.top;
+        
+        function initializeHints() {
+            const hintHeaders = document.querySelectorAll('.cm_hint_header');
             
-            function initializeHints() {
-                const hintHeaders = document.querySelectorAll('.cm_hint_header');
-                
-                // 초기 상태 설정
-                hintHeaders.forEach(header => {
-                    const content = header.nextElementSibling;
-                    if (content && content.classList.contains('cm_hint_content')) {
-                        content.style.maxHeight = '0';  // 모든 힌트를 닫음
-                    }
-                });
-                // 각 힌트 헤더에 직접 이벤트 리스너 추가
-                hintHeaders.forEach(header => {
-                    // 기존 이벤트 리스너 제거
-                    header.removeEventListener('click', handleHintClick);
-                    // 새 이벤트 리스너 추가
-                    header.addEventListener('click', handleHintClick);
-                });
-            }
-    
-            function handleHintClick(e) {
-                e.preventDefault();
-                e.stopPropagation();
-                
-                const header = this;
+            // 초기 상태 설정
+            hintHeaders.forEach(header => {
                 const content = header.nextElementSibling;
-                
-                if (!content || !content.classList.contains('cm_hint_content')) return;
-                
-                // 현재 클릭한 힌트만 열기/닫기
-                if (header.classList.contains('active')) {
-                    header.classList.remove('active');
-                    content.style.maxHeight = '0'; // 닫기
-                } else {
-                    header.classList.add('active');
-                    content.style.maxHeight = content.scrollHeight + 'px'; // 열기
+                if (content && content.classList.contains('cm_hint_content')) {
+                    content.style.maxHeight = '0';  // 모든 힌트를 닫음
                 }
-            }
-    
-            // DOM이 완전히 로드된 후 실행
-            if (document.readyState === 'loading') {
-                document.addEventListener('DOMContentLoaded', initializeHints);
+            });
+            // 각 힌트 헤더에 직접 이벤트 리스너 추가
+            hintHeaders.forEach(header => {
+                // 기존 이벤트 리스너 제거
+                header.removeEventListener('click', handleHintClick);
+                // 새 이벤트 리스너 추가
+                header.addEventListener('click', handleHintClick);
+            });
+        }
+
+        function handleHintClick(e) {
+            //e.preventDefault();
+            //e.stopPropagation();
+            
+            const header = this;
+            const content = header.nextElementSibling;
+            
+            if (!content || !content.classList.contains('cm_hint_content')) return;
+            
+            // 현재 클릭한 힌트만 열기/닫기
+            if (header.classList.contains('active')) {
+                header.classList.remove('active');
+                content.style.maxHeight = '0'; // 닫기
             } else {
-                initializeHints();
+                header.classList.add('active');
+                content.style.maxHeight = content.scrollHeight + 'px'; // 열기
             }
-    
-            // 리사이즈 이벤트 처리
-            window.addEventListener('resize', function() {
+        }
+
+        // DOM이 완전히 로드된 후 실행
+        if (document.readyState === 'loading') {
+            initializeHints();
+            //document.addEventListener('DOMContentLoaded', initializeHints);
+        } else {
+            initializeHints();
+        }
+
+        // 리사이즈 이벤트 처리
+        window.addEventListener('resize', function() {
+            document.querySelectorAll('.cm_hint_header.active').forEach(header => {
+                const content = header.nextElementSibling;
+                if (content && content.classList.contains('cm_hint_content')) {
+                    content.style.maxHeight = content.scrollHeight + 'px';
+                }
+            });
+        });
+
+        // iframe 내부에서 실행 중이면 부모 창에 로드 완료 메시지 전송
+        if (isInIframe) {
+            window.parent.postMessage({ type: 'hintContentLoaded' }, '*');
+        }
+
+        // 부모 창으로부터 메시지 수신
+        window.addEventListener('message', function(e) {
+            if (e.data && e.data.type === 'resizeHint') {
                 document.querySelectorAll('.cm_hint_header.active').forEach(header => {
                     const content = header.nextElementSibling;
                     if (content && content.classList.contains('cm_hint_content')) {
                         content.style.maxHeight = content.scrollHeight + 'px';
                     }
                 });
-            });
-    
-            // iframe 내부에서 실행 중이면 부모 창에 로드 완료 메시지 전송
-            if (isInIframe) {
-                window.parent.postMessage({ type: 'hintContentLoaded' }, '*');
             }
+        });
+    })();
+</script>
+
+
+
     
-            // 부모 창으로부터 메시지 수신
-            window.addEventListener('message', function(e) {
-                if (e.data && e.data.type === 'resizeHint') {
-                    document.querySelectorAll('.cm_hint_header.active').forEach(header => {
-                        const content = header.nextElementSibling;
-                        if (content && content.classList.contains('cm_hint_content')) {
-                            content.style.maxHeight = content.scrollHeight + 'px';
-                        }
+<!-- 통합된 스크립트 -->
+<script>
+    (function() {
+        // iframe 내부에서 실행 중인지 확인
+        const isInIframe = window.self !== window.top;
+        
+        function initializeHints() {
+            const hintHeaders = document.querySelectorAll('.cm_hint_header');
+            
+            // 각 힌트 헤더 초기화
+            hintHeaders.forEach(header => {
+                // 🔹 접근성 속성 설정 (첫 번째 스크립트에서 가져옴)
+                header.setAttribute("role", "button");
+                header.setAttribute("tabindex", "0");
+                header.setAttribute("aria-expanded", "false");
+                
+                // 🔹 초기 상태 설정 (클래스와 스타일 모두 초기화)
+                const content = header.nextElementSibling;
+                if (content && content.classList.contains('cm_hint_content')) {
+                    header.classList.remove('active');  // 🚨 클래스도 확실히 제거
+                    content.style.maxHeight = '0';
+                }
+                
+                // 🔹 이벤트 리스너 등록
+                header.removeEventListener('click', handleHintClick);
+                header.addEventListener('click', handleHintClick);
+                
+                // 🔹 키보드 이벤트 리스너 추가 (첫 번째 스크립트에서 가져옴)
+                header.removeEventListener('keydown', handleKeydown);
+                header.addEventListener('keydown', handleKeydown);
+            });
+        }
+        
+        // 🔹 클릭 이벤트 처리
+        function handleHintClick(e) {
+            toggleHint.call(this);
+        }
+        
+        // 🔹 키보드 이벤트 처리 (첫 번째 스크립트에서 가져옴)
+        function handleKeydown(e) {
+            if (e.key === "Enter" || e.key === " ") {
+                e.preventDefault();
+                toggleHint.call(this);
+            }
+        }
+        
+        // 🔹 힌트 토글 함수 (통합 버전)
+        function toggleHint() {
+            const header = this;
+            const content = header.nextElementSibling;
+            
+            if (!content || !content.classList.contains('cm_hint_content')) return;
+            
+            // 현재 상태 확인
+            const isExpanded = header.classList.contains('active');
+            
+            if (isExpanded) {
+                // 닫기
+                header.classList.remove('active');
+                header.setAttribute("aria-expanded", "false");
+                header.setAttribute('aria-label', '힌트 닫힘');
+                content.style.maxHeight = '0';
+            } else {
+                // 열기  
+                header.classList.add('active');
+                header.setAttribute("aria-expanded", "true");
+                header.setAttribute('aria-label', '힌트 열림');
+                content.style.maxHeight = content.scrollHeight + 'px';
+            }
+        }
+        
+        // DOM이 완전히 로드된 후 실행
+        if (document.readyState === 'loading') {
+            document.addEventListener('DOMContentLoaded', initializeHints);
+        } else {
+            initializeHints();
+        }
+        
+        // 🔹 리사이즈 이벤트 처리 (개선된 버전)
+        window.addEventListener('resize', function() {
+            document.querySelectorAll('.cm_hint_header.active').forEach(header => {
+                const content = header.nextElementSibling;
+                if (content && content.classList.contains('cm_hint_content')) {
+                    // 일시적으로 0으로 설정 후 다시 계산 (첫 번째 스크립트 방식)
+                    content.style.maxHeight = "0px";
+                    requestAnimationFrame(() => {
+                        content.style.maxHeight = content.scrollHeight + 'px';
                     });
                 }
             });
-        })();
+        });
+        
+        // iframe 내부에서 실행 중이면 부모 창에 로드 완료 메시지 전송
+        if (isInIframe) {
+            window.parent.postMessage({ type: 'hintContentLoaded' }, '*');
+        }
+        
+        // 부모 창으로부터 메시지 수신
+        window.addEventListener('message', function(e) {
+            if (e.data && e.data.type === 'resizeHint') {
+                document.querySelectorAll('.cm_hint_header.active').forEach(header => {
+                    const content = header.nextElementSibling;
+                    if (content && content.classList.contains('cm_hint_content')) {
+                        content.style.maxHeight = content.scrollHeight + 'px';
+                    }
+                });
+            }
+        });
+    })();
     </script>
+
+
+
+<!-- 통합된 스크립트 최종! (0721 반영) -->
+<script>
+    (function() {
+        // iframe 내부에서 실행 중인지 확인
+        const isInIframe = window.self !== window.top;
+        
+        function initializeHints() {
+            const hintHeaders = document.querySelectorAll('.cm_hint_header');
+            
+            // 각 힌트 헤더 초기화
+            hintHeaders.forEach(header => {
+                // 접근성 속성 설정 (첫 번째 스크립트에서 가져옴)
+                header.setAttribute("role", "button");
+                header.setAttribute("tabindex", "0");
+                header.setAttribute("aria-expanded", "false");
+                
+                // 초기 상태 설정 (클래스와 스타일 모두 초기화)
+                const content = header.nextElementSibling;
+                if (content && content.classList.contains('cm_hint_content')) {
+                    header.classList.remove('active');  // 클래스도 확실히 제거
+                    content.style.maxHeight = '0';
+                }
+                
+                // 이벤트 리스너 등록
+                header.removeEventListener('click', handleHintClick);
+                header.addEventListener('click', handleHintClick);
+                
+                // 키보드 이벤트 리스너 추가 (첫 번째 스크립트에서 가져옴)
+                header.removeEventListener('keydown', handleKeydown);
+                header.addEventListener('keydown', handleKeydown);
+            });
     
+            // 여기서 ResizeObserver 설정
+            const ro = new ResizeObserver(entries => {
+                for (let entry of entries) {
+                    const el = entry.target;
+                    // active 상태인 힌트만 조정
+                    const header = el.previousElementSibling;
+                    if (header && header.classList.contains('active')) {
+                        el.style.maxHeight = el.scrollHeight + 'px';
+                    }
+                }
+            });
     
+            document.querySelectorAll('.cm_hint_content').forEach(content => {
+                ro.observe(content);
+            });
+        }
+        
+        // 클릭 이벤트 처리
+        function handleHintClick(e) {
+            e.preventDefault();
+            e.stopPropagation();
+            toggleHint.call(this);
+        }
+        
+        // 키보드 이벤트 처리 (첫 번째 스크립트에서 가져옴)
+        function handleKeydown(e) {
+            if (e.key === "Enter" || e.key === " ") {
+                e.preventDefault();
+                toggleHint.call(this);
+            }
+        }
+        
+        // 힌트 토글 함수 (통합 버전)
+        function toggleHint() {
+            const header = this;
+            const content = header.nextElementSibling;
+            
+            if (!content || !content.classList.contains('cm_hint_content')) return;
+            
+            // 현재 상태 확인
+            const isExpanded = header.classList.contains('active');
+            
+            if (isExpanded) {
+                // 닫기
+                header.classList.remove('active');
+                header.setAttribute("aria-expanded", "false");
+                header.setAttribute('aria-label', '힌트 닫힘');
+                content.style.maxHeight = '0';
+            } else {
+                // 열기  
+                header.classList.add('active');
+                header.setAttribute("aria-expanded", "true");
+                header.setAttribute('aria-label', '힌트 열림');
+                content.style.maxHeight = content.scrollHeight + 'px';
+            }
+        }
+        
+        // DOM이 완전히 로드된 후 실행
+        if (document.readyState === 'loading') {
+            document.addEventListener('DOMContentLoaded', initializeHints);
+        } else {
+            initializeHints();
+        }
+        
+    })();
+</script>
+
 </body>
 </html>

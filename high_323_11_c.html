@@ -256,57 +256,103 @@ c ← 특정 요일 시간표 출력 or 특정 요일과 교시 과목 출력 �
             </ul>  
         </section>
     </section>
-    <script>
-        window.addEventListener("load", function () {
+<!-- 통합된 스크립트 최종! (0721 반영) -->
+<script>
+    (function() {
+        // iframe 내부에서 실행 중인지 확인
+        const isInIframe = window.self !== window.top;
+        
+        function initializeHints() {
             const hintHeaders = document.querySelectorAll('.cm_hint_header');
-        
-            hintHeaders.forEach(hintHeader => {
-                hintHeader.setAttribute("role", "button");
-                hintHeader.setAttribute("tabindex", "0");
-                hintHeader.setAttribute("aria-expanded", "false");
-        
-                // 힌트를 열고 닫는 함수
-                function toggleHint() {
-                    const hintContent = hintHeader.nextElementSibling;
-                    const isExpanded = hintHeader.classList.toggle('active');
-                    hintHeader.setAttribute("aria-expanded", isExpanded);
-                    
-                    // 열릴 때 '힌트 열림' 메시지
-                    if (isExpanded) {
-                        hintContent.style.maxHeight = hintContent.scrollHeight + "px";
-                        hintHeader.setAttribute('aria-label', '힌트 열림');  // 열릴 때 리더기에 읽히는 메시지
-                    } else {
-                        hintContent.style.maxHeight = null;
-                        hintHeader.setAttribute('aria-label', '힌트 닫힘');  // 닫힐 때 리더기에 읽히는 메시지
+            
+            // 각 힌트 헤더 초기화
+            hintHeaders.forEach(header => {
+                // 접근성 속성 설정 (첫 번째 스크립트에서 가져옴)
+                header.setAttribute("role", "button");
+                header.setAttribute("tabindex", "0");
+                header.setAttribute("aria-expanded", "false");
+                
+                // 초기 상태 설정 (클래스와 스타일 모두 초기화)
+                const content = header.nextElementSibling;
+                if (content && content.classList.contains('cm_hint_content')) {
+                    header.classList.remove('active');  // 클래스도 확실히 제거
+                    content.style.maxHeight = '0';
+                }
+                
+                // 이벤트 리스너 등록
+                header.removeEventListener('click', handleHintClick);
+                header.addEventListener('click', handleHintClick);
+                
+                // 키보드 이벤트 리스너 추가 (첫 번째 스크립트에서 가져옴)
+                header.removeEventListener('keydown', handleKeydown);
+                header.addEventListener('keydown', handleKeydown);
+            });
+    
+            // 여기서 ResizeObserver 설정
+            const ro = new ResizeObserver(entries => {
+                for (let entry of entries) {
+                    const el = entry.target;
+                    // active 상태인 힌트만 조정
+                    const header = el.previousElementSibling;
+                    if (header && header.classList.contains('active')) {
+                        el.style.maxHeight = el.scrollHeight + 'px';
                     }
                 }
-        
-                // 클릭 이벤트로 힌트 열기/닫기
-                hintHeader.addEventListener("click", toggleHint);
-        
-                // Enter 또는 Space 키로 힌트 열기/닫기
-                hintHeader.addEventListener("keydown", function (e) {
-                    // Enter 또는 Space 키가 눌렸을 때
-                    if (e.key === "Enter" || e.key === " ") {
-                        e.preventDefault(); // 기본 동작 막기
-                        toggleHint(); // 힌트 열기/닫기
-                    }
-                });
             });
-        
-            // 창 크기 변경 시 열린 힌트의 높이를 재계산
-            window.addEventListener("resize", function () {
-                document.querySelectorAll('.cm_hint_header.active').forEach(activeHeader => {
-                    const hintContent = activeHeader.nextElementSibling;
-                    hintContent.style.maxHeight = "0px";
-                    requestAnimationFrame(() => {
-                        hintContent.style.maxHeight = hintContent.scrollHeight + "px";
-                    });
-                });
+    
+            document.querySelectorAll('.cm_hint_content').forEach(content => {
+                ro.observe(content);
             });
-        });
-    </script>
-<!-- 엔터키 접근+열고닫기 안내메시지 // 가장 최신 수정코드+뷰어테스트 완료(0517) -->
-
+        }
+        
+        // 클릭 이벤트 처리
+        function handleHintClick(e) {
+            e.preventDefault();
+            e.stopPropagation();
+            toggleHint.call(this);
+        }
+        
+        // 키보드 이벤트 처리 (첫 번째 스크립트에서 가져옴)
+        function handleKeydown(e) {
+            if (e.key === "Enter" || e.key === " ") {
+                e.preventDefault();
+                toggleHint.call(this);
+            }
+        }
+        
+        // 힌트 토글 함수 (통합 버전)
+        function toggleHint() {
+            const header = this;
+            const content = header.nextElementSibling;
+            
+            if (!content || !content.classList.contains('cm_hint_content')) return;
+            
+            // 현재 상태 확인
+            const isExpanded = header.classList.contains('active');
+            
+            if (isExpanded) {
+                // 닫기
+                header.classList.remove('active');
+                header.setAttribute("aria-expanded", "false");
+                header.setAttribute('aria-label', '힌트 닫힘');
+                content.style.maxHeight = '0';
+            } else {
+                // 열기  
+                header.classList.add('active');
+                header.setAttribute("aria-expanded", "true");
+                header.setAttribute('aria-label', '힌트 열림');
+                content.style.maxHeight = content.scrollHeight + 'px';
+            }
+        }
+        
+        // DOM이 완전히 로드된 후 실행
+        if (document.readyState === 'loading') {
+            document.addEventListener('DOMContentLoaded', initializeHints);
+        } else {
+            initializeHints();
+        }
+        
+    })();
+</script>
 </body>
 </html>
