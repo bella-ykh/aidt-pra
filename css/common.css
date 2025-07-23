@@ -37,6 +37,12 @@ a:visited { color: #333; }
 
 .cmass-content select { -o-appearance: none; -webkit-appearance: none; -moz-appearance: none; appearance: none; } 
 
+.cmass-content pre {
+    user-select: none;
+    -webkit-user-drag: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+}
 
 @font-face { font-family: 'WAGURITTF'; src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/2403@1.0/WAGURITTF.woff2') format('woff2'); font-weight: normal; font-style: normal; } 
 @font-face { font-family: 'ONE Mobile Title'; src: url('https://cdn.jsdelivr.net/gh/wooin21/web/fonts/onestore/ONE Mobile Title.woff') format('woff2'); font-weight: normal; font-style: normal; } 
@@ -140,8 +146,8 @@ a:visited { color: #333; }
 color: #d4d4d4 !important; background: none !important; border: none !important; border-radius: 0 !important; min-width: 200px !important; font-style: normal !important; padding: 0 !important; } 
 .cmass-content .cm_code2 { white-space: pre-wrap; word-wrap: break-word; font-family: 'D2Coding', monospace; font-size: 16px; /*상속css 초기화*/ 
 color: #333 !important; background: none !important; border: none !important; border-radius: 0 !important; min-width: 200px !important; font-style: normal !important; padding: 0 !important; } /* 라인번호 없는 하얀 코드창 */
-.cmass-content .cm_code3 { margin-left: 30px; white-space: pre-wrap; word-wrap: break-word; /* font-family: 'D2Coding', monospace; */  font-size: 16px; /*상속css 초기화*/ 
-color: #d4d4d4 !important; background: none !important; border: none !important; border-radius: 0 !important; min-width: 200px !important; font-style: normal !important; padding: 0 !important; } /* 라인 개별 블럭 */
+.cmass-content .cm_code3 { margin-left: 30px; white-space: pre-wrap; word-wrap: break-word; word-break: break-all; /* font-family: 'D2Coding', monospace; */  font-size: 16px; /*상속css 초기화*/ 
+color: #d4d4d4 !important; background: none !important; border: none !important; border-radius: 0 !important; min-width: 160px !important; font-style: normal !important; padding: 0 10px 0 0 !important; } /* 라인 개별 블럭 */
 .cmass-content .cm_keyword { color: #608b42;  /* font-family: 'D2Coding', monospace; */  } 
 .cmass-content .cm_function { color: #7ec699; font-weight: bold; /* font-family: 'D2Coding', monospace; */  } 
 .cmass-content .cm_masked { display: inline-block; background-color: #ccc; color: transparent; width: 60px; height: 24px; border-radius: 5px; vertical-align: middle; user-select: none; margin: 3px 0; } 
